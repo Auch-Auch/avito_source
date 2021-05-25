@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/has_video" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/video_16" android:contentDescription="@null" android:layout_marginEnd="4dp"/>
+    <ImageView android:id="@+id/delivery_status" android:visibility="gone" android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/delivery" android:layout_marginEnd="4dp"/>
+    <TextView android:id="@+id/badge" android:visibility="gone" style="@style/res_2132017910_design_widget_badge_common"/>
+</LinearLayout>

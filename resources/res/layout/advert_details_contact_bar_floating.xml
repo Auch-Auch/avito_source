@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/advert_details_contact_bar_root" android:paddingLeft="@dimen/contact_bar_horizontal_padding" android:paddingRight="@dimen/contact_bar_horizontal_padding" android:paddingBottom="@dimen/contact_bar_bottom_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:translationY="76dp">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/contact_bar_buttons_container" android:background="@drawable/bg_contact_bar" android:padding="@dimen/contact_bar_glow_padding" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</FrameLayout>

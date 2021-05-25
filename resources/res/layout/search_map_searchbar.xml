@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.avito.android.design.widget.search_view.ToolbarSearchViewImpl xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/toolbar_search" android:paddingLeft="@dimen/serp_horizontal_padding" android:paddingRight="@dimen/serp_horizontal_padding" android:layout="@layout/search_map_toolbar_search_view" android:layout_width="match_parent" android:layout_height="match_parent" android:hint="@string/search"/>

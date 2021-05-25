@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.AppCompatTextView xmlns:android="http://schemas.android.com/apk/res/android" android:textAppearance="?attr/textLegacy3_body" android:textColor="@color/design_text_color_black_selector" android:id="@+id/addressText" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/item_address_margin_top"/>

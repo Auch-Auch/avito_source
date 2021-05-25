@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@+id/swipe_refresh_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="?attr/actionBarSize">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <include layout="@layout/extended_profile_error_and_progress"/>
+    <ViewStub android:layout_gravity="bottom" android:id="@+id/contact_bar_flying" android:visibility="visible" android:layout="@layout/advert_details_contact_bar_floating" android:inflatedId="@+id/extended_profile_contact_bar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <include layout="@layout/stub_view"/>
+    <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="?attr/actionBarSize" app:navigationIcon="@drawable/ic_back_24_black"/>
+</FrameLayout>

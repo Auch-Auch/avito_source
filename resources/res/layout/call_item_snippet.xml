@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.avito.android.serp.AdColumnsLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/item_image" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:layout_marginBottom="4dp" app:actualImageScaleType="6" app:backgroundImage="@color/expected_skeleton_on_dark_surface" app:placeholderImageScaleType="5" app:progressBarImageScaleType="5" app:roundedCornerRadius="5dp" app:viewAspectRatio="1.3333"/>
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?attr/textLegacy3_bodyLarge" android:textColor="@color/avito_constant_white" android:ellipsize="end" android:id="@+id/item_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="3"/>
+        <TextView android:textAppearance="?attr/textLegacy3_bodyLarge" android:textColor="@color/avito_constant_white" android:ellipsize="end" android:id="@+id/item_price" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:maxLines="1" android:singleLine="true" android:fontFamily="@font/avito_bold" app:fontFamily="@font/avito_bold"/>
+    </LinearLayout>
+</com.avito.android.serp.AdColumnsLayout>

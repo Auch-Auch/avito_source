@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="FeedbackDialog" parent="@style/res_2132017942_design_widget_bottomsheetdialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowSoftInputMode">stateVisible|adjustResize</item>
+        <item name="android:statusBarColor">?attr/transparentBlack</item>
+        <item name="android:navigationBarColor">?attr/transparentBlack</item>
+    </style>
+    <style name="GalleryImage">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">236dp</item>
+    </style>
+    <style name="res_2132018876_widget_design_tablayout" parent="@style/res_2132017770_base_widget_design_tablayout">
+        <item name="tabGravity">1</item>
+        <item name="tabMode">1</item>
+    </style>
+    <style name="res_2132018944_widget_materialcomponents_materialcalendar_headerselection" parent="@style/res_2132018698_widget_appcompat_textview">
+        <item name="android:textAppearance">?attr/textAppearanceHeadline6</item>
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">@integer/mtrl_calendar_selection_text_lines</item>
+    </style>
+</resources>

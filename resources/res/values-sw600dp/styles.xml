@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="res_2132017826_contentholder_servicesubscription" parent="@style/ContentHolder">
+        <item name="android:background">?attr/oldBackground</item>
+    </style>
+    <style name="FavoriteSellerIconButton" parent="@style/FavoriteSellerSecondaryButton">
+        <item name="button_iconColor">?attr/black</item>
+    </style>
+    <style name="NotificationsButton" parent="@style/res_2132017843_deprecated_design_widget_avito_button_floatingsecondary_medium">
+    </style>
+    <style name="PhoneConfirmationTheme" parent="@style/res_2132018472_theme_avito_transparent">
+    </style>
+    <style name="ServiceSubscriptionBanner">
+        <item name="android:background">@drawable/bg_subscription_banner_legacy</item>
+        <item name="android:paddingLeft">@dimen/standard_padding</item>
+        <item name="android:paddingTop">24dp</item>
+        <item name="android:paddingRight">@dimen/standard_padding</item>
+        <item name="android:paddingBottom">24dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ServiceSubscriptionContainer">
+        <item name="android:paddingBottom">28dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">8dp</item>
+    </style>
+    <style name="ServiceSubscriptionContainerLegacy">
+        <item name="android:background">@drawable/background_card</item>
+        <item name="android:paddingBottom">28dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">8dp</item>
+    </style>
+    <style name="ServiceSubscriptionScrollView">
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_width">524dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fillViewport">true</item>
+    </style>
+    <style name="res_2132018560_theme_themeonboarding_notch">
+        <item name="android:visibility">gone</item>
+    </style>
+    <style name="res_2132018706_widget_avito_advertxlpager">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:minWidth">426dp</item>
+        <item name="android:minHeight">240dp</item>
+        <item name="android:overScrollMode">never</item>
+    </style>
+    <style name="res_2132018810_widget_avito_simpledraweeview_serp_item_image_xladvert" parent="@style/res_2132018805_widget_avito_simpledraweeview_serp_item_image">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:minWidth">426dp</item>
+        <item name="android:minHeight">240dp</item>
+        <item name="actualImageScaleType">6</item>
+        <item name="overlayImage">?attr/blackAlpha8</item>
+    </style>
+    <style name="res_2132018876_widget_design_tablayout" parent="@style/res_2132017770_base_widget_design_tablayout">
+        <item name="tabGravity">1</item>
+        <item name="tabMode">1</item>
+    </style>
+</resources>

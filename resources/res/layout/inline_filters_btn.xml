@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/inline_filters_navigation_button_text" style="@style/res_2132018800_widget_avito_shortcutnavigationbutton_inlinefilter_simple"/>

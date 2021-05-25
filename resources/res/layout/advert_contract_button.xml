@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/contract_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <include layout="@layout/divider_1_0"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/advert_widget_horizontal_padding" android:layout_marginRight="@dimen/advert_widget_horizontal_padding">
+        <com.avito.android.lib.design.button.Button android:id="@+id/contract_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="16dp" android:layout_marginRight="16dp" android:layout_marginBottom="16dp" app:button_cornerRadius="5dp" style="?attr/buttonSecondaryLarge"/>
+    </FrameLayout>
+</LinearLayout>

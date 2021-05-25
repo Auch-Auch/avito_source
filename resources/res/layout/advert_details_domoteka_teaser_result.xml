@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/result_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/divider_top" android:background="?attr/gray8" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="24dp" android:layout_marginBottom="10dp"/>
+    <TextView android:textAppearance="?attr/textHeadingLarge" android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14dp"/>
+    <TextView android:textAppearance="?attr/textBody" android:textColor="?attr/gray48" android:id="@+id/sub_title" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_marginBottom="6dp"/>
+    <include layout="@layout/advert_details_autoteka_teaser_insights_container"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/buttons_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:divider="@drawable/divider_16dp" android:showDividers="middle">
+        <com.avito.android.lib.design.button.Button android:gravity="center" android:id="@+id/button" android:text="@string/autoteka_teaser_button" style="@style/AutotekaTeaserButton"/>
+    </LinearLayout>
+</LinearLayout>

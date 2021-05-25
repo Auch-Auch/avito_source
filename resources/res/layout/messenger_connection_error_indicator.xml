@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="horizontal" android:background="?attr/black" android:paddingLeft="8dp" android:paddingTop="8dp" android:paddingRight="8dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textColor="?attr/gray8" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/connection_error_message" android:padding="8dp" android:layout_width="0dp" android:layout_height="wrap_content" android:maxLines="2" android:layout_weight="1" style="?attr/textLegacy1_body"/>
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="match_parent">
+        <TextView android:textColor="@color/txt_flat_button_primary" android:layout_gravity="center" android:id="@+id/connection_error_action" android:background="@drawable/bg_flat_button_primary" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/res_2132017854_deprecated_theme_internal_button_flat_primary"/>
+        <com.avito.android.design.widget.circular_progress.CircularProgressBar android:layout_gravity="center" android:id="@+id/connection_progress" android:background="@null" android:visibility="invisible" android:layout_width="24dp" android:layout_height="24dp" style="@style/res_2132018734_widget_avito_circularprogressbar_light"/>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.avito.android.lib.design.component_container.ComponentContainer xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/select_item_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/select_item_container_margin_horizontal" android:layout_marginTop="@dimen/select_item_container_margin_top" android:layout_marginRight="@dimen/select_item_container_margin_horizontal">
+    <com.avito.android.lib.design.input.Input android:id="@+id/select_item" android:layout_width="match_parent" android:layout_height="wrap_content" android:minLines="1" app:input_componentType="-1" style="?attr/select"/>
+</com.avito.android.lib.design.component_container.ComponentContainer>

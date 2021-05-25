@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:background="?attr/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textAppearance="?attr/textLegacy2_headingSmall" android:textColor="?attr/black" android:ellipsize="end" android:layout_gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/connecting_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/messenger_connection_indicator_connecting" android:maxLines="1" android:singleLine="true" app:fontFamily="@font/avito_bold"/>
+    <com.avito.android.lib.design.spinner.Spinner android:layout_gravity="center_vertical" android:id="@+id/connection_progress" android:visibility="visible" android:layout_width="16dp" android:layout_height="16dp" android:layout_margin="8dp" style="?attr/spinnerDarkMedium"/>
+</LinearLayout>

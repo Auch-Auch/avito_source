@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:paddingLeft="?attr/tooltip_content_paddingLeft" android:paddingTop="?attr/tooltip_content_paddingTop" android:paddingRight="?attr/tooltip_content_paddingRight" android:paddingBottom="?attr/tooltip_content_paddingBottom" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="?attr/tooltip_imageAndTextSpacing"/>
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="?attr/tooltip_titleAndBodySpacing" style="?attr/tooltip_titleStyle"/>
+        <TextView android:id="@+id/body" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?attr/tooltip_bodyStyle"/>
+        <com.avito.android.lib.design.button.Button android:id="@+id/button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="?attr/tooltip_textAndButtonSpacing" android:layout_marginBottom="?attr/tooltip_button_marginBottom" style="?attr/tooltip_buttonStyle"/>
+    </LinearLayout>
+</LinearLayout>

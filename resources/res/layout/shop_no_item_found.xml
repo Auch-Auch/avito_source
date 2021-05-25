@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/expected_background" android:paddingLeft="16dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="16sp" android:textColor="?attr/black" android:id="@+id/no_items_found_title" android:paddingTop="16dp" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/no_adverts_found" android:lineSpacingExtra="1sp" app:fontFamily="@font/avito_bold"/>
+    <TextView android:textSize="12sp" android:textColor="?attr/gray48" android:id="@+id/no_items_found_subtitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/try_use_other_words_when_searching" android:lineSpacingExtra="1sp" app:fontFamily="@font/avito_regular"/>
+</LinearLayout>

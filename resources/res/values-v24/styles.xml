@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="res_2132017611_base_textappearance_appcompat_widget_button_borderless_colored" parent="@android:style/TextAppearance.Material.Widget.Button.Borderless.Colored">
+    </style>
+    <style name="res_2132017612_base_textappearance_appcompat_widget_button_colored" parent="@android:style/TextAppearance.Material.Widget.Button.Colored">
+    </style>
+    <style name="res_2132017673_base_v14_theme_materialcomponents" parent="@style/res_2132017674_base_v14_theme_materialcomponents_bridge">
+        <item name="android:colorBackground">@color/design_dark_default_color_background</item>
+        <item name="android:buttonBarButtonStyle">?attr/buttonBarButtonStyle</item>
+        <item name="android:timePickerDialogTheme">@style/res_2132018587_themeoverlay_materialcomponents_dialog</item>
+        <item name="android:datePickerDialogTheme">@style/res_2132018587_themeoverlay_materialcomponents_dialog</item>
+        <item name="android:contextPopupMenuStyle">@style/res_2132018957_widget_materialcomponents_popupmenu_contextmenu</item>
+        <item name="actionBarPopupTheme">@style/res_2132018584_themeoverlay_materialcomponents_dark</item>
+        <item name="actionBarSize">@dimen/mtrl_toolbar_default_height</item>
+        <item name="actionBarStyle">@style/res_2132018883_widget_materialcomponents_actionbar_surface</item>
+        <item name="actionBarTheme">@style/res_2132018575_themeoverlay_materialcomponents_actionbar_surface</item>
+        <item name="actionOverflowMenuStyle">@style/res_2132018959_widget_materialcomponents_popupmenu_overflow</item>
+        <item name="alertDialogTheme">@style/res_2132018588_themeoverlay_materialcomponents_dialog_alert</item>
+        <item name="appBarLayoutStyle">@style/res_2132018886_widget_materialcomponents_appbarlayout_surface</item>
+        <item name="borderlessButtonStyle">@style/res_2132018904_widget_materialcomponents_button_textbutton</item>
+        <item name="bottomNavigationStyle">@style/res_2132018895_widget_materialcomponents_bottomnavigationview</item>
+        <item name="bottomSheetDialogTheme">@style/res_2132018583_themeoverlay_materialcomponents_bottomsheetdialog</item>
+        <item name="buttonBarButtonStyle">@style/res_2132018904_widget_materialcomponents_button_textbutton</item>
+        <item name="checkboxStyle">@style/res_2132018924_widget_materialcomponents_compoundbutton_checkbox</item>
+        <item name="colorAccent">?attr/colorSecondary</item>
+        <item name="colorError">@color/design_dark_default_color_error</item>
+        <item name="colorPrimary">@color/design_dark_default_color_primary</item>
+        <item name="colorPrimaryDark">@color/design_dark_default_color_primary_dark</item>
+        <item name="floatingActionButtonStyle">@style/res_2132018929_widget_materialcomponents_floatingactionbutton</item>
+        <item name="listPopupWindowStyle">@style/res_2132018958_widget_materialcomponents_popupmenu_listpopupwindow</item>
+        <item name="materialAlertDialogTheme">@style/res_2132018593_themeoverlay_materialcomponents_materialalertdialog</item>
+        <item name="materialCalendarFullscreenTheme">@style/res_2132018601_themeoverlay_materialcomponents_materialcalendar_fullscreen</item>
+        <item name="materialCalendarStyle">@style/res_2132018933_widget_materialcomponents_materialcalendar</item>
+        <item name="materialCalendarTheme">@style/res_2132018600_themeoverlay_materialcomponents_materialcalendar</item>
+        <item name="materialTimePickerTheme">@style/res_2132018607_themeoverlay_materialcomponents_timepicker</item>
+        <item name="navigationViewStyle">@style/res_2132018955_widget_materialcomponents_navigationview</item>
+        <item name="popupMenuStyle">@style/res_2132018956_widget_materialcomponents_popupmenu</item>
+        <item name="radioButtonStyle">@style/res_2132018925_widget_materialcomponents_compoundbutton_radiobutton</item>
+        <item name="snackbarButtonStyle">@style/res_2132018909_widget_materialcomponents_button_textbutton_snackbar</item>
+        <item name="snackbarStyle">@style/res_2132018963_widget_materialcomponents_snackbar</item>
+        <item name="snackbarTextViewStyle">@style/res_2132018965_widget_materialcomponents_snackbar_textview</item>
+        <item name="switchStyle">@style/res_2132018926_widget_materialcomponents_compoundbutton_switch</item>
+        <item name="tabStyle">@style/res_2132018966_widget_materialcomponents_tablayout</item>
+        <item name="textAppearanceLargePopupMenu">?attr/textAppearanceSubtitle1</item>
+        <item name="textAppearanceSmallPopupMenu">?attr/textAppearanceSubtitle1</item>
+        <item name="textInputStyle">@style/res_2132018973_widget_materialcomponents_textinputlayout_filledbox</item>
+        <item name="toolbarStyle">@style/res_2132018989_widget_materialcomponents_toolbar</item>
+        <item name="viewInflaterClass">com.google.android.material.theme.MaterialComponentsViewInflater</item>
+    </style>
+    <style name="res_2132017675_base_v14_theme_materialcomponents_dialog" parent="@style/res_2132017676_base_v14_theme_materialcomponents_dialog_bridge">
+        <item name="android:colorBackground">@color/design_dark_default_color_background</item>
+        <item name="android:contextPopupMenuStyle">@style/res_2132018957_widget_materialcomponents_popupmenu_contextmenu</item>
+        <item name="actionBarPopupTheme">@style/res_2132018584_themeoverlay_materialcomponents_dark</item>
+        <item name="actionBarSize">@dimen/mtrl_toolbar_default_height</item>
+        <item name="actionBarStyle">@style/res_2132018883_widget_materialcomponents_actionbar_surface</item>
+        <item name="actionBarTheme">@style/res_2132018575_themeoverlay_materialcomponents_actionbar_surface</item>
+        <item name="actionOverflowMenuStyle">@style/res_2132018959_widget_materialcomponents_popupmenu_overflow</item>
+        <item name="alertDialogTheme">@style/res_2132018588_themeoverlay_materialcomponents_dialog_alert</item>
+        <item name="appBarLayoutStyle">@style/res_2132018886_widget_materialcomponents_appbarlayout_surface</item>
+        <item name="borderlessButtonStyle">@style/res_2132018904_widget_materialcomponents_button_textbutton</item>
+        <item name="bottomNavigationStyle">@style/res_2132018895_widget_materialcomponents_bottomnavigationview</item>
+        <item name="buttonBarButtonStyle">@style/res_2132018906_widget_materialcomponents_button_textbutton_dialog_flush</item>
+        <item name="checkboxStyle">@style/res_2132018924_widget_materialcomponents_compoundbutton_checkbox</item>
+        <item name="colorAccent">?attr/colorSecondary</item>
+        <item name="colorError">@color/design_dark_default_color_error</item>
+        <item name="colorPrimary">@color/design_dark_default_color_primary</item>
+        <item name="colorPrimaryDark">@color/design_dark_default_color_primary_dark</item>
+        <item name="colorSecondary">@color/design_dark_default_color_secondary</item>
+        <item name="floatingActionButtonStyle">@style/res_2132018929_widget_materialcomponents_floatingactionbutton</item>
+        <item name="listPopupWindowStyle">@style/res_2132018958_widget_materialcomponents_popupmenu_listpopupwindow</item>
+        <item name="materialAlertDialogTheme">@style/res_2132018593_themeoverlay_materialcomponents_materialalertdialog</item>
+        <item name="navigationViewStyle">@style/res_2132018955_widget_materialcomponents_navigationview</item>
+        <item name="popupMenuStyle">@style/res_2132018956_widget_materialcomponents_popupmenu</item>
+        <item name="radioButtonStyle">@style/res_2132018925_widget_materialcomponents_compoundbutton_radiobutton</item>
+        <item name="snackbarButtonStyle">@style/res_2132018909_widget_materialcomponents_button_textbutton_snackbar</item>
+        <item name="snackbarStyle">@style/res_2132018963_widget_materialcomponents_snackbar</item>
+        <item name="snackbarTextViewStyle">@style/res_2132018965_widget_materialcomponents_snackbar_textview</item>
+        <item name="switchStyle">@style/res_2132018926_widget_materialcomponents_compoundbutton_switch</item>
+        <item name="tabStyle">@style/res_2132018966_widget_materialcomponents_tablayout</item>
+        <item name="textAppearanceLargePopupMenu">?attr/textAppearanceSubtitle1</item>
+        <item name="textAppearanceSmallPopupMenu">?attr/textAppearanceSubtitle1</item>
+        <item name="textInputStyle">@style/res_2132018973_widget_materialcomponents_textinputlayout_filledbox</item>
+        <item name="toolbarStyle">@style/res_2132018989_widget_materialcomponents_toolbar</item>
+        <item name="viewInflaterClass">com.google.android.material.theme.MaterialComponentsViewInflater</item>
+    </style>
+    <style name="res_2132017677_base_v14_theme_materialcomponents_light" parent="@style/res_2132017678_base_v14_theme_materialcomponents_light_bridge">
+        <item name="android:colorBackground">@color/design_default_color_background</item>
+        <item name="android:buttonBarButtonStyle">?attr/buttonBarButtonStyle</item>
+        <item name="android:timePickerDialogTheme">@style/res_2132018587_themeoverlay_materialcomponents_dialog</item>
+        <item name="android:datePickerDialogTheme">@style/res_2132018587_themeoverlay_materialcomponents_dialog</item>
+        <item name="android:contextPopupMenuStyle">@style/res_2132018957_widget_materialcomponents_popupmenu_contextmenu</item>
+        <item name="actionBarPopupTheme">@style/res_2132018590_themeoverlay_materialcomponents_light</item>
+        <item name="actionBarSize">@dimen/mtrl_toolbar_default_height</item>
+        <item name="actionBarStyle">@style/res_2132018930_widget_materialcomponents_light_actionbar_solid</item>
+        <item name="actionOverflowMenuStyle">@style/res_2132018959_widget_materialcomponents_popupmenu_overflow</item>
+        <item name="alertDialogTheme">@style/res_2132018588_themeoverlay_materialcomponents_dialog_alert</item>
+        <item name="appBarLayoutStyle">@style/res_2132018884_widget_materialcomponents_appbarlayout_primary</item>
+        <item name="borderlessButtonStyle">@style/res_2132018904_widget_materialcomponents_button_textbutton</item>
+        <item name="bottomNavigationStyle">@style/res_2132018895_widget_materialcomponents_bottomnavigationview</item>
+        <item name="bottomSheetDialogTheme">@style/res_2132018591_themeoverlay_materialcomponents_light_bottomsheetdialog</item>
+        <item name="buttonBarButtonStyle">@style/res_2132018904_widget_materialcomponents_button_textbutton</item>
+        <item name="checkboxStyle">@style/res_2132018924_widget_materialcomponents_compoundbutton_checkbox</item>
+        <item name="colorAccent">?attr/colorSecondary</item>
+        <item name="colorError">@color/design_default_color_error</item>
+        <item name="colorPrimary">@color/design_default_color_primary</item>
+        <item name="colorPrimaryDark">@color/design_default_color_primary_dark</item>
+        <item name="floatingActionButtonStyle">@style/res_2132018929_widget_materialcomponents_floatingactionbutton</item>
+        <item name="listPopupWindowStyle">@style/res_2132018958_widget_materialcomponents_popupmenu_listpopupwindow</item>
+        <item name="materialAlertDialogTheme">@style/res_2132018593_themeoverlay_materialcomponents_materialalertdialog</item>
+        <item name="materialCalendarFullscreenTheme">@style/res_2132018601_themeoverlay_materialcomponents_materialcalendar_fullscreen</item>
+        <item name="materialCalendarStyle">@style/res_2132018933_widget_materialcomponents_materialcalendar</item>
+        <item name="materialCalendarTheme">@style/res_2132018600_themeoverlay_materialcomponents_materialcalendar</item>
+        <item name="materialTimePickerTheme">@style/res_2132018607_themeoverlay_materialcomponents_timepicker</item>
+        <item name="navigationViewStyle">@style/res_2132018955_widget_materialcomponents_navigationview</item>
+        <item name="popupMenuStyle">@style/res_2132018956_widget_materialcomponents_popupmenu</item>
+        <item name="radioButtonStyle">@style/res_2132018925_widget_materialcomponents_compoundbutton_radiobutton</item>
+        <item name="snackbarButtonStyle">@style/res_2132018909_widget_materialcomponents_button_textbutton_snackbar</item>
+        <item name="snackbarStyle">@style/res_2132018963_widget_materialcomponents_snackbar</item>
+        <item name="snackbarTextViewStyle">@style/res_2132018965_widget_materialcomponents_snackbar_textview</item>
+        <item name="switchStyle">@style/res_2132018926_widget_materialcomponents_compoundbutton_switch</item>
+        <item name="tabStyle">@style/res_2132018966_widget_materialcomponents_tablayout</item>
+        <item name="textAppearanceLargePopupMenu">?attr/textAppearanceSubtitle1</item>
+        <item name="textAppearanceSmallPopupMenu">?attr/textAppearanceSubtitle1</item>
+        <item name="textInputStyle">@style/res_2132018973_widget_materialcomponents_textinputlayout_filledbox</item>
+        <item name="toolbarStyle">@style/res_2132018989_widget_materialcomponents_toolbar</item>
+        <item name="viewInflaterClass">com.google.android.material.theme.MaterialComponentsViewInflater</item>
+    </style>
+    <style name="res_2132017680_base_v14_theme_materialcomponents_light_dialog" parent="@style/res_2132017681_base_v14_theme_materialcomponents_light_dialog_bridge">
+        <item name="android:colorBackground">@color/design_default_color_background</item>
+        <item name="android:contextPopupMenuStyle">@style/res_2132018957_widget_materialcomponents_popupmenu_contextmenu</item>
+        <item name="actionBarPopupTheme">@style/res_2132018590_themeoverlay_materialcomponents_light</item>
+        <item name="actionBarSize">@dimen/mtrl_toolbar_default_height</item>
+        <item name="actionBarStyle">@style/res_2132018930_widget_materialcomponents_light_actionbar_solid</item>
+        <item name="actionOverflowMenuStyle">@style/res_2132018959_widget_materialcomponents_popupmenu_overflow</item>
+        <item name="alertDialogTheme">@style/res_2132018588_themeoverlay_materialcomponents_dialog_alert</item>
+        <item name="appBarLayoutStyle">@style/res_2132018884_widget_materialcomponents_appbarlayout_primary</item>
+        <item name="borderlessButtonStyle">@style/res_2132018904_widget_materialcomponents_button_textbutton</item>
+        <item name="bottomNavigationStyle">@style/res_2132018895_widget_materialcomponents_bottomnavigationview</item>
+        <item name="buttonBarButtonStyle">@style/res_2132018906_widget_materialcomponents_button_textbutton_dialog_flush</item>
+        <item name="checkboxStyle">@style/res_2132018924_widget_materialcomponents_compoundbutton_checkbox</item>
+        <item name="colorAccent">?attr/colorSecondary</item>
+        <item name="colorError">@color/design_default_color_error</item>
+        <item name="colorPrimary">@color/design_default_color_primary</item>
+        <item name="colorPrimaryDark">@color/design_default_color_primary_dark</item>
+        <item name="colorSecondary">@color/design_default_color_secondary</item>
+        <item name="floatingActionButtonStyle">@style/res_2132018929_widget_materialcomponents_floatingactionbutton</item>
+        <item name="listPopupWindowStyle">@style/res_2132018958_widget_materialcomponents_popupmenu_listpopupwindow</item>
+        <item name="materialAlertDialogTheme">@style/res_2132018593_themeoverlay_materialcomponents_materialalertdialog</item>
+        <item name="navigationViewStyle">@style/res_2132018955_widget_materialcomponents_navigationview</item>
+        <item name="popupMenuStyle">@style/res_2132018956_widget_materialcomponents_popupmenu</item>
+        <item name="radioButtonStyle">@style/res_2132018925_widget_materialcomponents_compoundbutton_radiobutton</item>
+        <item name="snackbarButtonStyle">@style/res_2132018909_widget_materialcomponents_button_textbutton_snackbar</item>
+        <item name="snackbarStyle">@style/res_2132018963_widget_materialcomponents_snackbar</item>
+        <item name="snackbarTextViewStyle">@style/res_2132018965_widget_materialcomponents_snackbar_textview</item>
+        <item name="switchStyle">@style/res_2132018926_widget_materialcomponents_compoundbutton_switch</item>
+        <item name="tabStyle">@style/res_2132018966_widget_materialcomponents_tablayout</item>
+        <item name="textAppearanceLargePopupMenu">?attr/textAppearanceSubtitle1</item>
+        <item name="textAppearanceSmallPopupMenu">?attr/textAppearanceSubtitle1</item>
+        <item name="textInputStyle">@style/res_2132018973_widget_materialcomponents_textinputlayout_filledbox</item>
+        <item name="toolbarStyle">@style/res_2132018989_widget_materialcomponents_toolbar</item>
+        <item name="viewInflaterClass">com.google.android.material.theme.MaterialComponentsViewInflater</item>
+    </style>
+    <style name="res_2132018377_textappearance_compat_notification_info_media" parent="@style/res_2132018376_textappearance_compat_notification_info">
+    </style>
+    <style name="res_2132018380_textappearance_compat_notification_media" parent="@style/res_2132018375_textappearance_compat_notification">
+    </style>
+    <style name="res_2132018382_textappearance_compat_notification_time_media" parent="@style/res_2132018381_textappearance_compat_notification_time">
+    </style>
+    <style name="res_2132018384_textappearance_compat_notification_title_media" parent="@style/res_2132018383_textappearance_compat_notification_title">
+    </style>
+</resources>

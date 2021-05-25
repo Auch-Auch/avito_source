@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/container" android:background="@drawable/bg_btn_flat" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="8dp" android:paddingTop="16dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:id="@+id/indicator" android:background="@drawable/circle_blue" android:layout_width="8dp" android:layout_height="8dp"/>
+        <TextView android:textSize="16sp" android:textColor="?attr/black" android:ellipsize="end" android:id="@+id/title" android:paddingLeft="8dp" android:paddingRight="8dp" android:layout_width="0dp" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1" app:fontFamily="@font/avito_bold"/>
+        <TextView android:textSize="12sp" android:textColor="?attr/gray28" android:ellipsize="end" android:id="@+id/date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" app:fontFamily="@font/avito_regular"/>
+    </LinearLayout>
+    <TextView android:textSize="14sp" android:textColor="?attr/gray48" android:ellipsize="end" android:id="@+id/description" android:paddingLeft="24dp" android:paddingTop="8dp" android:paddingRight="16dp" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="3" app:fontFamily="@font/avito_regular"/>
+</LinearLayout>

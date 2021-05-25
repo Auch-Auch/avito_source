@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/awards_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <include layout="@layout/horizontal_divider"/>
+    <com.avito.android.lib.design.list_item.ListItem android:id="@+id/awards_button" android:paddingLeft="@dimen/shop_content_horizontal_padding" android:paddingRight="@dimen/shop_content_horizontal_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:drawableLeft="@drawable/ic_autodealer_of_the_year" android:drawableRight="@drawable/ic_arrow_select" android:drawablePadding="0dp"/>
+    <include layout="@layout/horizontal_divider"/>
+</LinearLayout>

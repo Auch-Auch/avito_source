@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/snackbarContainer" android:background="@drawable/design_background_snackbar" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="?attr/snackbar_snackbarPaddingLeft" android:paddingEnd="?attr/snackbar_snackbarPaddingRight">
+    <TextView android:textAppearance="?attr/snackbar_textAppearance" android:textColor="?attr/snackbar_textColor" android:id="@+id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="?attr/snackbar_textMarginTop" android:layout_marginBottom="?attr/snackbar_textMarginBottom" android:text="Защита номера включена"/>
+    <com.avito.android.lib.design.button.Button android:id="@+id/actionButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="?attr/snackbar_buttonMarginTopMultiLine" android:text="test" style="?attr/snackbar_buttonStyle"/>
+</LinearLayout>

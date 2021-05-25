@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:paddingLeft="@dimen/standard_padding" android:paddingTop="10dp" android:paddingRight="@dimen/standard_padding" android:paddingBottom="12dp" android:addStatesFromChildren="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/list_serp_card_content_min_height">
+    <TextView android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="2sp" style="@style/res_2132018845_widget_avito_textview_serp_item_caption_title_ads"/>
+    <androidx.legacy.widget.Space android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <Button android:textSize="13sp" android:id="@+id/more_info_button" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ad_more" android:textAllCaps="false" style="@style/res_2132018832_widget_avito_textview_serp_item_caption_info"/>
+</LinearLayout>

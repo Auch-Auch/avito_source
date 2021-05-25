@@ -1,0 +1,60 @@
+package com.avito.android.di.module;
+
+import com.avito.android.abuse.details.di.AbuseApiModule;
+import com.avito.android.advert_details.remote.AdvertDetailsApiModule;
+import com.avito.android.analytics.di.AnalyticsApiModule;
+import com.avito.android.auto_catalog.remote.di.AutoCatalogApiModule;
+import com.avito.android.autoteka.remote.AutotekaApiModule;
+import com.avito.android.beduin.di.module.BeduinApiModule;
+import com.avito.android.booking.di.module.BookingApiModule;
+import com.avito.android.brandspace.di.BrandspaceApiModule;
+import com.avito.android.call_feedback.di.CallFeedbackApiModule;
+import com.avito.android.deep_linking.di.DeeplinkApiModule;
+import com.avito.android.developments_catalog.remote.di.DevelopmentsCatalogApiModule;
+import com.avito.android.di.AdvertStatsApiModule;
+import com.avito.android.di.AppUpdateApiModule;
+import com.avito.android.di.CallsApiModule;
+import com.avito.android.di.ContactAccessApiModule;
+import com.avito.android.di.DiscountApiModule;
+import com.avito.android.di.ExpressCsApiModule;
+import com.avito.android.di.HintsApiModule;
+import com.avito.android.di.InfoApiModule;
+import com.avito.android.di.UserAdvertApiModule;
+import com.avito.android.di.VasApiModule;
+import com.avito.android.di.VasBundlesApiModule;
+import com.avito.android.di.VasUnionApiModule;
+import com.avito.android.domteka.DomotekaApiModule;
+import com.avito.android.favorites.remote.FavoritesApiModule;
+import com.avito.android.favorites.remote.ViewedItemsApiModule;
+import com.avito.android.fees.di.FeesApiModule;
+import com.avito.android.item_map.remote.di.ItemMapApiModule;
+import com.avito.android.item_report.di.ItemReportApiModule;
+import com.avito.android.job.JobApiModule;
+import com.avito.android.messenger.support.di.SupportApiModule;
+import com.avito.android.photo_wizard.di.module.PhotoWizardApiModule;
+import com.avito.android.public_profile.di.module.PublicProfileApiModule;
+import com.avito.android.publish.wizard.di.module.WizardApiModule;
+import com.avito.android.remote.NotificationsApiModule;
+import com.avito.android.remote.cart.di.CartApiModule;
+import com.avito.android.remote.di.ConfigApiModule;
+import com.avito.android.remote.di.ExtendedProfileApiModule;
+import com.avito.android.remote.di.ExtendedProfileSettingsApiModule;
+import com.avito.android.remote.di.FeaturesApiModule;
+import com.avito.android.remote.di.ShopsApiModule;
+import com.avito.android.remote.di.StoriesApiModule;
+import com.avito.android.remote.di.UserAdvertsApiModule;
+import com.avito.android.remote.di.module.AsyncPhoneApiModule;
+import com.avito.android.remote.order.di.OrderApiModule;
+import com.avito.android.remote.orders.di.OrdersApiModule;
+import com.avito.android.remote.publish_limits_info.di.PublishLimitsApiModule;
+import com.avito.android.safedeal.remote.di.SafedealApiModule;
+import com.avito.android.service_subscription.di.ServiceSubscriptionApiModule;
+import com.avito.android.spare_parts.remote.SparePartsApiModule;
+import com.avito.android.subscriptions.remote.SubscriptionsApiModule;
+import com.avito.user_stats.di.UserStatsApiModule;
+import dagger.Module;
+import kotlin.Metadata;
+@Metadata(bv = {1, 0, 3}, d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\bg\u0018\u00002\u00020\u0001¨\u0006\u0002"}, d2 = {"Lcom/avito/android/di/module/AvitoDistributedApiModule;", "", "avito-103.5-(1342)_release"}, k = 1, mv = {1, 4, 2})
+@Module(includes = {AbuseApiModule.class, AdvertDetailsApiModule.class, AdvertStatsApiModule.class, AnalyticsApiModule.class, AppUpdateApiModule.class, AsyncPhoneApiModule.class, AutoCatalogApiModule.class, AutotekaApiModule.class, BeduinApiModule.class, BookingApiModule.class, VasBundlesApiModule.class, VasUnionApiModule.class, CallFeedbackApiModule.class, CallsApiModule.class, SupportApiModule.class, CartApiModule.class, CheckoutApiModule.class, ConfigApiModule.class, ContactAccessApiModule.class, DeeplinkApiModule.class, DeliveryApiModule.class, DevelopmentsCatalogApiModule.class, DiscountApiModule.class, DomotekaApiModule.class, ExpressCsApiModule.class, ExtendedProfileApiModule.class, ExtendedProfileSettingsApiModule.class, FavoriteSellersApiModule.class, FavoritesApiModule.class, FeaturesApiModule.class, FeesApiModule.class, HintsApiModule.class, InfoApiModule.class, ItemMapApiModule.class, ItemReportApiModule.class, JobApiModule.class, LocationApiModule.class, NotificationsApiModule.class, OrderApiModule.class, OrdersApiModule.class, PaymentApiModule.class, PhotoWizardApiModule.class, PickerApiModule.class, ProfileApiModule.class, PublicProfileApiModule.class, PublishApiModule.class, PublishLimitsApiModule.class, RatingApiModule.class, SafedealApiModule.class, SearchApiModule.class, SearchRadiusApiModule.class, ServiceSubscriptionApiModule.class, SessionsApiModule.class, ShopSettingsApiModule.class, ShopsApiModule.class, ShortTermRentApiModule.class, SparePartsApiModule.class, StoriesApiModule.class, SubscriptionsApiModule.class, TariffApiModule.class, UserAdvertApiModule.class, UserAdvertsApiModule.class, UserAdvertsCommonApiModule.class, UserStatsApiModule.class, ValidateAdvertApiModule.class, VasApiModule.class, WizardApiModule.class, BrandspaceApiModule.class, VerificationApiModule.class, ViewedItemsApiModule.class})
+public interface AvitoDistributedApiModule {
+}

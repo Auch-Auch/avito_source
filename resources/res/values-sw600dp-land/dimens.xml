@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="shop_list_horizontal_padding">74dp</dimen>
+    <dimen name="shop_list_shortcuts_padding">68dp</dimen>
+    <dimen name="shop_list_toolbar_horizontal_padding">74dp</dimen>
+</resources>

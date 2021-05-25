@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+    <TextView android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="?attr/banner_textSpacing" style="?attr/banner_titleStyle"/>
+    <TextView android:id="@+id/body" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="?attr/banner_textSpacing" style="?attr/banner_bodyStyle"/>
+    <com.avito.android.lib.design.button.Button android:id="@+id/button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="?attr/banner_buttonAndTextSpacing" android:layout_marginBottom="?attr/banner_buttonSpacing" style="?attr/banner_buttonStyle"/>
+</LinearLayout>

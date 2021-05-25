@@ -1,0 +1,50 @@
+{
+  "item": {
+    "id": "accountDetail",
+    "personal": [
+      {
+        "value": "Козлов",
+        "fullName": "documents.passport.lastname",
+        "placeholder": "Фамилия"
+      },
+      {
+        "value": "Иван",
+        "fullName": "documents.passport.firstname",
+        "placeholder": "Имя"
+      },
+      {
+        "value": "Андреевич",
+        "fullName": "documents.passport.middlename",
+        "placeholder": "Отчество"
+      }
+    ],
+    "groups": [
+      {
+        "items": [
+          {
+            "description": "Телефон",
+            "value": "79259448584",
+            "mask": "+[0] ([000]) [000]-[00]-[00]",
+            "type": "phone"
+          },
+          {
+            "id": "emailRetriever",
+            "description": "Email",
+            "value": "sravniQA@mail.ru",
+            "type": "email"
+          }
+        ]
+      },
+      {
+        "items": [
+          {
+            "id": "workRetriever",
+            "description": "Данные о работодателе",
+            "type": "workPlace",
+            "showInfo": true
+          }
+        ]
+      }
+    ]
+  }
+}

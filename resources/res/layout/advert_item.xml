@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/advert_list_root" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/res_2132018792_widget_avito_serp_item_cardview_list">
+    <com.avito.android.design.widget.ForegroundRelativeLayout android:id="@+id/advert_content" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/image" android:layout_width="@dimen/list_serp_image_width" android:layout_height="wrap_content" android:layout_alignBottom="@+id/fields_container" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentStart="true" style="@style/res_2132018806_widget_avito_simpledraweeview_serp_item_image_list"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/fields_container" android:paddingLeft="@dimen/list_serp_card_content_padding" android:paddingRight="@dimen/list_serp_card_content_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/list_serp_card_content_min_height" android:layout_toRightOf="@+id/image" android:layout_toEndOf="@+id/image">
+            <TextView android:id="@+id/title" android:paddingTop="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/res_2132018844_widget_avito_textview_serp_item_caption_title"/>
+            <TextView android:id="@+id/price" android:paddingTop="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/res_2132018833_widget_avito_textview_serp_item_caption_price"/>
+        </LinearLayout>
+    </com.avito.android.design.widget.ForegroundRelativeLayout>
+</androidx.cardview.widget.CardView>

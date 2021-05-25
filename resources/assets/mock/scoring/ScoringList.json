@@ -1,0 +1,57 @@
+[
+  {
+    "item": {
+      "score": 1201,
+      "scoreUnitText": "балл",
+      "providerTitle": "Совместно c НБКИ",
+      "percentage": 90,
+      "message": "Высокий. Дадут.",
+      "status": "success"
+    }
+  },
+  {
+    "item": {
+      "score": -100,
+      "scoreUnitText": "баллов",
+      "providerTitle": "Совместно c НБКИ",
+      "message": "Есть задолженность",
+      "status": "debt"
+    }
+  },
+  {
+    "item": {
+      "score": 600,
+      "scoreUnitText": "баллов",
+      "message": "Не найден",
+      "status": "notFound"
+    }
+  },
+  {
+    "item": {
+      "score": 750,
+      "scoreUnitText": "баллов",
+      "providerTitle": "Совместно c ОКБ",
+      "percentage": 60,
+      "message": "Средний.",
+      "status": "success"
+    }
+  },
+  {
+    "item": {
+      "score": 260,
+      "scoreUnitText": "баллов",
+      "providerTitle": "Совместно c ОКБ",
+      "percentage": 20,
+      "message": "Низкий",
+      "status": "success"
+    }
+  },
+  {
+    "item": {
+      "score": 0,
+      "scoreUnitText": "баллов",
+      "message": "Никогда не считался",
+      "status": "notCalculated"
+    }
+  }
+]

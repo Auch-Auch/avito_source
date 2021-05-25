@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="?attr/white" android:layout_width="wrap_content" android:layout_height="match_parent" android:fillViewport="true">
+    <com.avito.android.design.widget.NavigationDrawerContainer android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <FrameLayout android:id="@+id/header" android:background="@drawable/bg_navigation_drawer_header" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/navigation_drawer_item_padding" android:paddingTop="16dp" android:paddingRight="@dimen/navigation_drawer_item_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/account_image" android:layout_width="64dp" android:layout_height="64dp" app:backgroundImage="?attr/white" app:placeholderImage="@drawable/ic_user_32_black12" app:roundAsCircle="true"/>
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:minHeight="56dp">
+                    <TextView android:textColor="?attr/white" android:ellipsize="end" android:id="@+id/account_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="?attr/textLegacy1_bodyBold"/>
+                    <TextView android:textColor="?attr/white" android:ellipsize="end" android:id="@+id/account_subtitle" android:paddingTop="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="?attr/textLegacy1_body"/>
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include android:id="@+id/btn_search" layout="@layout/navigation_drawer_item"/>
+            <include android:id="@+id/btn_saved_searches" layout="@layout/navigation_drawer_item"/>
+            <include android:id="@+id/btn_favorites" layout="@layout/navigation_drawer_item"/>
+            <include android:id="@+id/btn_notifications" layout="@layout/navigation_drawer_item"/>
+            <include android:id="@+id/btn_profile_items" layout="@layout/navigation_drawer_item"/>
+            <include android:id="@+id/btn_messenger" layout="@layout/navigation_drawer_item"/>
+        </LinearLayout>
+        <include layout="@layout/divider_1_0"/>
+        <LinearLayout android:orientation="vertical" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include android:id="@+id/btn_post_item" layout="@layout/navigation_drawer_item"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="bottom" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <include layout="@layout/divider_1_0"/>
+            <LinearLayout android:orientation="vertical" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <include android:id="@+id/btn_settings" layout="@layout/navigation_drawer_item"/>
+            </LinearLayout>
+        </LinearLayout>
+    </com.avito.android.design.widget.NavigationDrawerContainer>
+</ScrollView>

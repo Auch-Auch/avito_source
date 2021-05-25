@@ -1,0 +1,7 @@
+package com.avito.android.tariff.info.item.disclaimer;
+
+import com.avito.konveyor.blueprint.ItemPresenter;
+import kotlin.Metadata;
+@Metadata(bv = {1, 0, 3}, d1 = {"\u0000\u0012\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\bf\u0018\u00002\u000e\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\u00030\u0001¨\u0006\u0004"}, d2 = {"Lcom/avito/android/tariff/info/item/disclaimer/DisclaimerItemPresenter;", "Lcom/avito/konveyor/blueprint/ItemPresenter;", "Lcom/avito/android/tariff/info/item/disclaimer/DisclaimerItemView;", "Lcom/avito/android/tariff/info/item/disclaimer/DisclaimerItem;", "tariff_release"}, k = 1, mv = {1, 4, 2})
+public interface DisclaimerItemPresenter extends ItemPresenter<DisclaimerItemView, DisclaimerItem> {
+}

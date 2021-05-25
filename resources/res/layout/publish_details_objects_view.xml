@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@drawable/bg_publish_card" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/container" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="?attr/gray28" android:id="@+id/title" android:paddingLeft="@dimen/container_horizontal_padding" android:paddingRight="@dimen/container_horizontal_padding" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/res_2132018729_widget_avito_caption_1_0"/>
+        <TextView android:textSize="12sp" android:textColor="?attr/blue" android:id="@+id/add_more_button" android:paddingLeft="@dimen/container_horizontal_padding" android:paddingTop="16dp" android:paddingRight="@dimen/container_horizontal_padding" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/add" android:textAllCaps="true" app:fontFamily="@font/avito_bold" style="@style/res_2132018720_widget_avito_button_flat"/>
+    </LinearLayout>
+</FrameLayout>

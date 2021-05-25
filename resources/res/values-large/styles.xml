@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="res_2132017633_base_theme_appcompat_dialogwhenlarge" parent="@style/res_2132017631_base_theme_appcompat_dialog_fixedsize">
+    </style>
+    <style name="res_2132017640_base_theme_appcompat_light_dialogwhenlarge" parent="@style/res_2132017638_base_theme_appcompat_light_dialog_fixedsize">
+    </style>
+    <style name="res_2132017650_base_theme_materialcomponents_dialogwhenlarge" parent="@style/res_2132017648_base_theme_materialcomponents_dialog_fixedsize">
+    </style>
+    <style name="res_2132017660_base_theme_materialcomponents_light_dialogwhenlarge" parent="@style/res_2132017658_base_theme_materialcomponents_light_dialog_fixedsize">
+    </style>
+    <style name="FlexibleButtonsContainer">
+        <item name="android:gravity">center_vertical|clip_horizontal</item>
+        <item name="android:paddingTop">24dp</item>
+    </style>
+</resources>

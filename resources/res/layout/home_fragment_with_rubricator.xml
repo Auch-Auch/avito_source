@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/home_screen_root" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@+id/pull_refresh_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@+id/progress_overlay_container" android:background="?attr/white" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.avito.android.ui.widget.ScrollDirectionAwareRecyclerView android:id="@+id/recycler_view" android:paddingLeft="@dimen/serp_horizontal_padding" android:paddingTop="@dimen/serp_top_padding" android:paddingRight="@dimen/serp_horizontal_padding" android:scrollbars="none" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <ViewStub android:layout_gravity="top" android:id="@android:id/empty" android:layout="@layout/not_found_home_screen" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="80dp"/>
+        </FrameLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <ViewStub android:id="@+id/cart_fab_stub" android:layout="@layout/cart_fab" style="@style/CartFab"/>
+    <include layout="@layout/rubricator"/>
+    <include layout="@layout/searchbar"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

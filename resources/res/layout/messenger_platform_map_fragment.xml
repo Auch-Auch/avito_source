@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/messenger_platform_map_root" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.avito.android.avito_map.AvitoMapView android:id="@+id/messenger_platform_map_map_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="52dp"/>
+    <include android:layout_gravity="top" android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="52dp" layout="@layout/toolbar"/>
+    <View android:layout_gravity="top" android:id="@+id/bottom_divider" android:background="?attr/gray12" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="52dp"/>
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="ru.avito.component.behaviors.MoveAboveSnackBarBehavior">
+        <androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.google.android.material.floatingactionbutton.FloatingActionButton android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/messenger_platform_map_location_button" android:focusable="true" android:clickable="true" android:layout_width="@dimen/find_me_button_size" android:layout_height="@dimen/find_me_button_size" android:src="@drawable/my_location_icon" android:layout_marginEnd="@dimen/find_me_margin_end" android:backgroundTint="?attr/white" app:backgroundTint="?attr/white" app:fabCustomSize="@dimen/find_me_button_size" app:layout_behavior="ru.avito.component.behaviors.MoveAboveSnackBarBehavior"/>
+            <include android:id="@+id/messenger_map_bottom_sheet_layout" layout="@layout/avito_bottom_sheet"/>
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

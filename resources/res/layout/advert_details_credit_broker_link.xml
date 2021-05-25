@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/content_horizontal_padding" android:layout_marginTop="6dp" android:layout_marginRight="@dimen/content_horizontal_padding" android:layout_marginBottom="6dp">
+    <TextView android:textAppearance="?attr/textBody" android:ellipsize="end" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" android:layout_toLeftOf="@+id/icon" android:layout_alignParentStart="true"/>
+    <TextView android:textAppearance="?attr/textBody" android:textColor="?attr/blue" android:ellipsize="end" android:id="@+id/subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/advert_details_credit_link_get_conditions" android:maxLines="1" android:singleLine="true" android:layout_toLeftOf="@+id/icon" android:layout_below="@+id/title" android:layout_alignParentStart="true"/>
+    <ImageView android:id="@+id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/banks_icons" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+</RelativeLayout>

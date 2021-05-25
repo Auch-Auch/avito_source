@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/brandspace_screen_root" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/toolbar"/>
+    <FrameLayout android:id="@+id/brandspace_container" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="?attr/actionBarSize" style="@style/ContentHolder">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/brandspace_recycler" android:paddingBottom="@dimen/brandspace_module_padding_top" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+</FrameLayout>

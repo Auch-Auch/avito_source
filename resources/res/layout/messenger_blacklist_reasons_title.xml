@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/messenger_blacklist_reasons_title" android:tag="TITLE" android:paddingLeft="@dimen/content_horizontal_padding" android:paddingTop="16dp" android:paddingRight="@dimen/content_horizontal_padding" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="match_parent" style="?attr/textLegacy3_headingLarge"/>

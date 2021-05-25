@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/main_navigation" app:startDestination="@+id/splashFragment">
+    <fragment android:label="SplashFragment" android:name="ru.sravni.android.bankproduct.presentation.splash.view.SplashFragment" android:id="@+id/splashFragment">
+        <action android:id="@+id/action_splashFragment_to_profilePhoneFragment2" app:destination="@+id/profilePhoneFragment2" app:popUpTo="@+id/splashFragment" app:popUpToInclusive="true"/>
+        <action android:id="@+id/action_splashFragment_to_chatFragment" app:destination="@+id/chatFragment" app:popUpTo="@+id/splashFragment" app:popUpToInclusive="true"/>
+        <action android:id="@+id/action_splashFragment_to_avitoPhoneFragment" app:destination="@+id/avitoPhoneFragment" app:popUpTo="@+id/splashFragment" app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment android:label="ChatFragment" android:name="ru.sravni.android.bankproduct.presentation.chat.view.ChatFragment" android:id="@+id/chatFragment">
+        <argument android:name="conversationID" app:argType="string"/>
+        <action android:id="@+id/action_chatFragment_to_offerOsagoListFragment" app:destination="@+id/offerOsagoListFragment" app:popUpTo="@+id/chatFragment"/>
+        <action android:id="@+id/action_chatFragment_to_offerOsagoOrderFragment" app:destination="@+id/offerOsagoOrderFragment" app:popUpTo="@+id/chatFragment"/>
+        <action android:id="@+id/action_chatFragment_to_offerProductListFragment" app:destination="@+id/offerProductListFragment" app:popUpTo="@+id/chatFragment"/>
+        <action android:id="@+id/action_chatFragment_to_offerProductInfoFragment" app:destination="@+id/offerProductInfoFragment" app:popUpTo="@+id/chatFragment"/>
+    </fragment>
+    <fragment android:label="AvitoPhoneFragment" android:name="ru.sravni.android.bankproduct.presentation.avito.auth.phone.view.AvitoPhoneFragment" android:id="@+id/avitoPhoneFragment">
+        <action android:id="@+id/action_avitoPhoneFragment_to_avitoSmsFragment" app:destination="@+id/avitoSmsFragment" app:popUpTo="@+id/avitoPhoneFragment"/>
+    </fragment>
+    <fragment android:label="AvitoSmsFragment" android:name="ru.sravni.android.bankproduct.presentation.avito.auth.sms.view.AvitoSmsFragment" android:id="@+id/avitoSmsFragment">
+        <action android:id="@+id/action_avitoSmsFragment_to_chatFragment" app:destination="@+id/chatFragment" app:popUpTo="@+id/avitoSmsFragment" app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment android:label="ProfilePhoneFragment" android:name="ru.sravni.android.bankproduct.presentation.auth.phone.view.ProfilePhoneFragment" android:id="@+id/profilePhoneFragment2">
+        <action android:id="@+id/action_profilePhoneFragment2_to_profileSmsFragment2" app:destination="@+id/profileSmsFragment2" app:popUpTo="@+id/profilePhoneFragment2"/>
+    </fragment>
+    <fragment android:label="ProfileSmsFragment" android:name="ru.sravni.android.bankproduct.presentation.auth.sms.view.ProfileSmsFragment" android:id="@+id/profileSmsFragment2">
+        <action android:id="@+id/action_profileSmsFragment2_to_chatFragment" app:destination="@+id/chatFragment" app:popUpTo="@+id/profilePhoneFragment2" app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment android:label="OfferProductListFragment" android:name="ru.sravni.android.bankproduct.presentation.offer.product.list.view.OfferProductListFragment" android:id="@+id/offerProductListFragment">
+        <argument android:name="offerNavInfo" app:argType="string"/>
+        <action android:id="@+id/action_offerProductListFragment_to_offerProductInfoFragment" app:destination="@+id/offerProductInfoFragment" app:popUpTo="@+id/offerProductListFragment"/>
+        <action android:id="@+id/action_offerProductListFragment_to_offerProductStatusFragment" app:destination="@+id/offerProductStatusFragment"/>
+        <action android:id="@+id/action_offerProductListFragment_to_chatFragment" app:destination="@+id/chatFragment"/>
+    </fragment>
+    <fragment android:label="OfferProductInfoFragment" android:name="ru.sravni.android.bankproduct.presentation.offer.product.info.view.OfferProductInfoFragment" android:id="@+id/offerProductInfoFragment">
+        <argument android:name="offerProductInfo" app:argType="string"/>
+        <action android:id="@+id/action_offerProductInfoFragment_to_offerProductStatusFragment" app:destination="@+id/offerProductStatusFragment"/>
+        <action android:id="@+id/action_offerProductInfoFragment_to_chatFragment" app:destination="@+id/chatFragment"/>
+    </fragment>
+    <fragment android:label="OfferOsagoListFragment" android:name="ru.sravni.android.bankproduct.presentation.offer.osago.list.view.OfferOsagoListFragment" android:id="@+id/offerOsagoListFragment">
+        <argument android:name="osagoNavOfferInfo" app:argType="string"/>
+        <action android:id="@+id/action_offerOsagoListFragment_to_chatFragment" app:destination="@+id/chatFragment"/>
+    </fragment>
+    <fragment android:label="OfferOsagoOrderFragment" android:name="ru.sravni.android.bankproduct.presentation.offer.osago.order.view.OfferOsagoOrderFragment" android:id="@+id/offerOsagoOrderFragment">
+        <argument android:name="osagoNavOrderInfo" app:argType="string"/>
+    </fragment>
+    <fragment android:label="OfferProductStatusFragment" android:name="ru.sravni.android.bankproduct.presentation.offer.product.status.view.OfferProductStatusFragment" android:id="@+id/offerProductStatusFragment"/>
+</navigation>

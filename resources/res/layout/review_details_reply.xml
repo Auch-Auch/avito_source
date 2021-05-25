@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/reply_container" android:paddingTop="16dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/reply_declined_container" android:background="@drawable/bg_declined_review_reply" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginBottom="16dp">
+        <TextView android:id="@+id/reply_declined_text" android:layout_width="match_parent" android:layout_height="wrap_content" style="?attr/textLegacy2_headingSmall"/>
+        <TextView android:id="@+id/reply_declined_message" android:layout_width="match_parent" android:layout_height="wrap_content" style="?attr/textLegacy1_subheading"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/reply_user_container" android:paddingBottom="4dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/reply_user_avatar" android:layout_width="24dp" android:layout_height="24dp" app:actualImageScaleType="6" app:backgroundImage="?attr/gray8" app:placeholderImage="?attr/gray8" app:placeholderImageScaleType="4" app:roundAsCircle="true"/>
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/reply_shop_avatar" android:layout_width="30dp" android:layout_height="20dp" app:actualImageScaleType="6" app:backgroundImage="?attr/gray8" app:placeholderImage="@drawable/ic_shop_30_20_gray" app:placeholderImageScaleType="4" app:roundedCornerRadius="2dp"/>
+        <TextView android:ellipsize="end" android:id="@+id/reply_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:maxLines="1" style="?attr/textLegacy3_headingSmall"/>
+    </LinearLayout>
+    <TextView android:id="@+id/reply_moderation_text" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?attr/textLegacy2_headingSmall"/>
+    <TextView android:id="@+id/reply_text" android:paddingTop="4dp" android:layout_width="match_parent" android:layout_height="wrap_content" style="?attr/textLegacy1_subheading"/>
+    <TextView android:textColor="?attr/gray48" android:id="@+id/reply_date" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2" style="?attr/textLegacy2_body"/>
+</LinearLayout>

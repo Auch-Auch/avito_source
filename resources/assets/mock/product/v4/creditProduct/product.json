@@ -1,0 +1,90 @@
+{
+  "item": {
+    "id": "5f0eb9b2a3161c8326418a84",
+    "status": "new",
+    "productType": "credit",
+    "bankId": "285",
+    "productId": "2331",
+    "mainParams": [
+      {
+        "name": "Ставка",
+        "value": "От 9.90 %",
+        "fontType": "bold"
+      },
+      {
+        "name": "Платеж (мес)",
+        "value": "16 111 ₽",
+        "fontType": "bold"
+      }
+    ],
+    "detailParams": [
+      {
+        "values": [
+          {
+            "name": "Ставка",
+            "value": "От 9.90 %",
+            "fontType": "normal"
+          },
+          {
+            "name": "Сумма",
+            "value": "500 000 ₽",
+            "fontType": "normal"
+          },
+          {
+            "name": "Период",
+            "value": "36 месяцев",
+            "fontType": "normal"
+          },
+          {
+            "name": "Переплата",
+            "value": "79 965 ₽",
+            "fontType": "normal"
+          },
+          {
+            "name": "Ежемесячный платеж",
+            "value": "16 111 ₽",
+            "fontType": "bold"
+          }
+        ],
+        "blockType": "primary"
+      },
+      {
+        "values": [
+          {
+            "name": "Возраст",
+            "value": "21-59 лет",
+            "fontType": "normal"
+          },
+          {
+            "name": "Обязательные документы",
+            "value": "Документы по предоставляемому залогу, Паспорт, Заверенная копия трудовой книжки или трудовой договор",
+            "fontType": "normal"
+          },
+          {
+            "name": "Подтверждение дохода (1 документ на выбор)",
+            "value": "Не требуется",
+            "fontType": "normal"
+          }
+        ],
+        "blockTitle": "Требования и документы",
+        "blockType": "standart"
+      }
+    ],
+    "requestParams": {
+      "title1": "value1",
+      "title2": "value2",
+      "title3": "value3"
+    },
+    "displaySettings": {
+      "bankName": "Банк ЗЕНИТ",
+      "productName": "Кредит наличными",
+      "fontColor": "000000",
+      "iconTitle": "Б",
+      "offerTitle": "Под залог недвижимости",
+      "backgroundColor": "aaf3f5",
+      "detailTitle": "О кредите"
+    },
+    "profitability": 50,
+    "profitabilityText": "Средняя вероятность одобрения"
+  }
+}

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="auto_battery_mode_subtitle">Включится, когда планшет будет в режиме энергосбережения. Это поможет сэкономить заряд.</string>
+    <string name="follow_system_mode_subtitle">Будет переключаться автоматически при изменении оформления на планшете.</string>
+    <string name="follow_system_mode_title">Тема, как на планшете</string>
+</resources>

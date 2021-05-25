@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/user_contacts_screen_root" android:focusable="true" android:focusableInTouchMode="true" android:descendantFocusability="beforeDescendants" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/content_container" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler" android:paddingTop="?attr/actionBarSize" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/empty_state" android:paddingLeft="36dp" android:paddingRight="36dp" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textColor="?attr/gray48" android:id="@+id/empty_state_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/user_contact_empty_state_title" android:lineSpacingExtra="5sp" style="?attr/textLegacy2_headingLarge"/>
+            <TextView android:textColor="?attr/gray48" android:gravity="center" android:id="@+id/empty_state_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/user_contact_empty_state_message" style="?attr/textLegacy2_body"/>
+        </LinearLayout>
+    </FrameLayout>
+    <include layout="@layout/appbar"/>
+</FrameLayout>

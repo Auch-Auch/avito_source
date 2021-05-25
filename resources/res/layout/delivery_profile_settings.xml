@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/delivery_profile_settings_screen_root" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/toolbar"/>
+    <FrameLayout android:id="@+id/content_holder" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/ContentHolder">
+        <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+            <LinearLayout android:orientation="vertical" android:id="@+id/content" android:paddingTop="@dimen/profile_settings_content_padding_vertical" android:paddingBottom="@dimen/profile_settings_content_padding_vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center" android:id="@+id/image" android:layout_width="@dimen/profile_settings_image_width" android:layout_height="@dimen/profile_settings_image_height" fresco:actualImageScaleType="5"/>
+                <TextView android:id="@+id/text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/profile_settings_content_margin_left" android:layout_marginTop="24dp" android:layout_marginRight="@dimen/profile_settings_content_margin_right" style="?attr/textLegacy1_subheading"/>
+                <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/profile_settings_switch_component_margin_left" android:layout_marginTop="24dp" android:layout_marginRight="@dimen/profile_settings_switch_component_margin_right" layout="@layout/switch_list_element"/>
+                <TextView android:textColor="?attr/gray48" android:id="@+id/disclaimer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/profile_settings_content_margin_left" android:layout_marginTop="16dp" android:layout_marginRight="@dimen/profile_settings_content_margin_right" style="?attr/textLegacy1_body"/>
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+</LinearLayout>

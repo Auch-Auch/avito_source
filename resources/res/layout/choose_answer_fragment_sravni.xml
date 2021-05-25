@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:tag="layout/choose_answer_fragment_sravni_0" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <include android:visibility="gone" layout="@layout/button_answer_layout_sravni"/>
+    <include android:visibility="gone" layout="@layout/slider_answer_layout_sravni"/>
+    <include android:visibility="gone" layout="@layout/free_text_answer_layout_sravni"/>
+    <include android:visibility="gone" layout="@layout/suggest_text_answer_sravni"/>
+    <include android:visibility="gone" layout="@layout/mask_text_answer_layout_sravni"/>
+    <include android:visibility="gone" layout="@layout/passport_answer_layout_sravni"/>
+    <include android:visibility="gone" layout="@layout/credit_offers_answer_layout_sravni"/>
+    <include android:visibility="gone" layout="@layout/osago_offers_answer_layout_sravni"/>
+    <include android:visibility="gone" layout="@layout/osago_order_answer_layout_sravni"/>
+    <include android:visibility="gone" layout="@layout/close_chat_answer_layout_sravni"/>
+    <include android:visibility="gone" layout="@layout/credit_detail_answer_layout_sravni"/>
+</FrameLayout>

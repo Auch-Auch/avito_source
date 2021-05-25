@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="14sp" android:typeface="normal" android:textStyle="bold" android:textColor="?attr/gray48" android:ellipsize="end" android:id="@+id/tab_title" android:layout_width="0dp" android:layout_height="wrap_content" android:lines="1" android:singleLine="true" android:layout_weight="1" android:textAllCaps="true" app:fontFamily="@font/avito_bold"/>
+        <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="?attr/gray48" android:id="@+id/tab_delimiter" android:paddingLeft="4dp" android:paddingRight="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tab_delimiter"/>
+        <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="?attr/gray48" android:ellipsize="none" android:id="@+id/tab_counter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:textAllCaps="true" app:fontFamily="@font/avito_bold"/>
+    </LinearLayout>
+</FrameLayout>

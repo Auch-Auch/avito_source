@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/inline_filters_calendar_dialog_root" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/inline_filters_calendar_header"/>
+    <include layout="@layout/calendar_week_days"/>
+    <FrameLayout android:id="@+id/content_holder" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler_view" android:paddingLeft="@dimen/calendar_recycler_view_padding" android:paddingRight="@dimen/calendar_recycler_view_padding" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <FrameLayout android:layout_gravity="bottom" android:id="@+id/apply_btn_container" android:background="@drawable/bg_transparent_white_gradient" android:layout_width="match_parent" android:layout_height="64dp">
+            <com.avito.android.lib.design.button.Button android:layout_gravity="top|center_vertical|center_horizontal|center" android:id="@+id/button" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/apply_inline_filter" android:layout_marginStart="24dp" android:layout_marginEnd="24dp" style="?attr/buttonPrimaryLarge"/>
+        </FrameLayout>
+    </FrameLayout>
+</LinearLayout>

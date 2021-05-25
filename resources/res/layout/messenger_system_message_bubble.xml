@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <include android:id="@+id/message_date_divider" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/messenger_message_date_divider"/>
+    <TextView android:textAppearance="?attr/textLegacy2_bodySmallDense" android:textColor="?attr/black" android:gravity="center_horizontal" android:id="@+id/message" android:paddingTop="16dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxWidth="@dimen/messenger_message_list_max_width" android:paddingStart="44dp" android:paddingEnd="44dp" app:fontFamily="@font/avito_regular"/>
+</LinearLayout>

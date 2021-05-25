@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:theme="@style/res_2132018452_theme_avito" android:orientation="vertical" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.avito.android.lib.design.component_container.ComponentContainer android:id="@+id/container" android:paddingLeft="@dimen/container_horizontal_padding" android:paddingRight="@dimen/container_horizontal_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp" app:componentContainer_resetCondition="2">
+        <com.avito.android.lib.design.input.Input android:id="@+id/input" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="textNoSuggestions" app:input_selectionToEndOnFocus="false" app:layout_autoReset="0" style="?attr/input"/>
+    </com.avito.android.lib.design.component_container.ComponentContainer>
+    <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/tags_list"/>
+</LinearLayout>

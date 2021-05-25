@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/banner_root" android:padding="@dimen/standard_padding" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/content_horizontal_padding" android:layout_marginTop="@dimen/standard_padding" android:layout_marginRight="@dimen/content_horizontal_padding" android:layout_marginBottom="@dimen/standard_padding">
+    <TextView android:textSize="@dimen/big_text_size" android:textColor="?attr/black" android:id="@+id/banner_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp" app:fontFamily="@font/avito_bold"/>
+    <TextView android:textSize="@dimen/big_text_size" android:textColor="?attr/black" android:id="@+id/banner_text" android:layout_width="match_parent" android:layout_height="wrap_content" app:fontFamily="@font/avito_regular"/>
+</LinearLayout>

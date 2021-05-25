@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_horizontal" android:orientation="vertical" android:paddingBottom="32dp" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="16dp" android:paddingEnd="16dp">
+    <View android:background="@drawable/ic_avito_bottom_sheet_notch" android:layout_width="28dp" android:layout_height="4dp" android:layout_marginTop="6dp" android:layout_marginBottom="19dp"/>
+    <TextView android:textSize="22sp" android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" style="?attr/textLegacy1_titleBold"/>
+    <TextView android:id="@+id/text" android:layout_width="match_parent" android:layout_height="wrap_content" style="?attr/textLegacy1_subheading"/>
+    <com.avito.android.lib.design.button.Button android:id="@+id/button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" style="?attr/buttonDefaultLarge"/>
+</LinearLayout>

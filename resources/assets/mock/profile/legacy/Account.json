@@ -1,0 +1,188 @@
+{
+  "common": {
+    "email": {
+      "path": "common.email",
+      "value": "vas@list.ru",
+      "description": "Ваш личный емэйл",
+      "label": "Электронная почта",
+      "order": 2,
+      "isEditable": true
+    },
+    "phone": {
+      "path": "common.phone",
+      "value": "79305555555",
+      "description": "Ваш имя как в паспорте",
+      "label": "Телефон",
+      "isEditable": false,
+      "order": 1,
+      "mask": "+7 ([000]) [000] [00] [00]"
+    }
+  },
+  "documents": {
+    "passport": {
+      "FIO": {
+        "path": "documents.passport.FIO",
+        "value": "Иванов Иван Иванович",
+        "description": "Имя как в пасспорте",
+        "label": "ФИО",
+        "isEditable": true,
+        "order": 4
+      },
+      "issueDate": {
+        "path": "documents.passport.issueDate",
+        "value": "21.07.2009",
+        "description": "Дата выдачи паспорта",
+        "label": "Дата выдачи",
+        "isEditable": true,
+        "order": 1,
+        "mask": "[00]{.}[00]{.}[0000]"
+      },
+      "unitCode": {
+        "path": "documents.passport.unitCode",
+        "value": "007-906",
+        "description": "Код подразделения",
+        "label": "Код подразделения",
+        "isEditable": true,
+        "order": 2,
+        "mask": "[000]-[000]"
+      },
+      "issueTitle": {
+        "path": "documents.passport.issueTitle",
+        "value": "Юго Западный отдел милиции",
+        "description": "Наименование органа выдачи",
+        "label": "Кем выдан",
+        "order": 3,
+        "isEditable": true
+      },
+      "birthDay": {
+        "path": "documents.passport.birthDay",
+        "value": "21.07.2019",
+        "description": "Дата рождения дд.мм.гггг",
+        "label": "Дата рождения",
+        "isEditable": true,
+        "order": 5,
+        "mask": "[00]{.}[00]{.}[0000]"
+      },
+      "birthCity": {
+        "path": "documents.passport.birthCity",
+        "value": "Гродно",
+        "description": "Место рождения как в пасспорте",
+        "label": "Место рождения",
+        "order": 6,
+        "isEditable": true
+      },
+      "code": {
+        "path": "documents.passport.code",
+        "value": "4809 765345",
+        "description": "Серия и номер пасспорта",
+        "label": "Серия и номер",
+        "isEditable": true,
+        "order": 0,
+        "mask": "[00] [00] [000000]"
+      },
+      "address": {
+        "path": "documents.passport.address",
+        "value": "г Москва Третий переуорк дом 11 квартира 44",
+        "description": "Адрес регистрации как в пасспорте",
+        "label": "Адрес регистрации",
+        "order": 7,
+        "isEditable": true
+      },
+      "regDate": {
+        "path": "documents.passport.registrationDate",
+        "value": "21.07.2019",
+        "description": "Дата рождения дд.мм.гггг",
+        "label": "Дата рождения",
+        "isEditable": true,
+        "order": 8,
+        "mask": "[00]{.}[00]{.}[0000]"
+      }
+    }
+  },
+  "notes": {
+    "work": {
+      "employment_type": {
+        "value": "Работа по найму",
+        "isEditable": true,
+        "label": "Тип занятости",
+        "description": "Тип занятости",
+        "path": "notes.work.employment_type",
+        "order": 1
+      },
+      "organization_name": {
+        "value": "ООО Сравни.ру",
+        "isEditable": true,
+        "label": "Название организации",
+        "description": "Введите название организации",
+        "path": "notes.work.organization_name",
+        "order": 2
+      },
+      "employer_inn": {
+        "value": "3906183870",
+        "isEditable": true,
+        "label": "ИНН организации",
+        "description": "Введите ИНН организации",
+        "path": "notes.work.employer_inn",
+        "order": 3
+      },
+      "organization_type": {
+        "value": "Государственное бюджетное учреждение",
+        "isEditable": true,
+        "label": "Тип организации",
+        "description": "Введите Тип организации",
+        "path": "notes.work.organization_type",
+        "order": 4
+      },
+      "activity_field": {
+        "value": "Профессианальная, научная, техническая деятельность",
+        "isEditable": true,
+        "label": "Сфера деятельности",
+        "description": "Сфера деятельности",
+        "path": "notes.work.activity_field",
+        "order": 5
+      },
+      "start_work": {
+        "value": "03.03.2019",
+        "isEditable": true,
+        "mask": "[00]{.}[00]{.}[0000]",
+        "label": "Начало работы на последнем месте",
+        "description": "Введите дату начала работы на последнем месте",
+        "path": "notes.work.start_work",
+        "order": 6
+      },
+      "work_position": {
+        "value": "Оперуполномоченный",
+        "isEditable": true,
+        "label": "Должность",
+        "description": "Введите место рождения",
+        "path": "notes.work.position",
+        "order": 7
+      },
+      "organization_position": {
+        "value": "Неруководящий сотрудник - обсл. персонал",
+        "isEditable": true,
+        "label": "Тип должности",
+        "description": "Введите тип должности",
+        "path": "notes.work.organization_position",
+        "order": 8
+      },
+      "work_address": {
+        "value": "Новосибирская обл, г Бердск, тер ГПК Подорожник(между ГАИ и жд переездом), д 97",
+        "isEditable": true,
+        "label": "Рабочий адрес",
+        "description": "Вставьте рабочий адрес",
+        "path": "notes.work.work_place",
+        "order": 9
+      },
+      "work_phone": {
+        "value": "79259448584",
+        "mask": "+7 ([000]) [000] [00] [00]",
+        "isEditable": true,
+        "label": "Рабочий телефон",
+        "description": "Вставьте рабочий телефон",
+        "path": "notes.work.work_phone",
+        "order": 10
+      }
+    }
+  }
+}

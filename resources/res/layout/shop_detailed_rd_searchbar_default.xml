@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/shop_details_screen_root" android:background="@color/expected_background" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@+id/coordinator_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/call_button">
+        <FrameLayout android:id="@+id/not_found_view_container" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <TextView android:textSize="20sp" android:textColor="?attr/gray28" android:layout_gravity="center" android:id="@+id/not_found_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:fontFamily="@font/avito_medium"/>
+            <com.avito.android.ui.widget.ScrollDirectionAwareRecyclerView android:id="@+id/recycler_view" android:paddingLeft="@dimen/serp_horizontal_padding" android:paddingRight="@dimen/serp_horizontal_padding" android:scrollbars="none" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="64dp"/>
+        </FrameLayout>
+        <ViewStub android:id="@+id/cart_fab_stub" android:layout="@layout/cart_fab" style="@style/CartFab"/>
+        <include layout="@layout/searchbar"/>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <FrameLayout android:orientation="vertical" android:id="@+id/call_button" android:background="@drawable/bg_raised_button_blue" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:textAppearance="@style/res_2132018360_textappearance_avito_button" android:textColor="@color/txt_raised_button" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/text_button" android:paddingLeft="8dp" android:paddingRight="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="72dp" android:minHeight="36dp" android:text="@string/call" android:maxLines="1" android:drawablePadding="4dp" app:fontFamily="@font/avito_bold"/>
+    </FrameLayout>
+    <View android:id="@+id/shadow_call_btn" android:background="@drawable/shadow_inverted" android:visibility="gone" android:layout_width="match_parent" android:layout_height="4dp" android:layout_above="@+id/call_button"/>
+</RelativeLayout>

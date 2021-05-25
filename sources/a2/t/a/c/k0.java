@@ -1,0 +1,11 @@
+package a2.t.a.c;
+public enum k0 {
+    DISCONNECTED,
+    REQUEST_TO_BALANCER,
+    WEB_SOCKET_CONNECTING,
+    WAIT_SERVER_READY,
+    CONNECTIVITY_CHECK,
+    CONNECTED,
+    TRY_LOGIN,
+    LOGGED_IN
+}

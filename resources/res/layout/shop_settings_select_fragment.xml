@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/shop_settings_fragment_root" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="?android:attr/actionBarSize">
+        <TextView android:layout_gravity="center" android:id="@+id/toolbar_title" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?attr/textLegacy2_headingSmall"/>
+    </androidx.appcompat.widget.Toolbar>
+    <FrameLayout android:id="@+id/content_holder" android:paddingTop="?attr/actionBarSize" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/ContentHolder">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/shop_settings_select_list" android:paddingTop="8dp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+    </FrameLayout>
+</FrameLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/messenger_image_bubble_incoming" android:paddingTop="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxWidth="@dimen/messenger_message_list_max_width">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/message_avatar" android:focusable="true" android:visibility="invisible" android:clickable="true" android:layout_width="28dp" android:layout_height="28dp" android:layout_marginTop="5dp" android:layout_marginStart="8dp" app:actualImageScaleType="6" app:failureImage="?attr/gray12" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" app:placeholderImage="?attr/gray12" app:progressBarImage="?attr/gray12" app:roundAsCircle="true"/>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/message" android:background="@drawable/bg_messenger_call_message_incoming" android:layout_width="40dp" android:layout_height="38dp" android:layout_marginStart="8dp" app:layout_constraintStart_toEndOf="@+id/message_avatar">
+            <View android:id="@+id/dot1" android:layout_width="4dp" android:layout_height="4dp" android:layout_margin="1dp"/>
+            <View android:id="@+id/dot2" android:layout_width="4dp" android:layout_height="4dp" android:layout_margin="1dp" android:alpha="0.7"/>
+            <View android:id="@+id/dot3" android:layout_width="4dp" android:layout_height="4dp" android:layout_margin="1dp" android:alpha="0.4"/>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

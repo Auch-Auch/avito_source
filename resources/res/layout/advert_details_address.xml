@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/address_container" android:paddingLeft="@dimen/rds_content_horizontal_padding_left" android:paddingRight="@dimen/content_horizontal_padding" android:focusable="true" android:focusableInTouchMode="false" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textAppearance="?attr/textBody" android:textColor="@color/text_button_default" android:layout_gravity="center_vertical" android:id="@+id/advert_address" android:background="@drawable/bg_rds_gray_button" android:paddingLeft="4dp" android:paddingTop="4dp" android:paddingBottom="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</FrameLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.avito.android.design.widget.ForegroundLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/brandspace_categoryitem_bg" android:padding="12dp" android:layout_width="@dimen/brandspace_categoryitem_width" android:layout_height="wrap_content" android:foreground="@drawable/fg_rds_card">
+    <com.avito.android.util.SimpleDraweeView android:id="@+id/image" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/text_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?attr/textHeading" android:textColor="@color/design_text_color_black_selector" android:id="@+id/title" android:paddingTop="4dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <TextView android:textAppearance="?attr/textHeadingSmall" android:id="@+id/subtitle" android:paddingTop="4dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <TextView android:textAppearance="?attr/textBody" android:id="@+id/description" android:paddingTop="4dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</com.avito.android.design.widget.ForegroundLinearLayout>

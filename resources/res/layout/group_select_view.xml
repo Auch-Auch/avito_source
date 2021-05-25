@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/header" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="52dp" android:animateLayoutChanges="true" android:paddingStart="16dp" android:paddingEnd="16dp">
+        <com.avito.android.lib.design.toggle.Checkbox android:id="@+id/checkbox" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:layout_marginEnd="16dp"/>
+        <TextView android:textColor="@color/text_button_default" android:ellipsize="end" android:id="@+id/title" android:layout_width="0dp" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1" style="?attr/textLegacy2_body"/>
+        <ImageView android:id="@+id/icon" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/ic_expand_24" android:scaleType="center" android:layout_marginStart="16dp"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/items_container" android:layout_width="match_parent" android:layout_height="0dp" android:paddingStart="36dp"/>
+</merge>

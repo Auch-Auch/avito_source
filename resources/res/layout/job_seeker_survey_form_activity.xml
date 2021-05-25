@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/job_seeker_survey_form_activity_root" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar android:theme="@style/res_2132018570_themeoverlay_appcompat_light" android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <ScrollView android:orientation="vertical" android:id="@+id/scrollable_container" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textAppearance="?attr/textTitleSmall" android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:layout_marginBottom="16dp" android:layout_marginStart="16dp" android:layout_marginEnd="16dp"/>
+                <TextView android:textAppearance="?attr/textBody" android:id="@+id/subtitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="16dp" android:layout_marginEnd="16dp"/>
+                <LinearLayout android:orientation="vertical" android:id="@+id/field_container" android:paddingTop="12dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+                <com.avito.android.lib.design.button.Button android:id="@+id/save_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_marginBottom="16dp" android:layout_marginStart="16dp" android:layout_marginEnd="16dp" style="?attr/buttonPrimaryMedium"/>
+            </LinearLayout>
+        </ScrollView>
+        <FrameLayout android:id="@+id/loading" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/error" android:paddingLeft="16dp" android:paddingRight="16dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+                <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textAppearance="?attr/textHeadingLarge" android:textColor="?attr/gray48" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/error_title"/>
+                    <TextView android:textAppearance="?attr/textBody" android:textColor="?attr/gray48" android:gravity="center" android:layout_gravity="center" android:id="@+id/error_text" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </FrameLayout>
+            <com.avito.android.lib.design.button.Button android:id="@+id/refresh_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="16dp" android:text="@string/refresh_button_title" style="?attr/buttonPrimaryMedium"/>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

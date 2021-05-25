@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ru.rambler.libs.swipe_layout.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/product_swipe_layout" android:layout_width="match_parent" android:layout_height="wrap_content" app:left_swipe_enabled="false" app:right_swipe_enabled="true">
+    <include android:id="@+id/product" layout="@layout/cart_product_item"/>
+    <ImageView android:id="@+id/bin_icon" android:background="?attr/red" android:paddingLeft="32dp" android:paddingRight="32dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/ic_cart_bin" android:hapticFeedbackEnabled="true" android:contentDescription="@null" android:paddingHorizontal="32dp" app:bring_to_clamp="16dp" app:clamp="-2" app:gravity="center_horizontal" app:sticky="-2"/>
+</ru.rambler.libs.swipe_layout.SwipeLayout>

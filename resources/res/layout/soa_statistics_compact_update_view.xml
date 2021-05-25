@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/soa_update_view" android:background="?attr/gray4" android:paddingLeft="@dimen/soa_card_horizontal_padding" android:paddingTop="8dp" android:paddingRight="@dimen/soa_card_horizontal_padding" android:paddingBottom="12dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.avito.android.user_adverts.root_screen.adverts_host.header.menu_panel.CollapsingProgressView android:id="@+id/soa_update_progress" android:layout_width="25dp" android:layout_height="25dp" android:layout_marginBottom="3dp" app:circlesDiameter="8dp" app:distanceBetweenCircles="4dp" app:finalCircleDiameter="20dp" app:tickWidth="1.4dp"/>
+    <TextView android:id="@+id/soa_update_text" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?attr/textLegacy2_headingSmall"/>
+    <TextView android:textColor="?attr/gray48" android:id="@+id/soa_update_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="принесли продажи" style="?attr/textLegacy2_bodySmall"/>
+</LinearLayout>

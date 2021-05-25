@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/auto_catalog_serp_secondary_button_root" android:background="@drawable/bg_btn_flat_rds_blue_50" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/content_horizontal_padding" android:layout_marginTop="22dp" android:layout_marginRight="@dimen/content_horizontal_padding">
+    <TextView android:ellipsize="end" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/serp_secondary_button" android:paddingTop="7dp" android:paddingBottom="9dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" style="@style/res_2132018350_textappearance_avito_advertdetails_body_blue"/>
+</FrameLayout>

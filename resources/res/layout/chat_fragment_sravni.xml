@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:tag="layout/chat_fragment_sravni_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout android:id="@+id/appBarLayout" android:layout_width="@dimen/dim_0" android:layout_height="wrap_content" app:layout_constraintBottom_toTopOf="@+id/rvListMessage" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+        <com.google.android.material.appbar.MaterialToolbar android:id="@+id/toolbar" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.recyclerview.widget.RecyclerView android:orientation="vertical" android:id="@+id/rvListMessage" android:tag="binding_2" android:scrollbars="vertical" android:layout_width="0dp" android:layout_height="0dp" android:layout_marginBottom="@dimen/dim_4" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" app:layout_constraintBottom_toTopOf="@+id/flAnswer" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/appBarLayout" app:stackFromEnd="true"/>
+    <FrameLayout android:tag="binding_3" android:paddingTop="40dp" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintBottom_toTopOf="@+id/flAnswer" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/appBarLayout">
+        <include layout="@layout/suggest_list_sravni"/>
+    </FrameLayout>
+    <View android:id="@+id/vShadow" android:background="@drawable/top_shadow_sravni" android:layout_width="@dimen/dim_0" android:layout_height="@dimen/dim_1" app:layout_constraintBottom_toTopOf="@+id/flAnswer" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0"/>
+    <FrameLayout android:id="@+id/flAnswer" android:tag="binding_4" android:layout_width="0dp" android:layout_height="wrap_content" android:animateLayoutChanges="true" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/rvListMessage">
+        <include layout="@layout/choose_answer_fragment_sravni"/>
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,77 @@
+package a2.k.a.d;
+
+import android.view.MotionEvent;
+import android.view.View;
+import com.jakewharton.rxbinding3.internal.Preconditions;
+import com.vk.sdk.api.VKApiConst;
+import io.reactivex.Observable;
+import io.reactivex.Observer;
+import io.reactivex.android.MainThreadDisposable;
+import kotlin.jvm.functions.Function1;
+import kotlin.jvm.internal.Intrinsics;
+import org.jetbrains.annotations.NotNull;
+public final class j extends Observable<MotionEvent> {
+    public final View a;
+    public final Function1<MotionEvent, Boolean> b;
+
+    public static final class a extends MainThreadDisposable implements View.OnHoverListener {
+        public final View b;
+        public final Function1<MotionEvent, Boolean> c;
+        public final Observer<? super MotionEvent> d;
+
+        /* JADX DEBUG: Multi-variable search result rejected for r3v0, resolved type: kotlin.jvm.functions.Function1<? super android.view.MotionEvent, java.lang.Boolean> */
+        /* JADX WARN: Multi-variable type inference failed */
+        public a(@NotNull View view, @NotNull Function1<? super MotionEvent, Boolean> function1, @NotNull Observer<? super MotionEvent> observer) {
+            Intrinsics.checkParameterIsNotNull(view, "view");
+            Intrinsics.checkParameterIsNotNull(function1, "handled");
+            Intrinsics.checkParameterIsNotNull(observer, "observer");
+            this.b = view;
+            this.c = function1;
+            this.d = observer;
+        }
+
+        @Override // io.reactivex.android.MainThreadDisposable
+        public void onDispose() {
+            this.b.setOnHoverListener(null);
+        }
+
+        @Override // android.view.View.OnHoverListener
+        public boolean onHover(@NotNull View view, @NotNull MotionEvent motionEvent) {
+            Intrinsics.checkParameterIsNotNull(view, VKApiConst.VERSION);
+            Intrinsics.checkParameterIsNotNull(motionEvent, "event");
+            if (isDisposed()) {
+                return false;
+            }
+            try {
+                if (!this.c.invoke(motionEvent).booleanValue()) {
+                    return false;
+                }
+                this.d.onNext(motionEvent);
+                return true;
+            } catch (Exception e) {
+                this.d.onError(e);
+                dispose();
+                return false;
+            }
+        }
+    }
+
+    /* JADX DEBUG: Multi-variable search result rejected for r3v0, resolved type: kotlin.jvm.functions.Function1<? super android.view.MotionEvent, java.lang.Boolean> */
+    /* JADX WARN: Multi-variable type inference failed */
+    public j(@NotNull View view, @NotNull Function1<? super MotionEvent, Boolean> function1) {
+        Intrinsics.checkParameterIsNotNull(view, "view");
+        Intrinsics.checkParameterIsNotNull(function1, "handled");
+        this.a = view;
+        this.b = function1;
+    }
+
+    @Override // io.reactivex.Observable
+    public void subscribeActual(@NotNull Observer<? super MotionEvent> observer) {
+        Intrinsics.checkParameterIsNotNull(observer, "observer");
+        if (Preconditions.checkMainThread(observer)) {
+            a aVar = new a(this.a, this.b, observer);
+            observer.onSubscribe(aVar);
+            this.a.setOnHoverListener(aVar);
+        }
+    }
+}

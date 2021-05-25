@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/publish_root" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ru.avito.component.toolbar.AppBarLayoutWithTextAction android:id="@+id/app_bar" android:layout_width="match_parent" android:layout_height="wrap_content" android:stateListAnimator="@drawable/appbar_allways_unelevated"/>
+    <FrameLayout android:id="@+id/content_holder" android:background="?attr/white" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <FrameLayout android:id="@+id/progress_view_container" android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler_view" android:paddingTop="@dimen/publish_card_padding_vertical" android:paddingBottom="@dimen/publish_card_padding_vertical" android:focusable="false" android:focusableInTouchMode="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:splitMotionEvents="false"/>
+        </FrameLayout>
+    </FrameLayout>
+    <LinearLayout android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:orientation="vertical" android:background="@drawable/bg_transparent_white_gradient" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include layout="@layout/html_editor_panel"/>
+        <com.avito.android.lib.design.button.Button android:enabled="false" android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/main_button" android:layout_width="match_parent" android:layout_marginBottom="18dp" android:layout_marginStart="@dimen/publish_continue_button_side_margin" android:layout_marginEnd="@dimen/publish_continue_button_side_margin" style="?attr/buttonPrimaryLarge"/>
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

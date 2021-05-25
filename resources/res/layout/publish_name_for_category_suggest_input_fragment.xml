@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/publish_service_name_page_screen_root" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout android:id="@+id/app_bar" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.google.android.material.appbar.CollapsingToolbarLayout android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_scrollFlags="13">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="?attr/actionBarSize" app:layout_collapseMode="1">
+                <TextView android:id="@+id/name_for_service_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="16dp" style="?attr/textLegacy1_display"/>
+            </LinearLayout>
+            <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" app:layout_collapseMode="1">
+                <TextView android:textColor="@color/txt_flat_button_primary" android:layout_gravity="right" android:id="@+id/continue_button" android:background="@drawable/bg_flat_button_primary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/nfc_continue" style="@style/res_2132017854_deprecated_theme_internal_button_flat_primary"/>
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout android:orientation="vertical" android:id="@+id/root_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true">
+            <com.avito.android.design.widget.TextInputView android:id="@+id/text_input" android:paddingLeft="@dimen/standard_padding" android:paddingRight="@dimen/standard_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:imeOptions="flagNoExtractUi"/>
+            <include android:id="@+id/info_view" layout="@layout/info_label"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="can_switch_display_type">false</bool>
+    <bool name="is_tablet">true</bool>
+    <bool name="profile_concealable_toolbar_shadow">false</bool>
+    <bool name="single_button_always">false</bool>
+</resources>

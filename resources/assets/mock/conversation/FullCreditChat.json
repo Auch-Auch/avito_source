@@ -1,0 +1,452 @@
+[
+  {
+    "item": {
+      "_id": "chatCredit",
+      "status": "inprogress",
+      "messages": [
+        {
+          "order": "0",
+          "created": "Tue Jul 14 2020 13:01:13 GMT+0300 (Moscow Standard Time)",
+          "name": "startCard",
+          "message": "Здравствуйте",
+          "sender": "bot"
+        }
+      ]
+    }
+  },
+  {
+    "item": {
+      "_id": "chatCredit",
+      "status": "inprogress",
+      "messages": [
+        {
+          "order": "1",
+          "created": "Tue Jul 14 2020 13:01:13 GMT+0300 (Moscow Standard Time)",
+          "name": "passport",
+          "message": "Ваши паспортные данные",
+          "sender": "bot",
+          "type": "passportscan",
+          "content": {
+            "elements": [
+              {
+                "name": "birthday",
+                "params": {
+                  "placeholder": "ДД.ММ.ГГГГ",
+                  "keyboard": "number"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "item": {
+      "_id": "chatCredit",
+      "status": "inprogress",
+      "dialog": "5d4855ab98caf700469dc69a",
+      "messages": [
+        {
+          "order": "3",
+          "name": "question-card",
+          "created": "Tue Jul 14 2020 13:01:13 GMT+0300 (Moscow Standard Time)",
+          "message": "Паспорт\nСерия и номер\nДата выдачи\nКод подразделения\nДата рождения",
+          "content": {},
+          "sender": "bot",
+          "type": "passport",
+          "messageElements": {
+            "elements": [
+              {
+                "name": "5d4855ab98caf700469dc6b0",
+                "params": {},
+                "type": "header",
+                "text": "Паспорт РФ"
+              },
+              {
+                "name": "5d4855ab98caf700469dc6af",
+                "params": {},
+                "type": "labled-input",
+                "elements": [
+                  {
+                    "name": "5d4855ab98caf700469dc6ae",
+                    "params": {},
+                    "type": "input-value",
+                    "text": "Егоров Константин Константинопольский"
+                  }
+                ]
+              },
+              {
+                "name": "5d4855ab98caf700469dc6af",
+                "params": {},
+                "type": "labled-input",
+                "text": "Родился",
+                "elements": [
+                  {
+                    "name": "5d4855ab98caf700469dc6ae",
+                    "params": {},
+                    "type": "input-value",
+                    "text": "21.08.1980 в г. СОЧИ Краснодарского края лазаревского р-на"
+                  }
+                ]
+              },
+              {
+                "name": "5d4855ab98caf700469dc6af",
+                "params": {},
+                "type": "labled-input",
+                "text": "Серия и номер",
+                "elements": [
+                  {
+                    "name": "5d4855ab98caf700469dc6ae",
+                    "params": {},
+                    "type": "input-value",
+                    "text": "46 11 191222"
+                  }
+                ]
+              },
+              {
+                "name": "5d4855ab98caf700469dc6ad",
+                "params": {},
+                "type": "labled-input",
+                "text": "Код-подразделения",
+                "elements": [
+                  {
+                    "name": "5d4855ab98caf700469dc6ac",
+                    "params": {},
+                    "type": "input-value",
+                    "text": "500-076"
+                  }
+                ]
+              },
+              {
+                "name": "5d4855ab98caf700469dc6ad",
+                "params": {},
+                "type": "labled-input",
+                "text": "Выдан",
+                "elements": [
+                  {
+                    "name": "5d4855ab98caf700469dc6ac",
+                    "params": {},
+                    "type": "input-value",
+                    "text": "25.11.2010 в ТП В пос. Томилино ОУФМС Росси ипо МО. в люберецком р-не"
+                  }
+                ]
+              },
+              {
+                "name": "5d4855ab98caf700469dc6a9",
+                "params": {},
+                "type": "labled-input",
+                "text": "Прописан",
+                "elements": [
+                  {
+                    "name": "5d4855ab98caf700469dc6a8",
+                    "params": {},
+                    "type": "input-value",
+                    "text": "г. Москва, кутузовский проспект, д. 30, кв 407 с 23.07.2010"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "item": {
+      "_id": "chatCredit",
+      "status": "inprogress",
+      "messages": [
+        {
+          "order": "4",
+          "created": "Tue Jul 14 2020 13:01:13 GMT+0300 (Moscow Standard Time)",
+          "name": "purposecard",
+          "modifiers": [
+            "1",
+            "2"
+          ],
+          "message": "На какие цели нужны деньги?",
+          "sender": "bot",
+          "type": "button",
+          "actions": [
+            {
+              "text": "На авто",
+              "code": "0"
+            },
+            {
+              "text": "Ремонт",
+              "code": "1"
+            },
+            {
+              "text": "Погашение кредитов",
+              "code": "2"
+            },
+            {
+              "text": "Иное",
+              "code": "3"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "item": {
+      "_id": "chatCredit",
+      "status": "inprogress",
+      "messages": [
+        {
+          "order": "5",
+          "name": "startCard",
+          "created": "Tue Jul 14 2020 13:01:13 GMT+0300 (Moscow Standard Time)",
+          "message": "на то, что выбрал раньше",
+          "sender": "user"
+        },
+        {
+          "order": "6",
+          "name": "slidercard",
+          "created": "Tue Jul 14 2020 13:01:13 GMT+0300 (Moscow Standard Time)",
+          "message": "Какую сумму Вы хотите взять?",
+          "sender": "bot",
+          "type": "slider",
+          "content": {
+            "elements": [
+              {
+                "name": "summ",
+                "params": {
+                  "snapPoints": [
+                    {
+                      "snapKey": "k1",
+                      "snapValue": "до 5 000"
+                    },
+                    {
+                      "snapKey": "k2",
+                      "snapValue": "до 50 000"
+                    },
+                    {
+                      "snapKey": "k3",
+                      "snapValue": "до 500 000"
+                    },
+                    {
+                      "snapKey": "k4",
+                      "snapValue": "до 5 000 000"
+                    },
+                    {
+                      "snapKey": "k5",
+                      "snapValue": "до 15 000 000"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "item": {
+      "_id": "chatCredit",
+      "status": "inprogress",
+      "messages": [
+        {
+          "order": "7",
+          "created": "Tue Jul 14 2020 13:01:13 GMT+0300 (Moscow Standard Time)",
+          "name": "startCard",
+          "message": "сумму уже выбрал",
+          "sender": "user"
+        },
+        {
+          "order": "8",
+          "created": "Tue Jul 14 2020 13:01:13 GMT+0300 (Moscow Standard Time)",
+          "name": "autocompleteAdressCard",
+          "message": "Какой ваш адрес регистрации?",
+          "sender": "bot",
+          "type": "suggest",
+          "content": {
+            "elements": [
+              {
+                "name": "address",
+                "text": "Москва",
+                "params": {
+                  "keyboard": "email",
+                  "placeholder": "Адрес",
+                  "suggestMode": "partial-tail"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "item": {
+      "_id": "chatCredit",
+      "status": "inprogress",
+      "messages": [
+        {
+          "order": "9",
+          "name": "startCard",
+          "message": "адрес уже выбрал",
+          "sender": "user"
+        },
+        {
+          "order": "10",
+          "name": "autocompleteAdressCard",
+          "created": "Tue Jul 14 2020 13:01:13 GMT+0300 (Moscow Standard Time)",
+          "message": "Какой ваш телефон?",
+          "sender": "bot",
+          "type": "mask",
+          "content": {
+            "elements": [
+              {
+                "name": "phone",
+                "text": "79999999999",
+                "validation": {
+                  "required": true,
+                  "mask": "+7 ([000]) [000] [00] [00]",
+                  "maskPlaceholder": "0",
+                  "regexp": ""
+                },
+                "params": {
+                  "keyboard": "phone",
+                  "placeholder": "телефон"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "item": {
+      "_id": "chatCredit",
+      "status": "inprogress",
+      "messages": [
+        {
+          "order": "11",
+          "created": "Tue Jul 14 2020 13:01:13 GMT+0300 (Moscow Standard Time)",
+          "name": "startCard",
+          "message": "телефон уже ввел",
+          "sender": "user"
+        },
+        {
+          "order": "12",
+          "created": "Tue Jul 14 2020 13:01:13 GMT+0300 (Moscow Standard Time)",
+          "name": "autocompleteAdressCard",
+          "message": "Как Вас зовут?",
+          "sender": "bot",
+          "type": "freeanswer",
+          "content": {
+            "elements": [
+              {
+                "name": "fio",
+                "text": "Иванов",
+                "params": {
+                  "placeholder": "Фамилия Имя Отчество"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "item": {
+      "_id": "chatCredit",
+      "status": "inprogress",
+      "messages": [
+        {
+          "order": "13",
+          "created": "Tue Jul 14 2020 13:01:13 GMT+0300 (Moscow Standard Time)",
+          "name": "startCard",
+          "message": "Как то назвался",
+          "sender": "user"
+        },
+        {
+          "order": "14",
+          "created": "Tue Jul 14 2020 13:01:13 GMT+0300 (Moscow Standard Time)",
+          "name": "summCard",
+          "message": "Сколько дать денег?",
+          "sender": "bot",
+          "type": "freeanswer",
+          "content": {
+            "elements": [
+              {
+                "name": "summ",
+                "text": "12000",
+                "params": {
+                  "keyboard": "number",
+                  "placeholder": "Сумма"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "item": {
+      "_id": "chatCredit",
+      "status": "inprogress",
+      "messages": [
+        {
+          "order": "14",
+          "created": "Tue Jul 14 2020 13:01:13 GMT+0300 (Moscow Standard Time)",
+          "name": "startCard",
+          "message": "Как то назвался",
+          "sender": "user"
+        },
+        {
+          "order": "15",
+          "created": "Tue Jul 14 2020 13:01:13 GMT+0300 (Moscow Standard Time)",
+          "name": "detailСreditOffers",
+          "message": "Сколько дать денег?",
+          "sender": "bot",
+          "type": "detailcreditoffers",
+          "content": {}
+        }
+      ]
+    }
+  },
+  {
+    "item": {
+      "_id": "chatCredit",
+      "params": {
+        "savedSearch": "chatSavedResult1"
+      },
+      "status": "inprogress",
+      "messages": [
+        {
+          "order": "16",
+          "created": "Tue Jul 14 2020 13:01:13 GMT+0300 (Moscow Standard Time)",
+          "name": "startCard",
+          "message": "что-то написал",
+          "params": {
+            "disableRollback": false
+          },
+          "sender": "user"
+        },
+        {
+          "order": "17",
+          "name": "finalCard",
+          "message": "Спасибо за ответы!",
+          "type": "creditoffers",
+          "content": {
+            "elements": [
+              {
+                "name": "savedSearch",
+                "text": "chatSavedResult1"
+              }
+            ]
+          },
+          "sender": "bot"
+        }
+      ]
+    }
+  }
+]

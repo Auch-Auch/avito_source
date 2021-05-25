@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:tag="layout/offer_product_item_status_text_sravni_0" android:background="@drawable/round_rectangle_grey_sravni" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dim_4" android:layout_marginBottom="4dp" android:layout_marginStart="@dimen/dim_72" android:layout_marginEnd="@dimen/dim_4">
+    <TextView android:textColor="@color/on_surface_high_emphasis" android:id="@+id/tvText" android:paddingTop="@dimen/dim_12" android:paddingBottom="@dimen/dim_12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/dim_14" android:paddingEnd="@dimen/dim_14" style="@style/Subtitle1Regular"/>
+</FrameLayout>

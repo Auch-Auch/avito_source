@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/publish_my_advert_root" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="?attr/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="24dp" android:layout_marginTop="24dp" android:layout_marginRight="24dp" android:layout_marginBottom="8dp" android:text="@string/sts_recognition_error_title" style="?attr/textLegacy1_title"/>
+        <TextView android:textColor="?attr/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="24dp" android:layout_marginRight="24dp" android:layout_marginBottom="20dp" android:text="@string/sts_recognition_error_description" style="?attr/textLegacy1_body"/>
+        <com.avito.android.design.widget.ButtonPanelLayout android:paddingLeft="@dimen/button_panel_left_padding" android:paddingTop="@dimen/button_panel_standard_padding" android:paddingRight="@dimen/button_panel_standard_padding" android:paddingBottom="@dimen/button_panel_standard_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include android:id="@+id/button_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/button_flat_primary"/>
+            <include android:id="@+id/button_retry_scan" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/button_flat_primary"/>
+        </com.avito.android.design.widget.ButtonPanelLayout>
+    </LinearLayout>
+</ScrollView>

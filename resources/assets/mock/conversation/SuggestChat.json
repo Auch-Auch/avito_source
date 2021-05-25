@@ -1,0 +1,49 @@
+{
+  "items": [
+    {
+      "text": "sugest 1",
+      "subText": "subSugest 1",
+      "isComplete": true,
+      "optionalFields": {
+        "driverID": "2",
+        "fio": "Ivanov"
+      }
+    },
+    {
+      "text": "sugest 2",
+      "subText": "subSugest 2",
+      "isComplete": true,
+      "optionalFields": {
+        "driverID": "1",
+        "fio": "Petrov"
+      }
+    },
+    {
+      "text": "sugest 3",
+      "subText": "subSugest 3",
+      "isComplete": true,
+      "optionalFields": {
+        "driverID": "3",
+        "fio": "Sidorov"
+      }
+    },
+    {
+      "text": "sugest 4",
+      "subText": "subSugest 4 Жри французские булки Жри французские булки Жри французские булки Жри французские булки Жри французские булки Жри французские булки",
+      "isComplete": true,
+      "optionalFields": {
+        "driverID": "3",
+        "fio": "Sidorov"
+      }
+    },
+    {
+      "text": "sugest 5",
+      "subText": "subSugest 5 Жри французские булки Жри французские булки Жри французские булки",
+      "isComplete": true,
+      "optionalFields": {
+        "driverID": "3",
+        "fio": "Sidorov"
+      }
+    }
+  ]
+}

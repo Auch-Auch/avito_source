@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AutotekaTeaserButton" parent="@style/res_2132017347_avito_button_secondarylarge">
+        <item name="android:layout_width">288dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+</resources>

@@ -1,0 +1,200 @@
+[
+  {
+    "item": {
+      "_id": "chatInsurance",
+      "status": "inprogress",
+      "messages": [
+        {
+          "order": "0",
+          "created": "Tue Jul 14 2020 13:01:13 GMT+0300 (Moscow Standard Time)",
+          "name": "startCard",
+          "message": "Здравствуйте",
+          "sender": "bot"
+        }
+      ]
+    }
+  },
+  {
+    "item": {
+      "_id": "chatInsurance",
+      "status": "inprogress",
+      "messages": [
+        {
+          "order": "1",
+          "name": "startCard",
+          "params": {
+            "disabledRollback": true
+          },
+          "message": "сумму уже выбрал",
+          "sender": "user"
+        },
+        {
+          "order": "8",
+          "name": "autocompleteAdressCard",
+          "message": "Какой ваш адрес регистрации?",
+          "sender": "bot",
+          "type": "suggest",
+          "content": {
+            "elements": [
+              {
+                "name": "address",
+                "text": "Москва",
+                "params": {
+                  "showSuggestImmediately": false,
+                  "keyboard": "email",
+                  "placeholder": "Адрес",
+                  "suggestMode": "partial-tail"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "item": {
+      "_id": "chatInsurance",
+      "status": "inprogress",
+      "messages": [
+        {
+          "order": "11",
+          "name": "osagoOffers",
+          "message": "Ваши предложения!",
+          "sender": "bot",
+          "type": "osagooffers",
+          "content": {
+            "elements": [
+              {
+                "name": "savedSearch",
+                "text": "chatSavedResult1"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "item": {
+      "_id": "chatInsurance",
+      "status": "inprogress",
+      "dialog": "5d4855ab98caf700469dc69a",
+      "messages": [
+        {
+          "order": "13",
+          "name": "question-card",
+          "message": "Паспорт\nСерия и номер\nДата выдачи\nКод подразделения\nДата рождения",
+          "content": {},
+          "sender": "bot",
+          "type": "insurance",
+          "messageElements": {
+            "elements": [
+              {
+                "name": "company",
+                "params": {},
+                "type": "header",
+                "text": "Альфа-страхование",
+                "elements": [
+                  {
+                    "name": "backgroundColor",
+                    "params": {},
+                    "type": "input-value",
+                    "text": "e23483"
+                  },
+                  {
+                    "name": "fontColor",
+                    "params": {},
+                    "type": "input-value",
+                    "text": "FFFFFF"
+                  },
+                  {
+                    "name": "iconTitle",
+                    "params": {},
+                    "type": "input-value",
+                    "text": "Р"
+                  }
+                ]
+              },
+              {
+                "name": "amount",
+                "params": {},
+                "type": "labled-input",
+                "text": "Стоимость полиса",
+                "elements": [
+                  {
+                    "name": "amount",
+                    "params": {},
+                    "type": "input-value",
+                    "text": "3 500 Р"
+                  }
+                ]
+              },
+              {
+                "name": "period",
+                "params": {},
+                "type": "labled-input",
+                "text": "Период страхования",
+                "elements": [
+                  {
+                    "name": "period",
+                    "params": {},
+                    "type": "input-value",
+                    "text": "23 сен 2020 — 23 сен 2021"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "item": {
+      "_id": "chatInsurance",
+      "status": "inprogress",
+      "messages": [
+        {
+          "order": "14",
+          "name": "osagoOffers",
+          "message": "Ваши предложения!",
+          "sender": "bot",
+          "type": "osagoorder",
+          "content": {
+            "elements": [
+              {
+                "name": "status",
+                "text": "status"
+              },
+              {
+                "name": "savedSearch",
+                "text": "32432234sdwf23e33f"
+              },
+              {
+                "name": "productId",
+                "text": "productId"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "item": {
+      "_id": "chatInsurance",
+      "status": "inprogress",
+      "messages": [
+        {
+          "order": "16",
+          "created": "Tue Jul 14 2020 13:01:13 GMT+0300 (Moscow Standard Time)",
+          "name": "finalCard",
+          "type": "returntodashboard",
+          "message": "Спасибо за ответы!",
+          "sender": "bot"
+        }
+      ]
+    }
+  }
+]

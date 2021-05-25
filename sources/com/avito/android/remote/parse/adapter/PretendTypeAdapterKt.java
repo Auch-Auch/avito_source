@@ -1,0 +1,9 @@
+package com.avito.android.remote.parse.adapter;
+
+import com.avito.android.remote.auth.AuthSource;
+import kotlin.Metadata;
+@Metadata(bv = {1, 0, 3}, d1 = {"\u0000\f\n\u0002\b\u0004\n\u0002\b\u0005*\u0002\u0000\u0004\"\u0016\u0010\u0003\u001a\u00020\u00008\u0002@\u0002X\u0004¢\u0006\u0006\n\u0004\b\u0001\u0010\u0002\"\u0016\u0010\u0007\u001a\u00020\u00048\u0002@\u0002X\u0004¢\u0006\u0006\n\u0004\b\u0005\u0010\u0006¨\u0006\b"}, d2 = {"com/avito/android/remote/parse/adapter/PretendTypeAdapterKt$MAP_TYPE_TOKEN$1", AuthSource.SEND_ABUSE, "Lcom/avito/android/remote/parse/adapter/PretendTypeAdapterKt$MAP_TYPE_TOKEN$1;", "MAP_TYPE_TOKEN", "com/avito/android/remote/parse/adapter/PretendTypeAdapterKt$SLOTS_MAP_TYPE_TOKEN$1", AuthSource.BOOKING_ORDER, "Lcom/avito/android/remote/parse/adapter/PretendTypeAdapterKt$SLOTS_MAP_TYPE_TOKEN$1;", "SLOTS_MAP_TYPE_TOKEN", "models_release"}, k = 2, mv = {1, 4, 2})
+public final class PretendTypeAdapterKt {
+    public static final PretendTypeAdapterKt$MAP_TYPE_TOKEN$1 a = new PretendTypeAdapterKt$MAP_TYPE_TOKEN$1();
+    public static final PretendTypeAdapterKt$SLOTS_MAP_TYPE_TOKEN$1 b = new PretendTypeAdapterKt$SLOTS_MAP_TYPE_TOKEN$1();
+}

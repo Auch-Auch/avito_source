@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:paddingBottom="6dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.avito.android.lib.design.button.Button android:id="@+id/show_form_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" style="@style/res_2132017347_avito_button_secondarylarge"/>
+    <TextView android:textAppearance="?attr/textBodySmall" android:textColor="?attr/gray48" android:textColorLink="@color/avito_black" android:id="@+id/privacy_info" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp"/>
+</LinearLayout>

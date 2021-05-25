@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/rds_content_horizontal_padding_left" android:layout_marginEnd="@dimen/content_horizontal_padding">
+    <TextView android:textAppearance="?attr/textLegacy3_body" android:textColor="?attr/blue600" android:id="@+id/price_subscription_text" android:background="@drawable/bg_rds_gray_button" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="4dp" android:paddingEnd="4dp" style="?attr/listItem_link"/>
+</FrameLayout>

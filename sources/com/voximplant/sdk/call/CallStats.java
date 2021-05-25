@@ -1,0 +1,73 @@
+package com.voximplant.sdk.call;
+
+import a2.b.a.a.a;
+import java.util.Map;
+public class CallStats {
+    public long audioBytesReceived;
+    public long audioBytesSent;
+    public double audioLoss;
+    public int audioPacketsLost;
+    public long audioPacketsReceived;
+    public long audioPacketsSent;
+    public double availableOutgoingBitrate;
+    public Map<IEndpoint, EndpointStats> endpointStats;
+    public Map<IAudioStream, OutboundAudioStats> localAudioStats;
+    public String localCandidateType;
+    public Map<IVideoStream, OutboundVideoStats> localVideoStats;
+    public String networkType;
+    public String remoteCandidateType;
+    public double rtt;
+    public double timestamp;
+    public long totalBytesReceived;
+    public long totalBytesSent;
+    public double totalLoss;
+    public int totalPacketsLost;
+    public long totalPacketsReceived;
+    public long totalPacketsSent;
+    public long videoBytesReceived;
+    public long videoBytesSent;
+    public double videoLoss;
+    public int videoPacketsLost;
+    public long videoPacketsReceived;
+    public long videoPacketsSent;
+
+    public String toString() {
+        StringBuilder L = a.L("Timestamp:");
+        L.append(this.timestamp);
+        L.append(".Network:");
+        L.append(this.networkType);
+        L.append(",bitrate:");
+        L.append(this.availableOutgoingBitrate);
+        L.append(", candidate type: local - ");
+        L.append(this.localCandidateType);
+        L.append(", remote - ");
+        L.append(this.remoteCandidateType);
+        L.append(".Total audioBytesSent:");
+        L.append(this.audioBytesSent);
+        L.append(",packets:");
+        L.append(this.audioPacketsSent);
+        L.append(".Total audioBytesReceived:");
+        L.append(this.audioBytesReceived);
+        L.append(",packets:");
+        L.append(this.audioPacketsReceived);
+        L.append(".Total videoBytesSent:");
+        L.append(this.videoBytesSent);
+        L.append(",packets:");
+        L.append(this.videoPacketsSent);
+        L.append(".Total videoBytesReceived:");
+        L.append(this.videoBytesReceived);
+        L.append(",packets:");
+        L.append(this.videoPacketsReceived);
+        L.append(".Total packets lost:");
+        L.append(this.totalPacketsLost);
+        L.append(",total loss:");
+        L.append(this.totalLoss);
+        L.append(".Active local audio:");
+        L.append(this.localAudioStats);
+        L.append(".Active local video:");
+        L.append(this.localVideoStats);
+        L.append(".Endpoints:");
+        L.append(this.endpointStats);
+        return L.toString();
+    }
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/content_holder" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include layout="@layout/calendar_week_days"/>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler_view" android:paddingLeft="@dimen/calendar_recycler_view_padding" android:paddingRight="@dimen/calendar_recycler_view_padding" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </LinearLayout>
+    <com.avito.android.lib.design.shadow_layout.ShadowLayout android:layout_gravity="bottom" android:id="@+id/edit_main_params_button_container" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/res_2132017903_design_widget_avito_shadowlayout">
+        <com.avito.android.lib.design.button.Button android:gravity="center" android:id="@+id/edit_main_params_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/select_button_side_margin" android:layout_marginTop="20dp" android:layout_marginRight="@dimen/select_button_side_margin" android:layout_marginBottom="24dp" android:text="@string/seller_calendar_edit_main_params" style="@style/res_2132017842_deprecated_design_widget_avito_button_floatingsecondary_large"/>
+    </com.avito.android.lib.design.shadow_layout.ShadowLayout>
+    <com.avito.android.lib.design.shadow_layout.ShadowLayout android:layout_gravity="bottom" android:id="@+id/edit_params_button_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/res_2132017903_design_widget_avito_shadowlayout">
+        <com.avito.android.lib.design.button.Button android:gravity="center" android:id="@+id/edit_params_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/select_button_side_margin" android:layout_marginTop="20dp" android:layout_marginRight="@dimen/select_button_side_margin" android:layout_marginBottom="24dp" android:text="@string/seller_calendar_edit_params" style="@style/res_2132017847_deprecated_design_widget_avito_button_primary_large"/>
+    </com.avito.android.lib.design.shadow_layout.ShadowLayout>
+</FrameLayout>

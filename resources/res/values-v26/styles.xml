@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="res_2132017627_base_theme_appcompat" parent="@style/res_2132017698_base_v26_theme_appcompat">
+    </style>
+    <style name="res_2132017634_base_theme_appcompat_light" parent="@style/res_2132017699_base_v26_theme_appcompat_light">
+    </style>
+    <style name="res_2132017698_base_v26_theme_appcompat" parent="@style/res_2132017696_base_v23_theme_appcompat">
+        <item name="colorError">?android:attr/colorError</item>
+    </style>
+    <style name="res_2132017699_base_v26_theme_appcompat_light" parent="@style/res_2132017697_base_v23_theme_appcompat_light">
+        <item name="colorError">?android:attr/colorError</item>
+    </style>
+    <style name="res_2132017700_base_v26_widget_appcompat_toolbar" parent="@style/res_2132017710_base_v7_widget_appcompat_toolbar">
+        <item name="android:touchscreenBlocksFocus">true</item>
+        <item name="android:keyboardNavigationCluster">true</item>
+    </style>
+    <style name="res_2132017767_base_widget_appcompat_toolbar" parent="@style/res_2132017700_base_v26_widget_appcompat_toolbar">
+    </style>
+    <style name="res_2132018458_theme_avito_calls" parent="@style/res_2132018467_theme_avito_nobackground">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:statusBarColor">@color/expected_constant_black</item>
+        <item name="android:navigationBarColor">@color/expected_constant_black</item>
+    </style>
+    <style name="res_2132018459_theme_avito_darkstatusbar" parent="@style/res_2132018452_theme_avito">
+        <item name="android:windowBackground">@color/avito_transparent_black</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:statusBarColor">?attr/constantBlack</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+    <style name="res_2132018867_widget_design_appbarlayout" parent="@android:style/Widget">
+        <item name="android:background">?attr/colorPrimary</item>
+        <item name="android:stateListAnimator">@animator/design_appbar_state_list_animator</item>
+        <item name="android:touchscreenBlocksFocus">true</item>
+        <item name="android:keyboardNavigationCluster">true</item>
+    </style>
+</resources>

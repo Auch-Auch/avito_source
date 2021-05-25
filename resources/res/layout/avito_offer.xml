@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/avito_offer_container" android:background="@drawable/bg_rds_gray_button" android:layout_width="match_parent" android:layout_height="64dp">
+    <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_arrow_8_16" android:layout_marginEnd="@dimen/content_horizontal_padding" app:tint="?attr/gray28"/>
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/text_button_default" android:id="@+id/avito_offer_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/content_horizontal_padding" android:layout_marginEnd="@dimen/content_horizontal_padding" style="?attr/textLegacy2_body"/>
+        <TextView android:textColor="?attr/gray48" android:id="@+id/avito_offer_subtitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:layout_marginStart="@dimen/content_horizontal_padding" android:layout_marginEnd="@dimen/content_horizontal_padding" style="?attr/textLegacy2_bodySmall"/>
+    </LinearLayout>
+    <View android:layout_gravity="bottom" android:id="@+id/avito_offer_bottom_divider" android:background="?attr/gray8" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginStart="@dimen/content_horizontal_padding" android:layout_marginEnd="@dimen/content_horizontal_padding"/>
+</FrameLayout>

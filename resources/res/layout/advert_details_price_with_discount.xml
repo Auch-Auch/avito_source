@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/item_price_with_discount" android:background="?attr/selectableItemBackground" android:paddingLeft="@dimen/content_horizontal_padding" android:paddingRight="@dimen/content_horizontal_padding" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_marginBottom="5dp">
+    <TextView android:textAppearance="?attr/textHeadingLarge" android:id="@+id/price" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="8dp"/>
+    <TextView android:id="@+id/price_without_discount" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/res_2132018351_textappearance_avito_advertdetails_body_gray600"/>
+</LinearLayout>

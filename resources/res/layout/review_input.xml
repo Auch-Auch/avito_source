@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/review_input_root" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:id="@+id/content_container" android:paddingTop="?attr/actionBarSize" android:focusable="true" android:focusableInTouchMode="true" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/review_on_seller" style="@style/res_2132018826_widget_avito_textview_display_title"/>
+            <TextView android:textAppearance="?attr/textBody" android:id="@+id/sub_title" android:paddingLeft="@dimen/content_horizontal_padding" android:paddingRight="@dimen/content_horizontal_padding" android:paddingBottom="16dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/publish_appbar_subtitle_margin_top"/>
+            <EditText android:id="@+id/comment" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/review_comment_hint" android:minLines="3" android:maxLength="5000" android:inputType="text|textCapSentences|textMultiLine" android:imeOptions="actionGo|actionSend|actionDone|flagNoExtractUi" style="@style/res_2132018739_widget_avito_edittext_redesign"/>
+            <View android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+            <include android:id="@+id/comment_label" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/screen_info_label"/>
+            <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/content_horizontal_padding" android:paddingRight="@dimen/content_horizontal_padding" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/FlexibleButtonsContainer">
+                <com.avito.android.lib.design.button.Button android:id="@+id/send_button" android:layout_width="match_parent" android:layout_height="wrap_content" style="?attr/buttonPrimaryLarge"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/appbar"/>
+</FrameLayout>

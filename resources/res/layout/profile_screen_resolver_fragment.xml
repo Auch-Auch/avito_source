@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="?attr/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/extended_profile_error_and_progress"/>
+    <include layout="@layout/stub_view"/>
+    <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="?attr/actionBarSize" app:navigationIcon="@drawable/ic_back_24_black"/>
+</FrameLayout>

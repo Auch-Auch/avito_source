@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:id="@+id/columns_container" android:paddingLeft="4dp" android:paddingRight="4dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="4dp"/>
+        <include android:layout_gravity="bottom" android:id="@+id/median_value_pointer" android:visibility="gone" android:layout_width="2dp" android:layout_height="100dp" android:layout_marginLeft="50dp" android:layout_marginBottom="4dp" layout="@layout/recommendation_middle_value_pointer"/>
+        <include android:layout_gravity="bottom" android:id="@+id/current_value_pointer" android:visibility="gone" android:layout_width="8dp" android:layout_height="match_parent" layout="@layout/recommendation_current_value_pointer"/>
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="bottom" android:id="@+id/labels_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp">
+        <TextView android:textSize="12sp" android:textColor="?attr/gray68" android:layout_gravity="left" android:id="@+id/min_value_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="7dp"/>
+        <TextView android:textSize="12sp" android:textColor="?attr/gray68" android:layout_gravity="right" android:id="@+id/max_value_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="7dp"/>
+        <TextView android:textSize="12sp" android:textColor="?attr/gray68" android:id="@+id/median_value_label" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="7dp"/>
+    </FrameLayout>
+</LinearLayout>

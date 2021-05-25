@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:layoutAnimation="@anim/image_message_layout_animation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:animateLayoutChanges="true">
+    <ImageButton android:layout_gravity="center_vertical" android:id="@+id/error_button" android:background="@drawable/bg_selectable_blue_oval" android:padding="8dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_error_24" android:tint="?attr/red"/>
+    <FrameLayout android:id="@+id/image_container" android:focusable="true" android:clickable="true" android:layout_width="@dimen/image_message_width" android:layout_height="@dimen/image_message_height" android:foreground="@drawable/bg_image_message">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/image" android:layout_width="match_parent" android:layout_height="match_parent" fresco:backgroundImage="?attr/gray12" fresco:roundedCornerRadius="@dimen/image_message_corner_radius"/>
+        <include android:id="@+id/progress" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/circular_action_progress"/>
+    </FrameLayout>
+</LinearLayout>

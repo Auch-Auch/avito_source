@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/container_root" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/toolbar"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.avito.android.advert_core.advert.PagerAdaptiveRecyclerView android:id="@+id/developments_catalog_recycler" android:paddingBottom="74dp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:foreground="@drawable/shadow_toolbar"/>
+        <FrameLayout android:layout_gravity="bottom" android:id="@+id/floating_contact_bar" android:background="@drawable/bg_contact_bar" android:padding="@dimen/contact_bar_glow_padding" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/contact_bar_bottom_padding" android:layout_marginStart="@dimen/contact_bar_horizontal_padding" android:layout_marginEnd="@dimen/contact_bar_horizontal_padding">
+            <include android:id="@+id/contact_bar_button" layout="@layout/advert_details_contact_bar_button"/>
+        </FrameLayout>
+    </FrameLayout>
+</LinearLayout>

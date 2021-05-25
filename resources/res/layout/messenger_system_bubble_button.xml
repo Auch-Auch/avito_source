@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/block_bubble_button" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <Button android:layout_gravity="end" android:id="@+id/bubble_button" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/res_2132018721_widget_avito_button_flat_1_4"/>
+</FrameLayout>

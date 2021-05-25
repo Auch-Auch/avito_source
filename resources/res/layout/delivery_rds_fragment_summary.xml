@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/delivery_summary_fragment_root" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/header" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar android:id="@+id/header_toolbar" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="?attr/actionBarSize">
+            <TextView android:layout_gravity="center" android:id="@+id/header_toolbar_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/delivery_summary_title" style="?attr/textLegacy3_headingSmallBold"/>
+        </androidx.appcompat.widget.Toolbar>
+        <include android:id="@+id/header_item_group" android:visibility="gone" layout="@layout/delivery_header_item_group"/>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/content_holder" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/summary_list" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+</LinearLayout>

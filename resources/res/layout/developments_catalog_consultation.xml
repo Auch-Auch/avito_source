@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/bg_consultation_form" android:paddingTop="20dp" android:paddingBottom="24dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="32dp" android:paddingStart="@dimen/content_horizontal_padding" android:paddingEnd="@dimen/content_horizontal_padding">
+    <TextView android:textColor="?attr/black" android:id="@+id/title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/res_2132018364_textappearance_avito_heading_large"/>
+    <TextView android:id="@+id/subtitle" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" style="@style/res_2132018355_textappearance_avito_body"/>
+    <com.avito.android.lib.design.button.Button android:id="@+id/consultation_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" style="@style/res_2132017314_avito_button_primarymedium"/>
+</LinearLayout>

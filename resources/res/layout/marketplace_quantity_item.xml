@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:id="@+id/marketplace_quantity_root" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/content_horizontal_padding" android:layout_marginEnd="@dimen/content_horizontal_padding">
+    <ImageView android:id="@+id/marketplace_quantity_item_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?attr/ic_checkRoundOutline20" android:contentDescription="@null" android:layout_marginEnd="8dp" app:tint="?attr/orange700"/>
+    <TextView android:textAppearance="?attr/textHeadingSmall" android:textColor="?attr/black" android:id="@+id/marketplace_quantity_item_text" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

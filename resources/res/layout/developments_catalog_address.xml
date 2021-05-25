@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" android:textColor="@color/text_button_default" android:id="@+id/developments_catalog_address_root" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/content_horizontal_padding" android:layout_marginTop="3dp" android:layout_marginRight="@dimen/content_horizontal_padding" style="?attr/textLegacy2_body"/>

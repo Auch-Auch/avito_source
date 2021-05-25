@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/unified_title" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.avito.android.design.widget.BoundedFrameLayout android:layout_gravity="center_horizontal" android:paddingLeft="16dp" android:paddingTop="8dp" android:paddingRight="16dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxWidth="480dp">
+        <include android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/text_display"/>
+    </com.avito.android.design.widget.BoundedFrameLayout>
+</FrameLayout>

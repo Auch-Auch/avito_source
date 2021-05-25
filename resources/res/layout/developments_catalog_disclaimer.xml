@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/content_horizontal_padding" android:paddingRight="@dimen/content_horizontal_padding" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textColor="?attr/gray48" android:layout_gravity="center_vertical" android:id="@+id/text" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginRight="18dp" android:layout_weight="1" style="?attr/textLegacy3_bodySmall"/>
+    <ImageButton android:id="@+id/info_button" android:background="@drawable/bg_btn_circle_gray_rich" android:padding="12dp" android:layout_width="48dp" android:layout_height="48dp" android:layout_marginRight="-12dp" android:src="@drawable/legal_info_24" android:scaleType="centerInside"/>
+</LinearLayout>

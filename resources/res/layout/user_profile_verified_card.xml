@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:paddingTop="@dimen/standard_padding" android:paddingBottom="24dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/profile_inside_horizontal_padding" android:paddingEnd="@dimen/profile_inside_horizontal_padding" style="@style/UserProfileCardContainer">
+    <TextView android:id="@+id/verified_profile_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2dp" android:drawablePadding="12dp" app:drawableLeftCompat="@drawable/ic_tick_green_20" style="@style/res_2132017486_avito_text_body"/>
+</FrameLayout>

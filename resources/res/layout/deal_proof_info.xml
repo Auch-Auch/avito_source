@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:padding="16dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="16sp" android:textColor="?attr/black" android:paddingTop="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/deal_proof_info" android:fontFamily="@font/avito_regular"/>
+</FrameLayout>

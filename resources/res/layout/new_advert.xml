@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/lifecycle" layout="@layout/lifecycle"/>
+    <FrameLayout android:id="@+id/layout_content" android:layout_width="match_parent" android:layout_height="match_parent">
+        <View android:id="@+id/view_background" android:background="?attr/white" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <ScrollView android:layout_gravity="bottom" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/layout_buttons" android:paddingLeft="18dp" android:paddingTop="16dp" android:paddingRight="18dp" android:paddingBottom="92dp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </ScrollView>
+        <View android:layout_gravity="bottom" android:id="@+id/view_foreground" android:background="@drawable/bg_new_advert" android:layout_width="match_parent" android:layout_height="92dp"/>
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/layout_button" android:background="@drawable/bg_floating_add_advert" android:paddingLeft="6dp" android:paddingRight="6dp" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4dp">
+        <TextView android:textSize="12sp" android:textColor="?attr/white" android:layout_gravity="center_vertical" android:id="@+id/layout_button_text" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="48dp" android:layout_marginRight="24dp" android:text="@string/add_advert" android:singleLine="true" android:lineSpacingExtra="1sp" android:textAllCaps="true" app:fontFamily="@font/avito_bold"/>
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/layout_button_image_open" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_add_24" app:tint="?attr/white"/>
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/layout_button_image_close" android:paddingLeft="12dp" android:paddingRight="12dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_close_24" app:tint="?attr/white"/>
+    </FrameLayout>
+</FrameLayout>

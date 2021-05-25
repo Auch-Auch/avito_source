@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="brandspace_textwithvideo_description_margin_top">10dp</dimen>
+    <dimen name="brandspace_textwithvideo_image_horizontal_margin">20dp</dimen>
+    <dimen name="brandspace_textwithvideo_title_margin_bottom">0dp</dimen>
+    <dimen name="home_shortcuts_horizontal_padding">68dp</dimen>
+    <dimen name="section_advert_item_crop">74dp</dimen>
+    <dimen name="serp_horizontal_padding">74dp</dimen>
+    <dimen name="serp_horizontal_padding_button">78dp</dimen>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/search_by_image" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/camera_item_view" layout="@layout/camera_preview_item_sts_scanner"/>
+    <ImageButton android:id="@+id/close_button" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginLeft="8dp" android:layout_marginTop="8dp" android:src="@drawable/ic_back_24" android:layout_marginStart="8dp" style="@style/res_2132018724_widget_avito_button_flat_gray"/>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginTop="8dp">
+        <TextView android:textColor="?attr/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sts_scanner_title" style="?attr/textLegacy1_subheadingBold"/>
+        <TextView android:textColor="?attr/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sts_scanner_caption" style="?attr/textLegacy1_caption"/>
+    </LinearLayout>
+</FrameLayout>

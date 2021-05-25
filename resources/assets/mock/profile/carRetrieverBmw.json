@@ -1,0 +1,28 @@
+{
+  "item": {
+    "id": "carRetrieverBmw",
+    "title": "Авто",
+    "groups": [
+      {
+        "items": [
+          {
+            "title": "Марка",
+            "value": "BMW"
+          },
+          {
+            "title": "Модель",
+            "value": "X3"
+          },
+          {
+            "title": "Год выпуска",
+            "value": "2000"
+          },
+          {
+            "title": "ЛС",
+            "value": "275"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_gravity="bottom|right|center_vertical|center_horizontal|center|end" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:id="@+id/cart_fab_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_cart_fab" android:contentDescription="@null" app:borderWidth="0dp" app:elevation="4dp" app:fabCustomSize="50dp" style="@style/CartRootFab"/>
+    <com.avito.android.lib.design.notification_badge.NotificationBadge android:layout_gravity="end" android:id="@+id/cart_fab_badge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="-2dp" android:translationZ="10dp" android:outlineProvider="none" style="?attr/notificationBadgeNumberMedium"/>
+</merge>

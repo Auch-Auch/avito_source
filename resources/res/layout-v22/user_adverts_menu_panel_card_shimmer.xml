@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.avito.android.design.widget.shimmer.ShimmerLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" app:shimmer_animation_duration="3000" app:shimmer_autostart="true">
+    <LinearLayout android:orientation="vertical" android:background="?attr/gray4" android:paddingLeft="@dimen/soa_card_horizontal_padding" android:paddingTop="@dimen/soa_card_top_padding" android:paddingRight="@dimen/soa_card_horizontal_padding" android:paddingBottom="@dimen/soa_card_bottom_padding" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingHorizontal="@dimen/soa_card_horizontal_padding">
+        <View android:background="@drawable/stub_with_round_corners" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginBottom="@dimen/soa_card_icon_margin_bottom"/>
+        <View android:background="@drawable/stub_with_round_corners" android:layout_width="64dp" android:layout_height="15dp" android:layout_marginTop="3dp" android:layout_marginBottom="6dp"/>
+        <View android:background="@drawable/stub_with_round_corners" android:layout_width="96dp" android:layout_height="13dp"/>
+    </LinearLayout>
+</com.avito.android.design.widget.shimmer.ShimmerLayout>

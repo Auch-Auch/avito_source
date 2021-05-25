@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.google.android.material.internal.CheckableImageButton android:layout_gravity="center_horizontal" android:id="@+id/decline_button" android:layout_width="@dimen/calls_control_buttons_call_size" android:layout_height="@dimen/calls_control_buttons_call_size" style="@style/res_2132017805_calls_widget_callbutton_decline"/>
+        <TextView android:textColor="@color/avito_constant_white" android:layout_gravity="center_horizontal" android:id="@+id/decline_button_caption" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="@string/calls_decline" style="?attr/textLegacy3_bodySmallDense"/>
+    </LinearLayout>
+    <Space android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.google.android.material.internal.CheckableImageButton android:layout_gravity="center_horizontal" android:id="@+id/answer_button" android:layout_width="@dimen/calls_control_buttons_call_size" android:layout_height="@dimen/calls_control_buttons_call_size" style="@style/res_2132017803_calls_widget_callbutton_answer"/>
+        <TextView android:textColor="@color/avito_constant_white" android:layout_gravity="center_horizontal" android:id="@+id/answer_button_caption" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="@string/calls_answer" style="?attr/textLegacy3_bodySmallDense"/>
+    </LinearLayout>
+</LinearLayout>

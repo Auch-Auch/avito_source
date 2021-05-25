@@ -1,0 +1,35 @@
+package ru.sravni.android.bankproduct.presentation.offer.product.info.viewmodel;
+
+import androidx.lifecycle.ViewModel;
+import androidx.lifecycle.ViewModelProvider;
+import com.avito.android.remote.auth.AuthSource;
+import kotlin.Metadata;
+import kotlin.jvm.internal.Intrinsics;
+import org.jetbrains.annotations.NotNull;
+import ru.sravni.android.bankproduct.domain.featuretoggle.IFeatureToggleRouterDomain;
+import ru.sravni.android.bankproduct.domain.offer.product.IOfferProductInteractor;
+import ru.sravni.android.bankproduct.utils.resource.IResourceProvider;
+@Metadata(bv = {1, 0, 3}, d1 = {"\u00006\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0006\u0018\u00002\u00020\u0001B'\u0012\u0006\u0010\u0013\u001a\u00020\u0010\u0012\u0006\u0010\u0017\u001a\u00020\u0014\u0012\u0006\u0010\u000b\u001a\u00020\b\u0012\u0006\u0010\u000f\u001a\u00020\f¢\u0006\u0004\b\u0018\u0010\u0019J)\u0010\u0006\u001a\u00028\u0000\"\n\b\u0000\u0010\u0003*\u0004\u0018\u00010\u00022\f\u0010\u0005\u001a\b\u0012\u0004\u0012\u00028\u00000\u0004H\u0016¢\u0006\u0004\b\u0006\u0010\u0007R\u0016\u0010\u000b\u001a\u00020\b8\u0002@\u0002X\u0004¢\u0006\u0006\n\u0004\b\t\u0010\nR\u0016\u0010\u000f\u001a\u00020\f8\u0002@\u0002X\u0004¢\u0006\u0006\n\u0004\b\r\u0010\u000eR\u0016\u0010\u0013\u001a\u00020\u00108\u0002@\u0002X\u0004¢\u0006\u0006\n\u0004\b\u0011\u0010\u0012R\u0016\u0010\u0017\u001a\u00020\u00148\u0002@\u0002X\u0004¢\u0006\u0006\n\u0004\b\u0015\u0010\u0016¨\u0006\u001a"}, d2 = {"Lru/sravni/android/bankproduct/presentation/offer/product/info/viewmodel/OfferProductInfoFromChatViewModelFactory;", "Landroidx/lifecycle/ViewModelProvider$Factory;", "Landroidx/lifecycle/ViewModel;", "T", "Ljava/lang/Class;", "modelClass", "create", "(Ljava/lang/Class;)Landroidx/lifecycle/ViewModel;", "Lru/sravni/android/bankproduct/domain/featuretoggle/IFeatureToggleRouterDomain;", "c", "Lru/sravni/android/bankproduct/domain/featuretoggle/IFeatureToggleRouterDomain;", "featureToggleRouter", "Lru/sravni/android/bankproduct/utils/resource/IResourceProvider;", "d", "Lru/sravni/android/bankproduct/utils/resource/IResourceProvider;", "resourceProvider", "Lru/sravni/android/bankproduct/domain/offer/product/IOfferProductInteractor;", AuthSource.SEND_ABUSE, "Lru/sravni/android/bankproduct/domain/offer/product/IOfferProductInteractor;", "offerProductInteractor", "Lru/sravni/android/bankproduct/presentation/offer/product/info/viewmodel/IOfferProductInfoController;", AuthSource.BOOKING_ORDER, "Lru/sravni/android/bankproduct/presentation/offer/product/info/viewmodel/IOfferProductInfoController;", "offerInfoController", "<init>", "(Lru/sravni/android/bankproduct/domain/offer/product/IOfferProductInteractor;Lru/sravni/android/bankproduct/presentation/offer/product/info/viewmodel/IOfferProductInfoController;Lru/sravni/android/bankproduct/domain/featuretoggle/IFeatureToggleRouterDomain;Lru/sravni/android/bankproduct/utils/resource/IResourceProvider;)V", "sravnichat_release"}, k = 1, mv = {1, 4, 0})
+public final class OfferProductInfoFromChatViewModelFactory implements ViewModelProvider.Factory {
+    public final IOfferProductInteractor a;
+    public final IOfferProductInfoController b;
+    public final IFeatureToggleRouterDomain c;
+    public final IResourceProvider d;
+
+    public OfferProductInfoFromChatViewModelFactory(@NotNull IOfferProductInteractor iOfferProductInteractor, @NotNull IOfferProductInfoController iOfferProductInfoController, @NotNull IFeatureToggleRouterDomain iFeatureToggleRouterDomain, @NotNull IResourceProvider iResourceProvider) {
+        Intrinsics.checkParameterIsNotNull(iOfferProductInteractor, "offerProductInteractor");
+        Intrinsics.checkParameterIsNotNull(iOfferProductInfoController, "offerInfoController");
+        Intrinsics.checkParameterIsNotNull(iFeatureToggleRouterDomain, "featureToggleRouter");
+        Intrinsics.checkParameterIsNotNull(iResourceProvider, "resourceProvider");
+        this.a = iOfferProductInteractor;
+        this.b = iOfferProductInfoController;
+        this.c = iFeatureToggleRouterDomain;
+        this.d = iResourceProvider;
+    }
+
+    @Override // androidx.lifecycle.ViewModelProvider.Factory
+    public <T extends ViewModel> T create(@NotNull Class<T> cls) {
+        Intrinsics.checkParameterIsNotNull(cls, "modelClass");
+        return new OfferProductInfoFromChatViewModel(this.a, this.b, this.c, this.d);
+    }
+}

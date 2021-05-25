@@ -1,0 +1,31 @@
+{
+  "item": {
+    "id": "workRetriever",
+    "title": "Работодатель",
+    "groups": [
+      {
+        "items": [
+          {
+            "title": "Работодатель",
+            "placeholder": "Название",
+            "value": "ООО “СРАВНИ.РУ”",
+            "fullname": "work.organization_name"
+          },
+          {
+            "title": "Адрес работодателя",
+            "placeholder": "Адрес работодателя",
+            "value": "109544, г.Москва, Б-р Энтузиастов, 2",
+            "fullname": "work.work_address"
+          },
+          {
+            "title": "Телефон",
+            "placeholder": "Рабочий телефон",
+            "value": "78126407210",
+            "mask": "+[0] ([000]) [000]-[00]-[00]",
+            "fullname": "work.work_phone"
+          }
+        ]
+      }
+    ]
+  }
+}

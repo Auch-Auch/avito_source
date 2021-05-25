@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/unified_pair_button" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.avito.android.design.widget.BoundedLinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:paddingLeft="12dp" android:paddingTop="20dp" android:paddingRight="12dp" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxWidth="480dp">
+        <include android:id="@+id/first_button" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginRight="4dp" android:layout_weight="1" layout="@layout/button_secondary"/>
+        <include android:id="@+id/second_button" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:layout_weight="1" layout="@layout/button_secondary"/>
+    </com.avito.android.design.widget.BoundedLinearLayout>
+</FrameLayout>

@@ -1,0 +1,41 @@
+{
+  "item": {
+    "personal": {
+      "name": "Абрам"
+    },
+    "cars": [
+      {
+        "id": "carRetrieverBmw",
+        "title": "BMW X3",
+        "text": "E123KX777",
+        "type": "car"
+      },
+      {
+        "id": "carRetrieverLada",
+        "title": "Ваз 2107",
+        "text": "А311МР77",
+        "type": "car"
+      }
+    ],
+    "documents": [
+      {
+        "id": "passportRetriever",
+        "title": "Паспорт РФ",
+        "text": "Иванов Абрам Изевич",
+        "type": "passport"
+      },
+      {
+        "id": "inn",
+        "title": "ИНН",
+        "text": "Иванов Абрам Изевич",
+        "type": "inn"
+      },
+      {
+        "id": "driverLicenceRetriever",
+        "title": "Водительское удостоверение",
+        "text": "Иванов Абрам Изевич",
+        "type": "driverLicence"
+      }
+    ]
+  }
+}

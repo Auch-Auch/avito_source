@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/category_shops_root" android:background="?attr/gray4" android:paddingBottom="28dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/shop_card_horizontal_margin" android:layout_marginRight="@dimen/shop_card_horizontal_margin">
+    <FrameLayout android:background="@drawable/shop_card_background" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp" android:foreground="@drawable/shop_card_foreground">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingLeft="@dimen/category_view_padding_left_new" android:paddingTop="24dp" android:paddingRight="@dimen/category_view_padding_left_new" android:paddingBottom="24dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="72dp">
+            <TextView android:textSize="@dimen/big_text_size" android:textColor="?attr/black" android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:lineSpacingExtra="1sp" app:fontFamily="@font/avito_regular"/>
+            <TextView android:textSize="14sp" android:textColor="?attr/gray48" android:id="@+id/subtitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:lineSpacingExtra="1sp" app:fontFamily="@font/avito_regular"/>
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

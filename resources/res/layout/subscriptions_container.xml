@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:paddingLeft="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp">
+    <include android:id="@+id/subscriptions" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/public_profile_counter"/>
+    <include android:id="@+id/subscribers" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/public_profile_counter"/>
+</LinearLayout>

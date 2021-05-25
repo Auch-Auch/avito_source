@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="bottom|right|center_vertical|center_horizontal|center|end" android:background="@drawable/bg_osm_disclaimer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16dp" android:text="@string/osm_disclaimer" android:paddingStart="4dp" android:paddingEnd="4dp" android:layout_marginStart="6dp" android:layout_marginEnd="78dp"/>

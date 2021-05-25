@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="16dp" android:paddingTop="@dimen/standard_padding" android:paddingRight="16dp" android:paddingBottom="@dimen/standard_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/avatar" android:layout_width="64dp" android:layout_height="64dp" app:actualImageScaleType="6" app:backgroundImage="?attr/gray8" app:placeholderImage="?attr/gray8" app:placeholderImageScaleType="4" app:roundAsCircle="true"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/profile_snippet_content_margin">
+        <TextView android:textAppearance="?attr/textHeadingSmall" android:ellipsize="end" android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1"/>
+        <include android:id="@+id/rating_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" layout="@layout/advert_details_profile_snippet_rating"/>
+        <TextView android:textAppearance="?attr/textBodySmall" android:gravity="center_vertical" android:id="@+id/subtitle" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:drawablePadding="6dp"/>
+        <TextView android:textAppearance="?attr/textBodySmall" android:gravity="center_vertical" android:id="@+id/verification" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:drawablePadding="6dp"/>
+        <TextView android:textAppearance="?attr/textBodySmall" android:id="@+id/summary" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp"/>
+    </LinearLayout>
+</FrameLayout>

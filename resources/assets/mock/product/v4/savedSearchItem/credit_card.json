@@ -1,0 +1,185 @@
+{
+  "item": {
+    "mainTitle": "Подбор кредита",
+    "conversationId": "12312312312",
+    "savedSearchId": "5df22a778ac3bb964e4e688f",
+    "offerGroups": [
+      {
+        "title": "Все кредиты",
+        "description": "Банки, показывающие примерную ставку и ежемесячную сумму платежа",
+        "offerList": [
+          {
+            "productType": "creditcard",
+            "displaySettings": {
+              "fontColor": "FFFFFF",
+              "backgroundColor": "AAAAAA",
+              "iconTitle": "Р",
+              "offerTitle": "Большой комфорт",
+              "bankName": "Raiff",
+              "productName": "Кредитная карта",
+              "detailTitle": "О карте",
+              "cardType": "visa"
+            },
+            "profitability": 75,
+            "profitabilityText": "Высокая вероятность одобрения",
+            "status": "new",
+            "statusText": "кредит предварительно одобрен",
+            "productId": "1231231123",
+            "orderId": "creditcard_order_1",
+            "bankId": "123123123",
+            "mainParams": [
+              {
+                "name": "Ставка",
+                "value": "От 13,00%",
+                "fontType": "bold"
+              },
+              {
+                "name": "Платеж (мес)",
+                "value": "15 585 Р",
+                "fontType": "bold"
+              }
+            ],
+            "detailParams": [
+              {
+                "blockType": "primary",
+                "values": [
+                  {
+                    "name": "Ставка",
+                    "value": "От 13,00%",
+                    "fontType": "bold"
+                  },
+                  {
+                    "name": "Сумма",
+                    "value": "300 000 Р",
+                    "fontType": "bold"
+                  },
+                  {
+                    "name": "Период",
+                    "value": "16 месяцев",
+                    "fontType": "bold"
+                  },
+                  {
+                    "name": "Месячный платеж",
+                    "value": "15 585 Р",
+                    "fontType": "bold"
+                  }
+                ]
+              },
+              {
+                "blockType": "standart",
+                "blockTitle": "Требования и документы!!optional",
+                "values": [
+                  {
+                    "name": "Гражданство",
+                    "value": "РФ",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Возраст",
+                    "value": "18-27 лет",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Обязательные документы",
+                    "value": "Паспорт",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Подтверждение дохода (1 документы на выбор)",
+                    "value": "Справка 2-ндфл, справока по форме банка",
+                    "fontType": "normal"
+                  }
+                ]
+              },
+              {
+                "blockType": "standart",
+                "blockTitle": "Как оформить",
+                "values": [
+                  {
+                    "name": "Где",
+                    "value": "В отделениях банка",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Форма выдачи",
+                    "value": "Наличными",
+                    "fontType": "normal"
+                  }
+                ]
+              }
+            ],
+            "requestParams": {
+              "title1": "value1",
+              "title2": "value2",
+              "title3": "value3"
+            }
+          }
+        ]
+      }
+    ],
+    "filters": [
+      {
+        "title": "400 000 Р",
+        "filterIcon": "money",
+        "filterName": "summ",
+        "details": [
+          {
+            "valueType": "slider",
+            "title": "Сумма",
+            "values": [
+              {
+                "title": "1000 Р",
+                "code": "minValue",
+                "value": "1000"
+              },
+              {
+                "title": "1000000 Р",
+                "code": "maxValue",
+                "value": "1000000"
+              },
+              {
+                "title": "70000 Р",
+                "code": "currentValue",
+                "value": "70000"
+              },
+              {
+                "title": "1000",
+                "code": "step",
+                "value": "1000"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "8 месяцев",
+        "filterIcon": "time",
+        "filterName": "period",
+        "details": [
+          {
+            "valueType": "snapPoints",
+            "title": "Срок кредита",
+            "values": [
+              {
+                "title": "1 месяц",
+                "code": "pointPeriod",
+                "value": "P1M"
+              },
+              {
+                "title": "1 год",
+                "code": "pointPeriod",
+                "value": "P1Y"
+              },
+              {
+                "title": "1 месяц",
+                "code": "currentPeriod",
+                "value": "P1M"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "id": "5df22a778ac3bb964e4e688f"
+  }
+}

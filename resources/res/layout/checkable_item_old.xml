@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.avito.android.ui.view.CheckableFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/bg_btn_flat" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <androidx.appcompat.widget.AppCompatCheckedTextView android:textColor="@color/control_with_check_mark_text_states" android:gravity="center_vertical" android:id="@+id/title" android:paddingLeft="@dimen/container_horizontal_padding" android:paddingTop="@dimen/card_padding" android:paddingRight="@dimen/container_horizontal_padding" android:paddingBottom="@dimen/card_padding" android:duplicateParentState="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:checkMark="@drawable/control_check_mark" android:minHeight="@dimen/publish_details_view_min_height" android:drawablePadding="40dp" style="?attr/textLegacy1_subheading"/>
+</com.avito.android.ui.view.CheckableFrameLayout>

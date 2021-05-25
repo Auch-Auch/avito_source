@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" layout="@layout/toolbar"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="?attr/actionBarSize" style="@style/ContentHolder">
+        <ScrollView android:id="@+id/content" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:padding="16dp" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.avito.android.ui.view.InputView android:id="@+id/edit_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="7dp" android:hint="@string/your_name" android:inputType="textCapWords" style="@style/InputView"/>
+                <com.avito.android.ui.view.InputView android:id="@+id/edit_email" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/your_email" android:inputType="textEmailAddress" style="@style/InputView"/>
+                <com.avito.android.ui.view.InputView android:id="@+id/edit_message" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/message" android:maxLength="@integer/feedback_email_max_length" android:inputType="text|textCapSentences|textMultiLine" android:imeOptions="actionUnspecified" style="@style/InputView"/>
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+</FrameLayout>

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImageView xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/input" android:paddingTop="@dimen/delivery_summary_divider_padding" android:paddingBottom="@dimen/delivery_summary_divider_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/delivery_horizontal_padding" android:layout_marginRight="@dimen/delivery_horizontal_padding" android:src="@drawable/delivery_recycler_view_divider"/>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/messenger_channels_search_root" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" app:contentInsetEnd="16dp" app:contentInsetLeft="16dp" app:contentInsetRight="16dp" app:contentInsetStart="16dp" app:contentInsetStartWithNavigation="16dp" app:elevation="0dp" app:navigationIcon="@drawable/ic_back_24_black">
+        <include android:id="@+id/search_field" layout="@layout/messenger_search_field"/>
+    </androidx.appcompat.widget.Toolbar>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/items" android:paddingBottom="32dp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="?attr/actionBarSize"/>
+    <TextView android:textColor="?attr/gray48" android:layout_gravity="center" android:id="@+id/message" android:padding="16dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="?attr/actionBarSize" style="?attr/textLegacy3_body"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

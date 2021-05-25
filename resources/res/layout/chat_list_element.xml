@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:id="@+id/chat_list_element" android:background="@drawable/bg_white_selectable_blue_rectangle" android:paddingTop="10dp" android:paddingBottom="10dp" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="16dp" android:paddingEnd="16dp">
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:layout_marginEnd="10dp">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/item_image" android:layout_width="48dp" android:layout_height="36dp" app:backgroundImage="?attr/gray4" app:placeholderImage="@drawable/img_item_placeholder_48_40" app:roundedCornerRadius="3dp"/>
+        <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center" android:id="@+id/system_image" android:visibility="gone" android:layout_width="24dp" android:layout_height="24dp" app:actualImageScaleType="5"/>
+        <FrameLayout android:layout_gravity="center" android:id="@+id/u2u_images" android:background="?attr/oldBackground" android:visibility="gone" android:layout_width="39dp" android:layout_height="26dp">
+            <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/u2u_user_image" android:layout_width="18dp" android:layout_height="18dp" app:actualImageScaleType="5" app:roundAsCircle="true" app:roundingBorderColor="@color/avito_white" app:roundingBorderWidth="1dp"/>
+            <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/u2u_interlocutor_image" android:layout_width="26dp" android:layout_height="26dp" app:actualImageScaleType="5" app:roundAsCircle="true" app:roundingBorderColor="@color/avito_white" app:roundingBorderWidth="1dp"/>
+        </FrameLayout>
+    </FrameLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.avito.android.messenger.widget.HorizontalWrapContentViewContainer android:gravity="center_vertical" android:id="@+id/name_block" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginEnd="8dp" android:layout_toStartOf="@+id/date">
+            <TextView android:textColor="?attr/black" android:id="@+id/chat_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" app:fontFamily="@font/avito_bold" style="?attr/textLegacy3_bodyDense"/>
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/avatar" android:layout_width="22dp" android:layout_height="22dp" android:layout_marginStart="4dp" app:placeholderImage="?attr/gray4" app:progressBarImage="?attr/gray4" app:roundAsCircle="true"/>
+            <ImageView android:id="@+id/online_status_indicator" android:layout_width="6dp" android:layout_height="6dp" android:layout_margin="4dp" android:src="@drawable/chat_list_element_interlocutor_online"/>
+        </com.avito.android.messenger.widget.HorizontalWrapContentViewContainer>
+        <TextView android:textColor="?attr/gray48" android:gravity="center_vertical" android:id="@+id/date" android:layout_width="wrap_content" android:layout_height="22dp" android:drawablePadding="4dp" android:layout_alignParentTop="true" android:layout_alignParentEnd="true" style="?attr/textLegacy3_bodySmallDense"/>
+        <LinearLayout android:id="@+id/item_block" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_below="@+id/name_block">
+            <TextView android:textColor="?attr/black" android:ellipsize="end" android:gravity="start" android:id="@+id/item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1" style="?attr/textLegacy3_bodyDense"/>
+            <TextView android:textColor="?attr/black" android:ellipsize="none" android:gravity="end" android:id="@+id/price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_marginStart="8dp" style="?attr/textLegacy3_bodyDense"/>
+        </LinearLayout>
+        <FrameLayout android:id="@+id/last_message_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_below="@+id/item_block">
+            <TextView android:ellipsize="end" android:gravity="start" android:id="@+id/last_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" style="?attr/textLegacy3_bodyDense"/>
+            <TextView android:textColor="?attr/gray48" android:ellipsize="end" android:gravity="start" android:id="@+id/is_typing" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/is_typing" android:maxLines="2" style="?attr/textLegacy3_bodyDense"/>
+        </FrameLayout>
+        <TextView android:gravity="start" android:id="@+id/item_delivery_status" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:drawablePadding="4dp" android:layout_below="@+id/last_message_container" android:layout_alignParentBottom="true" style="?attr/textLegacy3_bodyDense"/>
+    </RelativeLayout>
+</LinearLayout>

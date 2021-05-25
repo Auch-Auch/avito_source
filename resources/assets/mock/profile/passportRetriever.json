@@ -1,0 +1,68 @@
+{
+  "item": {
+    "id": "passportRetriever",
+    "title": "Паспорт РФ",
+    "groups": [
+      {
+        "items": [
+          {
+            "title": "Серия и номер",
+            "placeholder": "00 00 000000",
+            "value": "4556889998",
+            "fullName": "documents.passport.code",
+            "mask": "[00] [00] [000000]"
+          }
+        ]
+      },
+      {
+        "title": "Владелец",
+        "items": [
+          {
+            "title": "ФИО",
+            "placeholder": "Фамилия Имя Отчество",
+            "fullName": "documents.passport.fio",
+            "value": "Иванов Абрам Изевич"
+          },
+          {
+            "title": "Дата рождения",
+            "value": "01012000",
+            "fullName": "documents.passport.birthDay",
+            "placeholder": "00.00.0000",
+            "mask": "[00]{.}[00]{.}[0000]"
+          },
+          {
+            "title": "Место рождения",
+            "placeholder": "Место рождения",
+            "fullName": "documents.passport.birthCity",
+            "value": "ГОР.МОСКВА"
+          }
+        ]
+      },
+      {
+        "title": "Документ",
+        "items": [
+          {
+            "title": "Код подзразделения",
+            "placeholder": "Код подзразделения",
+            "value": "500150",
+            "fullName": "documents.passport.unitCode",
+            "mask": "[000]-[000]"
+          },
+          {
+            "title": "Кем выдан",
+            "placeholder": "Кем выдан",
+            "fullName": "documents.passport.issueTitle",
+            "value": "Отделом УФМС России по г. Москве по району Южное Бутово"
+          },
+          {
+            "title": "Дата выдачи",
+            "placeholder": "Дата выдачи",
+            "fullName": "documents.passport.issueDate",
+            "value": "01012015",
+            "mask": "[00]{.}[00]{.}[0000]"
+          }
+        ]
+      }
+    ]
+  }
+}

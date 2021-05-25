@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:id="@+id/payment_history_operation" android:paddingTop="10dp" android:paddingBottom="10dp" android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginEnd="16dp">
+        <TextView android:id="@+id/payment_operation_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="16dp" android:layout_marginEnd="16dp" app:fontFamily="@font/avito_bold" style="?attr/textLegacy3_headingSmallBold"/>
+        <TextView android:textColor="@color/design_text_color_black_selector" android:id="@+id/payment_operation_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="16dp" style="?attr/textLegacy3_body"/>
+        <TextView android:textColor="@color/design_text_color_black_selector" android:id="@+id/payment_operation_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="16dp" style="?attr/textLegacy3_body"/>
+        <TextView android:textColor="?attr/gray48" android:id="@+id/payment_operation_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:layout_marginStart="16dp" style="?attr/textLegacy3_bodySmall"/>
+    </LinearLayout>
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/payment_operation_icon" android:padding="2dp" android:layout_width="24dp" android:layout_height="24dp" android:scaleType="fitCenter" android:layout_marginEnd="16dp"/>
+</LinearLayout>

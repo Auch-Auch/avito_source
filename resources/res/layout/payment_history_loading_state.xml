@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="56dp">
+    <ProgressBar android:layout_gravity="center" android:id="@+id/progress_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/res_2132018685_widget_appcompat_progressbar"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/refresh" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="64dp">
+        <TextView android:textColor="@color/design_text_color_black_selector" android:ellipsize="end" android:paddingTop="12dp" android:paddingBottom="12dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Ошибка обработки запроса, попробуйте чуть позже" android:maxLines="2" android:layout_weight="1" style="?attr/textLegacy3_body"/>
+        <Space android:layout_width="64dp" android:layout_height="match_parent"/>
+        <com.avito.android.lib.design.button.Button android:id="@+id/refresh_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Обновить" style="@style/res_2132017845_deprecated_design_widget_avito_button_link_medium"/>
+    </LinearLayout>
+</FrameLayout>

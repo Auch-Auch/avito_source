@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ru.avito.component.popup.BlackPopupView xmlns:android="http://schemas.android.com/apk/res/android" android:textColor="@color/design_text_color_white_selector" android:layout_gravity="center" android:id="@+id/message" android:background="@drawable/bg_black_popup" android:paddingLeft="16dp" android:paddingTop="20dp" android:paddingRight="16dp" android:paddingBottom="24dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/popup_max_width" style="?attr/textLegacy3_body"/>

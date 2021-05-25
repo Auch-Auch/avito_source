@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.avito.android.design.widget.shimmer.ShimmerFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:shimmer="http://schemas.android.com/apk/res-auto" android:layout_gravity="center" android:id="@+id/auto_catalog_skeleton_root" android:layout_width="match_parent" android:layout_height="wrap_content" shimmer:shimmer_duration="3000">
+    <LinearLayout android:orientation="vertical" android:background="@color/avito_white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/content_horizontal_padding" android:layout_marginTop="10dp" android:layout_marginRight="@dimen/content_horizontal_padding">
+        <View android:background="@drawable/bg_stub" android:layout_width="match_parent" android:layout_height="12dp" android:layout_marginTop="14dp" android:layout_marginRight="64dp"/>
+        <View android:background="@drawable/bg_stub" android:layout_width="match_parent" android:layout_height="12dp" android:layout_marginTop="14dp" android:layout_marginRight="64dp"/>
+        <View android:background="@drawable/bg_stub" android:layout_width="match_parent" android:layout_height="12dp" android:layout_marginTop="14dp" android:layout_marginRight="104dp"/>
+        <View android:background="@drawable/bg_stub" android:layout_width="match_parent" android:layout_height="215dp" android:layout_marginTop="26dp"/>
+        <View android:background="@drawable/bg_stub" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginTop="32dp"/>
+        <View android:background="@drawable/bg_stub" android:layout_width="match_parent" android:layout_height="12dp" android:layout_marginTop="43dp" android:layout_marginRight="64dp"/>
+        <View android:background="@drawable/bg_stub" android:layout_width="match_parent" android:layout_height="12dp" android:layout_marginTop="14dp" android:layout_marginRight="64dp"/>
+        <View android:background="@drawable/bg_stub" android:layout_width="match_parent" android:layout_height="12dp" android:layout_marginTop="14dp" android:layout_marginRight="104dp"/>
+    </LinearLayout>
+</com.avito.android.design.widget.shimmer.ShimmerFrameLayout>

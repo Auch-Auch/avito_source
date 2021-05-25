@@ -1,0 +1,531 @@
+{
+  "item": {
+    "mainTitle": "Подбор кредита",
+    "conversationId": "5e3d1cdc9b1c1300228f6016",
+    "_id": "5e3d1e72c5faff3e8a73302с",
+    "savedSearchId": "5e3d1e72c5faff3e8a73302с",
+    "offerGroups": [
+      {
+        "title": "Все кредиты",
+        "description": "Банки, показывающие примерную ставку и ежемесячную сумму платежа",
+        "offerList": [
+          {
+            "productType": "mfo",
+            "displaySettings": {
+              "fontColor": "225393",
+              "backgroundColor": "8CBE55",
+              "iconTitle": "M",
+              "offerTitle": "До зарплаты",
+              "bankName": "migcredit",
+              "productName": "Микрозайм",
+              "detailTitle": "О микрозайме",
+              "bankLogoUrlPDF": "https://sravni-logos.s3.eu-north-1.amazonaws.com/logo_bank_mkb.pdf",
+              "bankLogoUrlSVG": "https://sravni-logos.s3.eu-north-1.amazonaws.com/logo_bank_mkb.svg"
+            },
+            "profitability": 75,
+            "profitabilityText": "Высокая вероятность одобрения",
+            "status": "new",
+            "productId": "1231231123",
+            "orderId": "32123212312",
+            "bankId": "123123123",
+            "offerId": "2342342",
+            "mainParams": [
+              {
+                "name": "Срок",
+                "value": "до 29 дней",
+                "fontType": "bold"
+              },
+              {
+                "name": "Платеж раз в 2 недели",
+                "value": "3 202 Р",
+                "fontType": "bold"
+              }
+            ],
+            "detailParams": [
+              {
+                "blockType": "primary",
+                "values": [
+                  {
+                    "name": "Ставка",
+                    "value": "От 13,00%",
+                    "fontType": "bold"
+                  },
+                  {
+                    "name": "Сумма",
+                    "value": "до 15 000 Р",
+                    "fontType": "bold"
+                  },
+                  {
+                    "name": "Срок",
+                    "value": "до 30 дней",
+                    "fontType": "bold"
+                  },
+                  {
+                    "name": "Платеж раз в 2 недели",
+                    "value": "3 202 Р",
+                    "fontType": "bold"
+                  }
+                ]
+              },
+              {
+                "blockType": "standart",
+                "blockTitle": "Требования и документы",
+                "values": [
+                  {
+                    "name": "Гражданство",
+                    "value": "РФ",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Возраст",
+                    "value": "от 21 года",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Обязательные документы",
+                    "value": "Паспорт",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Подтверждение дохода (1 документы на выбор)",
+                    "value": "Справка 2-ндфл, справока по форме банка",
+                    "fontType": "normal"
+                  }
+                ]
+              },
+              {
+                "blockType": "standart",
+                "blockTitle": "Как оформить",
+                "values": [
+                  {
+                    "name": "Где",
+                    "value": "В отделениях банка",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Форма выдачи",
+                    "value": "Наличными",
+                    "fontType": "normal"
+                  }
+                ]
+              }
+            ],
+            "requestParams": {
+              "title1": "value1",
+              "title2": "value2",
+              "title3": "value3"
+            }
+          },
+          {
+            "productType": "mfo",
+            "displaySettings": {
+              "fontColor": "225393",
+              "backgroundColor": "8CBE55",
+              "iconTitle": "M",
+              "offerTitle": "Оптимальный",
+              "bankName": "migcredit",
+              "productName": "Микрозайм",
+              "detailTitle": "О микрозайме"
+            },
+            "status": "accepted",
+            "statusText": "кредит одобрен",
+            "productId": "1231231124",
+            "orderId": "32123212314",
+            "url": "https://migcredit.ru/mikrokredity/",
+            "urlText": "migcredit.ru",
+            "bankId": "123123123",
+            "offerId": "2342343",
+            "mainParams": [
+              {
+                "name": "Срок",
+                "value": "до 1 года",
+                "fontType": "bold"
+              },
+              {
+                "name": "Платеж раз в 2 недели",
+                "value": "10 913 ₽",
+                "fontType": "bold"
+              }
+            ],
+            "detailParams": [
+              {
+                "blockType": "primary",
+                "values": [
+                  {
+                    "name": "Ставка",
+                    "value": "От 13,00%",
+                    "fontType": "bold"
+                  },
+                  {
+                    "name": "Сумма",
+                    "value": "до 100 000 Р",
+                    "fontType": "bold"
+                  },
+                  {
+                    "name": "Срок",
+                    "value": "до 1 года",
+                    "fontType": "bold"
+                  },
+                  {
+                    "name": "Платеж раз в 2 недели",
+                    "value": "10 913 ₽",
+                    "fontType": "bold"
+                  }
+                ]
+              },
+              {
+                "blockType": "standart",
+                "blockTitle": "Требования и документы",
+                "values": [
+                  {
+                    "name": "Гражданство",
+                    "value": "РФ",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Возраст",
+                    "value": "от 21 года",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Обязательные документы",
+                    "value": "Паспорт",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Подтверждение дохода (1 документы на выбор)",
+                    "value": "Справка 2-ндфл, справока по форме банка",
+                    "fontType": "normal"
+                  }
+                ]
+              },
+              {
+                "blockType": "standart",
+                "blockTitle": "Как оформить",
+                "values": [
+                  {
+                    "name": "Где",
+                    "value": "В отделениях банка",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Форма выдачи",
+                    "value": "Наличными",
+                    "fontType": "normal"
+                  }
+                ]
+              }
+            ],
+            "requestParams": {
+              "title1": "value1",
+              "title2": "value2",
+              "title3": "value3"
+            }
+          },
+          {
+            "productType": "mfo",
+            "displaySettings": {
+              "fontColor": "FFFFFF",
+              "backgroundColor": "F2CB69",
+              "iconTitle": "M",
+              "offerTitle": "Старт 0%",
+              "bankName": "MoneyMan",
+              "productName": "Микрозайм",
+              "detailTitle": "О микрозайме"
+            },
+            "status": "declined",
+            "statusText": "Банк не готов одобрить кредит",
+            "productId": "1231231125",
+            "orderId": "mfo_credit_status_2",
+            "bankId": "123123125",
+            "offerId": "2342345",
+            "mainParams": [
+              {
+                "name": "Срок",
+                "value": "от 5 до 15 дней",
+                "fontType": "bold"
+              },
+              {
+                "name": "Сумма",
+                "value": "от 1 500 до 15 000 руб.",
+                "fontType": "bold"
+              }
+            ],
+            "detailParams": [
+              {
+                "blockType": "primary",
+                "values": [
+                  {
+                    "name": "Ставка",
+                    "value": "0,00% в день",
+                    "fontType": "bold"
+                  },
+                  {
+                    "name": "Сумма",
+                    "value": "от 1 500 до 15 000 руб.",
+                    "fontType": "bold"
+                  },
+                  {
+                    "name": "Срок",
+                    "value": "от 5 до 15 дней",
+                    "fontType": "bold"
+                  },
+                  {
+                    "name": "Платеж раз в 2 недели",
+                    "value": "Единовременное погашение",
+                    "fontType": "bold"
+                  }
+                ]
+              },
+              {
+                "blockType": "standart",
+                "blockTitle": "Требования и документы",
+                "values": [
+                  {
+                    "name": "Гражданство",
+                    "value": "РФ",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Возраст",
+                    "value": "от 21 года",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Обязательные документы",
+                    "value": "Паспорт",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Подтверждение дохода (1 документы на выбор)",
+                    "value": "Справка 2-ндфл, справка по форме банка",
+                    "fontType": "normal"
+                  }
+                ]
+              },
+              {
+                "blockType": "standart",
+                "blockTitle": "Как оформить",
+                "values": [
+                  {
+                    "name": "Где",
+                    "value": "В отделениях банка",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Форма выдачи",
+                    "value": "Наличными",
+                    "fontType": "normal"
+                  }
+                ]
+              }
+            ],
+            "requestParams": {
+              "title1": "value1",
+              "title2": "value2",
+              "title3": "value3"
+            }
+          },
+          {
+            "productType": "mfo",
+            "displaySettings": {
+              "fontColor": "FFFFFF",
+              "backgroundColor": "F2CB69",
+              "iconTitle": "M",
+              "offerTitle": "Супертурбо",
+              "bankName": "MoneyMan",
+              "productName": "Микрозайм",
+              "detailTitle": "О микрозайме"
+            },
+            "status": "waiting",
+            "statusText": "ожидайте ответа от банка",
+            "productId": "1231231126",
+            "orderId": "mfo_credit_status_1",
+            "bankId": "123123125",
+            "offerId": "2342346",
+            "mainParams": [
+              {
+                "name": "Срок",
+                "value": "от 16 до 18 недель",
+                "fontType": "bold"
+              },
+              {
+                "name": "Сумма",
+                "value": "от 50 000 до 80 000 руб.",
+                "fontType": "bold"
+              }
+            ],
+            "detailParams": [
+              {
+                "blockType": "primary",
+                "values": [
+                  {
+                    "name": "Ставка",
+                    "value": "0,9% в день",
+                    "fontType": "bold"
+                  },
+                  {
+                    "name": "Сумма",
+                    "value": "от 50 000 до 80 000 руб.",
+                    "fontType": "bold"
+                  },
+                  {
+                    "name": "Срок",
+                    "value": "от 16 до 18 недель",
+                    "fontType": "bold"
+                  },
+                  {
+                    "name": "Платеж раз в 2 недели",
+                    "value": "111111 руб",
+                    "fontType": "bold"
+                  }
+                ]
+              },
+              {
+                "blockType": "standart",
+                "blockTitle": "Требования и документы",
+                "values": [
+                  {
+                    "name": "Гражданство",
+                    "value": "РФ",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Возраст",
+                    "value": "от 21 года",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Обязательные документы",
+                    "value": "Паспорт",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Подтверждение дохода (1 документы на выбор)",
+                    "value": "Справка 2-ндфл, справка по форме банка",
+                    "fontType": "normal"
+                  }
+                ]
+              },
+              {
+                "blockType": "standart",
+                "blockTitle": "Как оформить",
+                "values": [
+                  {
+                    "name": "Где",
+                    "value": "В отделениях банка",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Форма выдачи",
+                    "value": "Наличными",
+                    "fontType": "normal"
+                  }
+                ]
+              }
+            ],
+            "requestParams": {
+              "title1": "value1",
+              "title2": "value2",
+              "title3": "value3"
+            }
+          }
+        ]
+      }
+    ],
+    "filters": [
+      {
+        "title": "400 000 Р",
+        "filterIcon": "money",
+        "filterName": "summ",
+        "details": [
+          {
+            "valueType": "slider",
+            "title": "Сумма",
+            "values": [
+              {
+                "title": "1 000 ₽",
+                "code": "minValue",
+                "value": "1000"
+              },
+              {
+                "title": "10 000 000 ₽",
+                "code": "maxValue",
+                "value": "10000000"
+              },
+              {
+                "title": "70 000 ₽",
+                "code": "currentValue",
+                "value": "70000"
+              },
+              {
+                "title": "10000",
+                "code": "step",
+                "value": "10000"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "3 года",
+        "filterIcon": "time",
+        "filterName": "period",
+        "details": [
+          {
+            "valueType": "snapPoints",
+            "title": "Срок кредита",
+            "values": [
+              {
+                "title": "1 месяц",
+                "code": "pointPeriod",
+                "value": "P1M"
+              },
+              {
+                "title": "1 год",
+                "code": "pointPeriod",
+                "value": "P1Y"
+              },
+              {
+                "title": "2 год",
+                "code": "pointPeriod",
+                "value": "P2Y"
+              },
+              {
+                "title": "3 года",
+                "code": "pointPeriod",
+                "value": "P3Y"
+              },
+              {
+                "title": "4 года",
+                "code": "pointPeriod",
+                "value": "P4Y"
+              },
+              {
+                "title": "5 лет",
+                "code": "pointPeriod",
+                "value": "P5Y"
+              },
+              {
+                "title": "6 лет",
+                "code": "pointPeriod",
+                "value": "P6Y"
+              },
+              {
+                "title": "7 лет",
+                "code": "pointPeriod",
+                "value": "P7Y"
+              },
+              {
+                "title": "3 года",
+                "code": "currentPeriod",
+                "value": "P3Y"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
+

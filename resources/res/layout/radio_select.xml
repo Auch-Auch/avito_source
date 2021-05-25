@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/content_container" android:focusable="true" android:focusableInTouchMode="true" android:descendantFocusability="beforeDescendants" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignTop="@+id/buttons_container" android:layout_alignParentTop="true">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+        <include layout="@layout/deal_stage_collapsing_appbar"/>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/buttons_container" android:background="?attr/white" android:paddingLeft="@dimen/content_horizontal_padding" android:paddingRight="@dimen/content_horizontal_padding" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" style="@style/FlexibleButtonsContainer">
+        <com.avito.android.lib.design.button.Button android:id="@+id/continue_button" android:layout_width="match_parent" android:layout_height="wrap_content" style="?attr/buttonPrimaryLarge"/>
+    </LinearLayout>
+</RelativeLayout>

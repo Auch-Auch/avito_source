@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="calls_content_horizontal_margin">94dp</dimen>
+    <dimen name="calls_control_buttons_horizontal_margin">180dp</dimen>
+</resources>

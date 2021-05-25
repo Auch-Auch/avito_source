@@ -1,0 +1,84 @@
+package com.facebook.common.streams;
+
+import java.io.FilterInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.Objects;
+public class TailAppendingInputStream extends FilterInputStream {
+    public final byte[] a;
+    public int b;
+    public int c;
+
+    public TailAppendingInputStream(InputStream inputStream, byte[] bArr) {
+        super(inputStream);
+        Objects.requireNonNull(inputStream);
+        Objects.requireNonNull(bArr);
+        this.a = bArr;
+    }
+
+    public final int a() {
+        int i = this.b;
+        byte[] bArr = this.a;
+        if (i >= bArr.length) {
+            return -1;
+        }
+        this.b = i + 1;
+        return bArr[i] & 255;
+    }
+
+    @Override // java.io.FilterInputStream, java.io.InputStream
+    public void mark(int i) {
+        if (((FilterInputStream) this).in.markSupported()) {
+            super.mark(i);
+            this.c = this.b;
+        }
+    }
+
+    @Override // java.io.FilterInputStream, java.io.InputStream
+    public int read() throws IOException {
+        int read = ((FilterInputStream) this).in.read();
+        if (read != -1) {
+            return read;
+        }
+        return a();
+    }
+
+    @Override // java.io.FilterInputStream, java.io.InputStream
+    public void reset() throws IOException {
+        if (((FilterInputStream) this).in.markSupported()) {
+            ((FilterInputStream) this).in.reset();
+            this.b = this.c;
+            return;
+        }
+        throw new IOException("mark is not supported");
+    }
+
+    @Override // java.io.FilterInputStream, java.io.InputStream
+    public int read(byte[] bArr) throws IOException {
+        return read(bArr, 0, bArr.length);
+    }
+
+    @Override // java.io.FilterInputStream, java.io.InputStream
+    public int read(byte[] bArr, int i, int i2) throws IOException {
+        int read = ((FilterInputStream) this).in.read(bArr, i, i2);
+        if (read != -1) {
+            return read;
+        }
+        int i3 = 0;
+        if (i2 == 0) {
+            return 0;
+        }
+        while (i3 < i2) {
+            int a3 = a();
+            if (a3 == -1) {
+                break;
+            }
+            bArr[i + i3] = (byte) a3;
+            i3++;
+        }
+        if (i3 > 0) {
+            return i3;
+        }
+        return -1;
+    }
+}

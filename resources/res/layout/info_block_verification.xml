@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:paddingLeft="@dimen/content_horizontal_padding" android:paddingTop="@dimen/standard_padding" android:paddingRight="@dimen/content_horizontal_padding" android:paddingBottom="@dimen/standard_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:gravity="center" android:id="@+id/title" android:paddingRight="@dimen/standard_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:singleLine="true" android:drawablePadding="32dp" style="?attr/textLegacy1_subheading"/>
+    <com.avito.android.design.widget.CollapsingLayout android:layout_gravity="center_vertical" android:id="@+id/right_icons" android:layout_width="match_parent" android:layout_height="wrap_content" app:normal_margin="@dimen/info_block_verification_connections_normal_margin" app:overflow_margin="@dimen/info_block_verification_connections_overflow_margin"/>
+</LinearLayout>

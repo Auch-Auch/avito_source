@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="start_booking_fragment_next_button_horizontal_margins">12dp</dimen>
+</resources>

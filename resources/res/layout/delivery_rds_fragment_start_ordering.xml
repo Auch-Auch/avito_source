@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/delivery_start_ordering_root" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="?attr/actionBarSize">
+            <TextView android:layout_gravity="center" android:id="@+id/toolbar_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/delivery_delivery_points" style="?attr/textLegacy3_headingSmallBold"/>
+        </androidx.appcompat.widget.Toolbar>
+        <FrameLayout android:orientation="vertical" android:id="@+id/map_overlay" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/ContentHolder">
+            <com.avito.android.avito_map.AvitoMapView android:id="@+id/map" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <com.google.android.material.floatingactionbutton.FloatingActionButton android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/find_me_button" android:focusable="true" android:clickable="true" android:layout_width="@dimen/find_me_button_size" android:layout_height="@dimen/find_me_button_size" android:src="@drawable/my_location_icon" android:layout_marginEnd="@dimen/find_me_margin_end" android:backgroundTint="?attr/white" app:backgroundTint="?attr/white" app:fabCustomSize="@dimen/find_me_button_size" app:layout_behavior="com.avito.android.item_map.view.MoveAboveBottomSheetBehavior"/>
+        </FrameLayout>
+    </LinearLayout>
+    <include layout="@layout/delivery_rds_point_detail_info_bottom_sheet"/>
+    <com.avito.android.lib.design.shadow_layout.ShadowFrameLayout android:layout_gravity="bottom" android:id="@+id/submit_button_container" android:paddingLeft="@dimen/card_padding" android:paddingRight="@dimen/card_padding" android:paddingBottom="24dp" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:elevation="@dimen/delivery_point_submit_button_elevation">
+        <com.avito.android.lib.design.button.Button android:id="@+id/submit_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/delivery_point_detail_info_continue" app:layout_shadowEnabled="true" style="@style/res_2132017847_deprecated_design_widget_avito_button_primary_large"/>
+    </com.avito.android.lib.design.shadow_layout.ShadowFrameLayout>
+    <com.avito.android.lib.design.shadow_layout.ShadowFrameLayout android:layout_gravity="top" android:id="@+id/overlay_container" android:paddingLeft="@dimen/card_padding" android:paddingTop="12dp" android:paddingRight="@dimen/card_padding" android:paddingBottom="12dp" android:visibility="gone" android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16sp" android:textColor="?attr/black" android:ellipsize="end" android:gravity="center" android:id="@+id/overlay_label" android:background="@drawable/delivery_overlay_label_background" android:paddingTop="13dp" android:paddingBottom="13dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2" android:paddingStart="16dp" android:paddingEnd="16dp" app:layout_shadowEnabled="true"/>
+    </com.avito.android.lib.design.shadow_layout.ShadowFrameLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

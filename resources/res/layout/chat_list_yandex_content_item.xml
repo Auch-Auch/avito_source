@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@drawable/bg_white_selectable_blue_rectangle" android:addStatesFromChildren="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.yandex.mobile.ads.nativeads.NativeContentAdView android:id="@+id/yandex_content_view" android:padding="0dp" android:addStatesFromChildren="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/chat_list_element" android:paddingTop="10dp" android:paddingBottom="10dp" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="16dp" android:paddingEnd="16dp">
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:layout_marginEnd="10dp">
+                <com.avito.android.design.widget.YandexBannerImageView android:id="@+id/image" android:background="@drawable/messenger_chat_list_ad_banner_img_bg" android:layout_width="48dp" android:layout_height="42dp" android:scaleType="centerCrop"/>
+            </FrameLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.avito.android.messenger.widget.ChatListAdBannerTitleContainer android:id="@+id/title_block" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textColor="?attr/black" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" app:fontFamily="@font/avito_bold" style="?attr/textLegacy3_bodyDense"/>
+                    <TextView android:id="@+id/badge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/advertising_title" android:layout_marginStart="6dp" style="@style/res_2132017907_design_widget_badge_ad_single"/>
+                    <TextView android:id="@+id/age" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="4dp" style="@style/res_2132017909_design_widget_badge_age_rds"/>
+                </com.avito.android.messenger.widget.ChatListAdBannerTitleContainer>
+                <TextView android:textColor="?attr/gray48" android:gravity="start" android:id="@+id/description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" style="?attr/textLegacy3_bodyDense"/>
+                <TextView android:textColor="?attr/gray48" android:gravity="start" android:id="@+id/disclaimer" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" style="?attr/textLegacy3_bodySmallDense"/>
+            </LinearLayout>
+        </LinearLayout>
+    </com.yandex.mobile.ads.nativeads.NativeContentAdView>
+</FrameLayout>

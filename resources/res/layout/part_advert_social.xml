@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <include layout="@layout/divider_1_0"/>
+    <TextView android:paddingLeft="@dimen/content_horizontal_padding" android:paddingRight="@dimen/content_horizontal_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/share" style="@style/res_2132018812_widget_avito_subheader"/>
+    <HorizontalScrollView android:id="@+id/horizontal_scroll_view" android:scrollbars="none" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:overScrollMode="never">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/share_buttons_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:overScrollMode="never"/>
+    </HorizontalScrollView>
+</LinearLayout>

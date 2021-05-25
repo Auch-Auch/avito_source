@@ -1,0 +1,42 @@
+package com.avito.android.util;
+@Deprecated
+public final class UrlParams {
+    public static final String ARRAY_TEMPLATE = "%s[%s]";
+    public static final String CATEGORY_ID = "categoryId";
+    public static final String COMPANY_ONLY = "companyOnly";
+    public static final String DESCRIPTION = "description";
+    public static final String DIRECTION_ID = "directionId";
+    public static final String DIRECTION_ID_REGEX = "directionId\\[[\\d]+\\]";
+    public static final String DISTRICT_ID = "districtId";
+    public static final String DISTRICT_ID_REGEX = "districtId\\[[\\d]+\\]";
+    public static final String EMAIL = "email";
+    public static final String FALSE = "0";
+    public static final String GEO_COORDS = "geoCoords";
+    public static final String IMAGES = "images";
+    public static final String ITEM_ID = "itemId";
+    public static final String LAST_STAMP = "lastStamp";
+    public static final String LIMIT = "limit";
+    public static final String LOCAL_PRIORITY = "localPriority";
+    public static final String LOCATION_ID = "locationId";
+    public static final String METRO_ID = "metroId";
+    public static final String METRO_ID_REGEX = "metroId\\[[\\d]+\\]";
+    public static final String NEXT_PAGE_ID = "nextPageId";
+    public static final String OWNER = "owner";
+    public static final String PAGE = "page";
+    public static final String PARAMS = "params";
+    public static final String PARAMS_REGEX = "params\\[([^]]+)\\]";
+    public static final String PHONE = "phone";
+    public static final String PRICE = "price";
+    public static final String PRICE_MAX = "priceMax";
+    public static final String PRICE_MIN = "priceMin";
+    public static final String PRIVATE_ONLY = "privateOnly";
+    public static final String QUERY = "query";
+    public static final String SIMPLE_MAP = "showSimpleMap";
+    public static final String SORT = "sort";
+    public static final String SORT_BY_DISTANCE = "sortByDistance";
+    public static final String SORT_BY_PRICE = "sortByPrice";
+    public static final String TITLE = "title";
+    public static final String TRUE = "1";
+    public static final String WITH_DELIVERY_ONLY = "withDeliveryOnly";
+    public static final String WITH_IMAGES_ONLY = "withImagesOnly";
+}

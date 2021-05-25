@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/calendar_view_header"/>
+    <include layout="@layout/calendar_week_days"/>
+    <FrameLayout android:id="@+id/content_holder" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler_view" android:paddingLeft="@dimen/calendar_recycler_view_padding" android:paddingRight="@dimen/calendar_recycler_view_padding" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <TextView android:textColor="@color/txt_raised_button" android:gravity="center" android:layout_gravity="bottom" android:id="@+id/button" android:background="@drawable/bg_raised_button_blue" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/select_button_side_margin" android:layout_marginTop="20dp" android:layout_marginRight="@dimen/select_button_side_margin" android:layout_marginBottom="24dp" android:text="@string/calendar_choose" style="@style/res_2132017857_deprecated_theme_internal_button_primary"/>
+    </FrameLayout>
+</LinearLayout>

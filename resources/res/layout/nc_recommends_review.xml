@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/toolbar"/>
+    <FrameLayout android:id="@+id/container" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/ContentHolder">
+        <ScrollView android:id="@+id/content" android:paddingTop="16dp" android:scrollbars="none" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent">
+            <include android:id="@+id/edit_text" layout="@layout/edit_text_area"/>
+        </ScrollView>
+    </FrameLayout>
+</LinearLayout>

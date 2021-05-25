@@ -1,0 +1,34 @@
+{
+  "pollingId": "sadsadsa",
+  "pollingInterval": 5000,
+  "pollingStatus": "inprogress",
+  "items": [
+    {
+      "productId": "8969",
+      "statusText": "Цена изменилась. Теперь Ваша страховка \nдешевле на 5% ",
+      "linkText": "Почему?",
+      "statusDescription": "Александр, в прошлом году Вы были застрахованы в компании “Ингосстрах”, стоимость страховки составляла \n5 432 ₽. \n\nМы сделали расчет на новый период еще в нескольких страховых компаниях, что бы вы смогли сравнить цены. Обратите внимание – история вождения водителей улучшилась, значит базовая стоимость полиса будет дешевле, чем в прошлом году – так держать",
+      "summ": 3500,
+      "summValue": "3500 Р",
+      "summTitle": "Сумма",
+      "status": "accepted",
+      "requestParams": {
+        "offerID": "fdkhksjdss",
+        "pollingID": "ewert23efw",
+        "productID": "8969"
+      }
+    },
+    {
+      "productId": "8979",
+      "summ": 3900,
+      "summValue": "3900 Р",
+      "summTitle": "Сумма",
+      "status": "accepted",
+      "requestParams": {
+        "offerID": "f1231eddkhksjdss",
+        "pollingID": "12313ewert23efw",
+        "productID": "8979"
+      }
+    }
+  ]
+}

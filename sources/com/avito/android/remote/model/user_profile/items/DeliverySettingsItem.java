@@ -1,0 +1,73 @@
+package com.avito.android.remote.model.user_profile.items;
+
+import android.net.Uri;
+import android.os.Parcel;
+import android.os.Parcelable;
+import com.avito.android.util.Parcels;
+import com.facebook.share.internal.MessengerShareContentUtility;
+import com.facebook.share.internal.ShareConstants;
+import com.google.gson.annotations.SerializedName;
+import kotlin.Metadata;
+import kotlin.jvm.JvmField;
+import kotlin.jvm.internal.Intrinsics;
+import org.jetbrains.annotations.NotNull;
+import t6.r.a.j;
+@Metadata(bv = {1, 0, 3}, d1 = {"\u0000,\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\b\u0018\u0000 \u00172\u00020\u0001:\u0001\u0017B\u001f\u0012\u0006\u0010\u000e\u001a\u00020\t\u0012\u0006\u0010\n\u001a\u00020\t\u0012\u0006\u0010\u0011\u001a\u00020\u0010¢\u0006\u0004\b\u0015\u0010\u0016J\u001f\u0010\u0007\u001a\u00020\u00062\u0006\u0010\u0003\u001a\u00020\u00022\u0006\u0010\u0005\u001a\u00020\u0004H\u0016¢\u0006\u0004\b\u0007\u0010\bR\u001c\u0010\n\u001a\u00020\t8\u0006@\u0007X\u0004¢\u0006\f\n\u0004\b\n\u0010\u000b\u001a\u0004\b\f\u0010\rR\u001c\u0010\u000e\u001a\u00020\t8\u0006@\u0007X\u0004¢\u0006\f\n\u0004\b\u000e\u0010\u000b\u001a\u0004\b\u000f\u0010\rR\u001c\u0010\u0011\u001a\u00020\u00108\u0006@\u0007X\u0004¢\u0006\f\n\u0004\b\u0011\u0010\u0012\u001a\u0004\b\u0013\u0010\u0014¨\u0006\u0018"}, d2 = {"Lcom/avito/android/remote/model/user_profile/items/DeliverySettingsItem;", "Lcom/avito/android/remote/model/user_profile/items/UserProfileItem;", "Landroid/os/Parcel;", "dest", "", "flags", "", "writeToParcel", "(Landroid/os/Parcel;I)V", "", MessengerShareContentUtility.SUBTITLE, "Ljava/lang/String;", "getSubtitle", "()Ljava/lang/String;", "title", "getTitle", "Landroid/net/Uri;", ShareConstants.MEDIA_URI, "Landroid/net/Uri;", "getUri", "()Landroid/net/Uri;", "<init>", "(Ljava/lang/String;Ljava/lang/String;Landroid/net/Uri;)V", "Companion", "profile_release"}, k = 1, mv = {1, 4, 2})
+public final class DeliverySettingsItem extends UserProfileItem {
+    @JvmField
+    @NotNull
+    public static final Parcelable.Creator<DeliverySettingsItem> CREATOR = Parcels.creator(DeliverySettingsItem$Companion$CREATOR$1.INSTANCE);
+    @NotNull
+    public static final Companion Companion = new Companion(null);
+    @SerializedName(MessengerShareContentUtility.SUBTITLE)
+    @NotNull
+    private final String subtitle;
+    @SerializedName("title")
+    @NotNull
+    private final String title;
+    @SerializedName(ShareConstants.MEDIA_URI)
+    @NotNull
+    private final Uri uri;
+
+    @Metadata(bv = {1, 0, 3}, d1 = {"\u0000\u0014\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\b\u0003\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0006\u0010\u0007R\u001c\u0010\u0004\u001a\b\u0012\u0004\u0012\u00020\u00030\u00028\u0006@\u0007X\u0004¢\u0006\u0006\n\u0004\b\u0004\u0010\u0005¨\u0006\b"}, d2 = {"Lcom/avito/android/remote/model/user_profile/items/DeliverySettingsItem$Companion;", "", "Landroid/os/Parcelable$Creator;", "Lcom/avito/android/remote/model/user_profile/items/DeliverySettingsItem;", "CREATOR", "Landroid/os/Parcelable$Creator;", "<init>", "()V", "profile_release"}, k = 1, mv = {1, 4, 2})
+    public static final class Companion {
+        private Companion() {
+        }
+
+        public /* synthetic */ Companion(j jVar) {
+            this();
+        }
+    }
+
+    public DeliverySettingsItem(@NotNull String str, @NotNull String str2, @NotNull Uri uri2) {
+        Intrinsics.checkNotNullParameter(str, "title");
+        Intrinsics.checkNotNullParameter(str2, MessengerShareContentUtility.SUBTITLE);
+        Intrinsics.checkNotNullParameter(uri2, ShareConstants.MEDIA_URI);
+        this.title = str;
+        this.subtitle = str2;
+        this.uri = uri2;
+    }
+
+    @NotNull
+    public final String getSubtitle() {
+        return this.subtitle;
+    }
+
+    @NotNull
+    public final String getTitle() {
+        return this.title;
+    }
+
+    @NotNull
+    public final Uri getUri() {
+        return this.uri;
+    }
+
+    @Override // android.os.Parcelable
+    public void writeToParcel(@NotNull Parcel parcel, int i) {
+        Intrinsics.checkNotNullParameter(parcel, "dest");
+        parcel.writeString(this.title);
+        parcel.writeString(this.subtitle);
+        parcel.writeParcelable(this.uri, i);
+    }
+}

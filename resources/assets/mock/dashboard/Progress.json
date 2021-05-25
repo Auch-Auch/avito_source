@@ -1,0 +1,14 @@
+{
+  "finance": [
+    {
+      "_id": "5d7b4b1b7e540c00496a1529",
+      "percentsPassed": 50,
+      "name": "credit"
+    },
+    {
+      "_id": "5d7b4b1b7e540c00496a1529",
+      "percentsPassed": 85,
+      "name": "credit_card"
+    }
+  ]
+}

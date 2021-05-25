@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="136dp" android:layout_height="wrap_content">
+    <View android:layout_gravity="end" android:background="@drawable/ic_popup_window_corner" android:layout_width="14dp" android:layout_height="7dp" android:layout_marginEnd="12dp"/>
+    <LinearLayout android:orientation="vertical" android:background="@drawable/bg_price_subscription_popup" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="7dp" android:paddingStart="16dp" android:paddingEnd="16dp">
+        <TextView android:textAppearance="?attr/textHeadingSmall" android:textColor="?attr/white" android:id="@+id/price_subscription_popup_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp"/>
+        <TextView android:textAppearance="?attr/textBody" android:textColor="?attr/white" android:id="@+id/price_subscription_popup_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp"/>
+        <com.avito.android.lib.design.button.Button android:id="@+id/price_subscription_popup_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" style="?attr/buttonDefaultInverseSmall"/>
+    </LinearLayout>
+</FrameLayout>

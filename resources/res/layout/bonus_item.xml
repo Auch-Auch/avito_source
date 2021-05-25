@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.avito.android.lib.design.list_item.ListItem xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/bonus_list_item" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="52dp" android:paddingEnd="@dimen/standard_padding"/>

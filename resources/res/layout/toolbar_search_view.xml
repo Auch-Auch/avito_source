@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <include android:id="@+id/toolbar_lifecycle" layout="@layout/lifecycle"/>
+    <View android:background="@color/expected_background" android:layout_width="match_parent" android:layout_height="36dp"/>
+    <View android:background="@drawable/bg_toolbar_search_gradient" android:layout_width="match_parent" android:layout_height="26dp" android:layout_marginTop="36dp"/>
+    <View android:id="@+id/shadow" android:background="@color/expected_overlay" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:alpha="0"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/toolbar_container" android:background="@drawable/bg_search_bar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp">
+        <androidx.appcompat.widget.Toolbar android:layout_gravity="top" android:id="@+id/toolbar" android:background="@color/avito_transparent_black" android:paddingLeft="0dp" android:paddingRight="0dp" android:layout_width="match_parent" android:layout_height="@dimen/toolbar_search_layout_height" app:contentInsetLeft="@dimen/toolbar_search_text_padding" app:contentInsetStart="@dimen/toolbar_search_text_padding" app:contentInsetStartWithNavigation="@dimen/toolbar_search_text_padding">
+            <View android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0dp" android:layout_height="0dp"/>
+            <TextView android:textSize="16sp" android:textColor="?attr/black" android:textColorHint="?attr/gray28" android:gravity="left|center_vertical|center_horizontal|center|start" android:layout_gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/search_current_query" android:background="@color/avito_transparent_black" android:layout_width="match_parent" android:layout_height="match_parent" android:singleLine="true" android:freezesText="true" app:fontFamily="@font/avito_regular"/>
+            <com.avito.android.design.widget.search_view.SearchEditText android:textSize="16sp" android:textColor="?attr/black" android:textColorHint="?attr/gray28" android:ellipsize="end" android:layout_gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/search_edit_text" android:background="@color/avito_transparent_black" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:maxLines="1" android:inputType="textNoSuggestions" android:imeOptions="actionNone|actionGo|actionSearch|flagNoExtractUi" app:fontFamily="@font/avito_regular"/>
+        </androidx.appcompat.widget.Toolbar>
+        <View android:id="@+id/search_divider" android:background="?attr/gray8" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/suggests_recycler" android:paddingTop="8dp" android:paddingBottom="8dp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</merge>

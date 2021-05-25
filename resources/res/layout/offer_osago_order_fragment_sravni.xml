@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:tag="layout/offer_osago_order_fragment_sravni_0" android:background="@color/white_sravni" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar android:theme="@style/res_2132018268_sravni_close_toolbar" android:id="@+id/toolbar" android:background="@color/white_sravni" android:layout_width="@dimen/dim_0" android:layout_height="56dp" android:elevation="5dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" app:title="@string/osago_payment" style="@style/FontMedium"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/llViewSection" android:tag="binding_1" android:layout_width="@dimen/dim_0" android:layout_height="@dimen/dim_0" app:layout_constraintBottom_toTopOf="@+id/frBtnSection" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/toolbar">
+        <include android:visibility="gone" layout="@layout/offer_osago_order_info_sravni"/>
+        <include android:visibility="gone" layout="@layout/offer_osago_order_wait_error_sravni"/>
+        <include android:visibility="gone" layout="@layout/offer_osago_order_quote_sravni"/>
+        <include android:id="@+id/incStatusView" android:visibility="gone" layout="@layout/offer_osago_order_status_sravni"/>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/frBtnSection" android:tag="binding_2" android:visibility="visible" android:layout_width="@dimen/dim_0" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dim_20" android:layout_marginStart="@dimen/dim_20" android:layout_marginEnd="@dimen/dim_20" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0">
+        <com.google.android.material.button.MaterialButton android:id="@+id/btnCloseOsago" android:tag="binding_3" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/button_ready" style="@style/res_2132018262_sravni_button"/>
+        <com.google.android.material.button.MaterialButton android:id="@+id/btnPaymentOsago" android:tag="binding_4" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/show_payment" style="@style/res_2132018262_sravni_button"/>
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

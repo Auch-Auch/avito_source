@@ -1,0 +1,79 @@
+[
+  {
+    "item": {
+      "_id": "chatInsurance",
+      "status": "inprogress",
+      "messages": [
+        {
+          "order": "0",
+          "created": "Tue Jul 14 2020 13:01:13 GMT+0300 (Moscow Standard Time)",
+          "name": "startCard",
+          "message": "Здравствуйте. Здесь написано очень много текста, чтобы проверить межстрочный интервал. Но мы то понимаем, что эт оне для этого :)",
+          "sender": "bot"
+        }
+      ]
+    }
+  },
+  {
+    "item": {
+      "_id": "chatInsurance",
+      "status": "inprogress",
+      "messages": [
+        {
+          "order": "0",
+          "created": "Tue Jul 14 2020 13:01:13 GMT+0300 (Moscow Standard Time)",
+          "name": "startCard",
+          "message": "Здравствуйте. Здесь написано очень много текста, чтобы проверить межстрочный интервал. Но мы то понимаем, что эт оне для этого :)",
+          "sender": "bot"
+        }
+      ]
+    }
+  },
+  {
+    "item": {
+      "_id": "chatInsurance",
+      "status": "inprogress",
+      "messages": [
+        {
+          "order": "14",
+          "name": "osagoOffers",
+          "message": "Ваши предложения!",
+          "sender": "bot",
+          "type": "osagoorder",
+          "content": {
+            "elements": [
+              {
+                "name": "status",
+                "text": "status"
+              },
+              {
+                "name": "savedSearch",
+                "text": "32432234sdwf23e33f"
+              },
+              {
+                "name": "productId",
+                "text": "productId"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "item": {
+      "_id": "chatInsurance",
+      "status": "inprogress",
+      "messages": [
+        {
+          "order": "16",
+          "created": "Tue Jul 14 2020 13:01:13 GMT+0300 (Moscow Standard Time)",
+          "name": "finalCard",
+          "type": "returntodashboard",
+          "message": "Спасибо за ответы!",
+          "sender": "bot"
+        }
+      ]
+    }
+  }
+]

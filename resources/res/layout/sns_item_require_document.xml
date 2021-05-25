@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/sns_bg_required_document_type" android:paddingTop="@dimen/sns_margin_small_tiny" android:paddingBottom="@dimen/sns_margin_small_tiny" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/sns_margin_medium" android:paddingEnd="@dimen/sns_margin_medium">
+    <TextView android:layout_gravity="center_vertical" android:id="@+id/tv_type" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/res_2132019005_widget_snsdocument_required_title"/>
+</FrameLayout>

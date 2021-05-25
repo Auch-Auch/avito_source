@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <objectAnimator android:duration="333" android:repeatCount="infinite" android:repeatMode="reverse" android:valueFrom="0.7" android:valueTo="1" android:valueType="floatType" android:propertyName="fillAlpha"/>
+    <objectAnimator android:duration="333" android:repeatCount="infinite" android:repeatMode="reverse" android:valueFrom="1" android:valueTo="0.4" android:valueType="floatType" android:propertyName="fillAlpha"/>
+    <objectAnimator android:duration="333" android:repeatCount="infinite" android:repeatMode="reverse" android:valueFrom="0.4" android:valueTo="0.7" android:valueType="floatType" android:propertyName="fillAlpha"/>
+    <objectAnimator android:duration="500" android:repeatCount="infinite" android:repeatMode="reverse" android:valueFrom="M29.5,8L29.5,8A1.5,1.5 0,0 1,31 9.5L31,14.5A1.5,1.5 0,0 1,29.5 16L29.5,16A1.5,1.5 0,0 1,28 14.5L28,9.5A1.5,1.5 0,0 1,29.5 8z" android:valueTo="M29.5,1L29.5,1A1.5,1.5 0,0 1,31 2.5L31,12.5A1.5,1.5 0,0 1,29.5 14L29.5,14A1.5,1.5 0,0 1,28 12.5L28,2.5A1.5,1.5 0,0 1,29.5 1z" android:valueType="pathType" android:propertyName="pathData"/>
+</set>

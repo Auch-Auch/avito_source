@@ -1,0 +1,151 @@
+{
+  "item": {
+    "mainTitle": "Выбор страховой",
+    "recommendedDate": "10.04.2020",
+    "conversationId": "12312312312",
+    "savedSearchId": "123122312",
+    "pollingId": "123154322",
+    "pollingInterval": 500,
+    "offerGroups": [
+      {
+        "title": "Ваша страховая компания",
+        "blockType": "prolongation",
+        "offerList": [
+          {
+            "productType": "osago",
+            "displaySettings": {
+              "fontColor": "ffffff",
+              "backgroundColor": "e23483",
+              "productName": "Альфа-страхование",
+              "iconTitle": "A"
+            },
+            "objectType": "prolongation",
+            "productId": "8969"
+          }
+        ]
+      },
+      {
+        "title": "Выберите компанию",
+        "offerList": [
+          {
+            "productType": "osago",
+            "displaySettings": {
+              "fontColor": "ffffff",
+              "backgroundColor": "9b0028",
+              "productName": "Росгосстрах",
+              "iconTitle": "P"
+            },
+            "productId": "8968"
+          },
+          {
+            "productType": "osago",
+            "displaySettings": {
+              "fontColor": "000000",
+              "backgroundColor": "fff100",
+              "productName": "Тинькофф страхование",
+              "iconTitle": "T"
+            },
+            "productId": "8978"
+          },
+          {
+            "productType": "osago",
+            "displaySettings": {
+              "fontColor": "ffffff",
+              "backgroundColor": "03a9f4",
+              "productName": "ВКС страхование",
+              "iconTitle": "B"
+            },
+            "productId": "8979"
+          }
+        ]
+      }
+    ],
+    "filters": [
+      {
+        "title": "c 28.08.2020",
+        "filterIcon": "time",
+        "filterName": "policedate",
+        "details": [
+          {
+            "valueType": "barrelDay",
+            "title": "Дата пролонгации",
+            "values": [
+              {
+                "title": "20.02.2020",
+                "code": "minValue",
+                "value": "12.02.2020"
+              },
+              {
+                "title": "12.04.2020",
+                "code": "maxValue",
+                "value": "12.04.2020"
+              },
+              {
+                "title": "28.08.2020",
+                "code": "recommendedValue",
+                "value": "14.02.2020"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "3 водителя",
+        "filterIcon": "human",
+        "filterName": "drivers",
+        "details": [
+          {
+            "valueType": "switcherList",
+            "title": "Водители",
+            "editable": true,
+            "values": [
+              {
+                "title": "Мешков Юрий Макимович",
+                "code": "active",
+                "value": "1"
+              },
+              {
+                "title": "Тищенко Темур",
+                "code": "inactive",
+                "value": "2"
+              },
+              {
+                "title": "Амиров Андрей",
+                "code": "active",
+                "value": "3"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Машинка машиночка",
+        "filterIcon": "car",
+        "filterName": "carInfo",
+        "details": [
+          {
+            "valueType": "listInfo",
+            "title": "Mark + Model",
+            "values": [
+              {
+                "title": "Модель",
+                "code": "mark",
+                "value": "Лада кайён"
+              },
+              {
+                "title": "Год выпуска",
+                "code": "year",
+                "value": "2007"
+              },
+              {
+                "title": "ЛС",
+                "code": "power",
+                "value": "107"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

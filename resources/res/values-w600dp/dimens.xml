@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="container_horizontal_padding">110dp</dimen>
+    <dimen name="container_horizontal_ripple_padding">94dp</dimen>
+    <dimen name="extended_profile_badge_ratio">0.5</dimen>
+    <dimen name="home_shortcuts_bottom_padding">18dp</dimen>
+    <dimen name="home_shortcuts_horizontal_padding">12dp</dimen>
+    <dimen name="home_shortcuts_top_padding">16dp</dimen>
+    <dimen name="list_serp_card_padding">6dp</dimen>
+    <dimen name="notification_center_recommends_advert_max_size">468dp</dimen>
+    <dimen name="price_view_side_margin">104dp</dimen>
+    <dimen name="publish_continue_button_side_margin">136dp</dimen>
+    <dimen name="recommendations_adverts_vertical_padding">12dp</dimen>
+    <dimen name="review_details_text_horizontal_padding">72dp</dimen>
+    <dimen name="search_shortcut_horizontal_padding">6dp</dimen>
+    <dimen name="serp_card_bottom_padding">16dp</dimen>
+    <dimen name="serp_disclaimer_banner_bottom_padding">6dp</dimen>
+    <dimen name="serp_horizontal_padding">18dp</dimen>
+    <dimen name="serp_horizontal_padding_button">22dp</dimen>
+    <dimen name="toolbar_search_view_height">64dp</dimen>
+    <dimen name="vin_divider_margin">200dp</dimen>
+    <dimen name="vk_share_dialog_view_padding">100dp</dimen>
+</resources>

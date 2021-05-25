@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sothree.slidinguppanel.SlidingUpPanelLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="bottom" android:id="@+id/sliding_layout" android:tag="layout/offer_osago_list_fragment_sravni_0" android:layout_width="match_parent" android:layout_height="match_parent" app:umanoFadeColor="@color/sliding_background_sravni" app:umanoOverlay="true" app:umanoPanelHeight="0dp" app:umanoShadowHeight="0dp">
+    <androidx.constraintlayout.widget.ConstraintLayout android:tag="binding_1" android:background="@color/pale_grey_sravni" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar" android:tag="binding_2" android:background="@color/white_sravni" android:layout_width="0dp" android:layout_height="56dp" android:elevation="5dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" app:titleTextColor="@color/black_sravni" style="@style/FontMedium"/>
+        <View android:id="@+id/vToolbar" android:background="@color/black_12_sravni" android:layout_width="@dimen/dim_0" android:layout_height="1dp" android:layout_marginTop="3dp" android:elevation="5dp" app:layout_constraintBottom_toBottomOf="@+id/toolbar" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0"/>
+        <FrameLayout android:id="@+id/flFilterPanel" android:background="@color/white_sravni" android:layout_width="match_parent" android:layout_height="wrap_content" android:elevation="5dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/vToolbar">
+            <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@+id/rvFilterPanel" android:tag="binding_3" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:overScrollMode="never" android:paddingStart="@dimen/dim_12" android:paddingEnd="@dimen/dim_4" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+        </FrameLayout>
+        <ru.sravni.android.bankproduct.utils.components.wraprefreshlayout.WrapContentableSwipeRefreshLayout android:tag="binding_4" android:layout_width="@dimen/dim_0" android:layout_height="@dimen/dim_0" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/flFilterPanel">
+            <androidx.recyclerview.widget.RecyclerView android:orientation="vertical" android:id="@+id/rvListOsagoOffer" android:tag="binding_5" android:paddingTop="6dp" android:paddingBottom="6dp" android:scrollbars="vertical" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+        </ru.sravni.android.bankproduct.utils.components.wraprefreshlayout.WrapContentableSwipeRefreshLayout>
+        <include android:visibility="gone" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/toolbar" layout="@layout/wait_error_fragment_sravni"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout android:orientation="vertical" android:tag="binding_6" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@+id/flPanelFadeLayout" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+        <FrameLayout android:tag="binding_7" android:background="@drawable/background_up_panel_sravni" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include android:visibility="gone" layout="@layout/filter_barrel_day_layout_sravni"/>
+            <include android:visibility="gone" layout="@layout/filter_list_info_layout_sravni"/>
+            <include android:visibility="gone" layout="@layout/filter_switcher_list_layout_sravni"/>
+            <include android:visibility="gone" layout="@layout/filter_description_layout_sravni"/>
+        </FrameLayout>
+        <include layout="@layout/slideup_panel_button_sravni"/>
+    </LinearLayout>
+</com.sothree.slidinguppanel.SlidingUpPanelLayout>

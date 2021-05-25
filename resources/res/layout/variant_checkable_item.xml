@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.avito.android.ui.view.CheckableFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/bg_rds_gray_button" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <androidx.appcompat.widget.AppCompatCheckedTextView android:textColor="?attr/black" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/title" android:padding="16dp" android:duplicateParentState="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:checkMark="@drawable/control_check_mark_20" android:minHeight="@dimen/auto_catalog_selector_content_height" android:maxLines="2" android:drawablePadding="8dp" style="?attr/textLegacy2_body"/>
+</com.avito.android.ui.view.CheckableFrameLayout>

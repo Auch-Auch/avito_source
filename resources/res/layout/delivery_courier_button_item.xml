@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.avito.android.lib.design.shadow_layout.ShadowFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/apply_button_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.avito.android.lib.design.button.Button android:gravity="center" android:id="@+id/button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/delivery_horizontal_padding" android:layout_marginTop="32dp" android:layout_marginRight="@dimen/delivery_horizontal_padding" android:layout_marginBottom="22dp" style="@style/res_2132017311_avito_button_primarylarge"/>
+</com.avito.android.lib.design.shadow_layout.ShadowFrameLayout>

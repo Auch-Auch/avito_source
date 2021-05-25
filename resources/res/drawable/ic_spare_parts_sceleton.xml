@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" android:height="118dp" android:width="374dp" android:viewportWidth="374" android:viewportHeight="118">
+    <path android:fillColor="?attr/gray8" android:pathData="M5 0 L256 0 A5 5 0 0 1 261 5 L261 11 A5 5 0 0 1 256 16 L5 16 A5 5 0 0 1 0 11 L0 5 A5 5 0 0 1 5 0z"/>
+    <path android:fillColor="?attr/gray8" android:pathData="M4 26 L153 26 A4 4 0 0 1 157 30 L157 30 A4 4 0 0 1 153 34 L4 34 A4 4 0 0 1 0 30 L0 30 A4 4 0 0 1 4 26z"/>
+    <path android:fillColor="?attr/gray8" android:pathData="M4 50 L366 50 A4 4 0 0 1 370 54 L370 54 A4 4 0 0 1 366 58 L4 58 A4 4 0 0 1 0 54 L0 54 A4 4 0 0 1 4 50z"/>
+    <path android:fillColor="?attr/gray8" android:pathData="M4 68 L228 68 A4 4 0 0 1 232 72 L232 72 A4 4 0 0 1 228 76 L4 76 A4 4 0 0 1 0 72 L0 72 A4 4 0 0 1 4 68z"/>
+    <path android:fillColor="?attr/gray8" android:pathData="M4 92 L 366 92 A4 4 0 0 1 370 96 L370 96A4 4 0 0 1 366 100L4 100A4 4 0 0 1 0 96L0 96A4 4 0 0 1 4 92z"/>
+    <path android:fillColor="?attr/gray8" android:pathData="M4 110 L228 110 A4 4 0 0 1 232 114 L232 114 A4 4 0 0 1 228 118 L4 118 A4 4 0 0 1 0 114 L0 114 A4 4 0 0 1 4 110z"/>
+</vector>

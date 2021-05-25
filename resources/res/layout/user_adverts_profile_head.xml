@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center_vertical" android:layout_gravity="start" android:orientation="horizontal" android:id="@+id/profile" android:background="@drawable/bg_profile" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="?attr/actionBarSize">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/avatar" android:layout_width="36dp" android:layout_height="36dp" app:actualImageScaleType="6" app:backgroundImage="?attr/gray8" app:placeholderImage="?attr/gray8" app:placeholderImageScaleType="4" app:roundAsCircle="true"/>
+    <TextView android:ellipsize="end" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" android:layout_marginStart="10dp" app:fontFamily="@font/avito_bold" style="?attr/textLegacy1_titleBold"/>
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1dp" app:srcCompat="@drawable/ic_ua_arrow_next_24"/>
+</LinearLayout>

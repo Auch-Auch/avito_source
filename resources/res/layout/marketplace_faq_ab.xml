@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/marketplace_faq_root" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:layout_marginEnd="@dimen/content_horizontal_padding">
+    <TextView android:textAppearance="?attr/textHeadingLarge" android:id="@+id/marketplace_faq_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/content_horizontal_padding"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/marketplace_faq_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/content_horizontal_padding"/>
+    <TextView android:gravity="center" android:id="@+id/marketplace_faq_action" android:background="@drawable/bg_rds_gray_button" android:paddingLeft="4dp" android:paddingRight="4dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="28dp" android:layout_marginTop="6dp" android:text="@string/rds_show_full" android:layout_marginStart="@dimen/rds_content_horizontal_padding_left" style="@style/res_2132018350_textappearance_avito_advertdetails_body_blue"/>
+</LinearLayout>

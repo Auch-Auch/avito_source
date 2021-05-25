@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" android:drawable="@drawable/ic_wait_text_sravni">
+    <target android:name="first" android:animation="@animator/anim_first_sravni"/>
+    <target android:name="second" android:animation="@animator/anim_second_sravni"/>
+    <target android:name="third" android:animation="@animator/anim_third_sravni"/>
+    <target android:name="fourth" android:animation="@animator/anim_fourth_sravni"/>
+    <target android:name="fifth" android:animation="@animator/anim_fifth_sravni"/>
+</animated-vector>

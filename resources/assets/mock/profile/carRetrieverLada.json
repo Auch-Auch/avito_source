@@ -1,0 +1,28 @@
+{
+  "item": {
+    "id": "carRetrieverLada",
+    "title": "Авто",
+    "groups": [
+      {
+        "items": [
+          {
+            "title": "Марка",
+            "value": "Ваз"
+          },
+          {
+            "title": "Модель",
+            "value": "2107"
+          },
+          {
+            "title": "Год выпуска",
+            "value": "1985"
+          },
+          {
+            "title": "ЛС",
+            "value": "75"
+          }
+        ]
+      }
+    ]
+  }
+}

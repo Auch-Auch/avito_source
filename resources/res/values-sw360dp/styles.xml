@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="res_2132017799_calls_widget_audiobutton_mic" parent="@style/res_2132017798_calls_widget_audiobutton">
+        <item name="android:src">@drawable/ic_call_mic_off_24</item>
+    </style>
+    <style name="res_2132017800_calls_widget_audiobutton_speaker" parent="@style/res_2132017798_calls_widget_audiobutton">
+        <item name="android:src">@drawable/ic_call_speaker_24</item>
+    </style>
+    <style name="res_2132017803_calls_widget_callbutton_answer" parent="@style/res_2132017802_calls_widget_callbutton">
+        <item name="android:src">@drawable/ic_call_answer_36</item>
+        <item name="android:backgroundTint">?attr/green</item>
+    </style>
+    <style name="res_2132017804_calls_widget_callbutton_close" parent="@style/res_2132017802_calls_widget_callbutton">
+        <item name="android:src">@drawable/ic_call_decline_36</item>
+        <item name="android:backgroundTint">@color/expected_call_button</item>
+    </style>
+    <style name="res_2132017805_calls_widget_callbutton_decline" parent="@style/res_2132017802_calls_widget_callbutton">
+        <item name="android:src">@drawable/ic_call_decline_36</item>
+        <item name="android:backgroundTint">?attr/red</item>
+    </style>
+    <style name="res_2132017806_calls_widget_callbutton_hangup" parent="@style/res_2132017802_calls_widget_callbutton">
+        <item name="android:src">@drawable/ic_call_hangup_36</item>
+        <item name="android:backgroundTint">?attr/red</item>
+    </style>
+    <style name="res_2132017808_calls_widget_textview_callstatus" parent="@style/res_2132017807_calls_widget_textview">
+        <item name="android:textAppearance">?attr/textLegacy3_body</item>
+        <item name="android:textColor">@color/avito_constant_white</item>
+        <item name="android:fontFamily">@font/avito_regular</item>
+        <item name="fontFamily">@font/avito_regular</item>
+    </style>
+    <style name="res_2132017810_calls_widget_textview_callername" parent="@style/res_2132017807_calls_widget_textview">
+        <item name="android:textAppearance">?attr/textLegacy3_headingLargeBold</item>
+        <item name="android:textSize">26sp</item>
+        <item name="android:textColor">@color/avito_constant_white</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:fontFamily">@font/avito_bold</item>
+        <item name="fontFamily">@font/avito_bold</item>
+    </style>
+</resources>

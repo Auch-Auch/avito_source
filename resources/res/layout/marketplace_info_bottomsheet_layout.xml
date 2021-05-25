@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="16dp" android:layout_marginEnd="16dp">
+            <ImageView android:id="@+id/marketplace_info_bottomsheet_image" android:layout_width="match_parent" android:layout_height="322dp" android:src="@drawable/marketplace_info_image"/>
+            <TextView android:textAppearance="?attr/textHeadingLarge" android:id="@+id/marketplace_info_bottomsheet_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp"/>
+            <TextView android:textAppearance="?attr/textBody" android:textColor="@color/text_button_default" android:id="@+id/marketplace_info_bottomsheet_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp"/>
+            <Space android:layout_width="match_parent" android:layout_height="32dp"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

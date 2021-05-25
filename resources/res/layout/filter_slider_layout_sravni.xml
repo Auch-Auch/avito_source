@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:tag="layout/filter_slider_layout_sravni_0" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textColor="@color/on_surface_high_emphasis" android:id="@+id/tvAmountTitle" android:tag="binding_1" android:padding="@dimen/dim_16" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Headline1Medium"/>
+    <com.google.android.material.textfield.TextInputLayout android:id="@+id/tilAmount" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dim_4" android:hint="@string/filter_amount_title" android:layout_marginStart="@dimen/dim_16" android:layout_marginEnd="@dimen/dim_16" style="@style/res_2132018278_sravni_textinputlayout">
+        <com.google.android.material.textfield.TextInputEditText android:id="@+id/tietAmount" android:tag="binding_2" android:longClickable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="number"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.google.android.material.slider.Slider android:tag="binding_3" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dim_4" android:layout_marginStart="@dimen/dim_6" android:layout_marginEnd="@dimen/dim_6" app:haloRadius="@dimen/dim_12" app:labelBehavior="2" app:thumbRadius="@dimen/dim_6" style="@style/res_2132018275_sravni_slider"/>
+        <FrameLayout android:layout_gravity="bottom" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dim_16" android:layout_marginEnd="@dimen/dim_16">
+            <TextView android:textColor="@color/on_surface_medium_emphasis" android:gravity="start" android:id="@+id/tvMinAmountTitle" android:tag="binding_4" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Caption2Regular"/>
+            <TextView android:textColor="@color/on_surface_medium_emphasis" android:gravity="end" android:id="@+id/tvMaxAmountTitle" android:tag="binding_5" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Caption2Regular"/>
+        </FrameLayout>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/advert_details_icebreakers_root" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/content_horizontal_padding" android:layout_marginTop="20dp" android:layout_marginRight="@dimen/content_horizontal_padding">
+    <TextView android:textAppearance="?attr/textHeadingLarge" android:textColor="@color/avito_black" android:id="@+id/ice_breakers_title" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <com.google.android.flexbox.FlexboxLayout android:id="@+id/ice_breakers_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" app:flexDirection="0" app:flexWrap="1"/>
+</LinearLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" android:height="9dp" android:width="8dp" android:viewportWidth="8" android:viewportHeight="9">
+    <path android:fillColor="@color/stepper_button" android:pathData="M3.42969,5.28125H0.25781V4.22656H3.42969V0.89063H4.5625V4.22656H7.75V5.28125H4.5625V8.64062H3.42969V5.28125Z"/>
+</vector>

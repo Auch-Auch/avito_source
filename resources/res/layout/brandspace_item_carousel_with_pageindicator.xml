@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:paddingLeft="@dimen/brandspace_content_horizontal_padding" android:paddingRight="@dimen/brandspace_content_horizontal_padding" android:clipToPadding="@bool/brandspace_carousel_cliptopaddings" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <com.avito.android.lib.design.page_indicator.PageIndicator android:gravity="center" android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/page_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="12dp" app:selectedDotColor="?attr/white" style="@style/res_2132017981_design_widget_pageindicator"/>
+</FrameLayout>

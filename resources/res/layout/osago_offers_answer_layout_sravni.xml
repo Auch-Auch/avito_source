@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.button.MaterialButton xmlns:android="http://schemas.android.com/apk/res/android" android:tag="layout/osago_offers_answer_layout_sravni_0" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dim_4" android:layout_marginBottom="@dimen/dim_4" android:text="@string/show_result" android:layout_marginStart="@dimen/dim_12" android:layout_marginEnd="@dimen/dim_12" style="@style/res_2132018265_sravni_chatbluebutton"/>

@@ -1,0 +1,294 @@
+package io.reactivex.internal.operators.flowable;
+
+import io.reactivex.Flowable;
+import io.reactivex.FlowableSubscriber;
+import io.reactivex.MaybeObserver;
+import io.reactivex.MaybeSource;
+import io.reactivex.disposables.Disposable;
+import io.reactivex.internal.disposables.DisposableHelper;
+import io.reactivex.internal.fuseable.SimplePlainQueue;
+import io.reactivex.internal.queue.SpscArrayQueue;
+import io.reactivex.internal.subscriptions.SubscriptionHelper;
+import io.reactivex.internal.util.AtomicThrowable;
+import io.reactivex.internal.util.BackpressureHelper;
+import io.reactivex.plugins.RxJavaPlugins;
+import java.util.concurrent.atomic.AtomicInteger;
+import java.util.concurrent.atomic.AtomicLong;
+import java.util.concurrent.atomic.AtomicReference;
+import org.reactivestreams.Subscriber;
+import org.reactivestreams.Subscription;
+public final class FlowableMergeWithMaybe<T> extends s6.a.c.b.a.a<T, T> {
+    public final MaybeSource<? extends T> b;
+
+    public static final class a<T> extends AtomicInteger implements FlowableSubscriber<T>, Subscription {
+        private static final long serialVersionUID = -4592979584110982903L;
+        public final Subscriber<? super T> a;
+        public final AtomicReference<Subscription> b = new AtomicReference<>();
+        public final C0386a<T> c = new C0386a<>(this);
+        public final AtomicThrowable d = new AtomicThrowable();
+        public final AtomicLong e = new AtomicLong();
+        public final int f;
+        public final int g;
+        public volatile SimplePlainQueue<T> h;
+        public T i;
+        public volatile boolean j;
+        public volatile boolean k;
+        public volatile int l;
+        public long m;
+        public int n;
+
+        /* renamed from: io.reactivex.internal.operators.flowable.FlowableMergeWithMaybe$a$a  reason: collision with other inner class name */
+        public static final class C0386a<T> extends AtomicReference<Disposable> implements MaybeObserver<T> {
+            private static final long serialVersionUID = -2935427570954647017L;
+            public final a<T> a;
+
+            public C0386a(a<T> aVar) {
+                this.a = aVar;
+            }
+
+            @Override // io.reactivex.MaybeObserver
+            public void onComplete() {
+                a<T> aVar = this.a;
+                aVar.l = 2;
+                aVar.a();
+            }
+
+            @Override // io.reactivex.MaybeObserver
+            public void onError(Throwable th) {
+                a<T> aVar = this.a;
+                if (aVar.d.addThrowable(th)) {
+                    SubscriptionHelper.cancel(aVar.b);
+                    aVar.a();
+                    return;
+                }
+                RxJavaPlugins.onError(th);
+            }
+
+            @Override // io.reactivex.MaybeObserver
+            public void onSubscribe(Disposable disposable) {
+                DisposableHelper.setOnce(this, disposable);
+            }
+
+            @Override // io.reactivex.MaybeObserver
+            public void onSuccess(T t) {
+                a<T> aVar = this.a;
+                if (aVar.compareAndSet(0, 1)) {
+                    long j = aVar.m;
+                    if (aVar.e.get() != j) {
+                        aVar.m = j + 1;
+                        aVar.a.onNext(t);
+                        aVar.l = 2;
+                    } else {
+                        aVar.i = t;
+                        aVar.l = 1;
+                        if (aVar.decrementAndGet() == 0) {
+                            return;
+                        }
+                    }
+                } else {
+                    aVar.i = t;
+                    aVar.l = 1;
+                    if (aVar.getAndIncrement() != 0) {
+                        return;
+                    }
+                }
+                aVar.b();
+            }
+        }
+
+        public a(Subscriber<? super T> subscriber) {
+            this.a = subscriber;
+            int bufferSize = Flowable.bufferSize();
+            this.f = bufferSize;
+            this.g = bufferSize - (bufferSize >> 2);
+        }
+
+        public void a() {
+            if (getAndIncrement() == 0) {
+                b();
+            }
+        }
+
+        public void b() {
+            int i2;
+            Subscriber<? super T> subscriber = this.a;
+            long j2 = this.m;
+            int i3 = this.n;
+            int i4 = this.g;
+            int i5 = 1;
+            int i6 = 1;
+            while (true) {
+                long j3 = this.e.get();
+                while (true) {
+                    i2 = (j2 > j3 ? 1 : (j2 == j3 ? 0 : -1));
+                    if (i2 == 0) {
+                        break;
+                    } else if (this.j) {
+                        this.i = null;
+                        this.h = null;
+                        return;
+                    } else if (this.d.get() != null) {
+                        this.i = null;
+                        this.h = null;
+                        subscriber.onError(this.d.terminate());
+                        return;
+                    } else {
+                        int i7 = this.l;
+                        if (i7 == i5) {
+                            T t = this.i;
+                            this.i = null;
+                            this.l = 2;
+                            subscriber.onNext(t);
+                            j2++;
+                        } else {
+                            boolean z = this.k;
+                            SimplePlainQueue<T> simplePlainQueue = this.h;
+                            T poll = simplePlainQueue != null ? simplePlainQueue.poll() : null;
+                            boolean z2 = poll == null;
+                            if (z && z2 && i7 == 2) {
+                                this.h = null;
+                                subscriber.onComplete();
+                                return;
+                            } else if (z2) {
+                                break;
+                            } else {
+                                subscriber.onNext(poll);
+                                j2++;
+                                i3++;
+                                if (i3 == i4) {
+                                    this.b.get().request((long) i4);
+                                    i3 = 0;
+                                }
+                                i5 = 1;
+                            }
+                        }
+                    }
+                }
+                if (i2 == 0) {
+                    if (this.j) {
+                        this.i = null;
+                        this.h = null;
+                        return;
+                    } else if (this.d.get() != null) {
+                        this.i = null;
+                        this.h = null;
+                        subscriber.onError(this.d.terminate());
+                        return;
+                    } else {
+                        boolean z3 = this.k;
+                        SimplePlainQueue<T> simplePlainQueue2 = this.h;
+                        boolean z4 = simplePlainQueue2 == null || simplePlainQueue2.isEmpty();
+                        if (z3 && z4 && this.l == 2) {
+                            this.h = null;
+                            subscriber.onComplete();
+                            return;
+                        }
+                    }
+                }
+                this.m = j2;
+                this.n = i3;
+                i6 = addAndGet(-i6);
+                if (i6 != 0) {
+                    i5 = 1;
+                } else {
+                    return;
+                }
+            }
+        }
+
+        @Override // org.reactivestreams.Subscription
+        public void cancel() {
+            this.j = true;
+            SubscriptionHelper.cancel(this.b);
+            DisposableHelper.dispose(this.c);
+            if (getAndIncrement() == 0) {
+                this.h = null;
+                this.i = null;
+            }
+        }
+
+        @Override // org.reactivestreams.Subscriber
+        public void onComplete() {
+            this.k = true;
+            a();
+        }
+
+        @Override // org.reactivestreams.Subscriber
+        public void onError(Throwable th) {
+            if (this.d.addThrowable(th)) {
+                DisposableHelper.dispose(this.c);
+                a();
+                return;
+            }
+            RxJavaPlugins.onError(th);
+        }
+
+        @Override // org.reactivestreams.Subscriber
+        public void onNext(T t) {
+            if (compareAndSet(0, 1)) {
+                long j2 = this.m;
+                if (this.e.get() != j2) {
+                    SimplePlainQueue<T> simplePlainQueue = this.h;
+                    if (simplePlainQueue == null || simplePlainQueue.isEmpty()) {
+                        this.m = j2 + 1;
+                        this.a.onNext(t);
+                        int i2 = this.n + 1;
+                        if (i2 == this.g) {
+                            this.n = 0;
+                            this.b.get().request((long) i2);
+                        } else {
+                            this.n = i2;
+                        }
+                    } else {
+                        simplePlainQueue.offer(t);
+                    }
+                } else {
+                    SpscArrayQueue spscArrayQueue = this.h;
+                    if (spscArrayQueue == null) {
+                        spscArrayQueue = new SpscArrayQueue(Flowable.bufferSize());
+                        this.h = spscArrayQueue;
+                    }
+                    spscArrayQueue.offer(t);
+                }
+                if (decrementAndGet() == 0) {
+                    return;
+                }
+            } else {
+                SpscArrayQueue spscArrayQueue2 = this.h;
+                if (spscArrayQueue2 == null) {
+                    spscArrayQueue2 = new SpscArrayQueue(Flowable.bufferSize());
+                    this.h = spscArrayQueue2;
+                }
+                spscArrayQueue2.offer(t);
+                if (getAndIncrement() != 0) {
+                    return;
+                }
+            }
+            b();
+        }
+
+        @Override // io.reactivex.FlowableSubscriber, org.reactivestreams.Subscriber
+        public void onSubscribe(Subscription subscription) {
+            SubscriptionHelper.setOnce(this.b, subscription, (long) this.f);
+        }
+
+        @Override // org.reactivestreams.Subscription
+        public void request(long j2) {
+            BackpressureHelper.add(this.e, j2);
+            a();
+        }
+    }
+
+    public FlowableMergeWithMaybe(Flowable<T> flowable, MaybeSource<? extends T> maybeSource) {
+        super(flowable);
+        this.b = maybeSource;
+    }
+
+    @Override // io.reactivex.Flowable
+    public void subscribeActual(Subscriber<? super T> subscriber) {
+        a aVar = new a(subscriber);
+        subscriber.onSubscribe(aVar);
+        this.source.subscribe((FlowableSubscriber) aVar);
+        this.b.subscribe(aVar.c);
+    }
+}

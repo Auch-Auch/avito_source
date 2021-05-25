@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/advert_details_screen_root" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/toolbar"/>
+    <FrameLayout android:id="@+id/advert_details_container" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="?attr/actionBarSize" style="@style/ContentHolder">
+        <com.avito.android.advert_core.advert.PagerAdaptiveRecyclerView android:id="@+id/advert_details_recycler" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ViewStub android:id="@+id/cart_fab_stub" android:layout="@layout/cart_fab" style="@style/CartFab"/>
+            <ViewStub android:id="@+id/contact_bar_flying" android:visibility="gone" android:layout="@layout/advert_details_contact_bar_floating" android:inflatedId="@+id/contact_bar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <ViewStub android:layout_gravity="bottom" android:id="@+id/ask_question_flying" android:visibility="gone" android:layout="@layout/advert_details_ask_question" android:inflatedId="@+id/ask_question_flying" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <ViewStub android:layout_gravity="bottom" android:id="@+id/network_retry" android:visibility="gone" android:layout="@layout/network_retry" android:inflatedId="@+id/advert_network_error" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </FrameLayout>
+</FrameLayout>

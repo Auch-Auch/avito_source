@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/public_profile_screen_root" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/profile_toolbar"/>
+    <FrameLayout android:id="@+id/overlay_container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="?attr/actionBarSize">
+        <androidx.coordinatorlayout.widget.CoordinatorLayout android:orientation="vertical" android:id="@+id/coordinator_layout" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <include android:id="@+id/user_hat" android:layout_width="250dp" android:layout_height="wrap_content" layout="@layout/public_profile_hat"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="250dp">
+                <com.google.android.material.tabs.TabLayout android:id="@+id/adverts_tabs" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:tabMode="0" style="@style/res_2132018787_widget_avito_redesign_tablayout"/>
+                <com.avito.android.lib.design.alert_banner.AlertBanner android:id="@+id/adverts_closed_alert_banner" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="16dp" android:layout_marginEnd="16dp" app:alertBanner_closeVisible="false" app:layout_behavior="@string/appbar_scrolling_view_behavior" style="?attr/alertBannerWarning"/>
+                <com.avito.android.ui.SafeViewPager android:id="@+id/adverts_viewpager" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+            </LinearLayout>
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </FrameLayout>
+    <include layout="@layout/stub_view"/>
+</FrameLayout>

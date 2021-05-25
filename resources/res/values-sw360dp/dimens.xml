@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="buttons_on_photo_in_editor_width">48dp</dimen>
+    <dimen name="calls_audio_control_button_size">64dp</dimen>
+    <dimen name="calls_caller_name_and_status_vertical_spacing">2dp</dimen>
+    <dimen name="calls_control_button_size">82dp</dimen>
+    <dimen name="calls_control_buttons_audio_size">64dp</dimen>
+    <dimen name="calls_control_buttons_bottom_margin">52dp</dimen>
+    <dimen name="calls_control_buttons_call_size">82dp</dimen>
+    <dimen name="calls_control_buttons_horizontal_margin">52dp</dimen>
+    <dimen name="fab_drawable_padding">4dp</dimen>
+    <dimen name="fab_left_padding">12dp</dimen>
+    <dimen name="fab_right_padding">24dp</dimen>
+</resources>

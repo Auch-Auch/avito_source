@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/public_profile_screen_root" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/profile_toolbar"/>
+    <FrameLayout android:id="@+id/overlay_container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="?attr/actionBarSize">
+        <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@+id/coordinator_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.google.android.material.appbar.AppBarLayout android:id="@+id/profile_appbar" android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="0dp" app:layout_behavior="com.avito.android.public_profile.ui.FlingBehavior">
+                <FrameLayout android:id="@+id/header_container" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_scrollFlags="1">
+                    <include android:id="@+id/user_hat" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/public_profile_hat"/>
+                </FrameLayout>
+                <com.google.android.material.tabs.TabLayout android:id="@+id/adverts_tabs" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/res_2132018787_widget_avito_redesign_tablayout"/>
+            </com.google.android.material.appbar.AppBarLayout>
+            <com.avito.android.lib.design.alert_banner.AlertBanner android:id="@+id/adverts_closed_alert_banner" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="16dp" android:layout_marginEnd="16dp" app:alertBanner_closeVisible="false" app:layout_behavior="@string/appbar_scrolling_view_behavior" style="?attr/alertBannerWarning"/>
+            <com.avito.android.ui.SafeViewPager android:id="@+id/adverts_viewpager" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </FrameLayout>
+    <include layout="@layout/stub_view"/>
+</FrameLayout>

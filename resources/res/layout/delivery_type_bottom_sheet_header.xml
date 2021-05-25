@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/custom_bottom_sheet_header" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <include android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="0dp" android:layout_marginRight="16dp" android:layout_marginBottom="0dp" android:layout_alignParentTop="true" layout="@layout/delivery_type_title"/>
+    <ImageView android:id="@+id/close_button" android:background="@drawable/design_icon_close_ripple_right_cross" android:focusable="true" android:clickable="true" android:layout_width="28dp" android:layout_height="28dp" android:layout_marginLeft="14dp" android:layout_marginTop="12dp" android:layout_marginRight="14dp" android:layout_alignParentEnd="true"/>
+</RelativeLayout>

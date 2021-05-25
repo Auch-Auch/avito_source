@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:paddingTop="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+    <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginRight="6dp" android:layout_weight="1">
+        <TextView android:textAppearance="?attr/textBodySmall" android:textColor="?attr/gray48" android:id="@+id/initial_payment_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/advert_details_credit_initial_payment_title"/>
+        <TextView android:textAppearance="?attr/textHeadingSmall" android:ellipsize="end" android:id="@+id/initial_payment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:layout_weight="1">
+        <TextView android:textAppearance="?attr/textBodySmall" android:textColor="?attr/gray48" android:id="@+id/monthly_payment_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/advert_details_credit_monthly_payment"/>
+        <TextView android:textAppearance="?attr/textHeadingSmall" android:ellipsize="end" android:id="@+id/monthly_payment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1"/>
+    </LinearLayout>
+</LinearLayout>

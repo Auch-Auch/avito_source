@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/imv_chart_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/content_horizontal_padding" android:paddingEnd="@dimen/content_horizontal_padding">
+    <TextView android:textAppearance="?attr/textHeadingLarge" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <TextView android:textAppearance="?attr/textBody" android:textColor="@color/text_button_default" android:id="@+id/subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <TextView android:textAppearance="?attr/textBody" android:textColor="@color/text_button_default" android:id="@+id/details" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp"/>
+    <HorizontalScrollView android:id="@+id/scroll_view" android:scrollbars="none" android:fadingEdgeLength="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:overScrollMode="never" android:requiresFadingEdge="horizontal">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/section_container" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </HorizontalScrollView>
+</LinearLayout>

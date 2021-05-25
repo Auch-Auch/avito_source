@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/avito_constant_black" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.exoplayer2.ui.PlayerView android:id="@+id/player_view" android:layout_width="match_parent" android:layout_height="match_parent" app:controller_layout_id="@layout/player_control_view"/>
+    <ImageView android:layout_gravity="top|left|center_vertical|center_horizontal|center|start" android:id="@+id/close_button" android:background="@drawable/player_close_circle_bg" android:padding="11dp" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginLeft="8dp" android:layout_marginTop="12dp" app:srcCompat="@drawable/player_close_icon"/>
+</FrameLayout>

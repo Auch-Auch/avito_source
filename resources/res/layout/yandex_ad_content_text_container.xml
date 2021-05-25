@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:paddingLeft="@dimen/standard_padding" android:paddingTop="12dp" android:paddingRight="@dimen/standard_padding" android:paddingBottom="10dp" android:addStatesFromChildren="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:id="@+id/badge" style="@style/res_2132017905_design_widget_badge_ad"/>
+    <TextView android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:lineSpacingExtra="2sp" style="@style/res_2132018844_widget_avito_textview_serp_item_caption_title"/>
+    <TextView android:textColor="?attr/gray48" android:id="@+id/description" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:maxLines="3" android:lineSpacingExtra="2sp" style="@style/res_2132018838_widget_avito_textview_serp_item_caption_secondary"/>
+    <androidx.legacy.widget.Space android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <include android:id="@+id/more_info_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" layout="@layout/yandex_ads_more_info_button"/>
+    <TextView android:textSize="12sp" android:gravity="bottom" android:id="@+id/domain" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" style="@style/res_2132018830_widget_avito_textview_serp_item_caption_green"/>
+</LinearLayout>

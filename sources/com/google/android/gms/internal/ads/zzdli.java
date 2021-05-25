@@ -1,0 +1,5 @@
+package com.google.android.gms.internal.ads;
+public final class zzdli {
+    public String zzdve;
+    public String zzdvf;
+}

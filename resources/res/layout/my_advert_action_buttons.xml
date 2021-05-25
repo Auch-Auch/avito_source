@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:paddingLeft="@dimen/content_horizontal_padding" android:paddingTop="8dp" android:paddingRight="@dimen/content_horizontal_padding" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textColor="?attr/black" android:gravity="center_horizontal" android:id="@+id/actions_hint" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12dp" android:lineSpacingExtra="3sp" style="?attr/textLegacy1_body"/>
+    <include android:id="@+id/action_primary" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="6dp" android:text="@string/sell_faster" layout="@layout/button_primary"/>
+    <include android:id="@+id/action_secondary" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/button_flat_primary"/>
+</LinearLayout>

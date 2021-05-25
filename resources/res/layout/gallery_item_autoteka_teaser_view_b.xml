@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="?attr/black" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textAppearance="?attr/textHeadingLarge" android:textColor="?attr/white" android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="72dp" android:layout_marginStart="@dimen/gallery_teaser_margin_horizontal" android:layout_marginEnd="@dimen/gallery_teaser_margin_horizontal" app:drawableEndCompat="@drawable/ic_autoteka_logo_gallery_teaser"/>
+    <TextView android:textAppearance="?attr/textBody" android:textColor="?attr/gray48" android:id="@+id/sub_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginStart="@dimen/gallery_teaser_margin_horizontal" android:layout_marginEnd="@dimen/gallery_teaser_margin_horizontal"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+        <ScrollView android:id="@+id/insights_scroll_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_marginBottom="16dp">
+            <LinearLayout android:orientation="vertical" android:id="@+id/insights_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/gallery_teaser_margin_horizontal" android:layout_marginEnd="@dimen/gallery_teaser_margin_horizontal"/>
+        </ScrollView>
+    </FrameLayout>
+    <com.avito.android.lib.design.button.Button android:id="@+id/gallery_teaser_button_show" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16dp" android:text="@string/gallery_teaser_button_show_text" android:layout_marginStart="@dimen/gallery_teaser_margin_horizontal" android:layout_marginEnd="@dimen/gallery_teaser_margin_horizontal" style="?attr/buttonPrimaryLarge"/>
+</merge>

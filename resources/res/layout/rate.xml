@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:paddingTop="2dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.avito.android.design.widget.RateView android:id="@+id/rate_view" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <Space android:id="@+id/guideline" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:layout_below="@+id/rate_view" android:layout_centerHorizontal="true"/>
+    <TextView android:gravity="left" android:id="@+id/negative_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginTop="6dp" android:layout_toLeftOf="@+id/guideline" android:layout_below="@+id/rate_view" android:layout_alignParentLeft="true" style="@style/res_2132018759_widget_avito_rate_text"/>
+    <TextView android:gravity="right" android:id="@+id/positive_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:layout_marginRight="12dp" android:layout_toRightOf="@+id/guideline" android:layout_below="@+id/rate_view" android:layout_alignParentRight="true" style="@style/res_2132018759_widget_avito_rate_text"/>
+</RelativeLayout>

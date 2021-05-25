@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textAppearance="?attr/chips_titleTextAppearance" android:id="@+id/title" android:visibility="gone" android:duplicateParentState="true" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <TextView android:textAppearance="?attr/chips_subtitleTextAppearance" android:id="@+id/subtitle" android:visibility="gone" android:duplicateParentState="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="?attr/chips_titleSmallMargin"/>
+    <TextView android:textAppearance="?attr/chips_errorTextAppearance" android:id="@+id/error_top" android:visibility="gone" android:duplicateParentState="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="?attr/chips_titleSmallMargin"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/chips_recycler_view" android:duplicateParentState="true" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="?attr/chips_contentTopMargin"/>
+    <TextView android:textAppearance="?attr/chips_hintTextAppearance" android:id="@+id/hint" android:visibility="gone" android:duplicateParentState="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="?attr/chips_hintTopMargin"/>
+</merge>

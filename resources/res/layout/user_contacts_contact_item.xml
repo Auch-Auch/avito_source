@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.avito.android.design.widget.ForegroundLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/user_contact_item_root" android:background="@drawable/bg_user_contact_item" android:paddingLeft="@dimen/standard_padding" android:paddingBottom="26dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/item_image" android:layout_width="92dp" android:layout_height="68dp" android:layout_marginTop="@dimen/standard_padding" app:roundedCornerRadius="@dimen/user_contact_corner_radius" style="@style/res_2132018811_widget_avito_simpledraweeview_usercontactavatar"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="@dimen/standard_padding" android:layout_weight="1">
+            <TextView android:ellipsize="end" android:id="@+id/contact_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" style="?attr/textLegacy2_bodyHeavy"/>
+            <TextView android:textColor="@color/text_button_default" android:ellipsize="end" android:id="@+id/item_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:maxLines="1" style="?attr/textLegacy2_body"/>
+            <TextView android:textColor="@color/text_button_default" android:ellipsize="end" android:id="@+id/item_price" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" style="?attr/textLegacy2_body"/>
+        </LinearLayout>
+        <com.avito.android.lib.design.button.Button android:id="@+id/btn_remove_contact" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/ic_close_24_grey_500"/>
+    </LinearLayout>
+    <View android:background="?attr/gray12" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="@dimen/standard_padding" android:layout_marginRight="@dimen/standard_padding" android:layout_marginBottom="@dimen/standard_padding"/>
+    <com.avito.android.rating.user_contacts.UserContactRatingSelectView android:id="@+id/item_score" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/standard_padding"/>
+</com.avito.android.design.widget.ForegroundLinearLayout>

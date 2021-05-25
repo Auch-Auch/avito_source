@@ -1,0 +1,71 @@
+package a2.j.b.a.c;
+
+import android.content.Context;
+import com.google.android.datatransport.runtime.ExecutionModule_ExecutorFactory;
+import com.google.android.datatransport.runtime.TransportRuntime;
+import com.google.android.datatransport.runtime.TransportRuntime_Factory;
+import com.google.android.datatransport.runtime.backends.CreationContextFactory_Factory;
+import com.google.android.datatransport.runtime.backends.MetadataBackendRegistry_Factory;
+import com.google.android.datatransport.runtime.scheduling.DefaultScheduler;
+import com.google.android.datatransport.runtime.scheduling.DefaultScheduler_Factory;
+import com.google.android.datatransport.runtime.scheduling.SchedulingConfigModule_ConfigFactory;
+import com.google.android.datatransport.runtime.scheduling.SchedulingModule_WorkSchedulerFactory;
+import com.google.android.datatransport.runtime.scheduling.jobscheduling.SchedulerConfig;
+import com.google.android.datatransport.runtime.scheduling.jobscheduling.Uploader;
+import com.google.android.datatransport.runtime.scheduling.jobscheduling.Uploader_Factory;
+import com.google.android.datatransport.runtime.scheduling.jobscheduling.WorkInitializer;
+import com.google.android.datatransport.runtime.scheduling.jobscheduling.WorkInitializer_Factory;
+import com.google.android.datatransport.runtime.scheduling.jobscheduling.WorkScheduler;
+import com.google.android.datatransport.runtime.scheduling.persistence.EventStoreModule_DbNameFactory;
+import com.google.android.datatransport.runtime.scheduling.persistence.EventStoreModule_SchemaVersionFactory;
+import com.google.android.datatransport.runtime.scheduling.persistence.EventStoreModule_StoreConfigFactory;
+import com.google.android.datatransport.runtime.scheduling.persistence.SQLiteEventStore;
+import com.google.android.datatransport.runtime.scheduling.persistence.SQLiteEventStore_Factory;
+import com.google.android.datatransport.runtime.scheduling.persistence.SchemaManager_Factory;
+import com.google.android.datatransport.runtime.time.TimeModule_EventClockFactory;
+import com.google.android.datatransport.runtime.time.TimeModule_UptimeClockFactory;
+import dagger.internal.DoubleCheck;
+import dagger.internal.Factory;
+import dagger.internal.InstanceFactory;
+import java.util.concurrent.Executor;
+import javax.inject.Provider;
+public final class d extends k {
+    public Provider<Executor> a = DoubleCheck.provider(ExecutionModule_ExecutorFactory.create());
+    public Provider<Context> b;
+    public Provider c;
+    public Provider d;
+    public Provider e;
+    public Provider<SQLiteEventStore> f;
+    public Provider<SchedulerConfig> g;
+    public Provider<WorkScheduler> h;
+    public Provider<DefaultScheduler> i;
+    public Provider<Uploader> j;
+    public Provider<WorkInitializer> k;
+    public Provider<TransportRuntime> l;
+
+    public d(Context context, a aVar) {
+        Factory create = InstanceFactory.create(context);
+        this.b = create;
+        CreationContextFactory_Factory create2 = CreationContextFactory_Factory.create(create, TimeModule_EventClockFactory.create(), TimeModule_UptimeClockFactory.create());
+        this.c = create2;
+        this.d = DoubleCheck.provider(MetadataBackendRegistry_Factory.create(this.b, create2));
+        this.e = SchemaManager_Factory.create(this.b, EventStoreModule_DbNameFactory.create(), EventStoreModule_SchemaVersionFactory.create());
+        this.f = DoubleCheck.provider(SQLiteEventStore_Factory.create(TimeModule_EventClockFactory.create(), TimeModule_UptimeClockFactory.create(), EventStoreModule_StoreConfigFactory.create(), this.e));
+        SchedulingConfigModule_ConfigFactory create3 = SchedulingConfigModule_ConfigFactory.create(TimeModule_EventClockFactory.create());
+        this.g = create3;
+        SchedulingModule_WorkSchedulerFactory create4 = SchedulingModule_WorkSchedulerFactory.create(this.b, this.f, create3, TimeModule_UptimeClockFactory.create());
+        this.h = create4;
+        Provider<Executor> provider = this.a;
+        Provider provider2 = this.d;
+        Provider<SQLiteEventStore> provider3 = this.f;
+        this.i = DefaultScheduler_Factory.create(provider, provider2, create4, provider3, provider3);
+        Provider<Context> provider4 = this.b;
+        Provider provider5 = this.d;
+        Provider<SQLiteEventStore> provider6 = this.f;
+        this.j = Uploader_Factory.create(provider4, provider5, provider6, this.h, this.a, provider6, TimeModule_EventClockFactory.create());
+        Provider<Executor> provider7 = this.a;
+        Provider<SQLiteEventStore> provider8 = this.f;
+        this.k = WorkInitializer_Factory.create(provider7, provider8, this.h, provider8);
+        this.l = DoubleCheck.provider(TransportRuntime_Factory.create(TimeModule_EventClockFactory.create(), TimeModule_UptimeClockFactory.create(), this.i, this.j, this.k));
+    }
+}

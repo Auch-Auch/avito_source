@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:paddingLeft="@dimen/content_horizontal_padding" android:paddingRight="@dimen/content_horizontal_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/bg_btn_flat_rds_gray100" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include android:id="@+id/common_container" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/advert_details_profile_snippet_common"/>
+        <include android:id="@+id/contact_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/standard_padding" layout="@layout/advert_details_profile_snippet_contact"/>
+    </LinearLayout>
+</FrameLayout>

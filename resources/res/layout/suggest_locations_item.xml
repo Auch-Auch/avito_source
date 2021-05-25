@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:id="@+id/location_suggests_item" android:background="@drawable/bg_btn_flat" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/image_historical" android:visibility="gone" android:layout_width="16dp" android:layout_height="16dp" android:layout_marginTop="22dp" android:layout_marginStart="16dp" app:srcCompat="@drawable/ic_time_16"/>
+    <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/sl_item_padding" android:paddingBottom="@dimen/sl_item_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/sl_item_padding_start" android:paddingEnd="@dimen/sl_item_padding_end">
+        <TextView android:textAppearance="?attr/textLegacy3_body" android:textColor="@color/design_text_color_black_selector" android:id="@+id/text_location" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <TextView android:textAppearance="?attr/textLegacy3_bodySmall" android:textColor="?attr/gray48" android:id="@+id/text_parent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/sl_subtitle_padding_top"/>
+    </LinearLayout>
+</LinearLayout>

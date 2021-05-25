@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sothree.slidinguppanel.SlidingUpPanelLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="bottom" android:id="@+id/sliding_layout" android:tag="layout/offer_product_list_fragment_sravni_0" android:layout_width="match_parent" android:layout_height="match_parent" app:umanoFadeColor="@color/sliding_background_sravni" app:umanoOverlay="true" app:umanoPanelHeight="0dp" app:umanoShadowHeight="0dp">
+    <androidx.constraintlayout.widget.ConstraintLayout android:tag="binding_1" android:background="@color/background_second" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.google.android.material.appbar.AppBarLayout android:orientation="vertical" android:id="@+id/appBarLayout" android:layout_width="@dimen/dim_0" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+            <com.google.android.material.appbar.MaterialToolbar android:id="@+id/toolbar" android:tag="binding_2" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize"/>
+            <View android:id="@+id/vToolbar" android:background="@color/overlay_8" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <FrameLayout android:id="@+id/flFilterPanel" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@+id/rvFilterPanel" android:tag="binding_3" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:overScrollMode="never" android:paddingStart="@dimen/dim_12" android:paddingEnd="@dimen/dim_4" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+            </FrameLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+        <ru.sravni.android.bankproduct.utils.components.wraprefreshlayout.WrapContentableSwipeRefreshLayout android:tag="binding_4" android:visibility="visible" android:layout_width="@dimen/dim_0" android:layout_height="@dimen/dim_0" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/appBarLayout">
+            <androidx.recyclerview.widget.RecyclerView android:orientation="vertical" android:id="@+id/rvListCreditOffer" android:tag="binding_5" android:paddingBottom="@dimen/dim_6" android:scrollbars="vertical" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+        </ru.sravni.android.bankproduct.utils.components.wraprefreshlayout.WrapContentableSwipeRefreshLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:tag="binding_6" android:padding="@dimen/dim_20" android:visibility="gone" android:layout_width="@dimen/dim_0" android:layout_height="@dimen/dim_0" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/appBarLayout">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_not_found_sravni" android:contentDescription="@string/sravni"/>
+            <TextView android:textColor="@color/on_surface_high_emphasis" android:ellipsize="end" android:id="@+id/tvHeader" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dim_20" android:text="@string/nothing_found" android:singleLine="true" style="@style/Headline1Medium"/>
+            <TextView android:textColor="@color/on_surface_medium_emphasis" android:gravity="center" android:id="@+id/tvDescription" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dim_8" android:text="@string/nothing_found_description" style="@style/Subtitle1Regular"/>
+        </LinearLayout>
+        <include android:visibility="gone" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/appBarLayout" layout="@layout/wait_error_fragment_sravni"/>
+        <include android:visibility="gone" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/appBarLayoutappBarLayout" layout="@layout/waiting_layout_sravni"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout android:orientation="vertical" android:tag="binding_7" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@+id/flPanelFadeLayout" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+        <FrameLayout android:tag="binding_8" android:background="@drawable/background_up_panel_sravni" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include android:visibility="gone" layout="@layout/filter_slider_layout_sravni"/>
+            <include android:visibility="gone" layout="@layout/filter_snap_point_layout_sravni"/>
+        </FrameLayout>
+        <include layout="@layout/slideup_panel_button_sravni"/>
+    </LinearLayout>
+</com.sothree.slidinguppanel.SlidingUpPanelLayout>

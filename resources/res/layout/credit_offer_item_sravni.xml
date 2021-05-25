@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:tag="layout/credit_offer_item_sravni_0" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dim_8" app:cardCornerRadius="@dimen/dim_4" app:cardElevation="@dimen/dim_2">
+    <LinearLayout android:orientation="vertical" android:background="@color/white_sravni" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:background="@color/bright_sky_blue_sravni" android:padding="@dimen/dim_16" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/font_12" android:textColor="@color/white_sravni" android:id="@+id/tvNameCredit" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Сезонный"/>
+            <TextView android:textSize="@dimen/font_18" android:textStyle="bold" android:textColor="@color/white_sravni" android:id="@+id/tvNameBank" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dim_2" android:text="Восточный Банк"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:padding="@dimen/dim_16" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:textSize="@dimen/font_12" android:textColor="@color/blue_grey_sravni" android:id="@+id/tvInterestRate" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Ставка"/>
+                <TextView android:textSize="@dimen/font_18" android:textStyle="bold" android:textColor="@color/charcoal_grey_sravni" android:id="@+id/tvRate" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dim_2" android:text="от 13,00%"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:textSize="@dimen/font_12" android:textColor="@color/blue_grey_sravni" android:id="@+id/tvPayment" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Платеж (мес)"/>
+                <TextView android:textSize="@dimen/font_18" android:textStyle="bold" android:textColor="@color/charcoal_grey_sravni" android:id="@+id/tvPaymentRub" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dim_2" android:text="18 000 P"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

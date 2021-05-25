@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="advert_details_verification_block_horizontal_margin">234dp</dimen>
+    <dimen name="advert_widget_horizontal_padding">224dp</dimen>
+    <dimen name="auto_catalog_selector_content_horizontal_padding">256dp</dimen>
+    <dimen name="complementary_content_horizontal_padding">232dp</dimen>
+    <dimen name="complementary_shortcut_content_horizontal_padding">236dp</dimen>
+    <dimen name="contact_bar_horizontal_padding">230dp</dimen>
+    <dimen name="content_highlight_horizontal_padding">232dp</dimen>
+    <dimen name="content_horizontal_padding">240dp</dimen>
+    <dimen name="rds_content_horizontal_padding_left">236dp</dimen>
+</resources>

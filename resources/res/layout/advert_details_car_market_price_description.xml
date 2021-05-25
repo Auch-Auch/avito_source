@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/imv_description_container" android:paddingLeft="@dimen/content_horizontal_padding" android:paddingRight="@dimen/content_horizontal_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textAppearance="?attr/textHeadingSmall" android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/buttons_container" android:background="@drawable/bg_car_market_price_button_container" android:padding="4dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/title">
+        <com.avito.android.lib.design.button.Button android:id="@+id/left_feature_button" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" style="@style/CarMarketPriceButton"/>
+        <com.avito.android.lib.design.button.Button android:id="@+id/right_feature_button" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" style="@style/CarMarketPriceButton"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/stub_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/buttons_container">
+        <ImageView android:id="@+id/stub_icon" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textAppearance="?attr/textBody" android:textColor="@color/text_button_default" android:gravity="center" android:id="@+id/stub_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/features_container" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/buttons_container"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

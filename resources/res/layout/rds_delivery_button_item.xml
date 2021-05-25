@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.avito.android.lib.design.button.Button xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:id="@+id/button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="26dp" android:layout_marginTop="32dp" android:layout_marginRight="26dp" style="@style/res_2132017311_avito_button_primarylarge"/>

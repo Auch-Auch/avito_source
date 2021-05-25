@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/shop_list_screen_root" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@+id/pull_refresh_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@+id/progress_overlay_container" android:background="@color/expected_background" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.avito.android.ui.widget.ScrollDirectionAwareRecyclerView android:id="@+id/recycler_view" android:paddingLeft="@dimen/shop_list_horizontal_padding" android:paddingTop="@dimen/serp_top_padding" android:paddingRight="@dimen/shop_list_horizontal_padding" android:paddingBottom="@dimen/new_item_button_bottom_space" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <include android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/not_found_shop_list"/>
+        </FrameLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <include layout="@layout/shortcuts"/>
+    <include layout="@layout/searchbar"/>
+    <include android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/new_shop_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4dp" layout="@layout/floating_button_primary"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

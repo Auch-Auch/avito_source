@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/background_card" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/mapImage" android:layout_width="match_parent" android:layout_height="@dimen/map_banner_image_height" style="@style/res_2132018805_widget_avito_simpledraweeview_serp_item_image"/>
+    <com.avito.android.lib.design.button.Button android:id="@+id/goToMapButton" android:layout_width="match_parent" android:layout_height="@dimen/map_banner_button_height" style="@style/res_2132017534_avitomaterial_button_defaultmedium"/>
+</LinearLayout>

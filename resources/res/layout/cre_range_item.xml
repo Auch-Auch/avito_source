@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/range_root" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <include android:id="@+id/range_to" layout="@layout/component_container_with_input"/>
+    <include android:id="@+id/range_switcher" layout="@layout/component_container_with_switcher"/>
+    <include android:id="@+id/range_from" layout="@layout/component_container_with_input"/>
+</LinearLayout>

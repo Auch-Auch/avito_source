@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/phone_proving_root" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/content_container" android:paddingTop="?attr/actionBarSize" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+            <LinearLayout android:orientation="vertical" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/content_horizontal_padding" android:layout_marginTop="28dp" android:layout_marginRight="@dimen/content_horizontal_padding" android:defaultFocusHighlightEnabled="false">
+                    <TextView android:textSize="24sp" android:gravity="end" android:id="@+id/phone_starting_view" android:background="@color/avito_transparent_black" android:paddingLeft="6dp" android:paddingRight="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:paddingStart="6dp" android:paddingEnd="6dp" style="@style/res_2132018653_widget_appcompat_edittext"/>
+                    <com.avito.android.authorization.phone_proving.view.HintEditText android:textSize="24sp" android:id="@+id/phone_ending_view" android:background="@color/avito_transparent_black" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:inputType="phone"/>
+                </LinearLayout>
+                <include android:id="@+id/phone_label" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/screen_info_label"/>
+                <include android:id="@+id/text_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/content_horizontal_padding" android:layout_marginTop="22dp" android:layout_marginRight="@dimen/content_horizontal_padding" android:layout_marginBottom="6dp" layout="@layout/text_subheading"/>
+                <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/content_horizontal_padding" android:paddingRight="@dimen/content_horizontal_padding" android:paddingBottom="28dp" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/FlexibleButtonsContainer">
+                    <include android:id="@+id/prove_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="-4dp" android:layout_marginRight="-4dp" layout="@layout/button_primary"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+        <include android:id="@+id/progress_view" android:paddingTop="?attr/actionBarSize" layout="@layout/semitransparent_progress"/>
+    </FrameLayout>
+    <include layout="@layout/appbar"/>
+</FrameLayout>

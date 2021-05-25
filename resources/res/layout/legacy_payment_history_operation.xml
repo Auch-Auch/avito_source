@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.avito.android.design.widget.ForegroundRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:padding="16dp" android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:id="@+id/payment_operation_amount" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="56dp" android:layout_marginTop="1dp" style="?attr/textLegacy1_bodyBold"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/payment_operation_title_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="56dp" android:layout_marginTop="8dp" android:layout_below="@+id/payment_operation_amount">
+        <TextView android:id="@+id/payment_operation_title" android:layout_width="match_parent" android:layout_height="wrap_content" style="?attr/textLegacy1_subheading"/>
+        <TextView android:textColor="?attr/gray48" android:id="@+id/payment_operation_description" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp" style="?attr/textLegacy1_body"/>
+    </LinearLayout>
+    <TextView android:textColor="?attr/gray48" android:id="@+id/payment_operation_date" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="56dp" android:layout_marginTop="12dp" android:layout_below="@+id/payment_operation_title_container" style="?attr/textLegacy1_body"/>
+    <ImageView android:id="@+id/payment_operation_icon" android:layout_width="24dp" android:layout_height="24dp" android:scaleType="fitCenter"/>
+</com.avito.android.design.widget.ForegroundRelativeLayout>

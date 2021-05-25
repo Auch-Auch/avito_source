@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/container" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/progress_overlay_container" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.core.widget.NestedScrollView android:id="@+id/nested_scroll_view" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+            <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@+id/recycler_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </androidx.core.widget.NestedScrollView>
+        <com.avito.android.lib.design.page_indicator.PageIndicator android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/page_indicator" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16dp" style="@style/res_2132017983_design_widget_pageindicator_floating"/>
+    </FrameLayout>
+</FrameLayout>

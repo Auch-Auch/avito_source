@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_scrollFlags="5"/>
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.google.android.material.appbar.AppBarLayout android:id="@+id/app_bar" android:layout_width="match_parent" android:layout_height="wrap_content" app:liftOnScroll="true">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/avito_constant_white" android:paddingTop="16dp" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_scrollFlags="5">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/avito_credit_partner_logo"/>
+                <View android:id="@+id/divider" android:background="@color/expected_avito_constant_gray_12" android:layout_width="1dp" android:layout_height="match_parent" android:layout_marginLeft="16dp" android:layout_marginRight="16dp"/>
+                <ImageView android:id="@+id/credit_partner_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tinkoff_credit_partner_logo" android:scaleType="center"/>
+            </LinearLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+        <com.avito.android.advert.item.dfpcreditinfo.credit_partner_screen.NestedPowerWebView android:id="@+id/web_view" android:background="@color/avito_constant_white" android:layout_width="match_parent" android:layout_height="match_parent" app:dom_storage_enabled="true" app:java_script_enabled="true" app:layout_behavior="@string/appbar_scrolling_view_behavior" app:support_zoom="false"/>
+        <com.avito.android.design.widget.circular_progress.CircularProgressBar android:layout_gravity="center" android:id="@+id/progress" android:layout_width="27dp" android:layout_height="27dp" app:cpb_color="@color/avito_constant_black" style="@style/res_2132018733_widget_avito_circularprogressbar_dark"/>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</LinearLayout>

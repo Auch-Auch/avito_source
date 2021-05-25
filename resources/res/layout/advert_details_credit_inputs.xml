@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:paddingTop="20dp" android:paddingBottom="6dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginRight="6dp" android:layout_weight="1">
+        <TextView android:textAppearance="?attr/textHeadingSmall" android:ellipsize="end" android:id="@+id/initial_payment_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/advert_details_credit_initial_payment" android:maxLines="1"/>
+        <com.avito.android.lib.design.input.Input android:id="@+id/initial_payment_input" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:inputType="number" android:imeOptions="actionGo|actionSend|actionDone|flagNoExtractUi" app:input_clearButton="true" app:input_clearButtonUnfocused="true" app:input_formatterType="1" app:input_postfix="₽" style="?attr/input"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:layout_weight="1">
+        <TextView android:textAppearance="?attr/textHeadingSmall" android:ellipsize="end" android:id="@+id/term_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/advert_details_credit_term" android:maxLines="1"/>
+        <com.avito.android.lib.design.input.Input android:id="@+id/term_input" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:inputType="number" android:imeOptions="actionNone|actionSend|actionNext|flagNoExtractUi" app:input_clearButton="false" style="?attr/select"/>
+    </LinearLayout>
+</LinearLayout>

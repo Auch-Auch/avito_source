@@ -1,0 +1,1243 @@
+{
+  "item": {
+    "mainTitle": "Подбор кредита",
+    "id": "5df218d78ac3bb964e4e3e94",
+    "savedSearchId": "5e72376eeadf40580a280aba",
+    "offerGroups": [
+      {
+        "title": "Все кредиты",
+        "offerList": [
+          {
+            "status": "new",
+            "productType": "credit",
+            "bankId": "645",
+            "productId": "29958",
+            "mainParams": [
+              {
+                "name": "Ставка",
+                "value": "От 11.00 %",
+                "fontType": "bold"
+              },
+              {
+                "name": "Платеж (мес)",
+                "value": "16 370 ₽",
+                "fontType": "bold"
+              }
+            ],
+            "detailParams": [
+              {
+                "values": [
+                  {
+                    "name": "Ставка",
+                    "value": "От 11.00 %",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Сумма",
+                    "value": "500 000 ₽",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Период",
+                    "value": "36 месяцев",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Переплата",
+                    "value": "89 297 ₽",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Ежемесячный платеж",
+                    "value": "16 370 ₽",
+                    "fontType": "bold"
+                  }
+                ],
+                "blockType": "primary"
+              },
+              {
+                "values": [
+                  {
+                    "name": "Возраст",
+                    "value": "18-59 лет",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Обязательные документы",
+                    "value": "Паспорт",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Подтверждение дохода (1 документ на выбор)",
+                    "value": "Не требуется",
+                    "fontType": "normal"
+                  }
+                ],
+                "blockTitle": "Требования и документы",
+                "blockType": "standart"
+              }
+            ],
+            "requestParams": {
+              "title1": "value1",
+              "title2": "value2",
+              "title3": "value3"
+            },
+            "displaySettings": {
+              "bankName": "Тинькофф Банк",
+              "productName": "Кредит наличными",
+              "fontColor": "000000",
+              "iconTitle": "Т",
+              "offerTitle": "Наличными под залог автомобиля",
+              "backgroundColor": "fff100",
+              "detailTitle": "О кредите"
+            },
+            "profitability": 50,
+            "profitabilityText": "Средняя вероятность одобрения"
+          },
+          {
+            "status": "new",
+            "productType": "credit",
+            "bankId": "330",
+            "productId": "26",
+            "mainParams": [
+              {
+                "name": "Ставка",
+                "value": "От 9.99 %",
+                "fontType": "bold"
+              },
+              {
+                "name": "Платеж (мес)",
+                "value": "16 132 ₽",
+                "fontType": "bold"
+              }
+            ],
+            "detailParams": [
+              {
+                "values": [
+                  {
+                    "name": "Ставка",
+                    "value": "От 9.99 %",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Сумма",
+                    "value": "500 000 ₽",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Период",
+                    "value": "36 месяцев",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Переплата",
+                    "value": "80 725 ₽",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Ежемесячный платеж",
+                    "value": "16 132 ₽",
+                    "fontType": "bold"
+                  }
+                ],
+                "blockType": "primary"
+              },
+              {
+                "values": [
+                  {
+                    "name": "Возраст",
+                    "value": "23-67 лет",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Обязательные документы",
+                    "value": "Паспорт",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Подтверждение дохода (1 документ на выбор)",
+                    "value": "Не требуется",
+                    "fontType": "normal"
+                  }
+                ],
+                "blockTitle": "Требования и документы",
+                "blockType": "standart"
+              }
+            ],
+            "extraInfoRequest": true,
+            "requestParams": {
+              "title1": "value1",
+              "title2": "value2",
+              "title3": "value3"
+            },
+            "displaySettings": {
+              "bankName": "Райффайзенбанк",
+              "productName": "Кредит наличными",
+              "fontColor": "000000",
+              "iconTitle": "Р",
+              "offerTitle": "Наличными",
+              "backgroundColor": "ffee00",
+              "detailTitle": "О кредите"
+            },
+            "profitability": 84,
+            "profitabilityText": "Высокая вероятность одобрения"
+          },
+          {
+            "status": "new",
+            "productType": "credit",
+            "bankId": "673",
+            "productId": "31055",
+            "mainParams": [
+              {
+                "name": "Ставка",
+                "value": "От 7.90 %",
+                "fontType": "bold"
+              },
+              {
+                "name": "Платеж (мес)",
+                "value": "15 646 ₽",
+                "fontType": "bold"
+              }
+            ],
+            "detailParams": [
+              {
+                "values": [
+                  {
+                    "name": "Ставка",
+                    "value": "От 7.90 %",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Сумма",
+                    "value": "500 000 ₽",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Период",
+                    "value": "36 месяцев",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Переплата",
+                    "value": "63 225 ₽",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Ежемесячный платеж",
+                    "value": "15 646 ₽",
+                    "fontType": "bold"
+                  }
+                ],
+                "blockType": "primary"
+              },
+              {
+                "values": [
+                  {
+                    "name": "Возраст",
+                    "value": "22-59 лет",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Обязательные документы",
+                    "value": "Паспорт",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Подтверждение дохода (1 документ на выбор)",
+                    "value": "Не требуется",
+                    "fontType": "normal"
+                  }
+                ],
+                "blockTitle": "Требования и документы",
+                "blockType": "standart"
+              }
+            ],
+            "extraInfoRequest": true,
+            "requestParams": {
+              "title1": "value1",
+              "title2": "value2",
+              "title3": "value3"
+            },
+            "displaySettings": {
+              "bankName": "Банк Хоум Кредит",
+              "productName": "Кредит наличными",
+              "fontColor": "FFFFFF",
+              "iconTitle": "Б",
+              "offerTitle": "Наличные на любые цели",
+              "backgroundColor": "c9072a",
+              "detailTitle": "О кредите"
+            },
+            "profitability": 22,
+            "profitabilityText": "Низкая вероятность одобрения"
+          },
+          {
+            "status": "new",
+            "productType": "credit",
+            "bankId": "291",
+            "productId": "31567",
+            "mainParams": [
+              {
+                "name": "Ставка",
+                "value": "От 10.50 %",
+                "fontType": "bold"
+              },
+              {
+                "name": "Платеж (мес)",
+                "value": "16 252 ₽",
+                "fontType": "bold"
+              }
+            ],
+            "detailParams": [
+              {
+                "values": [
+                  {
+                    "name": "Ставка",
+                    "value": "От 10.50 %",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Сумма",
+                    "value": "500 000 ₽",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Период",
+                    "value": "36 месяцев",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Переплата",
+                    "value": "85 044 ₽",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Ежемесячный платеж",
+                    "value": "16 252 ₽",
+                    "fontType": "bold"
+                  }
+                ],
+                "blockType": "primary"
+              },
+              {
+                "values": [
+                  {
+                    "name": "Возраст",
+                    "value": "25-69 лет",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Обязательные документы",
+                    "value": "Паспорт, Сведения о присвоении ИНН",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Подтверждение дохода (1 документ на выбор)",
+                    "value": "Не требуется",
+                    "fontType": "normal"
+                  }
+                ],
+                "blockTitle": "Требования и документы",
+                "blockType": "standart"
+              }
+            ],
+            "requestParams": {
+              "title1": "value1",
+              "title2": "value2",
+              "title3": "value3"
+            },
+            "displaySettings": {
+              "bankName": "ОТП Банк",
+              "productName": "Кредит наличными",
+              "fontColor": "FFFFFF",
+              "iconTitle": "О",
+              "offerTitle": "На любые цели",
+              "backgroundColor": "00674a",
+              "detailTitle": "О кредите"
+            },
+            "profitability": 68,
+            "profitabilityText": "Высокая вероятность одобрения"
+          },
+          {
+            "status": "new",
+            "productType": "credit",
+            "bankId": "553",
+            "productId": "23912",
+            "mainParams": [
+              {
+                "name": "Ставка",
+                "value": "От 10.90 %",
+                "fontType": "bold"
+              },
+              {
+                "name": "Платеж (мес)",
+                "value": "16 346 ₽",
+                "fontType": "bold"
+              }
+            ],
+            "detailParams": [
+              {
+                "values": [
+                  {
+                    "name": "Ставка",
+                    "value": "От 10.90 %",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Сумма",
+                    "value": "500 000 ₽",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Период",
+                    "value": "36 месяцев",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Переплата",
+                    "value": "88 445 ₽",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Ежемесячный платеж",
+                    "value": "16 346 ₽",
+                    "fontType": "bold"
+                  }
+                ],
+                "blockType": "primary"
+              },
+              {
+                "values": [
+                  {
+                    "name": "Возраст",
+                    "value": "27-59 лет",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Обязательные документы",
+                    "value": "Паспорт, Заверенная копия трудовой книжки или трудовой договор, СНИЛС",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Подтверждение дохода (1 документ на выбор)",
+                    "value": "Не требуется",
+                    "fontType": "normal"
+                  }
+                ],
+                "blockTitle": "Требования и документы",
+                "blockType": "standart"
+              }
+            ],
+            "requestParams": {
+              "title1": "value1",
+              "title2": "value2",
+              "title3": "value3"
+            },
+            "displaySettings": {
+              "bankName": "Промсвязьбанк",
+              "productName": "Кредит наличными",
+              "fontColor": "FFFFFF",
+              "iconTitle": "П",
+              "offerTitle": "Открытый рынок",
+              "backgroundColor": "29408f",
+              "detailTitle": "О кредите"
+            },
+            "profitability": 54,
+            "profitabilityText": "Средняя вероятность одобрения"
+          },
+          {
+            "status": "new",
+            "productType": "credit",
+            "bankId": "553",
+            "productId": "30412",
+            "mainParams": [
+              {
+                "name": "Ставка",
+                "value": "От 8.50 %",
+                "fontType": "bold"
+              },
+              {
+                "name": "Платеж (мес)",
+                "value": "15 784 ₽",
+                "fontType": "bold"
+              }
+            ],
+            "detailParams": [
+              {
+                "values": [
+                  {
+                    "name": "Ставка",
+                    "value": "От 8.50 %",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Сумма",
+                    "value": "500 000 ₽",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Период",
+                    "value": "36 месяцев",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Переплата",
+                    "value": "68 216 ₽",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Ежемесячный платеж",
+                    "value": "15 784 ₽",
+                    "fontType": "bold"
+                  }
+                ],
+                "blockType": "primary"
+              },
+              {
+                "values": [
+                  {
+                    "name": "Возраст",
+                    "value": "23-65 лет",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Обязательные документы",
+                    "value": "Не требуется",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Подтверждение дохода (1 документ на выбор)",
+                    "value": "Не требуется",
+                    "fontType": "normal"
+                  }
+                ],
+                "blockTitle": "Требования и документы",
+                "blockType": "standart"
+              }
+            ],
+            "requestParams": {
+              "title1": "value1",
+              "title2": "value2",
+              "title3": "value3"
+            },
+            "displaySettings": {
+              "bankName": "Промсвязьбанк",
+              "productName": "Кредит наличными",
+              "fontColor": "FFFFFF",
+              "iconTitle": "П",
+              "offerTitle": "Для военнослужащих",
+              "backgroundColor": "29408f",
+              "detailTitle": "О кредите"
+            },
+            "profitability": 54,
+            "profitabilityText": "Средняя вероятность одобрения"
+          },
+          {
+            "status": "new",
+            "productType": "credit",
+            "bankId": "53",
+            "productId": "15209",
+            "mainParams": [
+              {
+                "name": "Ставка",
+                "value": "От 9.00 %",
+                "fontType": "bold"
+              },
+              {
+                "name": "Платеж (мес)",
+                "value": "15 900 ₽",
+                "fontType": "bold"
+              }
+            ],
+            "detailParams": [
+              {
+                "values": [
+                  {
+                    "name": "Ставка",
+                    "value": "От 9.00 %",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Сумма",
+                    "value": "500 000 ₽",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Период",
+                    "value": "36 месяцев",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Переплата",
+                    "value": "72 396 ₽",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Ежемесячный платеж",
+                    "value": "15 900 ₽",
+                    "fontType": "bold"
+                  }
+                ],
+                "blockType": "primary"
+              },
+              {
+                "values": [
+                  {
+                    "name": "Возраст",
+                    "value": "26-76 лет",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Обязательные документы",
+                    "value": "Паспорт",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Подтверждение дохода (1 документ на выбор)",
+                    "value": "Не требуется",
+                    "fontType": "normal"
+                  }
+                ],
+                "blockTitle": "Требования и документы",
+                "blockType": "standart"
+              }
+            ],
+            "requestParams": {
+              "title1": "value1",
+              "title2": "value2",
+              "title3": "value3"
+            },
+            "displaySettings": {
+              "bankName": "Восточный экспресс Банк",
+              "productName": "Кредит наличными",
+              "fontColor": "FFFFFF",
+              "iconTitle": "В",
+              "offerTitle": "Комфорт",
+              "backgroundColor": "11438b",
+              "detailTitle": "О кредите"
+            },
+            "profitability": 50,
+            "profitabilityText": "Средняя вероятность одобрения"
+          },
+          {
+            "status": "new",
+            "productType": "credit",
+            "bankId": "53",
+            "productId": "30076",
+            "mainParams": [
+              {
+                "name": "Ставка",
+                "value": "От 9.90 %",
+                "fontType": "bold"
+              },
+              {
+                "name": "Платеж (мес)",
+                "value": "16 111 ₽",
+                "fontType": "bold"
+              }
+            ],
+            "detailParams": [
+              {
+                "values": [
+                  {
+                    "name": "Ставка",
+                    "value": "От 9.90 %",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Сумма",
+                    "value": "500 000 ₽",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Период",
+                    "value": "36 месяцев",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Переплата",
+                    "value": "79 965 ₽",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Ежемесячный платеж",
+                    "value": "16 111 ₽",
+                    "fontType": "bold"
+                  }
+                ],
+                "blockType": "primary"
+              },
+              {
+                "values": [
+                  {
+                    "name": "Возраст",
+                    "value": "26-76 лет",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Обязательные документы",
+                    "value": "Паспорт, СНИЛС",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Подтверждение дохода (1 документ на выбор)",
+                    "value": "Не требуется",
+                    "fontType": "normal"
+                  }
+                ],
+                "blockTitle": "Требования и документы",
+                "blockType": "standart"
+              }
+            ],
+            "requestParams": {
+              "title1": "value1",
+              "title2": "value2",
+              "title3": "value3"
+            },
+            "displaySettings": {
+              "bankName": "Восточный экспресс Банк",
+              "productName": "Кредит наличными",
+              "fontColor": "FFFFFF",
+              "iconTitle": "В",
+              "offerTitle": "Наличными",
+              "backgroundColor": "11438b",
+              "detailTitle": "О кредите"
+            },
+            "profitability": 50,
+            "profitabilityText": "Средняя вероятность одобрения"
+          },
+          {
+            "status": "new",
+            "productType": "credit",
+            "bankId": "53",
+            "productId": "17887",
+            "mainParams": [
+              {
+                "name": "Ставка",
+                "value": "От 8.90 %",
+                "fontType": "bold"
+              },
+              {
+                "name": "Платеж (мес)",
+                "value": "15 877 ₽",
+                "fontType": "bold"
+              }
+            ],
+            "detailParams": [
+              {
+                "values": [
+                  {
+                    "name": "Ставка",
+                    "value": "От 8.90 %",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Сумма",
+                    "value": "500 000 ₽",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Период",
+                    "value": "36 месяцев",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Переплата",
+                    "value": "71 558 ₽",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Ежемесячный платеж",
+                    "value": "15 877 ₽",
+                    "fontType": "bold"
+                  }
+                ],
+                "blockType": "primary"
+              },
+              {
+                "values": [
+                  {
+                    "name": "Возраст",
+                    "value": "26-70 лет",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Обязательные документы",
+                    "value": "Паспорт, Документы по предоставляемому залогу, Свидетельства о браке (разводе, смерти супруга), Заверенная копия трудовой книжки или трудовой договор",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Подтверждение дохода (1 документ на выбор)",
+                    "value": "Не требуется",
+                    "fontType": "normal"
+                  }
+                ],
+                "blockTitle": "Требования и документы",
+                "blockType": "standart"
+              }
+            ],
+            "requestParams": {
+              "title1": "value1",
+              "title2": "value2",
+              "title3": "value3"
+            },
+            "displaySettings": {
+              "bankName": "Восточный экспресс Банк",
+              "productName": "Кредит наличными",
+              "fontColor": "FFFFFF",
+              "iconTitle": "В",
+              "offerTitle": "Под залог +",
+              "backgroundColor": "11438b",
+              "detailTitle": "О кредите"
+            },
+            "profitability": 50,
+            "profitabilityText": "Средняя вероятность одобрения"
+          },
+          {
+            "status": "new",
+            "productType": "credit",
+            "bankId": "285",
+            "productId": "2331",
+            "mainParams": [
+              {
+                "name": "Ставка",
+                "value": "От 9.90 %",
+                "fontType": "bold"
+              },
+              {
+                "name": "Платеж (мес)",
+                "value": "16 111 ₽",
+                "fontType": "bold"
+              }
+            ],
+            "detailParams": [
+              {
+                "values": [
+                  {
+                    "name": "Ставка",
+                    "value": "От 9.90 %",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Сумма",
+                    "value": "500 000 ₽",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Период",
+                    "value": "36 месяцев",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Переплата",
+                    "value": "79 965 ₽",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Ежемесячный платеж",
+                    "value": "16 111 ₽",
+                    "fontType": "bold"
+                  }
+                ],
+                "blockType": "primary"
+              },
+              {
+                "values": [
+                  {
+                    "name": "Возраст",
+                    "value": "21-59 лет",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Обязательные документы",
+                    "value": "Документы по предоставляемому залогу, Паспорт, Заверенная копия трудовой книжки или трудовой договор",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Подтверждение дохода (1 документ на выбор)",
+                    "value": "Не требуется",
+                    "fontType": "normal"
+                  }
+                ],
+                "blockTitle": "Требования и документы",
+                "blockType": "standart"
+              }
+            ],
+            "requestParams": {
+              "title1": "value1",
+              "title2": "value2",
+              "title3": "value3"
+            },
+            "displaySettings": {
+              "bankName": "Банк ЗЕНИТ",
+              "productName": "Кредит наличными",
+              "fontColor": "000000",
+              "iconTitle": "Б",
+              "offerTitle": "Под залог недвижимости",
+              "backgroundColor": "aaf3f5",
+              "detailTitle": "О кредите"
+            },
+            "profitability": 50,
+            "profitabilityText": "Средняя вероятность одобрения"
+          },
+          {
+            "productId": "30912",
+            "productType": "credit",
+            "mainParams": [
+              {
+                "name": "Ставка",
+                "value": "От 10.50 %",
+                "fontType": "bold"
+              },
+              {
+                "name": "Платеж (мес)",
+                "value": "16 252 ₽",
+                "fontType": "bold"
+              }
+            ],
+            "product": "30912",
+            "ProductType": "кредит",
+            "detailParams": [
+              {
+                "values": [
+                  {
+                    "name": "Ставка",
+                    "value": "От 10.50 %",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Сумма",
+                    "value": "500 000 ₽",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Период",
+                    "value": "36 месяцев",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Переплата",
+                    "value": "85 044 ₽",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Ежемесячный платеж",
+                    "value": "16 252 ₽",
+                    "fontType": "bold"
+                  }
+                ],
+                "blockType": "primary"
+              },
+              {
+                "blockTitle": "Требования и документы",
+                "values": [
+                  {
+                    "name": "Возраст",
+                    "value": "24-59 лет",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Обязательные документы",
+                    "value": "Паспорт, Заграничный паспорт, Водительское удостоверение, Военный билет (для лиц моложе 27 лет), Документы по образованию, Сведения о присвоении ИНН",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Подтверждение дохода (1 документ на выбор)",
+                    "value": "Не требуется",
+                    "fontType": "normal"
+                  }
+                ],
+                "blockType": "standart"
+              }
+            ],
+            "displaySettings": {
+              "bankName": "Ренессанс Кредит",
+              "productName": "Кредит наличными",
+              "fontColor": "FFFFFF",
+              "iconTitle": "Р",
+              "offerTitle": "Эксклюзивно для sravni.ru",
+              "backgroundColor": "e23483",
+              "detailTitle": "О кредите"
+            },
+            "bank": "777",
+            "orderId": "credit_order_1",
+            "bankId": "777",
+            "status": "waiting",
+            "statusText": "Ожидайте ответа от банка"
+          },
+          {
+            "productId": "8968",
+            "productType": "credit",
+            "mainParams": [
+              {
+                "name": "Ставка",
+                "value": "От 10.90 %",
+                "fontType": "bold"
+              },
+              {
+                "name": "Платеж (мес)",
+                "value": "16 346 ₽",
+                "fontType": "bold"
+              }
+            ],
+            "product": "8968",
+            "ProductType": "кредит",
+            "detailParams": [
+              {
+                "values": [
+                  {
+                    "name": "Ставка",
+                    "value": "От 10.90 %",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Сумма",
+                    "value": "500 000 ₽",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Период",
+                    "value": "36 месяцев",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Переплата",
+                    "value": "88 445 ₽",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Ежемесячный платеж",
+                    "value": "16 346 ₽",
+                    "fontType": "bold"
+                  }
+                ],
+                "blockType": "primary"
+              },
+              {
+                "blockTitle": "Требования и документы",
+                "values": [
+                  {
+                    "name": "Возраст",
+                    "value": "18-69 лет",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Обязательные документы",
+                    "value": "Паспорт",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Подтверждение дохода (1 документ на выбор)",
+                    "value": "Не требуется",
+                    "fontType": "normal"
+                  }
+                ],
+                "blockType": "standart"
+              }
+            ],
+            "displaySettings": {
+              "bankName": "Московский Кредитный Банк",
+              "productName": "Кредит наличными",
+              "fontColor": "FFFFFF",
+              "iconTitle": "М",
+              "offerTitle": "Нецелевой без залога",
+              "backgroundColor": "9b0028",
+              "detailTitle": "О кредите",
+              "bankLogoUrlPDF": "https://sravni-logos.s3.eu-north-1.amazonaws.com/logo_bank_mkb.pdf",
+              "bankLogoUrlSVG": "https://sravni-logos.s3.eu-north-1.amazonaws.com/logo_bank_mkb.svg"
+            },
+            "bank": "743",
+            "orderId": "credit_order_1",
+            "bankId": "743",
+            "status": "waiting",
+            "statusText": "Ожидайте ответа от банка"
+          },
+          {
+            "productId": "3319",
+            "productType": "credit",
+            "mainParams": [
+              {
+                "name": "Ставка",
+                "value": "От 7.00 %",
+                "fontType": "bold"
+              },
+              {
+                "name": "Платеж (мес)",
+                "value": "15 439 ₽",
+                "fontType": "bold"
+              }
+            ],
+            "product": "3319",
+            "ProductType": "кредит",
+            "detailParams": [
+              {
+                "values": [
+                  {
+                    "name": "Ставка",
+                    "value": "От 7.00 %",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Сумма",
+                    "value": "500 000 ₽",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Период",
+                    "value": "36 месяцев",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Переплата",
+                    "value": "55 788 ₽",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Ежемесячный платеж",
+                    "value": "15 439 ₽",
+                    "fontType": "bold"
+                  }
+                ],
+                "blockType": "primary"
+              },
+              {
+                "blockTitle": "Требования и документы",
+                "values": [
+                  {
+                    "name": "Возраст",
+                    "value": "23-70 лет",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Обязательные документы",
+                    "value": "Паспорт, Военный билет (для лиц моложе 27 лет), Заграничный паспорт, Водительское удостоверение, СНИЛС, Сведения о присвоении ИНН",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Подтверждение дохода (1 документ на выбор)",
+                    "value": "Не требуется",
+                    "fontType": "normal"
+                  }
+                ],
+                "blockType": "standart"
+              }
+            ],
+            "displaySettings": {
+              "bankName": "СКБ-Банк",
+              "productName": "Кредит наличными",
+              "fontColor": "FFFFFF",
+              "iconTitle": "С",
+              "offerTitle": "Простой и удобный",
+              "backgroundColor": "f45d3e",
+              "detailTitle": "О кредите"
+            },
+            "bank": "902",
+            "orderId": "credit_order_1",
+            "bankId": "902",
+            "status": "waiting",
+            "statusText": "Ожидайте ответа от банка"
+          }
+        ],
+        "description": "Банки, показывающие примерную ставку и ежемесячную сумму платежа"
+      }
+    ],
+    "conversationId": "5e7218d93a9b160022f30cb3",
+    "filters": [
+      {
+        "title": "500 000 ₽",
+        "details": [
+          {
+            "title": "Сумма",
+            "valueType": "slider",
+            "values": [
+              {
+                "title": "10 000 ₽",
+                "value": "10000",
+                "code": "minValue"
+              },
+              {
+                "title": "10 000 000 ₽",
+                "value": "10000000",
+                "code": "maxValue"
+              },
+              {
+                "title": "500 000 ₽",
+                "value": "500000",
+                "code": "currentValue"
+              },
+              {
+                "title": "10000",
+                "value": "10000",
+                "code": "step"
+              }
+            ]
+          }
+        ],
+        "filterIcon": "money",
+        "filterName": "summ"
+      },
+      {
+        "title": "3 года",
+        "details": [
+          {
+            "title": "Срок кредита",
+            "valueType": "snapPoints",
+            "values": [
+              {
+                "title": "6 месяцев",
+                "value": "P6M",
+                "code": "pointPeriod"
+              },
+              {
+                "title": "1 год",
+                "value": "P1Y",
+                "code": "pointPeriod"
+              },
+              {
+                "title": "2 года",
+                "value": "P2Y",
+                "code": "pointPeriod"
+              },
+              {
+                "title": "3 года",
+                "value": "P3Y",
+                "code": "pointPeriod"
+              },
+              {
+                "title": "4 года",
+                "value": "P4Y",
+                "code": "pointPeriod"
+              },
+              {
+                "title": "5 лет",
+                "value": "P5Y",
+                "code": "pointPeriod"
+              },
+              {
+                "title": "7 лет",
+                "value": "P7Y",
+                "code": "pointPeriod"
+              },
+              {
+                "title": "10 лет",
+                "value": "P10Y",
+                "code": "pointPeriod"
+              },
+              {
+                "title": "15 лет",
+                "value": "P15Y",
+                "code": "pointPeriod"
+              },
+              {
+                "title": "3 года",
+                "value": "P3Y",
+                "code": "currentPeriod"
+              }
+            ]
+          }
+        ],
+        "filterIcon": "time",
+        "filterName": "term"
+      }
+    ]
+  }
+}

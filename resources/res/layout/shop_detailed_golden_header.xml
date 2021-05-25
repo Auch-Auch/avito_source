@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/background" android:layout_width="match_parent" android:layout_height="@dimen/collapsing_search_bar_image_height_default" app:actualImageScaleType="6" app:layout_collapseMode="2"/>
+    <com.avito.android.design.widget.ForegroundRelativeLayout android:layout_gravity="bottom" android:id="@+id/background_small_image_container" android:background="@drawable/bg_card_phone_white" android:visibility="gone" android:layout_width="72dp" android:layout_height="72dp" android:layout_marginBottom="16dp" android:layout_marginStart="@dimen/shop_content_horizontal_padding" app:layout_collapseMode="2" style="@style/res_2132018795_widget_avito_shop_item_card">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/logo" android:layout_width="64dp" android:layout_height="64dp" android:layout_margin="8dp" app:actualImageScaleType="5"/>
+    </com.avito.android.design.widget.ForegroundRelativeLayout>
+</FrameLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/buyer_info_root" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:id="@+id/content_container" android:paddingTop="?attr/actionBarSize" android:focusable="true" android:focusableInTouchMode="true" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/buyer_info_title" style="@style/res_2132018826_widget_avito_textview_display_title"/>
+            <EditText android:id="@+id/text" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="84dp" android:hint="@string/buyer_info_hint" android:minLines="3" android:maxLength="5000" android:inputType="text|textCapSentences|textMultiLine" android:imeOptions="actionGo|actionSend|actionDone|flagNoExtractUi" style="@style/res_2132018739_widget_avito_edittext_redesign"/>
+            <TextView android:textSize="13sp" android:textColor="?attr/gray48" android:paddingLeft="@dimen/content_horizontal_padding" android:paddingTop="4dp" android:paddingRight="@dimen/content_horizontal_padding" android:paddingBottom="@dimen/text_input_area_bottom_padding" android:layout_width="match_parent" android:layout_height="0dp" android:text="@string/buyer_info_disclaimer" android:layout_weight="1"/>
+            <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/content_horizontal_padding" android:paddingRight="@dimen/content_horizontal_padding" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/FlexibleButtonsContainer">
+                <com.avito.android.lib.design.button.Button android:id="@+id/send_button" android:layout_width="match_parent" android:layout_height="wrap_content" style="?attr/buttonPrimaryLarge"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/appbar"/>
+</FrameLayout>

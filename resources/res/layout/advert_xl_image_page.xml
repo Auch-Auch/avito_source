@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.facebook.drawee.view.SimpleDraweeView xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/image_view" style="@style/res_2132018810_widget_avito_simpledraweeview_serp_item_image_xladvert"/>

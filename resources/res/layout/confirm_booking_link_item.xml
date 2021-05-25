@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/component_horizontal_padding" android:layout_marginTop="10dp" android:layout_marginRight="@dimen/component_horizontal_padding" android:layout_marginBottom="10dp">
+    <TextView android:textColor="?attr/black" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?attr/textLegacy1_subheading"/>
+</FrameLayout>

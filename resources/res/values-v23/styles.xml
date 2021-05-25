@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="res_2132017603_base_textappearance_appcompat_widget_actionbar_menu" parent="@android:style/TextAppearance.Material.Widget.ActionBar.Menu">
+    </style>
+    <style name="res_2132017613_base_textappearance_appcompat_widget_button_inverse" parent="@android:style/TextAppearance.Material.Widget.Button.Inverse">
+    </style>
+    <style name="res_2132017627_base_theme_appcompat" parent="@style/res_2132017696_base_v23_theme_appcompat">
+    </style>
+    <style name="res_2132017634_base_theme_appcompat_light" parent="@style/res_2132017697_base_v23_theme_appcompat_light">
+    </style>
+    <style name="res_2132017696_base_v23_theme_appcompat" parent="@style/res_2132017694_base_v22_theme_appcompat">
+        <item name="actionBarItemBackground">?android:attr/actionBarItemBackground</item>
+        <item name="actionMenuTextAppearance">?android:attr/actionMenuTextAppearance</item>
+        <item name="actionMenuTextColor">?android:attr/actionMenuTextColor</item>
+        <item name="actionOverflowButtonStyle">?android:attr/actionOverflowButtonStyle</item>
+        <item name="controlBackground">@drawable/abc_control_background_material</item>
+        <item name="ratingBarStyleIndicator">?android:attr/ratingBarStyleIndicator</item>
+        <item name="ratingBarStyleSmall">?android:attr/ratingBarStyleSmall</item>
+    </style>
+    <style name="res_2132017697_base_v23_theme_appcompat_light" parent="@style/res_2132017695_base_v22_theme_appcompat_light">
+        <item name="actionBarItemBackground">?android:attr/actionBarItemBackground</item>
+        <item name="actionMenuTextAppearance">?android:attr/actionMenuTextAppearance</item>
+        <item name="actionMenuTextColor">?android:attr/actionMenuTextColor</item>
+        <item name="actionOverflowButtonStyle">?android:attr/actionOverflowButtonStyle</item>
+        <item name="controlBackground">@drawable/abc_control_background_material</item>
+        <item name="ratingBarStyleIndicator">?android:attr/ratingBarStyleIndicator</item>
+        <item name="ratingBarStyleSmall">?android:attr/ratingBarStyleSmall</item>
+    </style>
+    <style name="res_2132017718_base_widget_appcompat_actionbutton_overflow" parent="@android:style/Widget.Material.ActionButton.Overflow">
+    </style>
+    <style name="res_2132017724_base_widget_appcompat_button_borderless_colored" parent="@android:style/Widget.Material.Button.Borderless.Colored">
+    </style>
+    <style name="res_2132017726_base_widget_appcompat_button_colored" parent="@android:style/Widget.Material.Button.Colored">
+        <item name="android:textAppearance">@style/res_2132018341_textappearance_appcompat_widget_button_colored</item>
+    </style>
+    <style name="res_2132017736_base_widget_appcompat_edittext" parent="@android:style/Widget.Material.EditText">
+        <item name="android:breakStrategy">@null</item>
+        <item name="android:hyphenationFrequency">@null</item>
+    </style>
+    <style name="res_2132017757_base_widget_appcompat_ratingbar_indicator" parent="@android:style/Widget.Material.RatingBar.Indicator">
+    </style>
+    <style name="res_2132017758_base_widget_appcompat_ratingbar_small" parent="@android:style/Widget.Material.RatingBar.Small">
+    </style>
+    <style name="res_2132017764_base_widget_appcompat_spinner_underlined" parent="@android:style/Widget.Material.Spinner.Underlined">
+    </style>
+    <style name="res_2132017765_base_widget_appcompat_textview" parent="@android:style/Widget.Material.TextView">
+        <item name="android:breakStrategy">high_quality</item>
+        <item name="android:hyphenationFrequency">@null</item>
+    </style>
+    <style name="CardView" parent="@style/res_2132017569_base_cardview">
+        <item name="cardBackgroundColor">?android:attr/colorBackgroundFloating</item>
+    </style>
+    <style name="SNSProofaceTheme" parent="@style/res_2132018558_theme_snscore">
+        <item name="android:statusBarColor">@color/sns_status_bar_color</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="colorAccent">@color/sns_black</item>
+    </style>
+    <style name="SravniAppTheme" parent="@style/res_2132018525_theme_materialcomponents_daynight_noactionbar">
+        <item name="android:windowBackground">@color/on_primary_high_emphasis</item>
+        <item name="android:windowLightStatusBar">@bool/windowLightStatusBar</item>
+        <item name="colorAccent">@color/primary</item>
+        <item name="colorPrimary">@color/on_primary_high_emphasis</item>
+        <item name="colorPrimaryDark">@color/on_primary_high_emphasis</item>
+        <item name="materialAlertDialogTheme">@style/SravniMaterialDialogThemeOverlay</item>
+    </style>
+    <style name="res_2132018452_theme_avito" parent="@style/res_2132018496_theme_designsystem_avito">
+        <item name="android:textColorPrimary">?attr/black</item>
+        <item name="android:textColorSecondary">?attr/gray48</item>
+        <item name="android:windowBackground">?attr/white</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:checkboxStyle">?attr/checkboxStyle</item>
+        <item name="android:radioButtonStyle">?attr/radioButtonStyle</item>
+        <item name="android:textViewStyle">?attr/textLegacy1_default</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:splitMotionEvents">false</item>
+        <item name="android:listChoiceBackgroundIndicator">?attr/listChoiceBackgroundIndicator</item>
+        <item name="android:statusBarColor">?attr/gray4</item>
+        <item name="android:colorEdgeEffect">?attr/blue100</item>
+        <item name="android:windowLightStatusBar">@bool/is_not_dark_theme</item>
+        <item name="actionBarTabTextStyle">@style/res_2132018369_textappearance_avito_tab</item>
+        <item name="actionButtonStyle">@style/res_2132018702_widget_avito_actionbutton</item>
+        <item name="actionMenuTextAppearance">@style/res_2132018372_textappearance_avito_toolbar_menu</item>
+        <item name="actionMenuTextColor">@color/txt_btn_action</item>
+        <item name="actionModeBackground">?attr/white</item>
+        <item name="actionModeShareDrawable">@drawable/ic_share_24_blue</item>
+        <item name="actionOverflowButtonStyle">@style/res_2132018703_widget_avito_actionbutton_overflow</item>
+        <item name="actionOverflowMenuStyle">@style/res_2132018755_widget_avito_popupmenu_overflow</item>
+        <item name="alertDialogTheme">@style/res_2132018461_theme_avito_dialog_alert</item>
+        <item name="checkboxStyle">@style/res_2132018731_widget_avito_checkbox</item>
+        <item name="colorAccent">?attr/blue</item>
+        <item name="colorPrimary">?attr/white</item>
+        <item name="colorPrimaryDark">?attr/black</item>
+        <item name="editTextBackground">@drawable/bg_edittext_states</item>
+        <item name="editTextColor">@color/input_text_states</item>
+        <item name="editTextStyle">@style/res_2132018738_widget_avito_edittext</item>
+        <item name="homeAsUpIndicator">@drawable/ic_back_24_blue</item>
+        <item name="listChoiceBackgroundIndicator">@drawable/bg_btn_flat</item>
+        <item name="navigationIcon">@drawable/ic_back_24_blue</item>
+        <item name="popupTheme">@style/res_2132018454_theme_avito_base_popupmenu</item>
+        <item name="radioButtonStyle">@style/res_2132018756_widget_avito_radiobutton</item>
+        <item name="searchViewStyle">@style/res_2132018788_widget_avito_searchview</item>
+        <item name="textAppearanceLargePopupMenu">@style/res_2132018367_textappearance_avito_popupmenu</item>
+        <item name="textAppearanceSmallPopupMenu">@style/res_2132018367_textappearance_avito_popupmenu</item>
+        <item name="toolbarNavigationButtonStyle">@style/res_2132018862_widget_avito_toolbar_button_navigation</item>
+        <item name="toolbarStyle">@style/res_2132018861_widget_avito_toolbar</item>
+        <item name="windowActionBarOverlay">false</item>
+        <item name="windowActionModeOverlay">true</item>
+    </style>
+    <style name="res_2132018459_theme_avito_darkstatusbar" parent="@style/res_2132018452_theme_avito">
+        <item name="android:windowBackground">@color/avito_transparent_black</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:statusBarColor">?attr/constantBlack</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+    <style name="res_2132018474_theme_avitomaterial" parent="@style/res_2132017641_base_theme_avitomaterial">
+        <item name="android:statusBarColor">?attr/gray8</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+    <style name="res_2132018557_theme_snsbase" parent="@style/res_2132018525_theme_materialcomponents_daynight_noactionbar">
+        <item name="android:statusBarColor">@color/sns_status_bar_color</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+    <style name="res_2132018957_widget_materialcomponents_popupmenu_contextmenu" parent="@style/res_2132017776_base_widget_materialcomponents_popupmenu_contextmenu">
+        <item name="android:popupBackground">?attr/popupMenuBackground</item>
+        <item name="android:popupElevation">8dp</item>
+    </style>
+    <style name="res_2132018958_widget_materialcomponents_popupmenu_listpopupwindow" parent="@style/res_2132017777_base_widget_materialcomponents_popupmenu_listpopupwindow">
+        <item name="android:popupBackground">?attr/popupMenuBackground</item>
+        <item name="android:popupElevation">8dp</item>
+    </style>
+    <style name="res_2132019031_widget_snsradiobutton" parent="@style/res_2132018925_widget_materialcomponents_compoundbutton_radiobutton">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/sns_black</item>
+        <item name="android:background">@drawable/sns_bg_iddoc_item</item>
+        <item name="android:button">@null</item>
+        <item name="android:drawableEnd">@drawable/sns_ic_chevron_end</item>
+        <item name="android:drawableTint">@color/sns_grey</item>
+    </style>
+</resources>

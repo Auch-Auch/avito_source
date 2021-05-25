@@ -1,0 +1,84 @@
+package kotlin.reflect.jvm;
+
+import java.util.Iterator;
+import java.util.List;
+import java.util.Objects;
+import kotlin.Metadata;
+import kotlin.SinceKotlin;
+import kotlin.collections.CollectionsKt___CollectionsKt;
+import kotlin.jvm.JvmName;
+import kotlin.jvm.internal.Intrinsics;
+import kotlin.jvm.internal.Reflection;
+import kotlin.reflect.KClass;
+import kotlin.reflect.KClassifier;
+import kotlin.reflect.KType;
+import kotlin.reflect.KTypeParameter;
+import kotlin.reflect.jvm.internal.KotlinReflectionInternalError;
+import kotlin.reflect.jvm.internal.impl.descriptors.ClassDescriptor;
+import kotlin.reflect.jvm.internal.impl.descriptors.ClassKind;
+import kotlin.reflect.jvm.internal.impl.descriptors.ClassifierDescriptor;
+import org.jetbrains.annotations.NotNull;
+@Metadata(bv = {1, 0, 3}, d1 = {"\u0000\u0014\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0002\"$\u0010\u0006\u001a\u0006\u0012\u0002\b\u00030\u0001*\u00020\u00008F@\u0007X\u0004¢\u0006\f\u0012\u0004\b\u0004\u0010\u0005\u001a\u0004\b\u0002\u0010\u0003\"\u001e\u0010\u0006\u001a\u0006\u0012\u0002\b\u00030\u0001*\u00020\u00078@@\u0000X\u0004¢\u0006\u0006\u001a\u0004\b\u0002\u0010\b¨\u0006\t"}, d2 = {"Lkotlin/reflect/KType;", "Lkotlin/reflect/KClass;", "getJvmErasure", "(Lkotlin/reflect/KType;)Lkotlin/reflect/KClass;", "getJvmErasure$annotations", "(Lkotlin/reflect/KType;)V", "jvmErasure", "Lkotlin/reflect/KClassifier;", "(Lkotlin/reflect/KClassifier;)Lkotlin/reflect/KClass;", "kotlin-reflection"}, k = 2, mv = {1, 4, 1})
+@JvmName(name = "KTypesJvm")
+public final class KTypesJvm {
+    @NotNull
+    public static final KClass<?> getJvmErasure(@NotNull KType kType) {
+        KClass<?> jvmErasure;
+        Intrinsics.checkNotNullParameter(kType, "$this$jvmErasure");
+        KClassifier classifier = kType.getClassifier();
+        if (classifier != null && (jvmErasure = getJvmErasure(classifier)) != null) {
+            return jvmErasure;
+        }
+        throw new KotlinReflectionInternalError("Cannot calculate JVM erasure for type: " + kType);
+    }
+
+    @SinceKotlin(version = "1.1")
+    public static /* synthetic */ void getJvmErasure$annotations(KType kType) {
+    }
+
+    @NotNull
+    public static final KClass<?> getJvmErasure(@NotNull KClassifier kClassifier) {
+        T t;
+        KClass<?> jvmErasure;
+        boolean z;
+        Intrinsics.checkNotNullParameter(kClassifier, "$this$jvmErasure");
+        if (kClassifier instanceof KClass) {
+            return (KClass) kClassifier;
+        }
+        if (kClassifier instanceof KTypeParameter) {
+            List<KType> upperBounds = ((KTypeParameter) kClassifier).getUpperBounds();
+            Iterator<T> it = upperBounds.iterator();
+            while (true) {
+                t = null;
+                if (!it.hasNext()) {
+                    break;
+                }
+                T next = it.next();
+                T t2 = next;
+                Objects.requireNonNull(t2, "null cannot be cast to non-null type kotlin.reflect.jvm.internal.KTypeImpl");
+                ClassifierDescriptor declarationDescriptor = t2.getType().getConstructor().mo425getDeclarationDescriptor();
+                if (declarationDescriptor instanceof ClassDescriptor) {
+                    t = declarationDescriptor;
+                }
+                T t3 = t;
+                if (t3 == null || t3.getKind() == ClassKind.INTERFACE || t3.getKind() == ClassKind.ANNOTATION_CLASS) {
+                    z = false;
+                    continue;
+                } else {
+                    z = true;
+                    continue;
+                }
+                if (z) {
+                    t = next;
+                    break;
+                }
+            }
+            T t4 = t;
+            if (t4 == null) {
+                t4 = (KType) CollectionsKt___CollectionsKt.firstOrNull((List<? extends Object>) upperBounds);
+            }
+            return (t4 == null || (jvmErasure = getJvmErasure(t4)) == null) ? Reflection.getOrCreateKotlinClass(Object.class) : jvmErasure;
+        }
+        throw new KotlinReflectionInternalError("Cannot calculate JVM erasure for type: " + kClassifier);
+    }
+}

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/unified_image" android:paddingLeft="16dp" android:paddingTop="8dp" android:paddingRight="16dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.avito.android.design.widget.BoundedFrameLayout android:layout_gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxWidth="240dp" android:maxHeight="240dp">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/image" android:layout_width="match_parent" android:layout_height="wrap_content" app:placeholderImage="@drawable/ic_landing_placeholder" app:viewAspectRatio="1"/>
+    </com.avito.android.design.widget.BoundedFrameLayout>
+</FrameLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/messenger_blacklist_reasons_fragment" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.core.widget.NestedScrollView android:id="@+id/blacklist_reasons_content_scroll" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="?attr/actionBarSize">
+            <LinearLayout android:orientation="vertical" android:id="@+id/blacklist_reasons_content" android:paddingBottom="64dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </androidx.core.widget.NestedScrollView>
+        <com.avito.android.lib.design.spinner.Spinner android:layout_gravity="center" android:id="@+id/blacklist_reasons_progress" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="16dp" style="?attr/spinnerDarkLarge"/>
+    </FrameLayout>
+    <include android:id="@+id/toolbar" layout="@layout/toolbar"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

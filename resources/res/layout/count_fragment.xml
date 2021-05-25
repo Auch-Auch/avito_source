@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/tariff_count_fragment" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolbar" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" layout="@layout/toolbar"/>
+    <FrameLayout android:id="@+id/progress_placeholder" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <com.avito.android.tariff.PriceView android:layout_gravity="bottom" android:id="@+id/price_view" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/price_view_side_margin" android:layout_marginTop="10dp" android:layout_marginRight="@dimen/price_view_side_margin" android:layout_marginBottom="10dp"/>
+    </FrameLayout>
+</LinearLayout>

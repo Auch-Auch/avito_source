@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/content_holder" android:layout_width="match_parent" android:layout_height="match_parent" android:foreground="@null" style="@style/ContentHolder">
+    <FrameLayout android:id="@+id/content" android:layout_width="match_parent" android:layout_height="match_parent">
+        <View android:layout_gravity="bottom" android:id="@+id/bottom_guideline" android:layout_width="match_parent" android:layout_height="0dp"/>
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@+id/swipe_refresh_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView android:id="@android:id/list" android:background="?attr/white" android:paddingBottom="8dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+        <ViewStub android:layout_gravity="top|center_vertical|center_horizontal|center" android:id="@+id/update_proposal_stub" android:visibility="gone" android:layout="@layout/part_messenger_update" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="@dimen/stub_title_text_size" android:textColor="?attr/gray28" android:gravity="center" android:id="@android:id/empty" android:background="?attr/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/no_messages" android:lineSpacingExtra="4sp" app:fontFamily="@font/avito_medium"/>
+    </FrameLayout>
+</FrameLayout>

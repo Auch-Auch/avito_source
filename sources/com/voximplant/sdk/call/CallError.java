@@ -1,0 +1,11 @@
+package com.voximplant.sdk.call;
+public enum CallError {
+    ALREADY_IN_THIS_STATE,
+    FUNCTIONALITY_IS_DISABLED,
+    INCORRECT_OPERATION,
+    INTERNAL_ERROR,
+    MEDIA_IS_ON_HOLD,
+    MISSING_PERMISSION,
+    REJECTED,
+    TIMEOUT
+}

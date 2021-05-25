@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_bottom_nav_main_sravni" android:id="@+id/actionDashboard" android:title="@string/main"/>
+    <item android:icon="@drawable/ic_bottom_nav_profile_sravni" android:id="@+id/actionProfile" android:title="@string/office"/>
+</menu>

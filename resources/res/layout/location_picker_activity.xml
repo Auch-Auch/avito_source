@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/location_picker_screen_root" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="@color/txt_flat_button_primary" android:layout_gravity="right" android:id="@+id/choose_button" android:background="@drawable/bg_flat_button_primary" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lp_choose" style="@style/res_2132017854_deprecated_theme_internal_button_flat_primary"/>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <com.avito.android.avito_map.AvitoMapView android:id="@+id/map" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+    <ImageView android:layout_gravity="center" android:id="@+id/pin_shadow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="?attr/actionBarSize" android:src="@drawable/ic_pin_shadow"/>
+    <com.avito.android.location_picker.view.SearchRadiusViewImpl android:id="@+id/search_radius_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="56dp" android:layout_marginBottom="60dp" android:alpha="0" app:fillColor="@color/lp_radius_fill_color" app:strokeColor="@color/lp_radius_stroke_color" app:strokeWidth="1dp"/>
+    <FrameLayout android:layout_gravity="center" android:id="@+id/pin_container" android:layout_width="120dp" android:layout_height="120dp" android:layout_marginTop="?attr/actionBarSize">
+        <ImageView android:layout_width="match_parent" android:layout_height="60dp" android:src="@drawable/img_my_pin" android:adjustViewBounds="true"/>
+        <FrameLayout android:layout_gravity="center_horizontal" android:id="@+id/marker_progress" android:visibility="gone" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginTop="8dp">
+            <ImageView android:padding="2dp" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/progress_background"/>
+            <com.avito.android.design.widget.WhiteProgressBar android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </FrameLayout>
+    </FrameLayout>
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_behavior="ru.avito.component.behaviors.MoveAboveSnackBarBehavior">
+        <com.google.android.material.floatingactionbutton.FloatingActionButton android:layout_gravity="right" android:id="@+id/find_me_button" android:focusable="true" android:clickable="true" android:layout_width="@dimen/find_me_button_size" android:layout_height="@dimen/find_me_button_size" android:layout_marginBottom="@dimen/find_me_margin_bottom" android:src="@drawable/my_location_icon" android:layout_marginEnd="@dimen/find_me_margin_end" android:backgroundTint="?attr/white" app:backgroundTint="?attr/white" app:fabCustomSize="@dimen/find_me_button_size"/>
+        <com.avito.android.lib.design.button.Button android:id="@+id/main_button" android:visibility="gone" android:layout_width="@dimen/publish_params_continue_button_width" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/publish_params_continue_button_margin_horizontal" android:layout_marginRight="@dimen/publish_params_continue_button_margin_horizontal" android:layout_marginBottom="@dimen/publish_params_continue_button_margin_bottom" android:text="Кнопка" android:layout_marginStart="@dimen/publish_params_continue_button_margin_horizontal" android:layout_marginEnd="@dimen/publish_params_continue_button_margin_horizontal" style="?attr/buttonPrimaryLarge"/>
+    </LinearLayout>
+    <include android:layout_gravity="bottom" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_behavior="ru.avito.component.behaviors.MoveAboveSnackBarBehavior" layout="@layout/location_picker_search_radius_view"/>
+    <View android:id="@+id/map_concealer" android:background="@color/expected_overlay" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+    <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="4dp" app:layout_behavior="@string/appbar_scrolling_view_behavior" layout="@layout/location_picker_search_view"/>
+    <FrameLayout android:id="@+id/progress_overlay_container" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@+id/container" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/delivery_courier_order_update_root" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="?attr/actionBarSize">
+        <TextView android:layout_gravity="center" android:id="@+id/toolbar_title" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?attr/textLegacy3_headingSmallBold"/>
+    </androidx.appcompat.widget.Toolbar>
+    <RelativeLayout android:id="@+id/content_holder" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="?attr/actionBarSize">
+        <androidx.recyclerview.widget.RecyclerView android:orientation="vertical" android:id="@+id/recycler_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/submit_button" android:layout_alignParentTop="true"/>
+        <com.avito.android.lib.design.button.Button android:enabled="false" android:id="@+id/submit_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/order_update_fragment_buttons_margin_horizontal" android:layout_marginRight="@dimen/order_update_fragment_buttons_margin_horizontal" android:layout_marginBottom="@dimen/order_update_fragment_submit_button_margin_bottom" android:layout_above="@+id/cancel_button" style="@style/res_2132017311_avito_button_primarylarge"/>
+        <com.avito.android.lib.design.button.Button android:id="@+id/cancel_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/order_update_fragment_buttons_margin_horizontal" android:layout_marginRight="@dimen/order_update_fragment_buttons_margin_horizontal" android:layout_marginBottom="@dimen/order_update_fragment_cancel_button_margin_bottom" android:text="@string/courier_update_fragment_cancel_button_text" android:layout_alignParentBottom="true" style="@style/res_2132017281_avito_button_defaultlarge"/>
+    </RelativeLayout>
+</FrameLayout>

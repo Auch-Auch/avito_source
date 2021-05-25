@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/user_profile_screen_root" android:background="@color/expected_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/recycler_container" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler" android:paddingLeft="@dimen/profile_outside_horizontal_padding" android:paddingTop="?attr/actionBarSize" android:paddingRight="@dimen/profile_outside_horizontal_padding" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <ViewStub android:id="@+id/cart_fab_stub" android:layout="@layout/cart_fab" style="@style/CartFab"/>
+    </FrameLayout>
+    <include layout="@layout/appbar"/>
+    <include android:id="@+id/logout_progress" layout="@layout/semitransparent_progress"/>
+</FrameLayout>

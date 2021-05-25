@@ -1,0 +1,72 @@
+package io.reactivex.rxjava3.internal.operators.flowable;
+
+import io.reactivex.rxjava3.core.Flowable;
+import io.reactivex.rxjava3.core.FlowableSubscriber;
+import io.reactivex.rxjava3.internal.subscriptions.SubscriptionHelper;
+import java.util.ArrayDeque;
+import org.reactivestreams.Subscriber;
+import org.reactivestreams.Subscription;
+public final class FlowableSkipLast<T> extends s6.a.e.d.c.a.a<T, T> {
+    public final int b;
+
+    public static final class a<T> extends ArrayDeque<T> implements FlowableSubscriber<T>, Subscription {
+        private static final long serialVersionUID = -3807491841935125653L;
+        public final Subscriber<? super T> a;
+        public final int b;
+        public Subscription c;
+
+        public a(Subscriber<? super T> subscriber, int i) {
+            super(i);
+            this.a = subscriber;
+            this.b = i;
+        }
+
+        @Override // org.reactivestreams.Subscription
+        public void cancel() {
+            this.c.cancel();
+        }
+
+        @Override // org.reactivestreams.Subscriber
+        public void onComplete() {
+            this.a.onComplete();
+        }
+
+        @Override // org.reactivestreams.Subscriber
+        public void onError(Throwable th) {
+            this.a.onError(th);
+        }
+
+        @Override // org.reactivestreams.Subscriber
+        public void onNext(T t) {
+            if (this.b == size()) {
+                this.a.onNext((Object) poll());
+            } else {
+                this.c.request(1);
+            }
+            offer(t);
+        }
+
+        @Override // io.reactivex.rxjava3.core.FlowableSubscriber, org.reactivestreams.Subscriber
+        public void onSubscribe(Subscription subscription) {
+            if (SubscriptionHelper.validate(this.c, subscription)) {
+                this.c = subscription;
+                this.a.onSubscribe(this);
+            }
+        }
+
+        @Override // org.reactivestreams.Subscription
+        public void request(long j) {
+            this.c.request(j);
+        }
+    }
+
+    public FlowableSkipLast(Flowable<T> flowable, int i) {
+        super(flowable);
+        this.b = i;
+    }
+
+    @Override // io.reactivex.rxjava3.core.Flowable
+    public void subscribeActual(Subscriber<? super T> subscriber) {
+        this.source.subscribe((FlowableSubscriber) new a(subscriber, this.b));
+    }
+}

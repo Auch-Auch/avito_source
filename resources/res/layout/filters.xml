@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/filters_screen_root" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent" android:splitMotionEvents="false">
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler_view" android:paddingTop="?attr/actionBarSize" android:paddingBottom="@dimen/filters_show_button_bottom_space" android:scrollbars="vertical" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <include layout="@layout/appbar"/>
+    <FrameLayout android:id="@+id/progress" android:background="?attr/whiteAlpha88" android:focusable="true" android:focusableInTouchMode="true" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.avito.android.design.widget.ColoredProgressBar android:layout_gravity="center" android:id="@+id/progress_view" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </FrameLayout>
+    <include android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/btn_show_adverts" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4dp" layout="@layout/floating_button_primary"/>
+</FrameLayout>

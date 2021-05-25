@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/serp_screen_root" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@+id/pull_refresh_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@+id/progress_overlay_container" android:background="@color/expected_background" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.avito.android.ui.widget.ScrollDirectionAwareRecyclerView android:id="@+id/recycler_view" android:paddingLeft="@dimen/serp_horizontal_padding" android:paddingTop="@dimen/serp_top_padding" android:paddingRight="@dimen/serp_horizontal_padding" android:paddingBottom="@dimen/serp_bottom_padding" android:scrollbars="vertical" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <include android:layout_gravity="top" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="?attr/actionBarSize" layout="@layout/not_found_serp_screen"/>
+            <View android:layout_gravity="bottom" android:id="@+id/snackbar_anchor_above_bottom_navigation" android:layout_width="match_parent" android:layout_height="0dp"/>
+        </FrameLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <ViewStub android:id="@+id/cart_fab_stub" android:layout="@layout/cart_fab" style="@style/CartFab"/>
+    <include layout="@layout/shortcuts"/>
+    <include layout="@layout/serp_searchbar"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

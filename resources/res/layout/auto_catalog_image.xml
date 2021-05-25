@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.facebook.drawee.view.SimpleDraweeView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/auto_catalog_image_root" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/content_horizontal_padding" android:layout_marginTop="24dp" android:layout_marginRight="@dimen/content_horizontal_padding" app:actualImageScaleType="2" app:roundedCornerRadius="5dp" app:viewAspectRatio="1.5"/>

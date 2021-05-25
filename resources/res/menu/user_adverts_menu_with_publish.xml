@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="?attr/ic_plus24" android:id="@+id/start_publish" android:title="@string/start_publish" app:showAsAction="always"/>
+</menu>

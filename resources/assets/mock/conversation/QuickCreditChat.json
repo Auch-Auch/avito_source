@@ -1,0 +1,85 @@
+[
+  {
+    "item": {
+      "_id": "chatCredit",
+      "status": "inprogress",
+      "messages": [
+        {
+          "order": "0",
+          "created": "Tue Jul 14 2020 13:01:13 GMT+0300 (Moscow Standard Time)",
+          "name": "startCard",
+          "message": "Здравствуйте",
+          "sender": "bot"
+        }
+      ]
+    }
+  },
+  {
+    "item": {
+      "_id": "chatCredit",
+      "status": "inprogress",
+      "messages": [
+        {
+          "order": "14",
+          "created": "Tue Jul 14 2020 13:01:13 GMT+0300 (Moscow Standard Time)",
+          "name": "startCard",
+          "message": "Как то назвался",
+          "sender": "user"
+        },
+        {
+          "order": "15",
+          "created": "Tue Jul 14 2020 13:01:13 GMT+0300 (Moscow Standard Time)",
+          "name": "detailСreditOffers",
+          "message": "Сколько дать денег?",
+          "sender": "bot",
+          "type": "detailcreditoffers",
+          "content": {
+          },
+          "params": {
+            "analytics": {
+              "productName": "Подбор кредита",
+              "step": "Параметры кредита",
+              "isProlongation": true
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "item": {
+      "_id": "chatCredit",
+      "params": {
+        "savedSearch": "chatSavedResult1"
+      },
+      "status": "inprogress",
+      "messages": [
+        {
+          "order": "16",
+          "created": "Tue Jul 14 2020 13:01:13 GMT+0300 (Moscow Standard Time)",
+          "name": "startCard",
+          "message": "что-то написал",
+          "params": {
+            "disableRollback": false
+          },
+          "sender": "user"
+        },
+        {
+          "order": "17",
+          "name": "finalCard",
+          "message": "Спасибо за ответы!",
+          "type": "creditoffers",
+          "content": {
+            "elements": [
+              {
+                "name": "savedSearch",
+                "text": "chatSavedResult1"
+              }
+            ]
+          },
+          "sender": "bot"
+        }
+      ]
+    }
+  }
+]

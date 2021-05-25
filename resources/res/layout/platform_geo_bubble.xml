@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.facebook.drawee.view.SimpleDraweeView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:id="@+id/platform_geo_bubble_image" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="?android:attr/selectableItemBackground" fresco:actualImageScaleType="6" fresco:backgroundImage="?attr/gray4" fresco:roundedCornerRadius="5dp" fresco:viewAspectRatio="1.3333"/>

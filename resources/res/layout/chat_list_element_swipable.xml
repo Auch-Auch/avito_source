@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ru.rambler.libs.swipe_layout.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/swipe_layout" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <include android:id="@+id/chat_list_element" android:focusable="false" android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/chat_list_element"/>
+    <FrameLayout android:id="@+id/chat_list_element_right_view" android:background="?attr/red" android:layout_width="80dp" android:layout_height="match_parent" app:bring_to_clamp="2dp" app:clamp="-2" app:gravity="center_horizontal" app:sticky="-2">
+        <ImageView android:layout_gravity="center" android:id="@+id/chat_list_element_delete_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_rds_trash_white_24"/>
+    </FrameLayout>
+</ru.rambler.libs.swipe_layout.SwipeLayout>

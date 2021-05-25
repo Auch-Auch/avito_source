@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:theme="@style/res_2132018474_theme_avitomaterial" android:paddingTop="@dimen/serp_vertical_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="4dp">
+    <LinearLayout android:orientation="vertical" android:id="@+id/witcher_root" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/serp_horizontal_padding" android:paddingEnd="@dimen/serp_horizontal_padding" android:elevation="4dp">
+        <TextView android:id="@+id/witcher_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginStart="8dp" android:layout_marginEnd="8dp" style="?attr/textLegacy3_headingLargeBold"/>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/witcher_recycler" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp"/>
+        <com.avito.android.lib.design.shadow_layout.ShadowFrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.avito.android.lib.design.button.Button android:id="@+id/witcher_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_marginBottom="20dp" android:layout_marginStart="4dp" android:layout_marginEnd="4dp" style="?attr/buttonPrimaryLarge"/>
+        </com.avito.android.lib.design.shadow_layout.ShadowFrameLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/awards_action_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp">
+    <include layout="@layout/horizontal_divider"/>
+    <TextView android:textColor="?attr/blue" android:id="@+id/awards_action" android:focusable="true" android:clickable="true" android:layout_marginLeft="0dp" android:layout_marginRight="0dp" android:minHeight="60dp" style="@style/res_2132017532_avitoflatbutton_transparentbluebutton"/>
+    <include layout="@layout/horizontal_divider"/>
+</LinearLayout>

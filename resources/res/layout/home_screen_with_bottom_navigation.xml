@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="?attr/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/tab_container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/bottom_nav_height">
+        <FrameLayout android:id="@+id/tab_search" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <FrameLayout android:id="@+id/tab_favorites" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <FrameLayout android:id="@+id/tab_message" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <FrameLayout android:id="@+id/tab_profile" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <FrameLayout android:id="@+id/tab_user_adverts" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <FrameLayout android:id="@+id/tab_add" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+    <com.avito.android.bottom_navigation.ui.BottomNavigationLayout android:layout_gravity="bottom" android:id="@+id/bottom_navigation" android:layout_width="match_parent" android:layout_height="@dimen/bottom_nav_height"/>
+    <ImageView android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/add_advert" android:tag="BottomNavigationAddAdvert" android:layout_width="@dimen/bottom_nav_icon_size" android:layout_height="@dimen/bottom_nav_icon_size" android:layout_marginBottom="@dimen/bottom_nav_icon_bottom_offset"/>
+</FrameLayout>

@@ -1,0 +1,18 @@
+{
+  "item": {
+    "id": "emailRetriever",
+    "title": "Email",
+    "groups": [
+      {
+        "items": [
+          {
+            "description": "На эту почту вам будут приходить уведомления от банков и страховых компанний",
+            "value": "abrasha92@yandex.ru",
+            "fullName": "common.email",
+            "placeholder": "Email"
+          }
+        ]
+      }
+    ]
+  }
+}

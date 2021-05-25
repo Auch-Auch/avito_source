@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yandex.mobile.ads.nativeads.NativeImageAdView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/yandex_image_ad_view" android:addStatesFromChildren="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="@drawable/fg_rds_card">
+    <LinearLayout android:orientation="vertical" android:addStatesFromChildren="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:addStatesFromChildren="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="6dp">
+            <com.avito.android.serp.AdRoundedRatioImageView android:id="@+id/image" android:background="@drawable/bg_rds_ad_image" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="@color/expected_advert_overlay" android:scaleType="centerCrop" app:corner_radius="@dimen/rds_card_corner_radius" app:height_ratio="2" app:width_ratio="3"/>
+            <Button android:layout_gravity="top|right|center_vertical|center_horizontal|center" android:id="@+id/close_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4dp" style="@style/res_2132018773_widget_avito_rds_advert_closebutton"/>
+            <TextView android:id="@+id/badge" android:layout_margin="@dimen/card_badge_margin_top" style="@style/res_2132017906_design_widget_badge_ad_rds"/>
+        </FrameLayout>
+        <TextView android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/res_2132018782_widget_avito_rds_advert_title"/>
+        <Button android:id="@+id/more_info_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="@string/ad_more" style="@style/res_2132018772_widget_avito_rds_advert_admoreghostbutton"/>
+    </LinearLayout>
+    <TextView android:id="@+id/placeholder" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/ad_close_placeholder" style="@style/res_2132018769_widget_avito_rds_adplaceholder"/>
+</com.yandex.mobile.ads.nativeads.NativeImageAdView>

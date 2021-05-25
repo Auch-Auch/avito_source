@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.avito.android.lib.design.list_item.RadioListItem xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/radio_list_item" android:paddingLeft="?attr/listItemHorizontalPadding" android:paddingRight="?attr/listItemHorizontalPadding" android:layout_width="match_parent" android:layout_height="wrap_content" app:listItem_messageAppearance="?attr/textLegacy3_body" app:listItem_messageColor="@color/design_text_color_black_selector" app:listItem_toggleByClick="false"/>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@+id/swipe_refresh_layout" android:background="?attr/white" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentTop="true">
+        <FrameLayout android:id="@+id/content_view" android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/viewed_items_recycler_view" android:paddingLeft="@dimen/list_serp_card_padding" android:paddingTop="16dp" android:paddingRight="@dimen/list_serp_card_padding" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+            <TextView android:gravity="center" android:id="@+id/empty_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="44dp" android:layout_marginTop="80dp" android:layout_marginRight="44dp" android:text="@string/viewed_items_empty" style="@style/res_2132017866_design_textappearance_avito_body"/>
+        </FrameLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</FrameLayout>

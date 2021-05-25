@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.avito.android.lib.design.page_indicator.PageIndicator xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/photo_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="12dp" style="@style/res_2132017981_design_widget_pageindicator"/>

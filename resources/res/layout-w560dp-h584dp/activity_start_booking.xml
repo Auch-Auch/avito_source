@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/str_start_booking_screen_root" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/outside" android:background="?attr/blackAlpha64" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <androidx.cardview.widget.CardView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:cardCornerRadius="3dp" app:cardElevation="24dp">
+        <com.avito.android.design.widget.BoundedFrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:maxWidth="512dp" android:maxHeight="512dp">
+            <View android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <include layout="@layout/fragment_container"/>
+        </com.avito.android.design.widget.BoundedFrameLayout>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

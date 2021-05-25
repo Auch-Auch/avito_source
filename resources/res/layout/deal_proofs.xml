@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/deal_proof_root" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:id="@+id/content_container" android:paddingLeft="@dimen/content_horizontal_padding" android:paddingTop="?attr/actionBarSize" android:paddingRight="@dimen/content_horizontal_padding" android:focusable="true" android:focusableInTouchMode="true" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:id="@+id/title" android:paddingLeft="0dp" android:paddingRight="0dp" android:paddingBottom="0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/deal_proofs_title" style="@style/res_2132018826_widget_avito_textview_display_title"/>
+            <TextView android:id="@+id/sub_title" android:paddingBottom="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/publish_appbar_subtitle_margin_top" android:text="@string/deal_proofs_text" style="?attr/textLegacy1_subheading"/>
+            <TextView android:textSize="16sp" android:textColor="?attr/blue" android:id="@+id/info_link" android:paddingBottom="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/deal_proofs_link" android:includeFontPadding="false"/>
+            <FrameLayout android:id="@+id/photo_param_container" android:paddingTop="8dp" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <androidx.recyclerview.widget.RecyclerView android:id="@+id/image_list_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                </androidx.core.widget.NestedScrollView>
+                <LinearLayout android:gravity="center" android:id="@+id/empty_view_content" android:background="@drawable/btn_blue_borders_rounded" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="84dp">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_add_photo_56" android:scaleType="centerInside" app:tint="?attr/blue"/>
+                    <TextView android:textSize="17sp" android:textColor="?attr/blue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add_photo_empty_button_text" android:layout_marginStart="20dp"/>
+                </LinearLayout>
+            </FrameLayout>
+            <LinearLayout android:orientation="vertical" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/FlexibleButtonsContainer">
+                <com.avito.android.lib.design.button.Button android:id="@+id/send_button" android:layout_width="match_parent" android:layout_height="wrap_content" style="?attr/buttonPrimaryLarge"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/appbar"/>
+</FrameLayout>

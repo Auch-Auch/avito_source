@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.avito.android.design.widget.BoundedFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:paddingLeft="@dimen/component_horizontal_padding" android:paddingRight="@dimen/component_horizontal_padding" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <com.avito.android.component.emotion_selector.ImageSelectorView android:id="@+id/selector" android:paddingTop="16dp" android:paddingBottom="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-10dp" android:layout_marginBottom="-10dp"/>
+</com.avito.android.design.widget.BoundedFrameLayout>

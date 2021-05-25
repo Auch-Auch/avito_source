@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/select_metro_root" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/select_metro_list_container" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" layout="@layout/appbar"/>
+        <com.avito.android.lib.design.input.Input android:id="@+id/select_metro_input" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:layout_marginStart="16dp" android:layout_marginEnd="16dp" style="?attr/inputSearch"/>
+        <FrameLayout android:id="@+id/select_metro_recycler_view_container" android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView android:layout_gravity="center" android:orientation="vertical" android:id="@+id/select_metro_recycler_view" android:paddingBottom="@dimen/select_metro_last_item_padding" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <include android:layout_gravity="top" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/select_metro_line_item"/>
+        </FrameLayout>
+    </LinearLayout>
+    <FrameLayout android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/select_btn_container" android:background="@drawable/select_metro_btn_container_bg" android:layout_width="match_parent" android:layout_height="@dimen/select_metro_btn_container_height">
+        <com.avito.android.lib.design.button.Button android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/select_btn" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16dp" android:layout_marginStart="26dp" android:layout_marginEnd="26dp" style="?attr/buttonPrimaryLarge"/>
+    </FrameLayout>
+</FrameLayout>

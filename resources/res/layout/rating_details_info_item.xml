@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:id="@+id/rating_details_info_item" android:paddingLeft="@dimen/screen_component_horizontal_padding" android:paddingTop="32dp" android:paddingRight="@dimen/screen_component_horizontal_padding" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:paddingEnd="@dimen/screen_component_horizontal_padding">
+        <TextView android:textSize="22sp" android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content" style="?attr/textLegacy1_titleBold"/>
+        <TextView android:gravity="center_vertical" android:id="@+id/subtitle" android:paddingTop="4dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" style="?attr/textLegacy1_subheading"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/hint_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:src="@drawable/ic_help_black_24" app:tint="?attr/gray28"/>
+</LinearLayout>

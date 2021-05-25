@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="17sp" android:textColor="?attr/black" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/antihack_phone_list_title" style="?attr/textLegacy3_headingLargeBold"/>
+        </androidx.appcompat.widget.Toolbar>
+        <TextView android:textColor="@color/design_text_color_black_selector" android:id="@+id/description" android:paddingLeft="@dimen/standard_padding" android:paddingRight="@dimen/standard_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginBottom="24dp" android:text="@string/antihack_phone_list_description" style="?attr/textLegacy3_body"/>
+        <ViewStub android:id="@+id/search_stub" android:layout="@layout/antihack_search_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="8dp" android:layout_marginRight="16dp" android:layout_marginBottom="16dp"/>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler_view" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    </LinearLayout>
+    <include android:id="@+id/progress" android:paddingTop="?attr/actionBarSize" layout="@layout/semitransparent_progress"/>
+</FrameLayout>

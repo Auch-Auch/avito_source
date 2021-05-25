@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/fees_single_screen_root" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/toolbar"/>
+    <FrameLayout style="@style/ContentHolder">
+        <ScrollView android:id="@+id/content_holder" android:background="?attr/oldBackground" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+            <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/content_horizontal_padding" android:paddingTop="8dp" android:paddingRight="@dimen/content_horizontal_padding" android:visibility="visible" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:background="@drawable/background_card" android:padding="@dimen/card_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="14sp" android:textColor="?attr/black" android:id="@+id/message" android:layout_width="match_parent" android:layout_height="wrap_content" app:fontFamily="@font/avito_regular"/>
+                    <TextView android:textSize="12sp" android:textColor="?attr/blue" android:id="@+id/btn_about_listing_fees" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/about_listing_fees" app:fontFamily="@font/avito_bold"/>
+                </LinearLayout>
+                <TextView android:textSize="17sp" android:textColor="?attr/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/card_padding" android:layout_marginTop="@dimen/card_child_vertical_margin" android:layout_marginRight="@dimen/card_padding" android:layout_marginBottom="11dp" android:text="@string/services" app:fontFamily="@font/avito_bold"/>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/single_placement_block" android:background="@drawable/background_card" android:padding="@dimen/card_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="56dp">
+                    <TextView android:textSize="16sp" android:textColor="?attr/black" android:gravity="center_vertical" android:id="@+id/lf_icon" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/fees_single_placement" android:drawableLeft="@drawable/ic_add_item_listing_fees_single" android:drawablePadding="@dimen/card_padding" android:layout_weight="1" app:fontFamily="@font/avito_medium"/>
+                    <TextView android:textSize="16sp" android:textColor="?attr/black" android:id="@+id/price" android:layout_width="wrap_content" android:layout_height="wrap_content" app:fontFamily="@font/avito_bold"/>
+                </LinearLayout>
+                <FrameLayout android:id="@+id/legal_container" android:paddingLeft="@dimen/card_padding" android:paddingRight="@dimen/card_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="-6dp" android:layout_marginTop="20dp">
+                    <CheckBox android:id="@+id/agreement_checkbox" android:focusable="false" android:checked="true" style="@style/res_2132018731_widget_avito_checkbox"/>
+                    <TextView android:textSize="16sp" android:textColor="?attr/black" android:textColorLink="?attr/blue" android:layout_gravity="center_vertical" android:id="@+id/agreement_text" android:saveEnabled="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/checkbox_text_margin" app:fontFamily="@font/avito_medium"/>
+                </FrameLayout>
+                <Button android:id="@+id/continue_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginTop="28dp" android:layout_marginRight="12dp" android:layout_marginBottom="28dp" android:text="@string/fees_continue_string" style="@style/res_2132018725_widget_avito_button_raised"/>
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+</LinearLayout>

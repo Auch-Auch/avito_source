@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@+id/options_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <com.avito.android.lib.design.shadow_layout.ShadowFrameLayout android:padding="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="16dp" android:layout_marginEnd="16dp">
+            <com.avito.android.lib.design.button.Button android:id="@+id/apply_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:text="@string/apply_hint" app:layout_shadowEnabled="true" style="?attr/buttonPrimaryMedium"/>
+        </com.avito.android.lib.design.shadow_layout.ShadowFrameLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

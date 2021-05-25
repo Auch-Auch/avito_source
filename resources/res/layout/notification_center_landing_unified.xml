@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/notification_center_landing_unified_screen_root" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/content_holder" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler_view" android:paddingTop="?attr/actionBarSize" android:paddingBottom="24dp" android:visibility="gone" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+    <include layout="@layout/appbar"/>
+</FrameLayout>

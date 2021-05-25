@@ -1,0 +1,64 @@
+package org.spongycastle.crypto.signers;
+
+import androidx.exifinterface.media.ExifInterface;
+import java.math.BigInteger;
+import java.security.SecureRandom;
+import org.spongycastle.crypto.CipherParameters;
+import org.spongycastle.crypto.DSA;
+import org.spongycastle.crypto.params.GOST3410KeyParameters;
+import org.spongycastle.crypto.params.GOST3410Parameters;
+import org.spongycastle.crypto.params.GOST3410PrivateKeyParameters;
+import org.spongycastle.crypto.params.GOST3410PublicKeyParameters;
+import org.spongycastle.crypto.params.ParametersWithRandom;
+public class GOST3410Signer implements DSA {
+    public GOST3410KeyParameters a;
+    public SecureRandom b;
+
+    @Override // org.spongycastle.crypto.DSA
+    public BigInteger[] generateSignature(byte[] bArr) {
+        BigInteger bigInteger;
+        int length = bArr.length;
+        byte[] bArr2 = new byte[length];
+        for (int i = 0; i != length; i++) {
+            bArr2[i] = bArr[(length - 1) - i];
+        }
+        BigInteger bigInteger2 = new BigInteger(1, bArr2);
+        GOST3410Parameters parameters = this.a.getParameters();
+        do {
+            bigInteger = new BigInteger(parameters.getQ().bitLength(), this.b);
+        } while (bigInteger.compareTo(parameters.getQ()) >= 0);
+        BigInteger mod = parameters.getA().modPow(bigInteger, parameters.getP()).mod(parameters.getQ());
+        return new BigInteger[]{mod, bigInteger.multiply(bigInteger2).add(((GOST3410PrivateKeyParameters) this.a).getX().multiply(mod)).mod(parameters.getQ())};
+    }
+
+    @Override // org.spongycastle.crypto.DSA
+    public void init(boolean z, CipherParameters cipherParameters) {
+        if (!z) {
+            this.a = (GOST3410PublicKeyParameters) cipherParameters;
+        } else if (cipherParameters instanceof ParametersWithRandom) {
+            ParametersWithRandom parametersWithRandom = (ParametersWithRandom) cipherParameters;
+            this.b = parametersWithRandom.getRandom();
+            this.a = (GOST3410PrivateKeyParameters) parametersWithRandom.getParameters();
+        } else {
+            this.b = new SecureRandom();
+            this.a = (GOST3410PrivateKeyParameters) cipherParameters;
+        }
+    }
+
+    @Override // org.spongycastle.crypto.DSA
+    public boolean verifySignature(byte[] bArr, BigInteger bigInteger, BigInteger bigInteger2) {
+        int length = bArr.length;
+        byte[] bArr2 = new byte[length];
+        for (int i = 0; i != length; i++) {
+            bArr2[i] = bArr[(length - 1) - i];
+        }
+        BigInteger bigInteger3 = new BigInteger(1, bArr2);
+        GOST3410Parameters parameters = this.a.getParameters();
+        BigInteger valueOf = BigInteger.valueOf(0);
+        if (valueOf.compareTo(bigInteger) >= 0 || parameters.getQ().compareTo(bigInteger) <= 0 || valueOf.compareTo(bigInteger2) >= 0 || parameters.getQ().compareTo(bigInteger2) <= 0) {
+            return false;
+        }
+        BigInteger modPow = bigInteger3.modPow(parameters.getQ().subtract(new BigInteger(ExifInterface.GPS_MEASUREMENT_2D)), parameters.getQ());
+        return parameters.getA().modPow(bigInteger2.multiply(modPow).mod(parameters.getQ()), parameters.getP()).multiply(((GOST3410PublicKeyParameters) this.a).getY().modPow(parameters.getQ().subtract(bigInteger).multiply(modPow).mod(parameters.getQ()), parameters.getP())).mod(parameters.getP()).mod(parameters.getQ()).equals(bigInteger);
+    }
+}

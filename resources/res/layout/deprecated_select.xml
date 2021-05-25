@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content" style="?attr/textLegacy3_headingSmall"/>
+    <TextView android:textAppearance="?attr/textLegacy3_bodySmall" android:id="@+id/subtitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp"/>
+    <FrameLayout android:id="@+id/value_container" android:duplicateParentState="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+        <com.avito.android.lib.design.deprecated.select.SelectionAwareEditText android:textAppearance="?attr/textLegacy3_body" android:textColor="@color/design_text_color_black_selector" android:textColorHint="?attr/gray48" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center" android:id="@+id/value" android:paddingLeft="16dp" android:paddingTop="13dp" android:paddingRight="38dp" android:paddingBottom="13dp" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:minHeight="48dp" android:imeOptions="flagNoExtractUi"/>
+        <ImageView android:layout_gravity="top|right|center_vertical|center_horizontal|center" android:id="@+id/clear" android:background="@drawable/design_background_clear" android:layout_width="44dp" android:layout_height="48dp" android:contentDescription="@string/design_clear_description"/>
+    </FrameLayout>
+    <TextView android:id="@+id/status" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" style="@style/res_2132017851_deprecated_design_widget_avito_selecttext_status"/>
+</merge>

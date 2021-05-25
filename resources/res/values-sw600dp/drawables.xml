@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="bg_profile_card">@drawable/bg_profile_card_tablet</drawable>
+    <drawable name="bg_publish_card">@drawable/bg_card_tablet</drawable>
+    <drawable name="category_list_decoration_background">@drawable/bg_card_tablet</drawable>
+    <drawable name="shop_card_background">@drawable/serp_card_background</drawable>
+    <drawable name="shop_card_foreground">@drawable/serp_card_foreground</drawable>
+</resources>

@@ -1,0 +1,135 @@
+package r6.a.b.b;
+
+import hu.akarnokd.rxjava3.basetypes.Perhaps;
+import io.reactivex.rxjava3.exceptions.Exceptions;
+import io.reactivex.rxjava3.functions.Function;
+import io.reactivex.rxjava3.internal.subscriptions.DeferredScalarSubscription;
+import io.reactivex.rxjava3.internal.subscriptions.SubscriptionHelper;
+import io.reactivex.rxjava3.plugins.RxJavaPlugins;
+import java.util.Arrays;
+import java.util.concurrent.atomic.AtomicInteger;
+import java.util.concurrent.atomic.AtomicReference;
+import org.reactivestreams.Subscriber;
+import org.reactivestreams.Subscription;
+public final class d3<T, R> extends Perhaps<R> {
+    public final Perhaps<? extends T>[] b;
+    public final Function<? super Object[], ? extends R> c;
+
+    public static final class a<T, R> extends DeferredScalarSubscription<R> {
+        private static final long serialVersionUID = 278835184144033561L;
+        public final Function<? super Object[], ? extends R> a;
+        public final AtomicInteger b;
+        public final C0604a<T, R>[] c;
+        public final Object[] d;
+
+        /* renamed from: r6.a.b.b.d3$a$a  reason: collision with other inner class name */
+        public static final class C0604a<T, R> extends AtomicReference<Subscription> implements Subscriber<T> {
+            private static final long serialVersionUID = 2125487621013035317L;
+            public final a<T, R> a;
+            public final int b;
+
+            public C0604a(int i, a<T, R> aVar) {
+                this.b = i;
+                this.a = aVar;
+            }
+
+            @Override // org.reactivestreams.Subscriber
+            public void onComplete() {
+                a<T, R> aVar = this.a;
+                int i = this.b;
+                if (aVar.d[i] == null && aVar.b.getAndSet(0) > 0) {
+                    aVar.d(i);
+                    Arrays.fill(aVar.d, aVar);
+                    aVar.downstream.onComplete();
+                }
+            }
+
+            @Override // org.reactivestreams.Subscriber
+            public void onError(Throwable th) {
+                a<T, R> aVar = this.a;
+                int i = this.b;
+                if (aVar.b.getAndSet(0) > 0) {
+                    aVar.d(i);
+                    Arrays.fill(aVar.d, aVar);
+                    aVar.downstream.onError(th);
+                    return;
+                }
+                RxJavaPlugins.onError(th);
+            }
+
+            /* JADX DEBUG: Multi-variable search result rejected for r0v0, resolved type: r6.a.b.b.d3$a<T, R> */
+            /* JADX WARN: Multi-variable type inference failed */
+            /* JADX DEBUG: Type inference failed for r1v1. Raw type applied. Possible types: ? super java.lang.Object[] */
+            @Override // org.reactivestreams.Subscriber
+            public void onNext(T t) {
+                a<T, R> aVar = this.a;
+                aVar.d[this.b] = t;
+                if (aVar.b.decrementAndGet() == 0) {
+                    try {
+                        Object apply = aVar.a.apply(aVar.d);
+                        Arrays.fill(aVar.d, aVar);
+                        aVar.complete(apply);
+                    } catch (Throwable th) {
+                        Exceptions.throwIfFatal(th);
+                        aVar.downstream.onError(th);
+                    }
+                }
+            }
+
+            @Override // org.reactivestreams.Subscriber
+            public void onSubscribe(Subscription subscription) {
+                if (SubscriptionHelper.setOnce(this, subscription)) {
+                    subscription.request(Long.MAX_VALUE);
+                }
+            }
+        }
+
+        public a(Subscriber<? super R> subscriber, Function<? super Object[], ? extends R> function, int i) {
+            super(subscriber);
+            this.a = function;
+            this.b = new AtomicInteger(i);
+            this.c = new C0604a[i];
+            for (int i2 = 0; i2 < i; i2++) {
+                this.c[i2] = new C0604a<>(i2, this);
+            }
+            this.d = new Object[i];
+        }
+
+        @Override // io.reactivex.rxjava3.internal.subscriptions.DeferredScalarSubscription, org.reactivestreams.Subscription
+        public void cancel() {
+            super.cancel();
+            d(-1);
+        }
+
+        public void d(int i) {
+            C0604a<T, R>[] aVarArr = this.c;
+            for (int i2 = 0; i2 < aVarArr.length; i2++) {
+                if (i2 != i) {
+                    SubscriptionHelper.cancel(aVarArr[i2]);
+                }
+            }
+        }
+
+        public void h(Perhaps<? extends T>[] perhapsArr, int i) {
+            C0604a<T, R>[] aVarArr = this.c;
+            AtomicInteger atomicInteger = this.b;
+            for (int i2 = 0; i2 < i && atomicInteger.get() > 0; i2++) {
+                perhapsArr[i2].subscribe(aVarArr[i2]);
+            }
+        }
+    }
+
+    public d3(Perhaps<? extends T>[] perhapsArr, Function<? super Object[], ? extends R> function) {
+        this.b = perhapsArr;
+        this.c = function;
+    }
+
+    @Override // hu.akarnokd.rxjava3.basetypes.Perhaps
+    public void subscribeActual(Subscriber<? super R> subscriber) {
+        Perhaps<? extends T>[] perhapsArr = this.b;
+        int length = perhapsArr.length;
+        a aVar = new a(subscriber, this.c, length);
+        subscriber.onSubscribe(aVar);
+        aVar.h(perhapsArr, length);
+    }
+}

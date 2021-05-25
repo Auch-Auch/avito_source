@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/messenger_geo_search_root" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar android:id="@+id/messenger_geo_search_toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" app:contentInsetEnd="16dp" app:contentInsetLeft="16dp" app:contentInsetRight="16dp" app:contentInsetStart="16dp" app:contentInsetStartWithNavigation="16dp" app:elevation="0dp" app:navigationIcon="@drawable/ic_back_24_black">
+        <com.avito.android.lib.design.input.Input android:id="@+id/geo_search_field" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/messenger_geo_search_hint" style="?attr/inputSearch"/>
+    </androidx.appcompat.widget.Toolbar>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/messenger_geo_search_list" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <TextView android:textAppearance="?attr/textLegacy2_heading" android:textColor="?attr/gray48" android:layout_gravity="center" android:id="@+id/messenger_geo_search_list_placeholder" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:text="@string/messenger_geo_search_list_placeholder_text" android:layout_marginStart="16dp" android:layout_marginEnd="16dp"/>
+        <include android:layout_gravity="bottom" android:id="@+id/messenger_geo_search_connection_error_indicator" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/messenger_connection_error_indicator"/>
+    </FrameLayout>
+</LinearLayout>

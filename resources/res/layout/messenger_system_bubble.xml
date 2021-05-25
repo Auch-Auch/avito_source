@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:padding="@dimen/standard_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:layout_gravity="center_horizontal" android:id="@+id/bubble_container" android:layout_width="@dimen/messenger_delivery_bubble_width" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@+id/bubble_root_view" android:background="@drawable/bg_messenger_system_bubble" android:paddingTop="@dimen/standard_padding" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <ImageButton android:layout_gravity="top|right|center_vertical|center_horizontal|center" android:id="@+id/bubble_menu" android:background="?attr/selectableItemBackground" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/standard_padding" android:layout_marginRight="8dp" android:src="@drawable/ic_menu_12"/>
+    </FrameLayout>
+</FrameLayout>

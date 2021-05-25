@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/rating_details_screen_root" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/content_container" android:background="?attr/white" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler" android:paddingTop="?attr/actionBarSize" android:paddingBottom="56dp" android:focusable="true" android:focusableInTouchMode="true" android:clipToPadding="false" android:descendantFocusability="beforeDescendants" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <ru.avito.component.toolbar.AppBarLayoutWithTextAction android:id="@+id/app_bar" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize"/>
+    </FrameLayout>
+    <Button android:ellipsize="end" android:gravity="center" android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/comment_button" android:paddingLeft="32dp" android:paddingRight="32dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/comment_button" android:maxLines="2" android:singleLine="false" style="@style/res_2132018718_widget_avito_button_fab"/>
+</FrameLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:paddingLeft="@dimen/container_horizontal_padding" android:paddingRight="@dimen/container_horizontal_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:gravity="center_vertical" android:background="@drawable/bg_btn_flat_rds_gray100" android:padding="@dimen/standard_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/avatar" android:layout_width="72dp" android:layout_height="72dp" app:actualImageScaleType="6" app:backgroundImage="?attr/gray8" app:placeholderImage="?attr/gray8" app:placeholderImageScaleType="4" app:roundAsCircle="true"/>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="84dp">
+            <TextView android:textSize="22sp" android:ellipsize="end" android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2" style="?attr/textLegacy1_subheading"/>
+            <include android:id="@+id/rating_container" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/profile_snippet_rating"/>
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

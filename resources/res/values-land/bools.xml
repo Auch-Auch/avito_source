@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="photo_picker_photo_list_align_center_horizontal">true</bool>
+    <bool name="photo_picker_photo_list_align_left">false</bool>
+</resources>

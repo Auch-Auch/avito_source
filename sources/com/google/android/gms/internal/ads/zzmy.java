@@ -1,0 +1,6 @@
+package com.google.android.gms.internal.ads;
+
+import java.io.IOException;
+public interface zzmy {
+    void zzb(IOException iOException);
+}

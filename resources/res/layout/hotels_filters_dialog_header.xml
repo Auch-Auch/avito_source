@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/inline_filters_dialog_header" android:paddingBottom="@dimen/standard_padding" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="12dp" android:paddingEnd="12dp">
+    <View android:layout_gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/hotels_filter_close_button" android:background="@drawable/ic_close_24_black" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginTop="0dp" android:layout_marginBottom="4dp"/>
+    <TextView android:layout_gravity="center_horizontal" android:id="@+id/hotels_filter_dialog_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0dp" style="?attr/textHeadingSmall"/>
+    <TextView android:textSize="16sp" android:textColor="?attr/blue" android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/hotels_filter_reset_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0dp" android:layout_marginBottom="4dp" android:text="@string/hotels_filters_dialog_reset_button" android:layout_marginEnd="2dp" style="?attr/textBodySmall"/>
+</FrameLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/suggests_screen_root" android:background="@color/expected_overlay" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/content_container" android:background="?attr/white" android:layout_width="match_parent" android:layout_height="match_parent" app:behavior_hideable="true" app:behavior_peekHeight="314dp" app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+        <View android:background="@drawable/bottom_menu_shadow_top" android:layout_width="match_parent" android:layout_height="8dp" android:layout_marginTop="-8dp"/>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler" android:paddingTop="?attr/actionBarSize" android:paddingBottom="56dp" android:focusable="true" android:focusableInTouchMode="true" android:clipToPadding="false" android:descendantFocusability="beforeDescendants" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <FrameLayout android:id="@+id/toolbar_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include layout="@layout/appbar"/>
+        </FrameLayout>
+        <TextView android:gravity="center_vertical" android:id="@+id/collapsed_state_toolbar" android:paddingLeft="@dimen/screen_component_horizontal_padding" android:paddingRight="@dimen/screen_component_horizontal_padding" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" style="@style/res_2132018374_textappearance_avito_toolbar_title"/>
+    </FrameLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

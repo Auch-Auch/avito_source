@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/save_search_button" android:background="@drawable/bg_btn_flat_action" android:layout_width="@dimen/toolbar_search_layout_height" android:layout_height="@dimen/toolbar_search_layout_height">
+    <ImageView android:layout_gravity="center" android:id="@+id/save_search_image" android:clickable="false" android:layout_width="24dp" android:layout_height="24dp" android:scaleType="center" android:contentDescription="@null"/>
+</FrameLayout>

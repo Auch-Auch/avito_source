@@ -1,0 +1,6 @@
+package com.avito.android.messenger.channels.mvi.common.v3;
+
+import kotlin.Metadata;
+@Metadata(bv = {1, 0, 3}, d1 = {"\u0000\u001c\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0010\t\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002* \u0001\u0010\n\u001a\u0004\b\u0000\u0010\u0000\u001a\u0004\b\u0001\u0010\u0001\u001a\u0004\b\u0002\u0010\u0002\"D\u0012\u0013\u0012\u00110\u0004¢\u0006\f\b\u0005\u0012\b\b\u0006\u0012\u0004\b\b(\u0007\u0012\u0013\u0012\u00118\u0002¢\u0006\f\b\u0005\u0012\b\b\u0006\u0012\u0004\b\b(\b\u0012\u0016\u0012\u0014\u0012\u0004\u0012\u00028\u0000\u0012\u0004\u0012\u00028\u0001\u0012\u0004\u0012\u00028\u00020\t0\u00032D\u0012\u0013\u0012\u00110\u0004¢\u0006\f\b\u0005\u0012\b\b\u0006\u0012\u0004\b\b(\u0007\u0012\u0013\u0012\u00118\u0002¢\u0006\f\b\u0005\u0012\b\b\u0006\u0012\u0004\b\b(\b\u0012\u0016\u0012\u0014\u0012\u0004\u0012\u00028\u0000\u0012\u0004\u0012\u00028\u0001\u0012\u0004\u0012\u00028\u00020\t0\u0003¨\u0006\u000b"}, d2 = {"EventT", "PartialStateT", "DepsT", "Lkotlin/Function2;", "", "Lkotlin/ParameterName;", "name", "id", "deps", "Lcom/avito/android/messenger/channels/mvi/common/v3/EventInstance;", "EventDispatchable", "mvi_release"}, k = 2, mv = {1, 4, 2})
+public final class BaseMviEntityWithEventsKt {
+}

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:id="@+id/counter_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?attr/textHeading" android:ellipsize="end" android:id="@+id/counter_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+        <TextView android:textAppearance="?attr/textBodySmallDense" android:ellipsize="end" android:id="@+id/counter_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:translationY="-7dp" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/counter_title"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

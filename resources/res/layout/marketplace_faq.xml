@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/marketplace_faq_root" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="21dp" android:layout_marginStart="@dimen/content_horizontal_padding" android:layout_marginEnd="@dimen/content_horizontal_padding">
+    <TextView android:textAppearance="?attr/textHeadingLarge" android:id="@+id/marketplace_faq_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/marketplace_faq_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <com.avito.android.lib.design.button.Button android:id="@+id/marketplace_faq_action" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" style="?attr/buttonSecondaryMedium"/>
+</LinearLayout>

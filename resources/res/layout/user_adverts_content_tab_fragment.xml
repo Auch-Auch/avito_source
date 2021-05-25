@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/user_adverts_container" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@+id/content_holder" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.google.android.material.appbar.AppBarLayout android:id="@+id/app_bar" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@+id/adverts_collapsing_toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="?android:attr/actionBarSize" app:layout_scrollFlags="13">
+                <FrameLayout android:layout_width="match_parent" android:layout_height="?android:attr/actionBarSize"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="?android:attr/actionBarSize">
+                    <ViewStub android:id="@+id/stub_soa_statistics_and_orders_panel" android:layout="@layout/user_adverts_header_menu_panel" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                    <com.avito.android.lib.design.input.Input android:id="@+id/adverts_search" android:focusable="true" android:focusableInTouchMode="true" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12dp" android:hint="@string/my_advert_search_hint" android:layout_marginStart="14dp" android:layout_marginEnd="14dp" style="?attr/inputSearch"/>
+                    <TextView android:textSize="22sp" android:id="@+id/adverts_title" android:paddingLeft="16dp" android:paddingTop="4dp" android:paddingRight="16dp" android:paddingBottom="11dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/my_adverts_list_title" app:layout_scrollFlags="11" style="?attr/textLegacy1_display"/>
+                </LinearLayout>
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+            <com.google.android.material.tabs.TabLayout android:id="@+id/tabs" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/res_2132018787_widget_avito_redesign_tablayout"/>
+        </com.google.android.material.appbar.AppBarLayout>
+        <com.avito.android.ui.SafeViewPager android:id="@+id/pager" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+        <include android:id="@android:id/empty" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" layout="@layout/my_adverts_empty_tab_fragment"/>
+        <ViewStub android:id="@+id/cart_fab_stub" android:layout="@layout/cart_fab" style="@style/CartFab"/>
+        <ViewStub android:layout_gravity="bottom|right|center_vertical|center_horizontal|center|end" android:id="@+id/publish_fab_stub" android:layout="@layout/publish_fab" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20dp" android:layout_marginEnd="16dp" app:layout_behavior="com.avito.android.user_adverts.root_screen.adverts_host.publish_button.PublishButtonBehavior"/>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" app:contentInsetEnd="16dp" app:contentInsetLeft="0dp" app:contentInsetRight="16dp" app:contentInsetStart="0dp" app:contentInsetStartWithNavigation="0dp" app:layout_collapseMode="1" app:navigationIcon="@null" app:titleMarginStart="12dp">
+        <include layout="@layout/user_adverts_profile_head"/>
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/logout_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16dp" android:src="?attr/img_profile" android:contentDescription="@null"/>
+        <TextView android:textColor="?attr/gray48" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="24dp" android:layout_marginRight="24dp" android:layout_marginBottom="24dp" android:text="@string/logout_layout_description" style="?attr/textLegacy3_body"/>
+        <com.avito.android.lib.design.button.Button android:id="@+id/login_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="24dp" android:layout_marginRight="24dp" android:text="@string/logout_layout_login_button" style="?attr/buttonSecondaryLarge"/>
+    </LinearLayout>
+</FrameLayout>

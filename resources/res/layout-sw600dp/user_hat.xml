@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center" android:orientation="vertical" android:background="@drawable/bg_btn_flat" android:paddingTop="20dp" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/avatar" android:layout_width="80dp" android:layout_height="80dp" android:layout_marginBottom="@dimen/standard_padding" android:foreground="@drawable/bg_btn_circle" app:actualImageScaleType="6" app:backgroundImage="?attr/gray8" app:placeholderImage="?attr/gray8" app:placeholderImageScaleType="4" app:roundAsCircle="true"/>
+    <TextView android:gravity="center" android:id="@+id/name" android:layout_width="match_parent" android:layout_height="wrap_content" style="?attr/textLegacy1_display"/>
+    <TextView android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/subtitle" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:maxLines="1" style="?attr/textLegacy1_subheading"/>
+    <TextView android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/description" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:maxLines="1" style="?attr/textLegacy1_subheading"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/rating_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp">
+        <TextView android:textColor="?attr/black" android:id="@+id/rating_number" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="4dp" style="?attr/textLegacy3_headingSmallBold"/>
+        <com.avito.android.lib.design.rating.RatingBar android:id="@+id/rating_score" android:visibility="gone" style="@style/res_2132017901_design_widget_avito_rating_normal"/>
+    </LinearLayout>
+    <TextView android:textColor="?attr/blue" android:ellipsize="end" android:id="@+id/rating_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:maxLines="1" style="?attr/textLegacy1_subheading"/>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="?attr/white" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/vas_header_icon" android:layout_width="32dp" android:layout_height="32dp" android:layout_centerVertical="true" app:actualImageScaleType="2"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="56dp" android:layout_centerVertical="true">
+        <include android:id="@+id/vas_header_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="3dp" layout="@layout/text_subheading_bold_single"/>
+        <TextView android:id="@+id/vas_header_subtitle" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/res_2132018794_widget_avito_services_subtitle_single"/>
+    </LinearLayout>
+</RelativeLayout>

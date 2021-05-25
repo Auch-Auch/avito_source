@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" layout="@layout/toolbar"/>
+    <FrameLayout android:id="@+id/container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="?attr/actionBarSize" style="@style/ContentHolder">
+        <ScrollView android:id="@+id/content" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.avito.android.ui.view.SelectView android:id="@+id/category" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="21dp" android:layout_marginRight="16dp" android:title="@string/category" app:removable="true" style="@style/SelectView"/>
+                <com.avito.android.ui.view.SelectView android:id="@+id/location" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="4dp" android:layout_marginRight="16dp" android:title="@string/region" app:emptyText="@string/whole_russia" app:removable="true" style="@style/SelectView"/>
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+</FrameLayout>

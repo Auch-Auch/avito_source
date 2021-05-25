@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ViewStub android:id="@+id/stub_toolbar" android:layout="@layout/toolbar" android:inflatedId="@+id/toolbar" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize"/>
+    <ViewStub android:id="@+id/stub_suggest_toolbar" android:layout="@layout/delivery_suggest_toolbar" android:inflatedId="@+id/suggest_toolbar" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize"/>
+    <FrameLayout android:id="@+id/content_holder" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/ContentHolder">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="8dp"/>
+    </FrameLayout>
+</LinearLayout>

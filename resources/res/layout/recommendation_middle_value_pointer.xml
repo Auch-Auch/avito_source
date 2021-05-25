@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.avito.android.design.widget.recommendation_graph.VerticalDottedLine xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="2dp" android:layout_height="100dp" app:vdl_color="#7a7a7a" app:vdl_dot_radius="1dp" app:vdl_gap="2dp"/>

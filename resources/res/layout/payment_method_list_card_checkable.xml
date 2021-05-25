@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.avito.android.design.widget.ForegroundRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/res_2132018749_widget_avito_payments_method_card">
+    <RelativeLayout android:id="@+id/payment_method_inner_card" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include android:id="@+id/payment_method_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="56dp" android:layout_marginRight="56dp" android:layout_alignParentTop="true" layout="@layout/text_payment_method_title"/>
+        <include android:id="@+id/payment_method_subtitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="56dp" android:layout_marginTop="2dp" android:layout_marginRight="56dp" android:layout_below="@+id/payment_method_title" android:layout_alignWithParentIfMissing="true" layout="@layout/text_payment_method_subtitle_singleline"/>
+        <RadioButton android:id="@+id/payment_method_radiobutton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/res_2132018756_widget_avito_radiobutton"/>
+        <ImageView android:id="@+id/payment_method_icon" android:layout_width="24dp" android:layout_height="wrap_content" android:scaleType="fitCenter" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <TextView android:id="@+id/payment_method_information" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="56dp" android:layout_marginTop="16dp" android:layout_marginRight="56dp" android:layout_below="@+id/payment_method_inner_card" style="@style/res_2132018750_widget_avito_payments_method_information"/>
+</com.avito.android.design.widget.ForegroundRelativeLayout>

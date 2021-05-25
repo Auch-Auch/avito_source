@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:background="@drawable/tab_bubble_selector" android:paddingLeft="12dp" android:paddingTop="6dp" android:paddingRight="10dp" android:paddingBottom="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingVertical="6dp">
+        <TextView android:textSize="16sp" android:typeface="normal" android:textColor="@color/tab_bubble_text_selector" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@+id/tab_title" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:layout_marginRight="6dp" android:layout_marginBottom="1dp" android:lines="1" android:singleLine="true" android:layout_weight="1" app:fontFamily="@font/avito_regular"/>
+        <com.avito.android.lib.design.point.Point android:layout_gravity="center_vertical" android:id="@+id/red_badge" android:layout_width="wrap_content" android:layout_height="wrap_content" app:point_disableAnimationPreview="true" style="?attr/pointNewMedium"/>
+    </LinearLayout>
+</FrameLayout>

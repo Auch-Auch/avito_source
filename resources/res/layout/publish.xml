@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/publish_root" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" layout="@layout/toolbar"/>
+    <FrameLayout android:id="@+id/content_holder" android:background="?attr/gray8" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/ContentHolder">
+        <FrameLayout android:id="@+id/progress_view_container" android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler_view" android:paddingTop="@dimen/publish_card_padding_vertical" android:paddingBottom="@dimen/publish_card_padding_vertical" android:focusable="false" android:focusableInTouchMode="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:splitMotionEvents="false"/>
+        </FrameLayout>
+    </FrameLayout>
+</LinearLayout>

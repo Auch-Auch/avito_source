@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/booking_order_root_view" android:background="?attr/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:orientation="vertical" android:id="@+id/content" android:paddingTop="?attr/actionBarSize" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="16dp" android:paddingEnd="16dp">
+            <TextView android:id="@+id/input_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18dp" style="?attr/textLegacy2_headingSmall"/>
+            <com.avito.android.lib.design.input.Input android:id="@+id/input" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp"/>
+            <TextView android:textColor="@color/avito_gray_48" android:id="@+id/input_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18dp" style="?attr/textLegacy2_bodySmall"/>
+            <TextView android:id="@+id/booking_info_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="36dp" style="?attr/textLegacy2_headingSmall"/>
+            <TextView android:textColor="@color/avito_gray_48" android:id="@+id/booking_info_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" app:linkStyle="@style/ProposalLinkStyle" style="?attr/textLegacy2_body"/>
+        </LinearLayout>
+    </ScrollView>
+    <FrameLayout android:id="@+id/app_bar" android:layout_width="match_parent" android:layout_height="52dp">
+        <ImageButton android:layout_gravity="start" android:id="@+id/back_button" android:layout_width="32dp" android:layout_height="32dp" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:src="@drawable/ic_back_24_black" android:layout_marginStart="8dp" style="@style/res_2132018724_widget_avito_button_flat_gray"/>
+        <TextView android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@+id/screen_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_marginStart="48dp" android:layout_marginEnd="48dp" style="?attr/textLegacy2_bodyHeavy"/>
+    </FrameLayout>
+    <com.avito.android.lib.design.button.Button android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/floating_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16dp" android:minHeight="48dp" android:layout_marginStart="26dp" android:layout_marginEnd="26dp" app:layout_shadowEnabled="true" style="?attr/buttonPrimaryMedium"/>
+</FrameLayout>

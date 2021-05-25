@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.avito.android.design.widget.BoundedLinearLayout android:orientation="horizontal" android:background="?attr/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxHeight="98dp">
+        <FrameLayout android:layout_gravity="bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="16dp">
+            <FrameLayout android:id="@+id/attachment_button" android:background="@drawable/bg_selectable_blue_oval" android:focusable="true" android:clickable="true" android:layout_width="48dp" android:layout_height="48dp">
+                <ImageView android:layout_gravity="center" android:id="@+id/attachment_button_icon" android:padding="8dp" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/ic_add_24" app:tint="?attr/blue"/>
+                <ImageView android:layout_gravity="top|right|center_vertical|center_horizontal|center|end" android:id="@+id/attachment_button_onboarding_static_dot" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:src="@drawable/circle_red" android:layout_marginEnd="8dp"/>
+                <ImageView android:layout_gravity="top|right|center_vertical|center_horizontal|center|end" android:id="@+id/attachment_button_onboarding_dynamic_dot" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:src="@drawable/circle_red" android:alpha="0.5" android:layout_marginEnd="8dp"/>
+            </FrameLayout>
+        </FrameLayout>
+        <ScrollView android:scrollbars="none" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:overScrollMode="never">
+            <EditText android:textColorHint="?attr/gray28" android:gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/message" android:background="@null" android:paddingTop="14dp" android:paddingBottom="14dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/message_input_default_hint" android:maxLength="@integer/messenger_max_message_length" android:inputType="text|textCapSentences|textMultiLine" android:imeOptions="actionUnspecified" style="?attr/textLegacy1_subheading"/>
+        </ScrollView>
+        <ViewAnimator android:layout_gravity="bottom" android:id="@+id/submit_button_animator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:inAnimation="@anim/message_input_zoom_in" android:outAnimation="@anim/message_input_zoom_out">
+            <ImageView android:layout_gravity="bottom" android:id="@+id/photo_button" android:background="@drawable/bg_selectable_blue_oval" android:padding="12dp" android:focusable="true" android:clickable="true" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/ic_photo_24" android:layout_marginStart="4dp" android:layout_marginEnd="4dp" app:tint="?attr/blue"/>
+            <ImageView android:layout_gravity="bottom" android:id="@+id/submit_button" android:background="@drawable/bg_selectable_blue_oval" android:padding="12dp" android:focusable="true" android:clickable="true" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/ic_send_24" android:layout_marginStart="4dp" android:layout_marginEnd="4dp" app:tint="?attr/blue"/>
+        </ViewAnimator>
+    </com.avito.android.design.widget.BoundedLinearLayout>
+    <View android:layout_gravity="top" android:background="?attr/gray12" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+</FrameLayout>

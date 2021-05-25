@@ -1,0 +1,60 @@
+{
+  "item": {
+    "id": "driverLicenceRetriever",
+    "title": "Водительское удостоверение",
+    "groups": [
+      {
+        "items": [
+          {
+            "title": "Серия и номер",
+            "value": "4556889998",
+            "placeholder": "00 00 000000",
+            "fullName": "Driver.xyz.serianumber",
+            "mask": "[00] [00] [000000]"
+          }
+        ]
+      },
+      {
+        "title": "Владелец",
+        "items": [
+          {
+            "title": "ФИО",
+            "placeholder": "ФИО",
+            "fullName": "Driver.xyz.fio",
+            "value": "Иванов Абрам Изевич"
+          },
+          {
+            "title": "Дата рождения",
+            "value": "01012000",
+            "fullName": "Driver.xyz.birthday",
+            "mask": "[00]{.}[00]{.}[0000]"
+          }
+        ]
+      },
+      {
+        "title": "Документ",
+        "items": [
+          {
+            "title": "Дата начала стажа",
+            "placeholder": "00.00.0000",
+            "value": "01072009",
+            "fullName": "Driver.xyz.date",
+            "mask": "[00]{.}[00]{.}[0000]"
+          },
+          {
+            "title": "Дата выдачи",
+            "placeholder": "00.00.0000",
+            "value": "01012015",
+            "mask": "[00]{.}[00]{.}[0000]"
+          },
+          {
+            "title": "Срок действия",
+            "placeholder": "00.00.0000",
+            "value": "01012025",
+            "mask": "[00]{.}[00]{.}[0000]"
+          }
+        ]
+      }
+    ]
+  }
+}

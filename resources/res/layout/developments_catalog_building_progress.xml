@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="32dp">
+    <TextView android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="6dp" android:layout_marginStart="@dimen/content_horizontal_padding" android:layout_marginEnd="@dimen/content_horizontal_padding" style="?attr/textLegacy3_headingLarge"/>
+    <com.google.android.material.tabs.TabLayout android:id="@+id/tabs" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="6dp" style="@style/res_2132018787_widget_avito_redesign_tablayout"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/image_list" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/dc_building_progress_recycler_padding" android:paddingEnd="@dimen/dc_building_progress_recycler_padding"/>
+</LinearLayout>

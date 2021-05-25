@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:id="@+id/notification_center_landing_main_screen_root" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/content_holder" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ScrollView android:id="@+id/content" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.avito.android.design.widget.BoundedLinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:paddingLeft="12dp" android:paddingTop="?attr/actionBarSize" android:paddingRight="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxWidth="480dp">
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/screen_image" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:layout_marginTop="32dp" android:layout_marginRight="4dp" fresco:placeholderImage="@drawable/ic_landing_placeholder"/>
+                <include android:id="@+id/screen_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:layout_marginTop="32dp" android:layout_marginRight="4dp" layout="@layout/text_display"/>
+                <include android:id="@+id/description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:layout_marginTop="8dp" android:layout_marginRight="4dp" android:layout_marginBottom="4dp" layout="@layout/text_subheading"/>
+                <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" layout="@layout/notification_center_landing_unified_advert_item_list"/>
+                <include android:id="@+id/button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:layout_marginBottom="24dp" layout="@layout/button_primary"/>
+            </com.avito.android.design.widget.BoundedLinearLayout>
+        </ScrollView>
+    </FrameLayout>
+    <include layout="@layout/appbar"/>
+</FrameLayout>

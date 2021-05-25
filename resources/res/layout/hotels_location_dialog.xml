@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/inline_filters_select_dialog_root" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include layout="@layout/hotels_filters_dialog_header"/>
+        <com.avito.android.lib.design.input.Input android:id="@+id/search_edit_text" android:paddingTop="4dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp" android:hint="@string/search" android:layout_marginStart="16dp" android:layout_marginEnd="16dp" style="?attr/inputSearch"/>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/filter_options_recycler_view" android:paddingBottom="16dp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="2dp"/>
+    </LinearLayout>
+</FrameLayout>

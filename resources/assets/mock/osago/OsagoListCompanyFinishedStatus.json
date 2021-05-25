@@ -1,0 +1,31 @@
+{
+  "pollingId": "sadsadsa",
+  "pollingInterval": 500,
+  "pollingStatus": "finished",
+  "items": [
+    {
+      "productId": "8969",
+      "statusText": "Договор не может быть продлен, это решение от нас не зависит ☹",
+      "linkText": "Почему?",
+      "statusDescription": "Александр, к сожалению, Вы не является собственником ТС или не имеет необходимых полномочий на заключение договора страхования.",
+      "status": "declined",
+      "requestParams": {
+        "offerID": "fdkhksjdss",
+        "pollingID": "ewert23efw",
+        "productID": "8969"
+      }
+    },
+    {
+      "productId": "8968",
+      "summ": 3400,
+      "summValue": "3400 Р",
+      "summTitle": "Сумма",
+      "status": "accepted",
+      "requestParams": {
+        "offerID": "dfwfwf2f",
+        "pollingID": "dfwf22e2",
+        "productID": "8968"
+      }
+    }
+  ]
+}

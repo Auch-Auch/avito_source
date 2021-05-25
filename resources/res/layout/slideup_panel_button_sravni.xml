@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:tag="layout/slideup_panel_button_sravni_0" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:background="@color/background" android:layout_width="match_parent" android:layout_height="@dimen/dim_8"/>
+    <LinearLayout android:gravity="end" android:orientation="horizontal" android:tag="binding_1" android:background="@color/background" android:paddingTop="@dimen/dim_12" android:paddingBottom="@dimen/dim_6" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="0dp" android:paddingEnd="@dimen/dim_12">
+        <com.google.android.material.button.MaterialButton android:id="@+id/btnCancel" android:tag="binding_2" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cancel" style="@style/res_2132018277_sravni_textbutton"/>
+        <com.google.android.material.button.MaterialButton android:id="@+id/btnRecount" android:tag="binding_3" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/recount" android:layout_marginStart="@dimen/dim_8" style="@style/res_2132018277_sravni_textbutton"/>
+        <FrameLayout android:id="@+id/flRecountWithCount" android:tag="binding_4" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dim_8">
+            <ProgressBar android:layout_gravity="center" android:id="@+id/pbRecountWithCount" android:tag="binding_5" android:visibility="gone" android:layout_width="@dimen/dim_22" android:layout_height="@dimen/dim_22"/>
+            <com.google.android.material.button.MaterialButton android:id="@+id/btnRecountWithCount" android:tag="binding_6" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/show_with_count" style="@style/res_2132018277_sravni_textbutton"/>
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

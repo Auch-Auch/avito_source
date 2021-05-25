@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/tfa_settings_screen_root" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/appbar"/>
+    <ScrollView android:id="@+id/scroll_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="?attr/actionBarSize" android:layout_marginStart="@dimen/profile_outside_horizontal_padding" android:layout_marginEnd="@dimen/profile_outside_horizontal_padding">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/standard_padding" android:paddingEnd="@dimen/standard_padding">
+            <ImageView android:id="@+id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_tfa_settings_150" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+            <TextView android:textColor="?attr/black" android:id="@+id/description" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/tfa_settings_description" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/icon" style="?attr/textLegacy2_body"/>
+            <com.avito.android.lib.design.list_item.SwitcherListItem android:id="@+id/switcher" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/description" app:listItem_checked="false" app:listItem_title="@string/tfa_settings_toggle" style="?attr/switcherListItem"/>
+            <com.avito.android.lib.design.alert_banner.AlertBanner android:id="@+id/banner" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:alertBanner_closeVisible="false" app:layout_constraintTop_toBottomOf="@+id/switcher" style="?attr/alertBannerDanger"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</FrameLayout>

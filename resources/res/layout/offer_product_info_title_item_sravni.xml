@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:tag="layout/offer_product_info_title_item_sravni_0" android:padding="@dimen/dim_20" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textColor="@color/on_surface_high_emphasis" android:id="@+id/tvName" android:tag="binding_1" android:layout_width="@dimen/dim_0" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" style="@style/Headline1Medium"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/inline_filters_select_dialog_root" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include layout="@layout/hotels_filters_dialog_header"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/hotels_guests_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12dp" android:layout_marginStart="16dp" android:layout_marginEnd="16dp">
+                <TextView android:id="@+id/hotels_guests_adults_title" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?attr/textBody"/>
+                <TextView android:textColor="?attr/gray48" android:id="@+id/hotels_guests_adults_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/hotels_guests_adults_title" style="?attr/textBodySmall"/>
+                <TextView android:textColor="@drawable/selector_hotels_guests_dialog_buttons_text_color" android:gravity="center" android:id="@+id/hotels_guests_adults_increase" android:background="@drawable/selector_hotels_guests_dialog_increase_background" android:layout_width="36dp" android:layout_height="36dp" android:text="@string/hotels_guests_adults_increase_text" android:layout_centerVertical="true" android:layout_alignParentEnd="true" style="?attr/textBody"/>
+                <TextView android:gravity="center" android:id="@+id/hotels_guests_adults_value" android:background="?attr/gray4" android:layout_width="40dp" android:layout_height="36dp" android:layout_centerVertical="true" android:layout_toStartOf="@+id/hotels_guests_adults_increase" style="?attr/textBody"/>
+                <TextView android:textColor="@drawable/selector_hotels_guests_dialog_buttons_text_color" android:gravity="center" android:id="@+id/hotels_guests_adults_decrease" android:background="@drawable/selector_hotels_guests_dialog_decrease_background" android:layout_width="36dp" android:layout_height="36dp" android:text="@string/hotels_guests_adults_decrease_text" android:layout_centerVertical="true" android:layout_toStartOf="@+id/hotels_guests_adults_value" style="?attr/textBody"/>
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/hotels_guests_children_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="16dp" android:layout_marginEnd="16dp"/>
+            <TextView android:textColor="?attr/blue600" android:gravity="center" android:id="@+id/hotels_guests_children_increase" android:background="?attr/selectableItemBackground" android:layout_width="wrap_content" android:layout_height="44dp" android:paddingStart="16dp" android:paddingEnd="16dp" style="?attr/textBody"/>
+        </LinearLayout>
+        <com.avito.android.lib.design.picker.Picker android:id="@+id/hotels_guests_children_picker" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <com.avito.android.lib.design.button.Button android:id="@+id/hotels_filter_dialog_apply_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="16dp" style="?attr/buttonPrimaryLarge"/>
+    </LinearLayout>
+</FrameLayout>

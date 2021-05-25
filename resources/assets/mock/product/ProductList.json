@@ -1,0 +1,545 @@
+{
+  "item": {
+    "mainTitle": "Подбор кредита",
+    "conversationId": "12312312312",
+    "savedSearchId": "123122312",
+    "offerGroups": [
+      {
+        "title": "Все кредиты",
+        "description": "Банки, показывающие примерную ставку и ежемесячную сумму платежа",
+        "offerList": [
+          {
+            "productType": "credit",
+            "displaySettings": {
+              "fontColor": "FFFFFF",
+              "offerTitle": "Большой комфорт",
+              "backgroundColor": "D51668",
+              "bankName": "Ренессанс",
+              "productName": "Кредит наличными",
+              "detailTitle": "О кредите",
+              "iconTitle": "Р",
+              "bankLogoUrlPDF":"https://sravni-logos.s3.eu-north-1.amazonaws.com/logo_bank_mkb.pdf",
+              "bankLogoUrlSVG":"https://sravni-logos.s3.eu-north-1.amazonaws.com/logo_bank_mkb.svg"
+            },
+            "profitability": 75,
+            "profitabilityText": "Высокая вероятность одобрения",
+            "status": "waiting",
+            "statusText": "Ожидайте ответа от банка",
+            "productId": "1231231123",
+            "bankId": "123123123",
+            "orderId": "123123123",
+            "offerId": "123123123",
+            "requestParams": "object params",
+            "mainParams": [
+              {
+                "name": "Ставка",
+                "value": "От 13,00%",
+                "fontType": "bold"
+              },
+              {
+                "name": "Платеж (мес)",
+                "value": "15 585 Р",
+                "fontType": "bold"
+              }
+            ],
+            "detailParams": [
+              {
+                "blockType": "primary",
+                "values": [
+                  {
+                    "name": "Ставка",
+                    "value": "От 13,00%",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Сумма",
+                    "value": "300 000 Р",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Период",
+                    "value": "16 месяцев",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Месячный платеж",
+                    "value": "15 585 Р",
+                    "fontType": "bold"
+                  }
+                ]
+              },
+              {
+                "blockType": "standart",
+                "blockTitle": "Требования и документы",
+                "values": [
+                  {
+                    "name": "Гражданство",
+                    "value": "РФ",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Возраст",
+                    "value": "18-27 лет",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Обязательные документы",
+                    "value": "Паспорт",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Подтверждение дохода (1 документы на выбор)",
+                    "value": "Справка 2-ндфл, справока по форме банка",
+                    "fontType": "normal"
+                  }
+                ]
+              },
+              {
+                "blockType": "standart",
+                "blockTitle": "Как оформить",
+                "values": [
+                  {
+                    "name": "Где",
+                    "value": "В отделениях банка",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Форма выдачи",
+                    "value": "Наличными",
+                    "fontType": "normal"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Возможно, вам подойдет",
+        "description": "Мы подобрали для вас кредиты на сумму и срок, максимально близкие к вашему запросу",
+        "offerList": [
+          {
+            "productType": "credit",
+            "displaySettings": {
+              "fontColor": "FFFFFF",
+              "offerTitle": "Большой комфорт",
+              "productName": "Кредит наличными",
+              "bankName": "Восточный банк",
+              "backgroundColor": "004997",
+              "detailTitle": "О кредите",
+              "iconTitle": "В",
+              "bankLogoUrlPDF":"https://sravni-logos.s3.eu-north-1.amazonaws.com/logo_bank_mkb2.pdf",
+              "bankLogoUrlSVG":"https://sravni-logos.s3.eu-north-1.amazonaws.com/logo_bank_mkb2.svg"
+            },
+            "profitability": 75,
+            "profitabilityText": "Высокая вероятность одобрения",
+            "status": "accepted",
+            "statusText": "Кредит предварительно одобрен",
+            "productId": "1231231123",
+            "bankId": "123123123",
+            "orderId": "123123123",
+            "offerId": "123123123",
+            "requestParams": "object params",
+            "mainParams": [
+              {
+                "name": "Ставка",
+                "value": "От 13,00%",
+                "fontType": "bold"
+              },
+              {
+                "name": "Платеж (мес)",
+                "value": "15 585 Р",
+                "fontType": "bold"
+              },
+              {
+                "name": "Сумма",
+                "value": "350 000 Р",
+                "fontType": "normal"
+              },
+              {
+                "name": "Период",
+                "value": "16 месяцев",
+                "fontType": "normal"
+              }
+            ],
+            "detailParams": [
+              {
+                "blockType": "primary",
+                "values": [
+                  {
+                    "name": "Ставка",
+                    "value": "От 13,00%",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Сумма",
+                    "value": "300 000 Р",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Период",
+                    "value": "16 месяцев",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Месячный платеж",
+                    "value": "15 585 Р",
+                    "fontType": "bold"
+                  }
+                ]
+              },
+              {
+                "blockType": "standart",
+                "blockTitle": "Требования и документы",
+                "values": [
+                  {
+                    "name": "Гражданство",
+                    "value": "РФ",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Возраст",
+                    "value": "18-27 лет",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Обязательные документы",
+                    "value": "Паспорт",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Подтверждение дохода (1 документы на выбор)",
+                    "value": "Справка 2-ндфл, справока по форме банка",
+                    "fontType": "normal"
+                  }
+                ]
+              },
+              {
+                "blockType": "standart",
+                "blockTitle": "Как оформить",
+                "values": [
+                  {
+                    "name": "Где",
+                    "value": "В отделениях банка",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Форма выдачи",
+                    "value": "Наличными",
+                    "fontType": "normal"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "productType": "creditcard",
+            "displaySettings": {
+              "fontColor": "FFFFFF",
+              "offerTitle": "All Airlines",
+              "productName": "Кредитная карта",
+              "cardType": "mastercard",
+              "bankName": "Тинькофф Банк",
+              "backgroundColor": "50B3E1",
+              "detailTitle": "О карте",
+              "iconTitle": "Тинькофф Банк"
+            },
+            "profitability": 25,
+            "profitabilityText": "Низкая вероятность одобрения",
+            "status": "new",
+            "productId": "1231231123",
+            "bankId": "123123123",
+            "orderId": "123123123",
+            "offerId": "123123123",
+            "requestParams": "object params",
+            "mainParams": [
+              {
+                "name": "Льготный период",
+                "value": "55 дней",
+                "fontType": "bold"
+              },
+              {
+                "name": "Кредитный лимит",
+                "value": "до 300 000 Р",
+                "fontType": "bold"
+              },
+              {
+                "name": "Ставка",
+                "value": "от 17.9% до 34.8%",
+                "fontType": "normal"
+              },
+              {
+                "name": "Обслуживание",
+                "value": "бесплатно",
+                "fontType": "normal"
+              }
+            ],
+            "detailParams": [
+              {
+                "blockType": "primary",
+                "values": [
+                  {
+                    "name": "Ставка",
+                    "value": "От 13,00%",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Сумма",
+                    "value": "300 000 Р",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Период",
+                    "value": "16 месяцев",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Месячный платеж",
+                    "value": "15 585 Р",
+                    "fontType": "bold"
+                  }
+                ]
+              },
+              {
+                "blockType": "standart",
+                "blockTitle": "Требования и документы",
+                "values": [
+                  {
+                    "name": "Гражданство",
+                    "value": "РФ",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Возраст",
+                    "value": "18-27 лет",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Обязательные документы",
+                    "value": "Паспорт",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Подтверждение дохода (1 документы на выбор)",
+                    "value": "Справка 2-ндфл, справока по форме банка",
+                    "fontType": "normal"
+                  }
+                ]
+              },
+              {
+                "blockType": "standart",
+                "blockTitle": "Как оформить",
+                "values": [
+                  {
+                    "name": "Где",
+                    "value": "В отделениях банка",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Форма выдачи",
+                    "value": "Наличными",
+                    "fontType": "normal"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "productType": "microcredit",
+            "displaySettings": {
+              "fontColor": "FFFFFF",
+              "offerTitle": "Взлёт",
+              "productName": "Микрозайм",
+              "bankName": "Money Man",
+              "backgroundColor": "87CA15",
+              "detailTitle": "О займе",
+              "iconTitle": "M"
+            },
+            "profitability": 95,
+            "profitabilityText": "Высокая вероятность одобрения",
+            "status": "new",
+            "productId": "1231231123",
+            "bankId": "123123123",
+            "orderId": "123123123",
+            "offerId": "123123123",
+            "requestParams": "object params",
+            "mainParams": [
+              {
+                "name": "Сумма",
+                "value": "15 000 Р",
+                "fontType": "bold"
+              },
+              {
+                "name": "К возврату",
+                "value": "15 585 Р",
+                "fontType": "bold"
+              },
+              {
+                "name": "Ставка",
+                "value": "1,00% в день",
+                "fontType": "normal"
+              },
+              {
+                "name": "Период",
+                "value": "18 дней",
+                "fontType": "normal"
+              }
+            ],
+            "detailParams": [
+              {
+                "blockType": "primary",
+                "values": [
+                  {
+                    "name": "Ставка",
+                    "value": "От 13,00%",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Сумма",
+                    "value": "300 000 Р",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Период",
+                    "value": "16 месяцев",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Месячный платеж",
+                    "value": "15 585 Р",
+                    "fontType": "bold"
+                  }
+                ]
+              },
+              {
+                "blockType": "standart",
+                "blockTitle": "Требования и документы",
+                "values": [
+                  {
+                    "name": "Гражданство",
+                    "value": "РФ",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Возраст",
+                    "value": "18-27 лет",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Обязательные документы",
+                    "value": "Паспорт",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Подтверждение дохода (1 документы на выбор)",
+                    "value": "Справка 2-ндфл, справока по форме банка",
+                    "fontType": "normal"
+                  }
+                ]
+              },
+              {
+                "blockType": "standart",
+                "blockTitle": "Как оформить",
+                "values": [
+                  {
+                    "name": "Где",
+                    "value": "В отделениях банка",
+                    "fontType": "normal"
+                  },
+                  {
+                    "name": "Форма выдачи",
+                    "value": "Наличными",
+                    "fontType": "normal"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "filters": [
+      {
+        "title": "400 000 Р",
+        "filterIcon": "money",
+        "filterName": "summ",
+        "details": [
+          {
+            "valueType": "slider",
+            "title": "Сумма",
+            "values": [
+              {
+                "title": "10 000 Р",
+                "code": "minValue",
+                "value": "10000"
+              },
+              {
+                "title": "10 000 000 Р",
+                "code": "maxValue",
+                "value": "10000000"
+              },
+              {
+                "title": "50 000 Р",
+                "code": "currentValue",
+                "value": "50000"
+              },
+              {
+                "title": "50 000",
+                "code": "step",
+                "value": "50000"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "8 месяцев",
+        "filterIcon": "time",
+        "filterName": "period",
+        "details": [
+          {
+            "valueType": "snapPoints",
+            "title": "Срок кредита",
+            "values": [
+              {
+                "title": "1 месяц",
+                "code": "pointPeriod",
+                "value": "P1M"
+              },
+              {
+                "title": "3 месяца",
+                "code": "pointPeriod",
+                "value": "P3M"
+              },
+              {
+                "title": "6 месяцев",
+                "code": "pointPeriod",
+                "value": "P6M"
+              },
+              {
+                "title": "1 год",
+                "code": "pointPeriod",
+                "value": "P1Y"
+              },
+              {
+                "title": "3 года",
+                "code": "pointPeriod",
+                "value": "P3Y"
+              },
+              {
+                "title": "5 лет",
+                "code": "pointPeriod",
+                "value": "P5Y"
+              },
+              {
+                "title": "1 год",
+                "code": "currentPeriod",
+                "value": "P1Y"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

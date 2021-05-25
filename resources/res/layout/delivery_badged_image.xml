@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginEnd="8dp">
+    <com.avito.android.util.SimpleDraweeView android:id="@+id/image" android:layout_width="53dp" android:layout_height="40dp" style="@style/Image"/>
+    <com.avito.android.lib.expected.badge_bar.BadgeView android:textAppearance="?attr/textMicro" android:layout_gravity="bottom" android:id="@+id/badge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="3dp" android:layout_marginStart="3dp" app:badgeView_leftPadding="4dp" app:badgeView_radius="10dp" app:badgeView_rightPadding="4dp"/>
+</FrameLayout>

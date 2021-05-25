@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/rds_advert_details_small_offset" android:layout_marginRight="@dimen/content_horizontal_padding">
+    <TextView android:layout_gravity="start" android:id="@+id/auto_catalog_button" android:background="@drawable/bg_rds_gray_button" android:paddingLeft="4dp" android:paddingTop="3dp" android:paddingRight="4dp" android:paddingBottom="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/rds_content_horizontal_padding_left" style="@style/res_2132018350_textappearance_avito_advertdetails_body_blue"/>
+</FrameLayout>

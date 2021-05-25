@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/marketplace_brief_specs_root" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:layout_marginStart="@dimen/content_horizontal_padding" android:layout_marginEnd="@dimen/content_horizontal_padding">
+    <LinearLayout android:orientation="vertical" android:id="@+id/flat_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp">
+        <TextView android:textAppearance="?attr/textBody" android:textColor="@color/text_button_default" android:id="@+id/marketplace_brief_available_text" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/marketplace_brief_info_icon" android:visibility="gone" android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/ic_marketplace_info" android:contentDescription="@null" android:layout_marginStart="4dp" app:tint="?attr/gray28"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,188 @@
+package io.reactivex.rxjava3.internal.operators.parallel;
+
+import io.reactivex.rxjava3.exceptions.CompositeException;
+import io.reactivex.rxjava3.exceptions.Exceptions;
+import io.reactivex.rxjava3.functions.BiFunction;
+import io.reactivex.rxjava3.functions.Predicate;
+import io.reactivex.rxjava3.internal.fuseable.ConditionalSubscriber;
+import io.reactivex.rxjava3.internal.subscriptions.SubscriptionHelper;
+import io.reactivex.rxjava3.parallel.ParallelFailureHandling;
+import io.reactivex.rxjava3.parallel.ParallelFlowable;
+import io.reactivex.rxjava3.plugins.RxJavaPlugins;
+import org.reactivestreams.Subscriber;
+import org.reactivestreams.Subscription;
+public final class ParallelFilterTry<T> extends ParallelFlowable<T> {
+    public final ParallelFlowable<T> a;
+    public final Predicate<? super T> b;
+    public final BiFunction<? super Long, ? super Throwable, ParallelFailureHandling> c;
+
+    public static abstract class a<T> implements ConditionalSubscriber<T>, Subscription {
+        public final Predicate<? super T> a;
+        public final BiFunction<? super Long, ? super Throwable, ParallelFailureHandling> b;
+        public Subscription c;
+        public boolean d;
+
+        public a(Predicate<? super T> predicate, BiFunction<? super Long, ? super Throwable, ParallelFailureHandling> biFunction) {
+            this.a = predicate;
+            this.b = biFunction;
+        }
+
+        @Override // org.reactivestreams.Subscription
+        public final void cancel() {
+            this.c.cancel();
+        }
+
+        @Override // org.reactivestreams.Subscriber
+        public final void onNext(T t) {
+            if (!tryOnNext(t) && !this.d) {
+                this.c.request(1);
+            }
+        }
+
+        @Override // org.reactivestreams.Subscription
+        public final void request(long j) {
+            this.c.request(j);
+        }
+    }
+
+    public static final class b<T> extends a<T> {
+        public final ConditionalSubscriber<? super T> e;
+
+        public b(ConditionalSubscriber<? super T> conditionalSubscriber, Predicate<? super T> predicate, BiFunction<? super Long, ? super Throwable, ParallelFailureHandling> biFunction) {
+            super(predicate, biFunction);
+            this.e = conditionalSubscriber;
+        }
+
+        @Override // org.reactivestreams.Subscriber
+        public void onComplete() {
+            if (!this.d) {
+                this.d = true;
+                this.e.onComplete();
+            }
+        }
+
+        @Override // org.reactivestreams.Subscriber
+        public void onError(Throwable th) {
+            if (this.d) {
+                RxJavaPlugins.onError(th);
+                return;
+            }
+            this.d = true;
+            this.e.onError(th);
+        }
+
+        @Override // io.reactivex.rxjava3.core.FlowableSubscriber, org.reactivestreams.Subscriber
+        public void onSubscribe(Subscription subscription) {
+            if (SubscriptionHelper.validate(this.c, subscription)) {
+                this.c = subscription;
+                this.e.onSubscribe(this);
+            }
+        }
+
+        @Override // io.reactivex.rxjava3.internal.fuseable.ConditionalSubscriber
+        public boolean tryOnNext(T t) {
+            if (!this.d) {
+                long j = 0;
+                while (true) {
+                    try {
+                        if (!this.a.test(t) || !this.e.tryOnNext(t)) {
+                            return false;
+                        }
+                        return true;
+                    } catch (Throwable th) {
+                        Exceptions.throwIfFatal(th);
+                        this.c.cancel();
+                        onError(new CompositeException(th, th));
+                    }
+                }
+                return false;
+            }
+            return false;
+        }
+    }
+
+    public static final class c<T> extends a<T> {
+        public final Subscriber<? super T> e;
+
+        public c(Subscriber<? super T> subscriber, Predicate<? super T> predicate, BiFunction<? super Long, ? super Throwable, ParallelFailureHandling> biFunction) {
+            super(predicate, biFunction);
+            this.e = subscriber;
+        }
+
+        @Override // org.reactivestreams.Subscriber
+        public void onComplete() {
+            if (!this.d) {
+                this.d = true;
+                this.e.onComplete();
+            }
+        }
+
+        @Override // org.reactivestreams.Subscriber
+        public void onError(Throwable th) {
+            if (this.d) {
+                RxJavaPlugins.onError(th);
+                return;
+            }
+            this.d = true;
+            this.e.onError(th);
+        }
+
+        @Override // io.reactivex.rxjava3.core.FlowableSubscriber, org.reactivestreams.Subscriber
+        public void onSubscribe(Subscription subscription) {
+            if (SubscriptionHelper.validate(this.c, subscription)) {
+                this.c = subscription;
+                this.e.onSubscribe(this);
+            }
+        }
+
+        @Override // io.reactivex.rxjava3.internal.fuseable.ConditionalSubscriber
+        public boolean tryOnNext(T t) {
+            if (!this.d) {
+                long j = 0;
+                while (true) {
+                    try {
+                        if (!this.a.test(t)) {
+                            return false;
+                        }
+                        this.e.onNext(t);
+                        return true;
+                    } catch (Throwable th) {
+                        Exceptions.throwIfFatal(th);
+                        this.c.cancel();
+                        onError(new CompositeException(th, th));
+                    }
+                }
+                return false;
+            }
+            return false;
+        }
+    }
+
+    public ParallelFilterTry(ParallelFlowable<T> parallelFlowable, Predicate<? super T> predicate, BiFunction<? super Long, ? super Throwable, ParallelFailureHandling> biFunction) {
+        this.a = parallelFlowable;
+        this.b = predicate;
+        this.c = biFunction;
+    }
+
+    @Override // io.reactivex.rxjava3.parallel.ParallelFlowable
+    public int parallelism() {
+        return this.a.parallelism();
+    }
+
+    @Override // io.reactivex.rxjava3.parallel.ParallelFlowable
+    public void subscribe(Subscriber<? super T>[] subscriberArr) {
+        if (validate(subscriberArr)) {
+            int length = subscriberArr.length;
+            Subscriber<? super T>[] subscriberArr2 = new Subscriber[length];
+            for (int i = 0; i < length; i++) {
+                Subscriber<? super T> subscriber = subscriberArr[i];
+                if (subscriber instanceof ConditionalSubscriber) {
+                    subscriberArr2[i] = new b((ConditionalSubscriber) subscriber, this.b, this.c);
+                } else {
+                    subscriberArr2[i] = new c(subscriber, this.b, this.c);
+                }
+            }
+            this.a.subscribe(subscriberArr2);
+        }
+    }
+}

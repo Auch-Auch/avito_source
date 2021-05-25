@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@drawable/bg_btn_flat" android:paddingLeft="@dimen/shop_content_horizontal_padding" android:paddingTop="18dp" android:paddingRight="@dimen/shop_content_horizontal_padding" android:paddingBottom="18dp" android:layout_width="match_parent" android:layout_height="wrap_content" app:fontFamily="@font/avito_regular" style="@style/res_2132018744_widget_avito_listitem"/>

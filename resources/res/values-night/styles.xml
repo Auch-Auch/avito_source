@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CartRootFab">
+        <item name="android:outlineProvider">none</item>
+        <item name="backgroundTint">?attr/gray4</item>
+    </style>
+    <style name="res_2132018431_theme_appcompat_daynight" parent="@style/res_2132018429_theme_appcompat">
+    </style>
+    <style name="res_2132018432_theme_appcompat_daynight_darkactionbar" parent="@style/res_2132018429_theme_appcompat">
+    </style>
+    <style name="res_2132018433_theme_appcompat_daynight_dialog" parent="@style/res_2132018438_theme_appcompat_dialog">
+    </style>
+    <style name="res_2132018434_theme_appcompat_daynight_dialog_alert" parent="@style/res_2132018439_theme_appcompat_dialog_alert">
+    </style>
+    <style name="res_2132018435_theme_appcompat_daynight_dialog_minwidth" parent="@style/res_2132018440_theme_appcompat_dialog_minwidth">
+    </style>
+    <style name="res_2132018436_theme_appcompat_daynight_dialogwhenlarge" parent="@style/res_2132018441_theme_appcompat_dialogwhenlarge">
+    </style>
+    <style name="res_2132018437_theme_appcompat_daynight_noactionbar" parent="@style/res_2132018450_theme_appcompat_noactionbar">
+    </style>
+    <style name="res_2132018511_theme_materialcomponents_daynight" parent="@style/res_2132018507_theme_materialcomponents">
+    </style>
+    <style name="res_2132018512_theme_materialcomponents_daynight_bottomsheetdialog" parent="@style/res_2132018508_theme_materialcomponents_bottomsheetdialog">
+    </style>
+    <style name="res_2132018513_theme_materialcomponents_daynight_bridge" parent="@style/res_2132018509_theme_materialcomponents_bridge">
+    </style>
+    <style name="res_2132018514_theme_materialcomponents_daynight_darkactionbar" parent="@style/res_2132018507_theme_materialcomponents">
+    </style>
+    <style name="res_2132018515_theme_materialcomponents_daynight_darkactionbar_bridge" parent="@style/res_2132018509_theme_materialcomponents_bridge">
+    </style>
+    <style name="res_2132018516_theme_materialcomponents_daynight_dialog" parent="@style/res_2132018527_theme_materialcomponents_dialog">
+    </style>
+    <style name="res_2132018517_theme_materialcomponents_daynight_dialog_alert" parent="@style/res_2132018528_theme_materialcomponents_dialog_alert">
+    </style>
+    <style name="res_2132018518_theme_materialcomponents_daynight_dialog_alert_bridge" parent="@style/res_2132018529_theme_materialcomponents_dialog_alert_bridge">
+    </style>
+    <style name="res_2132018519_theme_materialcomponents_daynight_dialog_bridge" parent="@style/res_2132018530_theme_materialcomponents_dialog_bridge">
+    </style>
+    <style name="res_2132018520_theme_materialcomponents_daynight_dialog_fixedsize" parent="@style/res_2132018531_theme_materialcomponents_dialog_fixedsize">
+    </style>
+    <style name="res_2132018521_theme_materialcomponents_daynight_dialog_fixedsize_bridge" parent="@style/res_2132018532_theme_materialcomponents_dialog_fixedsize_bridge">
+    </style>
+    <style name="res_2132018522_theme_materialcomponents_daynight_dialog_minwidth" parent="@style/res_2132018533_theme_materialcomponents_dialog_minwidth">
+    </style>
+    <style name="res_2132018523_theme_materialcomponents_daynight_dialog_minwidth_bridge" parent="@style/res_2132018534_theme_materialcomponents_dialog_minwidth_bridge">
+    </style>
+    <style name="res_2132018524_theme_materialcomponents_daynight_dialogwhenlarge" parent="@style/res_2132018535_theme_materialcomponents_dialogwhenlarge">
+    </style>
+    <style name="res_2132018525_theme_materialcomponents_daynight_noactionbar" parent="@style/res_2132018554_theme_materialcomponents_noactionbar">
+    </style>
+    <style name="res_2132018526_theme_materialcomponents_daynight_noactionbar_bridge" parent="@style/res_2132018555_theme_materialcomponents_noactionbar_bridge">
+    </style>
+    <style name="res_2132018566_themeoverlay_appcompat_daynight" parent="@style/res_2132018564_themeoverlay_appcompat_dark">
+    </style>
+    <style name="res_2132018586_themeoverlay_materialcomponents_daynight_bottomsheetdialog" parent="@style/res_2132018583_themeoverlay_materialcomponents_bottomsheetdialog">
+    </style>
+    <style name="res_2132018881_widget_materialcomponents_actionbar_primarysurface" parent="@style/res_2132018883_widget_materialcomponents_actionbar_surface">
+    </style>
+    <style name="res_2132018885_widget_materialcomponents_appbarlayout_primarysurface" parent="@style/res_2132018886_widget_materialcomponents_appbarlayout_surface">
+    </style>
+    <style name="res_2132018894_widget_materialcomponents_bottomappbar_primarysurface" parent="@style/res_2132018892_widget_materialcomponents_bottomappbar">
+    </style>
+    <style name="res_2132018897_widget_materialcomponents_bottomnavigationview_primarysurface" parent="@style/res_2132018895_widget_materialcomponents_bottomnavigationview">
+    </style>
+    <style name="res_2132018968_widget_materialcomponents_tablayout_primarysurface" parent="@style/res_2132018966_widget_materialcomponents_tablayout">
+    </style>
+    <style name="res_2132018991_widget_materialcomponents_toolbar_primarysurface" parent="@style/res_2132018992_widget_materialcomponents_toolbar_surface">
+    </style>
+</resources>

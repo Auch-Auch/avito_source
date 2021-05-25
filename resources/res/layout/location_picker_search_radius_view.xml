@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/linear_radius_list_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:gravity="top" android:background="@drawable/bottom_menu_shadow_top" android:layout_width="match_parent" android:layout_height="8dp"/>
+    <ViewSwitcher android:layout_gravity="bottom" android:id="@+id/search_radius_view_switcher" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include layout="@layout/location_picker_search_radius_loader"/>
+        <LinearLayout android:gravity="bottom" android:orientation="vertical" android:background="?attr/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp">
+            <androidx.recyclerview.widget.RecyclerView android:gravity="top" android:id="@+id/radius_recycler_view" android:layout_width="match_parent" android:layout_height="56dp" android:layout_marginTop="4dp"/>
+            <TextView android:textColor="@color/txt_raised_button" android:gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/select_radius_button" android:background="@drawable/bg_raised_button_blue" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/location_picker_select_radius_button_padding" android:layout_marginTop="8dp" android:layout_marginRight="@dimen/location_picker_select_radius_button_padding" android:layout_marginBottom="@dimen/location_picker_select_radius_button_padding" android:text="@string/lp_choose_radius_btn_show" android:textAllCaps="true" style="@style/res_2132017857_deprecated_theme_internal_button_primary"/>
+        </LinearLayout>
+    </ViewSwitcher>
+</FrameLayout>

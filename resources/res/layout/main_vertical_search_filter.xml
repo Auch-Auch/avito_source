@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/vertical_search_filter_root" android:background="@drawable/bg_main_vertical_search_filter" android:paddingTop="15dp" android:paddingBottom="24dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingEnd="24dp" android:outlineProvider="background">
+    <TextView android:textColor="?attr/black" android:id="@+id/vertical_search_filter_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12dp" android:layout_marginStart="24dp" style="@style/res_2132017498_avito_text_h3"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/vertical_search_filter_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="24dp"/>
+    <com.avito.android.lib.design.shadow_layout.ShadowFrameLayout android:paddingLeft="8dp" android:paddingTop="4dp" android:paddingRight="8dp" android:paddingBottom="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-4dp" android:layout_marginStart="16dp">
+        <com.avito.android.lib.design.button.Button android:id="@+id/vertical_search_filter_action" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_shadowColor="@color/expected_button_primary_upper_shadow_blue" app:layout_shadowEnabled="@bool/is_not_dark_theme" style="@style/ButtonPrimaryLargeWhite"/>
+    </com.avito.android.lib.design.shadow_layout.ShadowFrameLayout>
+</LinearLayout>

@@ -1,0 +1,67 @@
+{
+  "items": [
+    {
+      "conversation": "5cdae92e6eba4e0045d1829a",
+      "query": {
+        "summ": "1000",
+        "term": "P2Y"
+      },
+      "queryTitle": "ОСАГО на машину",
+      "name": "ОСАГО",
+      "productName": "osago",
+      "offersCount": 3,
+      "offersCountTitle": "2 предложения от банков",
+      "requestsCounts": 0,
+      "requestsCountsTitle": "0 заявок отправлено",
+      "dateCreated": "29.05.2019",
+      "_id": "savedSearch1"
+    },
+    {
+      "conversation": "5cdae92e6eba4e0045d111",
+      "query": {
+        "summ": "5000",
+        "term": "P3M"
+      },
+      "queryTitle": "5 000 Р на 3 месяца",
+      "name": "Кредит наличными",
+      "productName": "credit",
+      "offersCount": 5,
+      "offersCountTitle": "5 предложений от банков",
+      "requestsCounts": 0,
+      "requestsCountsTitle": "1 заявка отправлена",
+      "dateCreated": "20.05.2019",
+      "_id": "savedSearch2"
+    },
+    {
+      "conversation": "5cdae92e6eba4e0045d1829a",
+      "query": {
+        "summ": "1000",
+        "term": "P2Y"
+      },
+      "queryTitle": "1 000 Р на 2 года",
+      "name": "Кредит наличными",
+      "productName": "credit",
+      "offersCount": 2,
+      "offersCountTitle": "2 предложения от банков",
+      "requestsCounts": 0,
+      "requestsCountsTitle": "0 заявок отправлено",
+      "dateCreated": "29.05.2019",
+      "_id": "savedSearch1"
+    },
+    {
+      "conversation": "5cdae92e6eba4e0045d111",
+      "query": {
+        "summ": "5000",
+        "term": "P3M"
+      },
+      "queryTitle": "5 000 Р на 3 месяца",
+      "name": "Кредит наличными",
+      "offersCount": 5,
+      "offersCountTitle": "5 предложений от банков",
+      "requestsCounts": 0,
+      "requestsCountsTitle": "1 заявка отправлена",
+      "dateCreated": "20.05.2019",
+      "_id": "savedSearch2"
+    }
+  ]
+}

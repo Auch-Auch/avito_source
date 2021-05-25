@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/res_2132017903_design_widget_avito_shadowlayout">
+    <TextView android:textColor="?attr/blue" android:id="@+id/messenger_updates_proposal_text" android:background="@drawable/bg_channel_update_proposal" android:paddingLeft="16dp" android:paddingTop="8dp" android:paddingRight="16dp" android:paddingBottom="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8dp" android:text="@string/messenger_new_messages" android:drawableRight="@drawable/ic_messenger_channel_updates_proposal_icon_16dp" android:drawablePadding="4dp" android:elevation="1dp" app:elevation="1dp" style="?attr/textLegacy3_bodySmallDense"/>
+</FrameLayout>

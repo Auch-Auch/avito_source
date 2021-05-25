@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.avito.android.lib.design.component_container.ComponentContainer xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:theme="@style/res_2132018452_theme_avito" android:id="@+id/container" android:paddingLeft="@dimen/container_horizontal_padding" android:paddingTop="10dp" android:paddingRight="@dimen/container_horizontal_padding" android:paddingBottom="10dp" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.avito.android.lib.design.input.Input android:id="@+id/input" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="textNoSuggestions" app:layout_autoReset="0" style="?attr/input"/>
+    <com.avito.android.lib.expected.video_preview.VideoPreview android:id="@+id/video_preview" android:layout_width="match_parent" android:layout_height="100dp" style="@style/res_2132018864_widget_avito_videopreview"/>
+</com.avito.android.lib.design.component_container.ComponentContainer>

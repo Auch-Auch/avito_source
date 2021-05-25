@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:id="@+id/incomplete_profile_note" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/incomplete_profile_note" app:fontFamily="@font/avito_regular" style="@style/res_2132018745_widget_avito_listitem_profile"/>
+    <include android:id="@+id/email" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/info_block"/>
+    <include android:id="@+id/manager" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/info_block"/>
+    <include android:id="@+id/address" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/info_block"/>
+    <include android:id="@+id/website" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/info_block"/>
+    <include android:id="@+id/registered" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/info_block"/>
+</LinearLayout>

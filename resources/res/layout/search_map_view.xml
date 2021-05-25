@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/search_by_map_screen_root" android:background="?attr/gray28" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.avito.android.avito_map.AvitoMapView android:id="@+id/map" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <FrameLayout android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.avito.android.search.map.view.ZoomButton android:id="@+id/zoom_map" android:visibility="gone" android:layout_width="44dp" android:layout_height="88dp" android:layout_margin="12dp" app:cardCornerRadius="22dp" app:cardElevation="10dp"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/progress_overlay_container" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@+id/container" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/serp_container" android:background="@color/avito_transparent_white" android:paddingTop="56dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+        <com.avito.android.ui.widget.ScrollDirectionAwareRecyclerView android:id="@+id/serp_items" android:background="?attr/white" android:paddingLeft="@dimen/serp_horizontal_padding" android:paddingRight="@dimen/serp_horizontal_padding" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="2dp" app:behavior_hideable="true"/>
+    </FrameLayout>
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@+id/bottom_panel" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_behavior="ru.avito.component.behaviors.MoveAboveSnackBarBehavior">
+        <com.google.android.material.floatingactionbutton.FloatingActionButton android:layout_gravity="end" android:id="@+id/find_me_button" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="44dp" android:layout_height="44dp" android:layout_margin="12dp" android:src="@drawable/my_location_icon" app:backgroundTint="?attr/white" app:fabCustomSize="44dp"/>
+        <com.avito.android.lib.design.button.Button android:id="@+id/go_to_serp_button" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/search_map_go_to_serp_button_height" android:layout_margin="@dimen/search_map_go_to_serp_button_margin" android:elevation="2dp" android:backgroundTint="?attr/white" style="?attr/buttonDefaultMedium"/>
+        <FrameLayout android:id="@+id/button_panel" android:background="?attr/white" android:layout_width="match_parent" android:layout_height="56dp">
+            <include android:layout_gravity="center_vertical" android:id="@+id/show_list_button" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="8dp" android:layout_marginRight="8dp" layout="@layout/button_flat_primary"/>
+            <com.avito.android.design.widget.ColoredProgressBar android:layout_gravity="center" android:id="@+id/button_panel_load_progress" android:visibility="gone" android:layout_width="@dimen/search_map_adverts_loader_size" android:layout_height="@dimen/search_map_adverts_loader_size"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/button_panel_error" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+                <TextView android:gravity="center_vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="16dp" android:text="@string/items_load_error" android:layout_weight="1" android:layout_marginStart="16dp" style="?attr/textLegacy1_body"/>
+                <include android:layout_gravity="center_vertical" android:id="@+id/button_panel_error_retry" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="8dp" android:layout_marginRight="8dp" android:text="@string/try_again" layout="@layout/button_flat_primary"/>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+    <include layout="@layout/shortcuts"/>
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_gravity="bottom" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include android:id="@+id/bottom_sheet" layout="@layout/avito_bottom_sheet"/>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <include android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/search_map_searchbar"/>
+    <com.avito.android.ui.widget.ScrollDirectionAwareRecyclerView android:id="@+id/pin_items" android:background="?attr/white" android:paddingLeft="@dimen/serp_horizontal_padding" android:paddingRight="@dimen/serp_horizontal_padding" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="2dp" app:behavior_hideable="true" app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"/>
+    <include app:layout_anchorGravity="35" app:layout_behavior="ru.avito.component.behaviors.MoveAboveSnackBarBehavior" layout="@layout/back_to_map_floating_button"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/review_reply_root" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/standard_padding" android:paddingRight="@dimen/standard_padding" android:paddingBottom="@dimen/standard_padding" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:layout_gravity="top|center_vertical|center_horizontal|center" android:background="@drawable/ic_avito_bottom_sheet_notch" android:layout_width="28dp" android:layout_height="4dp" android:layout_marginBottom="22dp"/>
+        <com.avito.android.lib.design.component_container.ComponentContainer android:id="@+id/component_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp">
+            <com.avito.android.lib.design.input.Input android:id="@+id/reply_input" android:layout_width="match_parent" android:layout_height="100dp" android:hint="@string/review_reply_hint" android:minLines="3"/>
+        </com.avito.android.lib.design.component_container.ComponentContainer>
+        <com.avito.android.lib.design.button.Button android:id="@+id/send_button" android:layout_width="match_parent" android:layout_height="wrap_content" style="?attr/buttonPrimaryLarge"/>
+    </LinearLayout>
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@+id/coordinator" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</FrameLayout>

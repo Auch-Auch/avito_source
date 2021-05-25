@@ -1,0 +1,30 @@
+{
+  "item": {
+    "price": 2600,
+    "priceValue": "2600 P",
+    "url": "https://engine.paymentgate.ru/payment/merchants/alfa_insur2/payment_ru.html?mdOrder=a8cb19e4-fbba-7d51-acc2-635700009efa",
+    "status": "getting",
+    "pollingInterval": 5000,
+    "pollingId": "23452rff24232f2",
+    "variants": [
+      {
+        "price": 2600,
+        "priceValue": "2600 P",
+        "productId": "435333",
+        "companyId": "8978",
+        "title": "Тинькофф страхование",
+        "titleColor": "000000",
+        "backgroundColor": "fff100"
+      },
+      {
+        "price": 2700,
+        "priceValue": "2700 P",
+        "productId": "435321",
+        "companyId": "8979",
+        "title": "Альфа страхование",
+        "titleColor": "000000",
+        "backgroundColor": "fff100"
+      }
+    ]
+  }
+}

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/shop_awards_screen_root" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/awards_recycler" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="?attr/actionBarSize"/>
+    <TextView android:textSize="20sp" android:textColor="?attr/gray28" android:gravity="center" android:layout_gravity="center" android:id="@+id/shop_not_found" android:paddingTop="?attr/actionBarSize" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" app:fontFamily="@font/avito_medium"/>
+    <include layout="@layout/appbar"/>
+</FrameLayout>

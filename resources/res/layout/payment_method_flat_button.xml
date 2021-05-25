@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/res_2132018751_widget_avito_payments_method_passive">
+    <include android:id="@+id/button_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="64dp" android:layout_marginBottom="8dp" layout="@layout/button_flat_primary"/>
+</FrameLayout>

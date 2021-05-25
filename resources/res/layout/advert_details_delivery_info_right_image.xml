@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/advert_delivery_block_root" android:paddingLeft="@dimen/content_horizontal_padding" android:paddingTop="16dp" android:paddingRight="@dimen/content_horizontal_padding" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/container" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:textAppearance="?attr/textBody" android:textColor="@color/text_button_default" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableRight="@drawable/ic_rds_delivery_black_20" android:drawablePadding="10dp" android:drawableEnd="@drawable/ic_rds_delivery_black_20"/>
+            <TextView android:textAppearance="?attr/textBody" android:textColor="@color/text_button_default" android:id="@+id/subtitle" android:paddingTop="4dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <com.avito.android.design.widget.BoundedFrameLayout android:id="@+id/toggle_container" android:layout_width="wrap_content" android:layout_height="match_parent" android:maxHeight="72dp" android:minHeight="56dp">
+            <androidx.appcompat.widget.SwitchCompat android:layout_gravity="center_vertical" android:id="@+id/toggle" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </com.avito.android.design.widget.BoundedFrameLayout>
+    </LinearLayout>
+</FrameLayout>

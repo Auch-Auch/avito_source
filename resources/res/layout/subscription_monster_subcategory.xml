@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="4dp">
+    <TextView android:textSize="16sp" android:textColor="?attr/black" android:id="@+id/subcategory" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <TextView android:textSize="13sp" android:textColor="?attr/gray48" android:id="@+id/microcategories" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</LinearLayout>

@@ -1,0 +1,21 @@
+package a2.a.a.g0.a;
+
+import com.avito.android.util.Logs;
+import com.jakewharton.rxrelay2.BehaviorRelay;
+import io.reactivex.functions.Consumer;
+public final class e<T> implements Consumer<Throwable> {
+    public final /* synthetic */ BehaviorRelay a;
+
+    public e(BehaviorRelay behaviorRelay) {
+        this.a = behaviorRelay;
+    }
+
+    /* JADX DEBUG: Method arguments types fixed to match base method, original types: [java.lang.Object] */
+    /* JADX DEBUG: Multi-variable search result rejected for r0v0, resolved type: com.jakewharton.rxrelay2.BehaviorRelay */
+    /* JADX WARN: Multi-variable type inference failed */
+    @Override // io.reactivex.functions.Consumer
+    public void accept(Throwable th) {
+        this.a.accept(Boolean.TRUE);
+        Logs.error("ConnectivityProvider", "Network state subscription failed", th);
+    }
+}
